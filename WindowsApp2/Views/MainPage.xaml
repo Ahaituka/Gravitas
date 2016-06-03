@@ -54,12 +54,7 @@
                              Background="White"
                              Foreground="Black">
 
-            <!--  secondary commands  -->
-            <controls:PageHeader.SecondaryCommands>
-                <AppBarButton Click="{x:Bind ViewModel.GotoSettings}" Label="Settings" />
-                <AppBarButton Click="{x:Bind ViewModel.GotoPrivacy}" Label="Privacy" />
-                <AppBarButton Click="{x:Bind ViewModel.GotoAbout}" Label="About" />
-            </controls:PageHeader.SecondaryCommands>
+           
 
         </controls:PageHeader>
 
@@ -94,6 +89,33 @@
                    RelativePanel.AlignLeftWith="parameterResizer"
                    RelativePanel.Below="parameterResizer"
                    Text="Current Visual State" />-->
+
+
+
+
+        <AutoSuggestBox
+                        x:Name="asb"
+                       RelativePanel.AlignRightWithPanel="True"
+                        RelativePanel.AlignTopWithPanel="True"
+                       RelativePanel.AlignRightWith="pageHeader"
+                        PlaceholderText="Type a Event Name" 
+                        TextChanged="asb_TextChanged"
+                        QueryIcon="Find"
+                        QuerySubmitted="asb_QuerySubmitted"
+                        SuggestionChosen="asb_SuggestionChosen"
+                        
+                        MinWidth="296"
+                        HorizontalAlignment="Left" 
+            
+         
+            
+                       >
+
+        </AutoSuggestBox>
+
+
+
+
 
     </RelativePanel>
 </Page>
