@@ -51,7 +51,6 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="SecondaryCommands" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
@@ -173,9 +172,14 @@
     <RootType FullName="WindowsApp2.Views.DetailPage" />
     <RootType FullName="WindowsApp2.Views.Favourites" />
     <RootType FullName="WindowsApp2.ViewModels.MainPageViewModel" />
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
-      <RootProperty Name="Label" />
-      <RootEvent Name="Click" />
+    <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="QueryIcon" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootEvent Name="TextChanged" />
+      <RootEvent Name="QuerySubmitted" />
+      <RootEvent Name="SuggestionChosen" />
     </RootType>
     <RootType FullName="WindowsApp2.Views.MainPage" />
     <RootType FullName="WindowsApp2.Views.Organisers" />
