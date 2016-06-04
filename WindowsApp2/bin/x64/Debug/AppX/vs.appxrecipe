@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-04T17:57:28.560</Modified>
+      <Modified>2016-06-04T18:33:51.570</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.exe">
       <PackagePath>entrypoint\WindowsApp2.exe</PackagePath>
-      <Modified>2016-06-04T17:57:20.016</Modified>
+      <Modified>2016-06-04T18:33:46.624</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RSSGPM\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -506,7 +506,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.xr.xml">
       <PackagePath>WindowsApp2.xr.xml</PackagePath>
-      <Modified>2016-06-04T17:57:18.623</Modified>
+      <Modified>2016-06-04T18:33:46.172</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -546,11 +546,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-04T17:57:26.208</Modified>
+      <Modified>2016-06-04T18:33:50.728</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\Core\WindowsApp2.exe">
       <PackagePath>WindowsApp2.exe</PackagePath>
-      <Modified>2016-06-04T17:57:28.528</Modified>
+      <Modified>2016-06-04T18:33:51.566</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -85,6 +85,7 @@
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Children" />
       <RootProperty Name="Background" />
+      <RootProperty Name="RowDefinitions" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
@@ -109,8 +110,10 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Style" />
+      <RootProperty Name="Name" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Style" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="LineHeight" />
       <RootProperty Name="TextWrapping" />
@@ -138,6 +141,9 @@
       <RootProperty Name="Source" />
       <RootProperty Name="Stretch" />
       <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="ItemsSource" />

@@ -33,32 +33,39 @@ mc:Ignorable="d">
     </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
-       
+
+
 
         <GridView ItemsSource="{x:Bind Category}" 
                   IsItemClickEnabled="True" 
                   ItemClick="GridView_ItemClick"
                   ItemTemplate="{StaticResource CategoryDataTemplate}">
             <GridView.ItemContainerStyle>
-                <Style TargetType="GridViewItem">
-                    <Setter Property="Margin" Value="0,0,4,4" />
-                    <Setter Property="Background" Value="Transparent"/>
-                    <Setter Property="TabNavigation" Value="Local"/>
-                    <Setter Property="IsHoldingEnabled" Value="True"/>
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="GridViewItem">
-                                <ContentPresenter />
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-
-
+                  <Style TargetType="GridViewItem">
+            <Setter Property="Margin" Value="0,0,4,4" />
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="TabNavigation" Value="Local"/>
+            <Setter Property="IsHoldingEnabled" Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="GridViewItem">
+                        <ContentPresenter  />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+                
+                
             </GridView.ItemContainerStyle>
+            
+
         </GridView>
 
-        
+
+
+
+
+
 
     </Grid>
 </Page>

@@ -35,8 +35,8 @@ namespace WindowsApp2.Views
 
         private void GridView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            //var book = (Book)e.ClickedItem;
-            //ResultTextBlock.Text = "You selected " + book.Title;
+            var book = (WindowsApp2.ViewModels.Categories)e.ClickedItem;
+            ResultTextBlock.Text = "You selected " + book. Name;
         }
 
     }
