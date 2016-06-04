@@ -9,16 +9,16 @@
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>918f62b6-1a93-4917-9b39-0f1900748008</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\bin\x64\Debug\WindowsApp2.exe">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.exe">
       <PackagePath>entrypoint\WindowsApp2.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RSSGPM\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
@@ -342,40 +342,43 @@
     <AppxPackagedFile Include="C:\Users\RSSGPM\.nuget\packages\Template10\1.1.11\lib\uap10.0\Template10Library.dll">
       <PackagePath>Template10Library.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Help.htm">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\7.jpg">
+      <PackagePath>Assets\7.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Help.htm">
       <PackagePath>Help.htm</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\bin\x64\Debug\WindowsApp2.xr.xml">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.xr.xml">
       <PackagePath>WindowsApp2.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
@@ -405,10 +408,10 @@
     <AppxPackagedFile Include="C:\Users\RSSGPM\.nuget\packages\Template10\1.1.11\lib\uap10.0\Template10Library\Themes\Resizer.xaml">
       <PackagePath>Template10Library\Themes\Resizer.xaml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\bin\x64\Debug\Core\WindowsApp2.exe">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\Core\WindowsApp2.exe">
       <PackagePath>WindowsApp2.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -5,9 +5,60 @@
     xmlns:local="using:WindowsApp2.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    xmlns:data="using:WindowsApp2.ViewModels"
+mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+  
+
+    <Page.Resources>
+        <DataTemplate x:DataType="data:Categories" x:Key="CategoryDataTemplate">
+            <!--<StackPanel HorizontalAlignment="Center">
+                <Image Width="150" Source="{x:Bind CoverImage}" />
+                <TextBlock FontSize="16" Text="{x:Bind Title}" HorizontalAlignment="Center" />
+                <TextBlock FontSize="10" Text="{x:Bind Author}" HorizontalAlignment="Center" />
+            </StackPanel>-->
+
+            <StackPanel  Margin='60'>
+                <Grid>
+                    <Image Source = "{x:Bind CoverImage}" Stretch="None" />
+                    <TextBlock Text="{x:Bind Name}" VerticalAlignment="Center" HorizontalAlignment="Right" />
+
+                </Grid>
+                <TextBlock Text="{x:Bind Description}"  />
+            </StackPanel>
+
+
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+       
+
+        <GridView ItemsSource="{x:Bind Category}" 
+                  IsItemClickEnabled="True" 
+                  ItemClick="GridView_ItemClick"
+                  ItemTemplate="{StaticResource CategoryDataTemplate}">
+            <GridView.ItemContainerStyle>
+                <Style TargetType="GridViewItem">
+                    <Setter Property="Margin" Value="0,0,4,4" />
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="TabNavigation" Value="Local"/>
+                    <Setter Property="IsHoldingEnabled" Value="True"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="GridViewItem">
+                                <ContentPresenter />
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+
+
+            </GridView.ItemContainerStyle>
+        </GridView>
+
+        
 
     </Grid>
 </Page>

@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using WindowsApp2.ViewModels;
+
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,9 +24,20 @@ namespace WindowsApp2.Views
     /// </summary>
     public sealed partial class Categories : Page
     {
+
+        private  List<WindowsApp2.ViewModels.Categories> Category;
         public Categories()
         {
             this.InitializeComponent();
+            Category = CategoryManager.GetCategory();
+           
+         }
+
+        private void GridView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            //var book = (Book)e.ClickedItem;
+            //ResultTextBlock.Text = "You selected " + book.Title;
         }
+
     }
 }

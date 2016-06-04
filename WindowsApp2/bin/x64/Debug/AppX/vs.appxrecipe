@@ -9,8 +9,8 @@
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>918f62b6-1a93-4917-9b39-0f1900748008</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\obj\x64\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>A50ECAC56DD55C1D7330296D1A3C0F80E7BF742FD720B7D085567FB2E6571804</RegisteredManifestChecksum>
+    <IntermediateOutputPath>C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>BDDB88E4BC449CC4CA1BF1D90B198307F4B26A91E66D4AE6E9630C72789E50D4</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>918f62b6-1a93-4917-9b39-0f1900748008_1.0.0.0_x64__an4bsv26nc1ym</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>918f62b6-1a93-4917-9b39-0f1900748008_an4bsv26nc1ym!App</RegisteredUserModeAppID>
     <RegisteredPackageID>918f62b6-1a93-4917-9b39-0f1900748008</RegisteredPackageID>
@@ -19,16 +19,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-03T19:57:46.065</Modified>
+      <Modified>2016-06-04T17:57:28.560</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\bin\x64\Debug\WindowsApp2.exe">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.exe">
       <PackagePath>entrypoint\WindowsApp2.exe</PackagePath>
-      <Modified>2016-06-03T19:57:37.028</Modified>
+      <Modified>2016-06-04T17:57:20.016</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RSSGPM\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -458,51 +458,55 @@
       <PackagePath>Template10Library.dll</PackagePath>
       <Modified>2016-05-19T13:17:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Help.htm">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\7.jpg">
+      <PackagePath>Assets\7.jpg</PackagePath>
+      <Modified>2016-06-04T09:34:58.468</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Help.htm">
       <PackagePath>Help.htm</PackagePath>
       <Modified>2016-06-03T19:40:51.177</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-06-03T19:40:51.209</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2016-06-03T19:40:51.162</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-03T19:40:51.162</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-03T19:40:51.162</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-03T19:40:51.162</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-03T19:40:51.177</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-03T19:40:51.177</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2016-06-03T19:40:51.177</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\bin\x64\Debug\WindowsApp2.xr.xml">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.xr.xml">
       <PackagePath>WindowsApp2.xr.xml</PackagePath>
-      <Modified>2016-06-03T19:57:35.708</Modified>
+      <Modified>2016-06-04T17:57:18.623</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -540,13 +544,13 @@
       <PackagePath>Template10Library\Themes\Resizer.xaml</PackagePath>
       <Modified>2016-05-19T13:17:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-03T19:57:43.965</Modified>
+      <Modified>2016-06-04T17:57:26.208</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\bin\x64\Debug\Core\WindowsApp2.exe">
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\Core\WindowsApp2.exe">
       <PackagePath>WindowsApp2.exe</PackagePath>
-      <Modified>2016-06-03T19:57:46.047</Modified>
+      <Modified>2016-06-04T17:57:28.528</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
