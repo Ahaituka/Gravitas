@@ -20,7 +20,6 @@
             <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
                 <VisualState x:Name="VisualStateNarrow">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <!--  TODO: change properties for narrow view  -->
@@ -52,17 +51,9 @@
                              RelativePanel.AlignRightWithPanel="True"
                              RelativePanel.AlignTopWithPanel="True" Text="Main Page"
                              Background="WhiteSmoke"
-                             Foreground="Black">
-
-<<<<<<< HEAD
-
-            <!--  secondary commands  -->
-            
-=======
-           
->>>>>>> refs/remotes/origin/master
-
-        </controls:PageHeader>
+                           Foreground="Black">
+           <!--  secondary commands  -->
+                </controls:PageHeader>
 
         <!--<controls:Resizer x:Name="parameterResizer" Margin="16,16,16,0"
                           RelativePanel.AlignLeftWithPanel="True"
@@ -96,8 +87,6 @@
                    RelativePanel.Below="parameterResizer"
                    Text="Current Visual State" />-->
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -127,33 +116,6 @@
 
     </RelativePanel>
 </Page>
->>>>>>> refs/remotes/origin/master
 
 
 
-        <AutoSuggestBox
-                        x:Name="asb"
-                       RelativePanel.AlignRightWithPanel="True"
-                        RelativePanel.AlignTopWithPanel="True"
-                       RelativePanel.AlignRightWith="pageHeader"
-                        PlaceholderText="Type a Event Name" 
-                        TextChanged="asb_TextChanged"
-                        QueryIcon="Find"
-                        QuerySubmitted="asb_QuerySubmitted"
-                        SuggestionChosen="asb_SuggestionChosen"
-                        
-                        MinWidth="296"
-                        HorizontalAlignment="Left" Margin="-300,10,0,-10" 
-            
-         
-            
-                       >
-
-        </AutoSuggestBox>
-
-
-
-
-
-    </RelativePanel>
-</Page>
