@@ -342,6 +342,12 @@
     <AppxPackagedFile Include="C:\Users\RSSGPM\.nuget\packages\Template10\1.1.11\lib\uap10.0\Template10Library.dll">
       <PackagePath>Template10Library.dll</PackagePath>
     </AppxPackagedFile>
+<<<<<<< HEAD
+    <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Assets\7.jpg">
+      <PackagePath>Assets\7.jpg</PackagePath>
+    </AppxPackagedFile>
+=======
+>>>>>>> refs/remotes/origin/master
     <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\Help.htm">
       <PackagePath>Help.htm</PackagePath>
     </AppxPackagedFile>

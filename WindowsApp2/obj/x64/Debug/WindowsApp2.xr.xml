@@ -47,15 +47,20 @@
     <RootType FullName="Template10.Controls.PageHeader">
       <RootProperty Name="VisualStateNarrowMinWidth" />
       <RootProperty Name="VisualStateNormalMinWidth" />
-      <RootProperty Name="Frame" />
       <RootProperty Name="Text" />
       <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
+<<<<<<< HEAD
+      <RootProperty Name="Frame" />
+=======
+>>>>>>> refs/remotes/origin/master
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="TabNavigation" />
+      <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
@@ -105,6 +110,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Text" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Style" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Inlines" />
@@ -117,12 +123,37 @@
     </RootType>
     <RootType FullName="WindowsApp2.Views.Busy" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="Background" />
     </RootType>
-    <RootType FullName="WindowsApp2.Views.Categories" />
-    <RootType FullName="WindowsApp2.ViewModels.DetailPageViewModel" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="States" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="StateTriggers" />
+      <RootProperty Name="Setters" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
+      <RootProperty Name="MinWindowWidth" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
@@ -145,29 +176,33 @@
       <RootMethod Name="GetRightOf" />
       <RootMethod Name="SetRightOf" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
-      <RootMethod Name="GetVisualStateGroups" />
+    <RootType FullName="Windows.UI.Xaml.Controls.GridView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="ItemContainerStyle" />
+      <RootEvent Name="ItemClick" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
-      <RootProperty Name="States" />
+    <RootType FullName="Windows.UI.Xaml.Controls.GridViewItem" />
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Margin" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.VisualState">
-      <RootProperty Name="StateTriggers" />
-      <RootProperty Name="Setters" />
+    <RootType FullName="Windows.UI.Xaml.UIElement">
+      <RootProperty Name="IsHoldingEnabled" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.AdaptiveTrigger">
-      <RootProperty Name="MinWindowWidth" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter" />
+    <RootType FullName="WindowsApp2.Views.Categories" />
+    <RootType FullName="WindowsApp2.ViewModels.DetailPageViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Padding" />
       <RootProperty Name="VerticalScrollBarVisibility" />
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalContentAlignment" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Children" />
-      <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="WindowsApp2.Views.DetailPage" />
     <RootType FullName="WindowsApp2.Views.Favourites" />
@@ -177,6 +212,10 @@
       <RootProperty Name="QueryIcon" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="HorizontalAlignment" />
+<<<<<<< HEAD
+      <RootProperty Name="Margin" />
+=======
+>>>>>>> refs/remotes/origin/master
       <RootEvent Name="TextChanged" />
       <RootEvent Name="QuerySubmitted" />
       <RootEvent Name="SuggestionChosen" />
@@ -209,11 +248,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Source" />
-      <RootProperty Name="Stretch" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Windows.UI.Xaml.Documents.Bold">
