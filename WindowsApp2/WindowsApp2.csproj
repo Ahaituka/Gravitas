@@ -103,11 +103,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
-<<<<<<< HEAD
-    <Compile Include="ViewModels\CategoriesViewModel.cs" />
-=======
     <Compile Include="ViewModels\Events.cs" />
->>>>>>> refs/remotes/origin/master
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\DetailPageViewModel.cs" />
     <Compile Include="ViewModels\SettingsPageViewModel.cs" />
@@ -119,9 +115,6 @@
     </Compile>
     <Compile Include="Views\DetailPage.xaml.cs">
       <DependentUpon>DetailPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\EventPage.xaml.cs">
-      <DependentUpon>EventPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Favourites.xaml.cs">
       <DependentUpon>Favourites.xaml</DependentUpon>
@@ -151,7 +144,6 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\7.jpg" />
     <Content Include="Help.htm" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -183,10 +175,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\DetailPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\EventPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -246,58 +246,6 @@ C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\ob
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\obj\x64\Debug\Microsoft.Xaml.Interactivity.pri.xml
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\obj\x64\Debug\Template10Library.pri.xml
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\WindowsApp2\WindowsApp2\obj\x64\Debug\ProjectArchitectures.txt
-<<<<<<< HEAD
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\WindowsApp2.csprojResolveAssemblyReference.cache
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\App.g.i.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\App.g.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Busy.g.i.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Busy.g.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Categories.g.i.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Categories.g.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\DetailPage.g.i.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\DetailPage.g.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Favourites.g.i.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Favourites.g.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\MainPage.g.i.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\MainPage.g.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Organisers.g.i.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Organisers.g.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\SettingsPage.g.i.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\SettingsPage.g.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Shell.g.i.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Shell.g.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Splash.g.i.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Splash.g.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Sponsors.g.i.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Sponsors.g.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\XamlTypeInfo.g.cs
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\App.xaml
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Styles\Custom.xaml
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Busy.xaml
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\DetailPage.xaml
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Favourites.xaml
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\MainPage.xaml
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Organisers.xaml
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\SettingsPage.xaml
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Shell.xaml
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Splash.xaml
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Sponsors.xaml
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Categories.xaml
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\App.xbf
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Styles\Custom.xbf
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Busy.xbf
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\DetailPage.xbf
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Favourites.xbf
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\MainPage.xbf
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Organisers.xbf
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\SettingsPage.xbf
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Shell.xbf
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Splash.xbf
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Sponsors.xbf
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Categories.xbf
-C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\XamlSaveStateFile.xml
-=======
->>>>>>> refs/remotes/origin/master
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\App.xbf
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\Styles\Custom.xbf
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\Views\Busy.xbf
@@ -425,8 +373,6 @@ C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\System.Xml.XmlDocument.dll
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\System.Xml.XmlSerializer.dll
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\bin\x64\Debug\Template10Library.dll
-<<<<<<< HEAD
-=======
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\WindowsApp2.csprojResolveAssemblyReference.cache
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\App.g.i.cs
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\App.g.cs
@@ -476,7 +422,6 @@ C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\Sponsors.xbf
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\Views\MainPage.xbf
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\XamlSaveStateFile.xml
->>>>>>> refs/remotes/origin/master
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\WindowsApp2.exe
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\WindowsApp2.pdb
 C:\Users\RSSGPM\Documents\Visual Studio 2015\Projects\Gravitas\WindowsApp2\obj\x64\Debug\ResourceHandlingTask.state
