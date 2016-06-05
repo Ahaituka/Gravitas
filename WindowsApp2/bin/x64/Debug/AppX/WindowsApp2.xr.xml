@@ -50,7 +50,10 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Background" />
       <RootProperty Name="Foreground" />
+<<<<<<< HEAD
       <RootProperty Name="Frame" />
+=======
+>>>>>>> refs/remotes/origin/master
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
@@ -209,7 +212,10 @@
       <RootProperty Name="QueryIcon" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="HorizontalAlignment" />
+<<<<<<< HEAD
       <RootProperty Name="Margin" />
+=======
+>>>>>>> refs/remotes/origin/master
       <RootEvent Name="TextChanged" />
       <RootEvent Name="QuerySubmitted" />
       <RootEvent Name="SuggestionChosen" />

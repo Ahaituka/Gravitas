@@ -1,4 +1,4 @@
-<Page x:Class="WindowsApp2.Views.MainPage"
+﻿<Page x:Class="WindowsApp2.Views.MainPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:Behaviors="using:Template10.Behaviors"
@@ -11,14 +11,14 @@
       xmlns:vm="using:WindowsApp2.ViewModels" mc:Ignorable="d">
 
     <Page.DataContext>
-        <vm:MainPageViewModel x:Name="ViewModel" />
+        <vm:MainPageViewModel x:ConnectionId='1' x:Name="ViewModel" />
     </Page.DataContext>
 
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
-                <VisualState x:Name="VisualStateNarrow">
+            <VisualStateGroup x:ConnectionId='2' x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:ConnectionId='3' x:Name="VisualStateNarrow">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
                     </VisualState.StateTriggers>
@@ -27,16 +27,16 @@
                         <Setter Target="stateTextBox.Text" Value="Narrow Visual State" />
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:Name="VisualStateNormal">
+                <VisualState x:ConnectionId='4' x:Name="VisualStateNormal">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <!--  TODO: change properties for normal view  -->
-                        <!--<Setter Target="stateTextBox.Text" Value="Normal Visual State" />-->
+                        <Setter Target="stateTextBox.Text" Value="Normal Visual State" />
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:Name="VisualStateWide">
+                <VisualState x:ConnectionId='5' x:Name="VisualStateWide">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
                     </VisualState.StateTriggers>
@@ -48,69 +48,61 @@
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
 
-        <controls:PageHeader x:Name="pageHeader" RelativePanel.AlignLeftWithPanel="True"
+        <controls:PageHeader x:ConnectionId='6' x:Name="pageHeader" RelativePanel.AlignLeftWithPanel="True"
                              RelativePanel.AlignRightWithPanel="True"
                              RelativePanel.AlignTopWithPanel="True" Text="Main Page"
-                             Background="WhiteSmoke"
+                             Background="White"
                              Foreground="Black">
 
-<<<<<<< HEAD
-
-            <!--  secondary commands  -->
-            
-=======
            
->>>>>>> refs/remotes/origin/master
 
         </controls:PageHeader>
 
         <!--<controls:Resizer x:Name="parameterResizer" Margin="16,16,16,0"
                           RelativePanel.AlignLeftWithPanel="True"
                           RelativePanel.Below="pageHeader">
+
             <TextBox MinWidth="150" MinHeight="62"
                      Header="Parameter to pass"
                      Text="{Binding Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                      TextWrapping="Wrap">
                 <Interactivity:Interaction.Behaviors>
-                    -->
-        <!--  enable submit on enter key  -->
-        <!--
+                    --><!--  enable submit on enter key  --><!--
                     <Behaviors:KeyBehavior Key="Enter">
                         <Core:CallMethodAction MethodName="GotoDetailsPage" TargetObject="{Binding}" />
                     </Behaviors:KeyBehavior>
-                    -->
-        <!--  focus on textbox when page loads  -->
-        <!--
+                    --><!--  focus on textbox when page loads  --><!--
                     <Core:EventTriggerBehavior>
                         <Behaviors:FocusAction />
                     </Core:EventTriggerBehavior>
                 </Interactivity:Interaction.Behaviors>
             </TextBox>
+
         </controls:Resizer>
+
         <Button x:Name="submitButton"
                 Click="{x:Bind ViewModel.GotoDetailsPage}" Content="Submit"
                 RelativePanel.AlignBottomWith="parameterResizer"
                 RelativePanel.RightOf="parameterResizer" />
+
         <TextBlock x:Name="stateTextBox" Margin="16,16,0,0"
                    RelativePanel.AlignLeftWith="parameterResizer"
                    RelativePanel.Below="parameterResizer"
                    Text="Current Visual State" />-->
 
-<<<<<<< HEAD
-=======
 
 
 
-        <AutoSuggestBox
+        <AutoSuggestBox x:ConnectionId='7'
                         x:Name="asb"
                        RelativePanel.AlignRightWithPanel="True"
                         RelativePanel.AlignTopWithPanel="True"
                        RelativePanel.AlignRightWith="pageHeader"
                         PlaceholderText="Type a Event Name" 
-                        TextChanged="asb_TextChanged"
+                                                     
                         QueryIcon="Find"
-                        QuerySubmitted="asb_QuerySubmitted"
-                        SuggestionChosen="asb_SuggestionChosen"
+                                                           
+                                                               
                         
                         MinWidth="296"
                         HorizontalAlignment="Left" 
@@ -127,33 +119,5 @@
 
     </RelativePanel>
 </Page>
->>>>>>> refs/remotes/origin/master
 
 
-
-        <AutoSuggestBox
-                        x:Name="asb"
-                       RelativePanel.AlignRightWithPanel="True"
-                        RelativePanel.AlignTopWithPanel="True"
-                       RelativePanel.AlignRightWith="pageHeader"
-                        PlaceholderText="Type a Event Name" 
-                        TextChanged="asb_TextChanged"
-                        QueryIcon="Find"
-                        QuerySubmitted="asb_QuerySubmitted"
-                        SuggestionChosen="asb_SuggestionChosen"
-                        
-                        MinWidth="296"
-                        HorizontalAlignment="Left" Margin="-300,10,0,-10" 
-            
-         
-            
-                       >
-
-        </AutoSuggestBox>
-
-
-
-
-
-    </RelativePanel>
-</Page>
