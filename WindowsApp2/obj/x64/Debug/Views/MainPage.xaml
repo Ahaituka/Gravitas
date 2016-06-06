@@ -24,7 +24,7 @@
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <!--  TODO: change properties for narrow view  -->
-                        <Setter Target="stateTextBox.Text" Value="Narrow Visual State" />
+                        <!--<Setter Target="stateTextBox.Text" Value="Narrow Visual State" />-->
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:ConnectionId='4' x:Name="VisualStateNormal">
@@ -42,7 +42,7 @@
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <!--  TODO: change properties for wide view  -->
-                        <Setter Target="stateTextBox.Text" Value="Wide Visual State" />
+                        <!--<Setter Target="stateTextBox.Text" Value="Wide Visual State" />-->
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>

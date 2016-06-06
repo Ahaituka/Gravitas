@@ -5,9 +5,162 @@
     xmlns:local="using:WindowsApp2.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Loaded="Page_Loaded"
+    xmlns:data="using:WindowsApp2.Models"
+             xmlns:controls="using:Template10.Controls"
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+>
 
+
+
+
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+        
+        
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:Name="VisaulStateWide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="DetailGrid.(Grid.Row)" Value="0" />
+                        <Setter Target="DetailGrid.(Grid.Column)" Value="1" />
+                        <Setter Target="ColumnOne.Width" Value="Auto" />
+                        <Setter Target="ColumnTwo.Width" Value="*" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateNormal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for normal view  -->
+                        <!--<Setter Target="stateTextBox.Text" Value="Normal Visual State" />-->
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateNarrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="DetailGrid.(Grid.Row)" Value="1" />
+                        <Setter Target="DetailGrid.(Grid.Column)" Value="0" />
+                        <Setter Target="ColumnOne.Width" Value="*" />
+                        <Setter Target="ColumnTwo.Width" Value="Auto" />
+
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <controls:PageHeader x:Name="pageHeader" RelativePanel.AlignLeftWithPanel="True"
+                             RelativePanel.AlignRightWithPanel="True"
+                             RelativePanel.AlignTopWithPanel="True" Text="Categories"
+                             Background="WhiteSmoke"
+                             Foreground="Black">
+
+
+            <!--  secondary commands  -->
+
+
+        </controls:PageHeader>
+
+        <ScrollViewer>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="ColumnOne" Width="Auto" />
+                    <ColumnDefinition x:Name="ColumnTwo" Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <ListView Name="MasterListView"
+                  IsItemClickEnabled="True"
+                  ItemsSource="{x:Bind EventList}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="data:EventDataWrapper">
+                            <StackPanel Orientation="Horizontal" Margin="10,5,0,5">
+                                <!--<Ellipse Width="45" Height="45">
+                                    <Ellipse.Fill>
+                                        <ImageBrush ImageSource="{x:Bind thumbnail.small}" />
+                                    </Ellipse.Fill>
+                                </Ellipse>-->
+                                <TextBlock Text="{x:Bind name}"
+                                   VerticalAlignment="Center"
+                                   Margin="10,0,0,0"
+                                   FontSize="18" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <!-- Detail Grid -->
+                <Grid Name="DetailGrid" Grid.Column="1" Grid.Row="0" Margin="10,0,10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <!-- Event Detail -->
+                    <Grid Grid.Row="0" 
+                  HorizontalAlignment="Left" 
+                  VerticalAlignment="Top">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Name="DetailImage" 
+                       Grid.Column="0" 
+                       Grid.RowSpan="2" 
+                       VerticalAlignment="Top" />
+                        <TextBlock Name="DetailNameTextBlock" 
+                           FontSize="32" 
+                           TextWrapping="Wrap"                                   
+                           Grid.Column="1" 
+                           Margin="10,0,0,0" />
+                        <TextBlock Name="DetailDescriptionTextBlock" 
+                           Grid.Row="1" 
+                           Grid.Column="1" 
+                           TextWrapping="Wrap"
+                           Margin="10,0,0,0" />
+
+                    </Grid>
+
+                 
+
+              
+
+                </Grid>
+
+                <!--<TextBlock Text="" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Center" 
+                   Grid.ColumnSpan="2" 
+                   Grid.Row="2" />-->
+
+                <ProgressRing Name="MyProgressRing"
+                      Width="100"
+                      Height="100"
+                      Foreground="Gray"
+                      Grid.ColumnSpan="2"
+                      Grid.RowSpan="3"
+                      VerticalAlignment="Center"
+                      HorizontalAlignment="Center" />
+
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Page>

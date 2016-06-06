@@ -51,7 +51,7 @@
 
             <!--  Favourites button  -->
 
-            <Controls:HamburgerButtonInfo  PageType="views:Favourites" 
+            <Controls:HamburgerButtonInfo  PageType="views:EventPage" 
                                           AutomationProperties.Name="Jerry"
                                           >
                 <StackPanel Orientation="Horizontal">
