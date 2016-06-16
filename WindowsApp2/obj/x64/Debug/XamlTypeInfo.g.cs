@@ -156,7 +156,7 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[73];
+            _typeNameTable = new string[102];
             _typeNameTable[0] = "Template10.Common.BootStrapper";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Template10.Common.StateItems";
@@ -222,16 +222,45 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             _typeNameTable[62] = "WindowsApp2.Views.Favourites";
             _typeNameTable[63] = "WindowsApp2.ViewModels.MainPageViewModel";
             _typeNameTable[64] = "WindowsApp2.Views.MainPage";
-            _typeNameTable[65] = "WindowsApp2.Views.Organisers";
-            _typeNameTable[66] = "WindowsApp2.ViewModels.SettingsPageViewModel";
-            _typeNameTable[67] = "WindowsApp2.ViewModels.SettingsPartViewModel";
-            _typeNameTable[68] = "WindowsApp2.ViewModels.AboutPartViewModel";
-            _typeNameTable[69] = "WindowsApp2.Views.SettingsPage";
-            _typeNameTable[70] = "WindowsApp2.Views.Shell";
-            _typeNameTable[71] = "WindowsApp2.Views.Splash";
-            _typeNameTable[72] = "WindowsApp2.Views.Sponsors";
+            _typeNameTable[65] = "WindowsApp2.Views.Marvel";
+            _typeNameTable[66] = "System.Collections.ObjectModel.ObservableCollection`1<WindowsApp2.Models.Character>";
+            _typeNameTable[67] = "System.Collections.ObjectModel.Collection`1<WindowsApp2.Models.Character>";
+            _typeNameTable[68] = "WindowsApp2.Models.Character";
+            _typeNameTable[69] = "Int32";
+            _typeNameTable[70] = "WindowsApp2.Models.Thumbnail";
+            _typeNameTable[71] = "WindowsApp2.Models.Comics";
+            _typeNameTable[72] = "WindowsApp2.Models.SeriesList";
+            _typeNameTable[73] = "WindowsApp2.Models.Stories";
+            _typeNameTable[74] = "WindowsApp2.Models.Events";
+            _typeNameTable[75] = "System.Collections.Generic.List`1<WindowsApp2.Models.Url>";
+            _typeNameTable[76] = "WindowsApp2.Models.Url";
+            _typeNameTable[77] = "System.Collections.ObjectModel.ObservableCollection`1<WindowsApp2.Models.ComicBook>";
+            _typeNameTable[78] = "System.Collections.ObjectModel.Collection`1<WindowsApp2.Models.ComicBook>";
+            _typeNameTable[79] = "WindowsApp2.Models.ComicBook";
+            _typeNameTable[80] = "System.Collections.Generic.List`1<WindowsApp2.Models.TextObject>";
+            _typeNameTable[81] = "WindowsApp2.Models.TextObject";
+            _typeNameTable[82] = "WindowsApp2.Models.Series";
+            _typeNameTable[83] = "System.Collections.Generic.List`1<WindowsApp2.Models.Variant>";
+            _typeNameTable[84] = "WindowsApp2.Models.Variant";
+            _typeNameTable[85] = "System.Collections.Generic.List`1<Object>";
+            _typeNameTable[86] = "System.Collections.Generic.List`1<WindowsApp2.Models.Date>";
+            _typeNameTable[87] = "WindowsApp2.Models.Date";
+            _typeNameTable[88] = "System.Collections.Generic.List`1<WindowsApp2.Models.Price>";
+            _typeNameTable[89] = "WindowsApp2.Models.Price";
+            _typeNameTable[90] = "System.Collections.Generic.List`1<WindowsApp2.Models.Image>";
+            _typeNameTable[91] = "WindowsApp2.Models.Image";
+            _typeNameTable[92] = "WindowsApp2.Models.Creators";
+            _typeNameTable[93] = "WindowsApp2.Models.Characters";
+            _typeNameTable[94] = "WindowsApp2.Views.Organisers";
+            _typeNameTable[95] = "WindowsApp2.ViewModels.SettingsPageViewModel";
+            _typeNameTable[96] = "WindowsApp2.ViewModels.SettingsPartViewModel";
+            _typeNameTable[97] = "WindowsApp2.ViewModels.AboutPartViewModel";
+            _typeNameTable[98] = "WindowsApp2.Views.SettingsPage";
+            _typeNameTable[99] = "WindowsApp2.Views.Shell";
+            _typeNameTable[100] = "WindowsApp2.Views.Splash";
+            _typeNameTable[101] = "WindowsApp2.Views.Sponsors";
 
-            _typeTable = new global::System.Type[73];
+            _typeTable = new global::System.Type[102];
             _typeTable[0] = typeof(global::Template10.Common.BootStrapper);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::Template10.Common.StateItems);
@@ -297,14 +326,43 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             _typeTable[62] = typeof(global::WindowsApp2.Views.Favourites);
             _typeTable[63] = typeof(global::WindowsApp2.ViewModels.MainPageViewModel);
             _typeTable[64] = typeof(global::WindowsApp2.Views.MainPage);
-            _typeTable[65] = typeof(global::WindowsApp2.Views.Organisers);
-            _typeTable[66] = typeof(global::WindowsApp2.ViewModels.SettingsPageViewModel);
-            _typeTable[67] = typeof(global::WindowsApp2.ViewModels.SettingsPartViewModel);
-            _typeTable[68] = typeof(global::WindowsApp2.ViewModels.AboutPartViewModel);
-            _typeTable[69] = typeof(global::WindowsApp2.Views.SettingsPage);
-            _typeTable[70] = typeof(global::WindowsApp2.Views.Shell);
-            _typeTable[71] = typeof(global::WindowsApp2.Views.Splash);
-            _typeTable[72] = typeof(global::WindowsApp2.Views.Sponsors);
+            _typeTable[65] = typeof(global::WindowsApp2.Views.Marvel);
+            _typeTable[66] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WindowsApp2.Models.Character>);
+            _typeTable[67] = typeof(global::System.Collections.ObjectModel.Collection<global::WindowsApp2.Models.Character>);
+            _typeTable[68] = typeof(global::WindowsApp2.Models.Character);
+            _typeTable[69] = typeof(global::System.Int32);
+            _typeTable[70] = typeof(global::WindowsApp2.Models.Thumbnail);
+            _typeTable[71] = typeof(global::WindowsApp2.Models.Comics);
+            _typeTable[72] = typeof(global::WindowsApp2.Models.SeriesList);
+            _typeTable[73] = typeof(global::WindowsApp2.Models.Stories);
+            _typeTable[74] = typeof(global::WindowsApp2.Models.Events);
+            _typeTable[75] = typeof(global::System.Collections.Generic.List<global::WindowsApp2.Models.Url>);
+            _typeTable[76] = typeof(global::WindowsApp2.Models.Url);
+            _typeTable[77] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::WindowsApp2.Models.ComicBook>);
+            _typeTable[78] = typeof(global::System.Collections.ObjectModel.Collection<global::WindowsApp2.Models.ComicBook>);
+            _typeTable[79] = typeof(global::WindowsApp2.Models.ComicBook);
+            _typeTable[80] = typeof(global::System.Collections.Generic.List<global::WindowsApp2.Models.TextObject>);
+            _typeTable[81] = typeof(global::WindowsApp2.Models.TextObject);
+            _typeTable[82] = typeof(global::WindowsApp2.Models.Series);
+            _typeTable[83] = typeof(global::System.Collections.Generic.List<global::WindowsApp2.Models.Variant>);
+            _typeTable[84] = typeof(global::WindowsApp2.Models.Variant);
+            _typeTable[85] = typeof(global::System.Collections.Generic.List<global::System.Object>);
+            _typeTable[86] = typeof(global::System.Collections.Generic.List<global::WindowsApp2.Models.Date>);
+            _typeTable[87] = typeof(global::WindowsApp2.Models.Date);
+            _typeTable[88] = typeof(global::System.Collections.Generic.List<global::WindowsApp2.Models.Price>);
+            _typeTable[89] = typeof(global::WindowsApp2.Models.Price);
+            _typeTable[90] = typeof(global::System.Collections.Generic.List<global::WindowsApp2.Models.Image>);
+            _typeTable[91] = typeof(global::WindowsApp2.Models.Image);
+            _typeTable[92] = typeof(global::WindowsApp2.Models.Creators);
+            _typeTable[93] = typeof(global::WindowsApp2.Models.Characters);
+            _typeTable[94] = typeof(global::WindowsApp2.Views.Organisers);
+            _typeTable[95] = typeof(global::WindowsApp2.ViewModels.SettingsPageViewModel);
+            _typeTable[96] = typeof(global::WindowsApp2.ViewModels.SettingsPartViewModel);
+            _typeTable[97] = typeof(global::WindowsApp2.ViewModels.AboutPartViewModel);
+            _typeTable[98] = typeof(global::WindowsApp2.Views.SettingsPage);
+            _typeTable[99] = typeof(global::WindowsApp2.Views.Shell);
+            _typeTable[100] = typeof(global::WindowsApp2.Views.Splash);
+            _typeTable[101] = typeof(global::WindowsApp2.Views.Sponsors);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -359,13 +417,41 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
         private object Activate_62_Favourites() { return new global::WindowsApp2.Views.Favourites(); }
         private object Activate_63_MainPageViewModel() { return new global::WindowsApp2.ViewModels.MainPageViewModel(); }
         private object Activate_64_MainPage() { return new global::WindowsApp2.Views.MainPage(); }
-        private object Activate_65_Organisers() { return new global::WindowsApp2.Views.Organisers(); }
-        private object Activate_66_SettingsPageViewModel() { return new global::WindowsApp2.ViewModels.SettingsPageViewModel(); }
-        private object Activate_67_SettingsPartViewModel() { return new global::WindowsApp2.ViewModels.SettingsPartViewModel(); }
-        private object Activate_68_AboutPartViewModel() { return new global::WindowsApp2.ViewModels.AboutPartViewModel(); }
-        private object Activate_69_SettingsPage() { return new global::WindowsApp2.Views.SettingsPage(); }
-        private object Activate_70_Shell() { return new global::WindowsApp2.Views.Shell(); }
-        private object Activate_72_Sponsors() { return new global::WindowsApp2.Views.Sponsors(); }
+        private object Activate_65_Marvel() { return new global::WindowsApp2.Views.Marvel(); }
+        private object Activate_66_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WindowsApp2.Models.Character>(); }
+        private object Activate_67_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WindowsApp2.Models.Character>(); }
+        private object Activate_68_Character() { return new global::WindowsApp2.Models.Character(); }
+        private object Activate_70_Thumbnail() { return new global::WindowsApp2.Models.Thumbnail(); }
+        private object Activate_71_Comics() { return new global::WindowsApp2.Models.Comics(); }
+        private object Activate_72_SeriesList() { return new global::WindowsApp2.Models.SeriesList(); }
+        private object Activate_73_Stories() { return new global::WindowsApp2.Models.Stories(); }
+        private object Activate_74_Events() { return new global::WindowsApp2.Models.Events(); }
+        private object Activate_75_List() { return new global::System.Collections.Generic.List<global::WindowsApp2.Models.Url>(); }
+        private object Activate_76_Url() { return new global::WindowsApp2.Models.Url(); }
+        private object Activate_77_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WindowsApp2.Models.ComicBook>(); }
+        private object Activate_78_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WindowsApp2.Models.ComicBook>(); }
+        private object Activate_79_ComicBook() { return new global::WindowsApp2.Models.ComicBook(); }
+        private object Activate_80_List() { return new global::System.Collections.Generic.List<global::WindowsApp2.Models.TextObject>(); }
+        private object Activate_81_TextObject() { return new global::WindowsApp2.Models.TextObject(); }
+        private object Activate_82_Series() { return new global::WindowsApp2.Models.Series(); }
+        private object Activate_83_List() { return new global::System.Collections.Generic.List<global::WindowsApp2.Models.Variant>(); }
+        private object Activate_84_Variant() { return new global::WindowsApp2.Models.Variant(); }
+        private object Activate_85_List() { return new global::System.Collections.Generic.List<global::System.Object>(); }
+        private object Activate_86_List() { return new global::System.Collections.Generic.List<global::WindowsApp2.Models.Date>(); }
+        private object Activate_87_Date() { return new global::WindowsApp2.Models.Date(); }
+        private object Activate_88_List() { return new global::System.Collections.Generic.List<global::WindowsApp2.Models.Price>(); }
+        private object Activate_89_Price() { return new global::WindowsApp2.Models.Price(); }
+        private object Activate_90_List() { return new global::System.Collections.Generic.List<global::WindowsApp2.Models.Image>(); }
+        private object Activate_91_Image() { return new global::WindowsApp2.Models.Image(); }
+        private object Activate_92_Creators() { return new global::WindowsApp2.Models.Creators(); }
+        private object Activate_93_Characters() { return new global::WindowsApp2.Models.Characters(); }
+        private object Activate_94_Organisers() { return new global::WindowsApp2.Views.Organisers(); }
+        private object Activate_95_SettingsPageViewModel() { return new global::WindowsApp2.ViewModels.SettingsPageViewModel(); }
+        private object Activate_96_SettingsPartViewModel() { return new global::WindowsApp2.ViewModels.SettingsPartViewModel(); }
+        private object Activate_97_AboutPartViewModel() { return new global::WindowsApp2.ViewModels.AboutPartViewModel(); }
+        private object Activate_98_SettingsPage() { return new global::WindowsApp2.Views.SettingsPage(); }
+        private object Activate_99_Shell() { return new global::WindowsApp2.Views.Shell(); }
+        private object Activate_101_Sponsors() { return new global::WindowsApp2.Views.Sponsors(); }
         private void MapAdd_2_StateItems(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -402,6 +488,72 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
         {
             var collection = (global::System.Collections.Generic.ICollection<global::WindowsApp2.Models.EventDataWrapper>)instance;
             var newItem = (global::WindowsApp2.Models.EventDataWrapper)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_66_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WindowsApp2.Models.Character>)instance;
+            var newItem = (global::WindowsApp2.Models.Character)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_67_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WindowsApp2.Models.Character>)instance;
+            var newItem = (global::WindowsApp2.Models.Character)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_75_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WindowsApp2.Models.Url>)instance;
+            var newItem = (global::WindowsApp2.Models.Url)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_77_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WindowsApp2.Models.ComicBook>)instance;
+            var newItem = (global::WindowsApp2.Models.ComicBook)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_78_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WindowsApp2.Models.ComicBook>)instance;
+            var newItem = (global::WindowsApp2.Models.ComicBook)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_80_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WindowsApp2.Models.TextObject>)instance;
+            var newItem = (global::WindowsApp2.Models.TextObject)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_83_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WindowsApp2.Models.Variant>)instance;
+            var newItem = (global::WindowsApp2.Models.Variant)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_85_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
+            var newItem = (global::System.Object)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_86_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WindowsApp2.Models.Date>)instance;
+            var newItem = (global::WindowsApp2.Models.Date)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_88_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WindowsApp2.Models.Price>)instance;
+            var newItem = (global::WindowsApp2.Models.Price)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_90_List(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::WindowsApp2.Models.Image>)instance;
+            var newItem = (global::WindowsApp2.Models.Image)item;
             collection.Add(newItem);
         }
 
@@ -869,59 +1021,314 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 65:   //  WindowsApp2.Views.Organisers
+            case 65:   //  WindowsApp2.Views.Marvel
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_65_Organisers;
+                userType.Activator = Activate_65_Marvel;
+                userType.AddMemberName("MarvelCharacters");
+                userType.AddMemberName("MarvelComics");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 66:   //  WindowsApp2.ViewModels.SettingsPageViewModel
+            case 66:   //  System.Collections.ObjectModel.ObservableCollection`1<WindowsApp2.Models.Character>
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<WindowsApp2.Models.Character>"));
+                userType.CollectionAdd = VectorAdd_66_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 67:   //  System.Collections.ObjectModel.Collection`1<WindowsApp2.Models.Character>
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_67_Collection;
+                userType.CollectionAdd = VectorAdd_67_Collection;
+                xamlType = userType;
+                break;
+
+            case 68:   //  WindowsApp2.Models.Character
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_68_Character;
+                userType.AddMemberName("id");
+                userType.AddMemberName("name");
+                userType.AddMemberName("description");
+                userType.AddMemberName("modified");
+                userType.AddMemberName("thumbnail");
+                userType.AddMemberName("resourceURI");
+                userType.AddMemberName("comics");
+                userType.AddMemberName("series");
+                userType.AddMemberName("stories");
+                userType.AddMemberName("events");
+                userType.AddMemberName("urls");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 69:   //  Int32
+                xamlType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 70:   //  WindowsApp2.Models.Thumbnail
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 71:   //  WindowsApp2.Models.Comics
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 72:   //  WindowsApp2.Models.SeriesList
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 73:   //  WindowsApp2.Models.Stories
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 74:   //  WindowsApp2.Models.Events
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 75:   //  System.Collections.Generic.List`1<WindowsApp2.Models.Url>
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_75_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 76:   //  WindowsApp2.Models.Url
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_76_Url;
+                userType.AddMemberName("type");
+                userType.AddMemberName("url");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 77:   //  System.Collections.ObjectModel.ObservableCollection`1<WindowsApp2.Models.ComicBook>
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<WindowsApp2.Models.ComicBook>"));
+                userType.CollectionAdd = VectorAdd_77_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 78:   //  System.Collections.ObjectModel.Collection`1<WindowsApp2.Models.ComicBook>
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_78_Collection;
+                userType.CollectionAdd = VectorAdd_78_Collection;
+                xamlType = userType;
+                break;
+
+            case 79:   //  WindowsApp2.Models.ComicBook
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_79_ComicBook;
+                userType.AddMemberName("id");
+                userType.AddMemberName("digitalId");
+                userType.AddMemberName("title");
+                userType.AddMemberName("issueNumber");
+                userType.AddMemberName("variantDescription");
+                userType.AddMemberName("description");
+                userType.AddMemberName("modified");
+                userType.AddMemberName("isbn");
+                userType.AddMemberName("upc");
+                userType.AddMemberName("diamondCode");
+                userType.AddMemberName("ean");
+                userType.AddMemberName("issn");
+                userType.AddMemberName("format");
+                userType.AddMemberName("pageCount");
+                userType.AddMemberName("textObjects");
+                userType.AddMemberName("resourceURI");
+                userType.AddMemberName("urls");
+                userType.AddMemberName("series");
+                userType.AddMemberName("variants");
+                userType.AddMemberName("collections");
+                userType.AddMemberName("collectedIssues");
+                userType.AddMemberName("dates");
+                userType.AddMemberName("prices");
+                userType.AddMemberName("thumbnail");
+                userType.AddMemberName("images");
+                userType.AddMemberName("creators");
+                userType.AddMemberName("characters");
+                userType.AddMemberName("stories");
+                userType.AddMemberName("events");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 80:   //  System.Collections.Generic.List`1<WindowsApp2.Models.TextObject>
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_80_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 81:   //  WindowsApp2.Models.TextObject
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_81_TextObject;
+                userType.AddMemberName("type");
+                userType.AddMemberName("language");
+                userType.AddMemberName("text");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 82:   //  WindowsApp2.Models.Series
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 83:   //  System.Collections.Generic.List`1<WindowsApp2.Models.Variant>
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_83_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 84:   //  WindowsApp2.Models.Variant
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_84_Variant;
+                userType.AddMemberName("resourceURI");
+                userType.AddMemberName("name");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 85:   //  System.Collections.Generic.List`1<Object>
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_85_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 86:   //  System.Collections.Generic.List`1<WindowsApp2.Models.Date>
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_86_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 87:   //  WindowsApp2.Models.Date
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_87_Date;
+                userType.AddMemberName("type");
+                userType.AddMemberName("date");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 88:   //  System.Collections.Generic.List`1<WindowsApp2.Models.Price>
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_88_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 89:   //  WindowsApp2.Models.Price
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_89_Price;
+                userType.AddMemberName("type");
+                userType.AddMemberName("price");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 90:   //  System.Collections.Generic.List`1<WindowsApp2.Models.Image>
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.CollectionAdd = VectorAdd_90_List;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 91:   //  WindowsApp2.Models.Image
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_91_Image;
+                userType.AddMemberName("path");
+                userType.AddMemberName("extension");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 92:   //  WindowsApp2.Models.Creators
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 93:   //  WindowsApp2.Models.Characters
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 94:   //  WindowsApp2.Views.Organisers
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_94_Organisers;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 95:   //  WindowsApp2.ViewModels.SettingsPageViewModel
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_66_SettingsPageViewModel;
+                userType.Activator = Activate_95_SettingsPageViewModel;
                 userType.AddMemberName("SettingsPartViewModel");
                 userType.AddMemberName("AboutPartViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 67:   //  WindowsApp2.ViewModels.SettingsPartViewModel
+            case 96:   //  WindowsApp2.ViewModels.SettingsPartViewModel
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 68:   //  WindowsApp2.ViewModels.AboutPartViewModel
+            case 97:   //  WindowsApp2.ViewModels.AboutPartViewModel
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 69:   //  WindowsApp2.Views.SettingsPage
+            case 98:   //  WindowsApp2.Views.SettingsPage
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_69_SettingsPage;
+                userType.Activator = Activate_98_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 70:   //  WindowsApp2.Views.Shell
+            case 99:   //  WindowsApp2.Views.Shell
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_70_Shell;
+                userType.Activator = Activate_99_Shell;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 71:   //  WindowsApp2.Views.Splash
+            case 100:   //  WindowsApp2.Views.Splash
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 72:   //  WindowsApp2.Views.Sponsors
+            case 101:   //  WindowsApp2.Views.Sponsors
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_72_Sponsors;
+                userType.Activator = Activate_101_Sponsors;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -1834,12 +2241,562 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             var that = (global::WindowsApp2.ViewModels.MainPageViewModel)instance;
             that.Value = (global::System.String)Value;
         }
-        private object get_88_SettingsPageViewModel_SettingsPartViewModel(object instance)
+        private object get_88_Marvel_MarvelCharacters(object instance)
+        {
+            var that = (global::WindowsApp2.Views.Marvel)instance;
+            return that.MarvelCharacters;
+        }
+        private void set_88_Marvel_MarvelCharacters(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Views.Marvel)instance;
+            that.MarvelCharacters = (global::System.Collections.ObjectModel.ObservableCollection<global::WindowsApp2.Models.Character>)Value;
+        }
+        private object get_89_Character_id(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            return that.id;
+        }
+        private void set_89_Character_id(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            that.id = (global::System.Int32)Value;
+        }
+        private object get_90_Character_name(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            return that.name;
+        }
+        private void set_90_Character_name(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            that.name = (global::System.String)Value;
+        }
+        private object get_91_Character_description(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            return that.description;
+        }
+        private void set_91_Character_description(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            that.description = (global::System.String)Value;
+        }
+        private object get_92_Character_modified(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            return that.modified;
+        }
+        private void set_92_Character_modified(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            that.modified = (global::System.String)Value;
+        }
+        private object get_93_Character_thumbnail(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            return that.thumbnail;
+        }
+        private void set_93_Character_thumbnail(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            that.thumbnail = (global::WindowsApp2.Models.Thumbnail)Value;
+        }
+        private object get_94_Character_resourceURI(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            return that.resourceURI;
+        }
+        private void set_94_Character_resourceURI(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            that.resourceURI = (global::System.String)Value;
+        }
+        private object get_95_Character_comics(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            return that.comics;
+        }
+        private void set_95_Character_comics(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            that.comics = (global::WindowsApp2.Models.Comics)Value;
+        }
+        private object get_96_Character_series(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            return that.series;
+        }
+        private void set_96_Character_series(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            that.series = (global::WindowsApp2.Models.SeriesList)Value;
+        }
+        private object get_97_Character_stories(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            return that.stories;
+        }
+        private void set_97_Character_stories(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            that.stories = (global::WindowsApp2.Models.Stories)Value;
+        }
+        private object get_98_Character_events(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            return that.events;
+        }
+        private void set_98_Character_events(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            that.events = (global::WindowsApp2.Models.Events)Value;
+        }
+        private object get_99_Character_urls(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            return that.urls;
+        }
+        private void set_99_Character_urls(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Character)instance;
+            that.urls = (global::System.Collections.Generic.List<global::WindowsApp2.Models.Url>)Value;
+        }
+        private object get_100_Url_type(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Url)instance;
+            return that.type;
+        }
+        private void set_100_Url_type(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Url)instance;
+            that.type = (global::System.String)Value;
+        }
+        private object get_101_Url_url(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Url)instance;
+            return that.url;
+        }
+        private void set_101_Url_url(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Url)instance;
+            that.url = (global::System.String)Value;
+        }
+        private object get_102_Marvel_MarvelComics(object instance)
+        {
+            var that = (global::WindowsApp2.Views.Marvel)instance;
+            return that.MarvelComics;
+        }
+        private void set_102_Marvel_MarvelComics(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Views.Marvel)instance;
+            that.MarvelComics = (global::System.Collections.ObjectModel.ObservableCollection<global::WindowsApp2.Models.ComicBook>)Value;
+        }
+        private object get_103_ComicBook_id(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.id;
+        }
+        private void set_103_ComicBook_id(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.id = (global::System.Int32)Value;
+        }
+        private object get_104_ComicBook_digitalId(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.digitalId;
+        }
+        private void set_104_ComicBook_digitalId(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.digitalId = (global::System.Int32)Value;
+        }
+        private object get_105_ComicBook_title(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.title;
+        }
+        private void set_105_ComicBook_title(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.title = (global::System.String)Value;
+        }
+        private object get_106_ComicBook_issueNumber(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.issueNumber;
+        }
+        private void set_106_ComicBook_issueNumber(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.issueNumber = (global::System.Int32)Value;
+        }
+        private object get_107_ComicBook_variantDescription(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.variantDescription;
+        }
+        private void set_107_ComicBook_variantDescription(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.variantDescription = (global::System.String)Value;
+        }
+        private object get_108_ComicBook_description(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.description;
+        }
+        private void set_108_ComicBook_description(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.description = (global::System.String)Value;
+        }
+        private object get_109_ComicBook_modified(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.modified;
+        }
+        private void set_109_ComicBook_modified(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.modified = (global::System.String)Value;
+        }
+        private object get_110_ComicBook_isbn(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.isbn;
+        }
+        private void set_110_ComicBook_isbn(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.isbn = (global::System.String)Value;
+        }
+        private object get_111_ComicBook_upc(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.upc;
+        }
+        private void set_111_ComicBook_upc(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.upc = (global::System.String)Value;
+        }
+        private object get_112_ComicBook_diamondCode(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.diamondCode;
+        }
+        private void set_112_ComicBook_diamondCode(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.diamondCode = (global::System.String)Value;
+        }
+        private object get_113_ComicBook_ean(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.ean;
+        }
+        private void set_113_ComicBook_ean(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.ean = (global::System.String)Value;
+        }
+        private object get_114_ComicBook_issn(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.issn;
+        }
+        private void set_114_ComicBook_issn(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.issn = (global::System.String)Value;
+        }
+        private object get_115_ComicBook_format(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.format;
+        }
+        private void set_115_ComicBook_format(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.format = (global::System.String)Value;
+        }
+        private object get_116_ComicBook_pageCount(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.pageCount;
+        }
+        private void set_116_ComicBook_pageCount(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.pageCount = (global::System.Int32)Value;
+        }
+        private object get_117_ComicBook_textObjects(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.textObjects;
+        }
+        private void set_117_ComicBook_textObjects(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.textObjects = (global::System.Collections.Generic.List<global::WindowsApp2.Models.TextObject>)Value;
+        }
+        private object get_118_TextObject_type(object instance)
+        {
+            var that = (global::WindowsApp2.Models.TextObject)instance;
+            return that.type;
+        }
+        private void set_118_TextObject_type(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.TextObject)instance;
+            that.type = (global::System.String)Value;
+        }
+        private object get_119_TextObject_language(object instance)
+        {
+            var that = (global::WindowsApp2.Models.TextObject)instance;
+            return that.language;
+        }
+        private void set_119_TextObject_language(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.TextObject)instance;
+            that.language = (global::System.String)Value;
+        }
+        private object get_120_TextObject_text(object instance)
+        {
+            var that = (global::WindowsApp2.Models.TextObject)instance;
+            return that.text;
+        }
+        private void set_120_TextObject_text(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.TextObject)instance;
+            that.text = (global::System.String)Value;
+        }
+        private object get_121_ComicBook_resourceURI(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.resourceURI;
+        }
+        private void set_121_ComicBook_resourceURI(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.resourceURI = (global::System.String)Value;
+        }
+        private object get_122_ComicBook_urls(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.urls;
+        }
+        private void set_122_ComicBook_urls(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.urls = (global::System.Collections.Generic.List<global::WindowsApp2.Models.Url>)Value;
+        }
+        private object get_123_ComicBook_series(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.series;
+        }
+        private void set_123_ComicBook_series(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.series = (global::WindowsApp2.Models.Series)Value;
+        }
+        private object get_124_ComicBook_variants(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.variants;
+        }
+        private void set_124_ComicBook_variants(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.variants = (global::System.Collections.Generic.List<global::WindowsApp2.Models.Variant>)Value;
+        }
+        private object get_125_Variant_resourceURI(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Variant)instance;
+            return that.resourceURI;
+        }
+        private void set_125_Variant_resourceURI(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Variant)instance;
+            that.resourceURI = (global::System.String)Value;
+        }
+        private object get_126_Variant_name(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Variant)instance;
+            return that.name;
+        }
+        private void set_126_Variant_name(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Variant)instance;
+            that.name = (global::System.String)Value;
+        }
+        private object get_127_ComicBook_collections(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.collections;
+        }
+        private void set_127_ComicBook_collections(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.collections = (global::System.Collections.Generic.List<global::System.Object>)Value;
+        }
+        private object get_128_ComicBook_collectedIssues(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.collectedIssues;
+        }
+        private void set_128_ComicBook_collectedIssues(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.collectedIssues = (global::System.Collections.Generic.List<global::System.Object>)Value;
+        }
+        private object get_129_ComicBook_dates(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.dates;
+        }
+        private void set_129_ComicBook_dates(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.dates = (global::System.Collections.Generic.List<global::WindowsApp2.Models.Date>)Value;
+        }
+        private object get_130_Date_type(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Date)instance;
+            return that.type;
+        }
+        private void set_130_Date_type(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Date)instance;
+            that.type = (global::System.String)Value;
+        }
+        private object get_131_Date_date(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Date)instance;
+            return that.date;
+        }
+        private void set_131_Date_date(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Date)instance;
+            that.date = (global::System.String)Value;
+        }
+        private object get_132_ComicBook_prices(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.prices;
+        }
+        private void set_132_ComicBook_prices(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.prices = (global::System.Collections.Generic.List<global::WindowsApp2.Models.Price>)Value;
+        }
+        private object get_133_Price_type(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Price)instance;
+            return that.type;
+        }
+        private void set_133_Price_type(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Price)instance;
+            that.type = (global::System.String)Value;
+        }
+        private object get_134_Price_price(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Price)instance;
+            return that.price;
+        }
+        private void set_134_Price_price(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Price)instance;
+            that.price = (global::System.Double)Value;
+        }
+        private object get_135_ComicBook_thumbnail(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.thumbnail;
+        }
+        private void set_135_ComicBook_thumbnail(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.thumbnail = (global::WindowsApp2.Models.Thumbnail)Value;
+        }
+        private object get_136_ComicBook_images(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.images;
+        }
+        private void set_136_ComicBook_images(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.images = (global::System.Collections.Generic.List<global::WindowsApp2.Models.Image>)Value;
+        }
+        private object get_137_Image_path(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Image)instance;
+            return that.path;
+        }
+        private void set_137_Image_path(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Image)instance;
+            that.path = (global::System.String)Value;
+        }
+        private object get_138_Image_extension(object instance)
+        {
+            var that = (global::WindowsApp2.Models.Image)instance;
+            return that.extension;
+        }
+        private void set_138_Image_extension(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.Image)instance;
+            that.extension = (global::System.String)Value;
+        }
+        private object get_139_ComicBook_creators(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.creators;
+        }
+        private void set_139_ComicBook_creators(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.creators = (global::WindowsApp2.Models.Creators)Value;
+        }
+        private object get_140_ComicBook_characters(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.characters;
+        }
+        private void set_140_ComicBook_characters(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.characters = (global::WindowsApp2.Models.Characters)Value;
+        }
+        private object get_141_ComicBook_stories(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.stories;
+        }
+        private void set_141_ComicBook_stories(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.stories = (global::WindowsApp2.Models.Stories)Value;
+        }
+        private object get_142_ComicBook_events(object instance)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            return that.events;
+        }
+        private void set_142_ComicBook_events(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Models.ComicBook)instance;
+            that.events = (global::WindowsApp2.Models.Events)Value;
+        }
+        private object get_143_SettingsPageViewModel_SettingsPartViewModel(object instance)
         {
             var that = (global::WindowsApp2.ViewModels.SettingsPageViewModel)instance;
             return that.SettingsPartViewModel;
         }
-        private object get_89_SettingsPageViewModel_AboutPartViewModel(object instance)
+        private object get_144_SettingsPageViewModel_AboutPartViewModel(object instance)
         {
             var that = (global::WindowsApp2.ViewModels.SettingsPageViewModel)instance;
             return that.AboutPartViewModel;
@@ -2444,16 +3401,346 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
                 xamlMember.Getter = get_87_MainPageViewModel_Value;
                 xamlMember.Setter = set_87_MainPageViewModel_Value;
                 break;
+            case "WindowsApp2.Views.Marvel.MarvelCharacters":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Views.Marvel");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "MarvelCharacters", "System.Collections.ObjectModel.ObservableCollection`1<WindowsApp2.Models.Character>");
+                xamlMember.Getter = get_88_Marvel_MarvelCharacters;
+                xamlMember.Setter = set_88_Marvel_MarvelCharacters;
+                break;
+            case "WindowsApp2.Models.Character.id":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Character");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "id", "Int32");
+                xamlMember.Getter = get_89_Character_id;
+                xamlMember.Setter = set_89_Character_id;
+                break;
+            case "WindowsApp2.Models.Character.name":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Character");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "name", "String");
+                xamlMember.Getter = get_90_Character_name;
+                xamlMember.Setter = set_90_Character_name;
+                break;
+            case "WindowsApp2.Models.Character.description":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Character");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "description", "String");
+                xamlMember.Getter = get_91_Character_description;
+                xamlMember.Setter = set_91_Character_description;
+                break;
+            case "WindowsApp2.Models.Character.modified":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Character");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "modified", "String");
+                xamlMember.Getter = get_92_Character_modified;
+                xamlMember.Setter = set_92_Character_modified;
+                break;
+            case "WindowsApp2.Models.Character.thumbnail":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Character");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "thumbnail", "WindowsApp2.Models.Thumbnail");
+                xamlMember.Getter = get_93_Character_thumbnail;
+                xamlMember.Setter = set_93_Character_thumbnail;
+                break;
+            case "WindowsApp2.Models.Character.resourceURI":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Character");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "resourceURI", "String");
+                xamlMember.Getter = get_94_Character_resourceURI;
+                xamlMember.Setter = set_94_Character_resourceURI;
+                break;
+            case "WindowsApp2.Models.Character.comics":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Character");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "comics", "WindowsApp2.Models.Comics");
+                xamlMember.Getter = get_95_Character_comics;
+                xamlMember.Setter = set_95_Character_comics;
+                break;
+            case "WindowsApp2.Models.Character.series":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Character");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "series", "WindowsApp2.Models.SeriesList");
+                xamlMember.Getter = get_96_Character_series;
+                xamlMember.Setter = set_96_Character_series;
+                break;
+            case "WindowsApp2.Models.Character.stories":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Character");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "stories", "WindowsApp2.Models.Stories");
+                xamlMember.Getter = get_97_Character_stories;
+                xamlMember.Setter = set_97_Character_stories;
+                break;
+            case "WindowsApp2.Models.Character.events":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Character");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "events", "WindowsApp2.Models.Events");
+                xamlMember.Getter = get_98_Character_events;
+                xamlMember.Setter = set_98_Character_events;
+                break;
+            case "WindowsApp2.Models.Character.urls":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Character");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "urls", "System.Collections.Generic.List`1<WindowsApp2.Models.Url>");
+                xamlMember.Getter = get_99_Character_urls;
+                xamlMember.Setter = set_99_Character_urls;
+                break;
+            case "WindowsApp2.Models.Url.type":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Url");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "type", "String");
+                xamlMember.Getter = get_100_Url_type;
+                xamlMember.Setter = set_100_Url_type;
+                break;
+            case "WindowsApp2.Models.Url.url":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Url");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "url", "String");
+                xamlMember.Getter = get_101_Url_url;
+                xamlMember.Setter = set_101_Url_url;
+                break;
+            case "WindowsApp2.Views.Marvel.MarvelComics":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Views.Marvel");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "MarvelComics", "System.Collections.ObjectModel.ObservableCollection`1<WindowsApp2.Models.ComicBook>");
+                xamlMember.Getter = get_102_Marvel_MarvelComics;
+                xamlMember.Setter = set_102_Marvel_MarvelComics;
+                break;
+            case "WindowsApp2.Models.ComicBook.id":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "id", "Int32");
+                xamlMember.Getter = get_103_ComicBook_id;
+                xamlMember.Setter = set_103_ComicBook_id;
+                break;
+            case "WindowsApp2.Models.ComicBook.digitalId":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "digitalId", "Int32");
+                xamlMember.Getter = get_104_ComicBook_digitalId;
+                xamlMember.Setter = set_104_ComicBook_digitalId;
+                break;
+            case "WindowsApp2.Models.ComicBook.title":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "title", "String");
+                xamlMember.Getter = get_105_ComicBook_title;
+                xamlMember.Setter = set_105_ComicBook_title;
+                break;
+            case "WindowsApp2.Models.ComicBook.issueNumber":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "issueNumber", "Int32");
+                xamlMember.Getter = get_106_ComicBook_issueNumber;
+                xamlMember.Setter = set_106_ComicBook_issueNumber;
+                break;
+            case "WindowsApp2.Models.ComicBook.variantDescription":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "variantDescription", "String");
+                xamlMember.Getter = get_107_ComicBook_variantDescription;
+                xamlMember.Setter = set_107_ComicBook_variantDescription;
+                break;
+            case "WindowsApp2.Models.ComicBook.description":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "description", "String");
+                xamlMember.Getter = get_108_ComicBook_description;
+                xamlMember.Setter = set_108_ComicBook_description;
+                break;
+            case "WindowsApp2.Models.ComicBook.modified":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "modified", "String");
+                xamlMember.Getter = get_109_ComicBook_modified;
+                xamlMember.Setter = set_109_ComicBook_modified;
+                break;
+            case "WindowsApp2.Models.ComicBook.isbn":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "isbn", "String");
+                xamlMember.Getter = get_110_ComicBook_isbn;
+                xamlMember.Setter = set_110_ComicBook_isbn;
+                break;
+            case "WindowsApp2.Models.ComicBook.upc":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "upc", "String");
+                xamlMember.Getter = get_111_ComicBook_upc;
+                xamlMember.Setter = set_111_ComicBook_upc;
+                break;
+            case "WindowsApp2.Models.ComicBook.diamondCode":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "diamondCode", "String");
+                xamlMember.Getter = get_112_ComicBook_diamondCode;
+                xamlMember.Setter = set_112_ComicBook_diamondCode;
+                break;
+            case "WindowsApp2.Models.ComicBook.ean":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "ean", "String");
+                xamlMember.Getter = get_113_ComicBook_ean;
+                xamlMember.Setter = set_113_ComicBook_ean;
+                break;
+            case "WindowsApp2.Models.ComicBook.issn":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "issn", "String");
+                xamlMember.Getter = get_114_ComicBook_issn;
+                xamlMember.Setter = set_114_ComicBook_issn;
+                break;
+            case "WindowsApp2.Models.ComicBook.format":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "format", "String");
+                xamlMember.Getter = get_115_ComicBook_format;
+                xamlMember.Setter = set_115_ComicBook_format;
+                break;
+            case "WindowsApp2.Models.ComicBook.pageCount":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "pageCount", "Int32");
+                xamlMember.Getter = get_116_ComicBook_pageCount;
+                xamlMember.Setter = set_116_ComicBook_pageCount;
+                break;
+            case "WindowsApp2.Models.ComicBook.textObjects":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "textObjects", "System.Collections.Generic.List`1<WindowsApp2.Models.TextObject>");
+                xamlMember.Getter = get_117_ComicBook_textObjects;
+                xamlMember.Setter = set_117_ComicBook_textObjects;
+                break;
+            case "WindowsApp2.Models.TextObject.type":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.TextObject");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "type", "String");
+                xamlMember.Getter = get_118_TextObject_type;
+                xamlMember.Setter = set_118_TextObject_type;
+                break;
+            case "WindowsApp2.Models.TextObject.language":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.TextObject");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "language", "String");
+                xamlMember.Getter = get_119_TextObject_language;
+                xamlMember.Setter = set_119_TextObject_language;
+                break;
+            case "WindowsApp2.Models.TextObject.text":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.TextObject");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "text", "String");
+                xamlMember.Getter = get_120_TextObject_text;
+                xamlMember.Setter = set_120_TextObject_text;
+                break;
+            case "WindowsApp2.Models.ComicBook.resourceURI":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "resourceURI", "String");
+                xamlMember.Getter = get_121_ComicBook_resourceURI;
+                xamlMember.Setter = set_121_ComicBook_resourceURI;
+                break;
+            case "WindowsApp2.Models.ComicBook.urls":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "urls", "System.Collections.Generic.List`1<WindowsApp2.Models.Url>");
+                xamlMember.Getter = get_122_ComicBook_urls;
+                xamlMember.Setter = set_122_ComicBook_urls;
+                break;
+            case "WindowsApp2.Models.ComicBook.series":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "series", "WindowsApp2.Models.Series");
+                xamlMember.Getter = get_123_ComicBook_series;
+                xamlMember.Setter = set_123_ComicBook_series;
+                break;
+            case "WindowsApp2.Models.ComicBook.variants":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "variants", "System.Collections.Generic.List`1<WindowsApp2.Models.Variant>");
+                xamlMember.Getter = get_124_ComicBook_variants;
+                xamlMember.Setter = set_124_ComicBook_variants;
+                break;
+            case "WindowsApp2.Models.Variant.resourceURI":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Variant");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "resourceURI", "String");
+                xamlMember.Getter = get_125_Variant_resourceURI;
+                xamlMember.Setter = set_125_Variant_resourceURI;
+                break;
+            case "WindowsApp2.Models.Variant.name":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Variant");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "name", "String");
+                xamlMember.Getter = get_126_Variant_name;
+                xamlMember.Setter = set_126_Variant_name;
+                break;
+            case "WindowsApp2.Models.ComicBook.collections":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "collections", "System.Collections.Generic.List`1<Object>");
+                xamlMember.Getter = get_127_ComicBook_collections;
+                xamlMember.Setter = set_127_ComicBook_collections;
+                break;
+            case "WindowsApp2.Models.ComicBook.collectedIssues":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "collectedIssues", "System.Collections.Generic.List`1<Object>");
+                xamlMember.Getter = get_128_ComicBook_collectedIssues;
+                xamlMember.Setter = set_128_ComicBook_collectedIssues;
+                break;
+            case "WindowsApp2.Models.ComicBook.dates":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "dates", "System.Collections.Generic.List`1<WindowsApp2.Models.Date>");
+                xamlMember.Getter = get_129_ComicBook_dates;
+                xamlMember.Setter = set_129_ComicBook_dates;
+                break;
+            case "WindowsApp2.Models.Date.type":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Date");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "type", "String");
+                xamlMember.Getter = get_130_Date_type;
+                xamlMember.Setter = set_130_Date_type;
+                break;
+            case "WindowsApp2.Models.Date.date":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Date");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "date", "String");
+                xamlMember.Getter = get_131_Date_date;
+                xamlMember.Setter = set_131_Date_date;
+                break;
+            case "WindowsApp2.Models.ComicBook.prices":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "prices", "System.Collections.Generic.List`1<WindowsApp2.Models.Price>");
+                xamlMember.Getter = get_132_ComicBook_prices;
+                xamlMember.Setter = set_132_ComicBook_prices;
+                break;
+            case "WindowsApp2.Models.Price.type":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Price");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "type", "String");
+                xamlMember.Getter = get_133_Price_type;
+                xamlMember.Setter = set_133_Price_type;
+                break;
+            case "WindowsApp2.Models.Price.price":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Price");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "price", "Double");
+                xamlMember.Getter = get_134_Price_price;
+                xamlMember.Setter = set_134_Price_price;
+                break;
+            case "WindowsApp2.Models.ComicBook.thumbnail":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "thumbnail", "WindowsApp2.Models.Thumbnail");
+                xamlMember.Getter = get_135_ComicBook_thumbnail;
+                xamlMember.Setter = set_135_ComicBook_thumbnail;
+                break;
+            case "WindowsApp2.Models.ComicBook.images":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "images", "System.Collections.Generic.List`1<WindowsApp2.Models.Image>");
+                xamlMember.Getter = get_136_ComicBook_images;
+                xamlMember.Setter = set_136_ComicBook_images;
+                break;
+            case "WindowsApp2.Models.Image.path":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Image");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "path", "String");
+                xamlMember.Getter = get_137_Image_path;
+                xamlMember.Setter = set_137_Image_path;
+                break;
+            case "WindowsApp2.Models.Image.extension":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.Image");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "extension", "String");
+                xamlMember.Getter = get_138_Image_extension;
+                xamlMember.Setter = set_138_Image_extension;
+                break;
+            case "WindowsApp2.Models.ComicBook.creators":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "creators", "WindowsApp2.Models.Creators");
+                xamlMember.Getter = get_139_ComicBook_creators;
+                xamlMember.Setter = set_139_ComicBook_creators;
+                break;
+            case "WindowsApp2.Models.ComicBook.characters":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "characters", "WindowsApp2.Models.Characters");
+                xamlMember.Getter = get_140_ComicBook_characters;
+                xamlMember.Setter = set_140_ComicBook_characters;
+                break;
+            case "WindowsApp2.Models.ComicBook.stories":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "stories", "WindowsApp2.Models.Stories");
+                xamlMember.Getter = get_141_ComicBook_stories;
+                xamlMember.Setter = set_141_ComicBook_stories;
+                break;
+            case "WindowsApp2.Models.ComicBook.events":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Models.ComicBook");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "events", "WindowsApp2.Models.Events");
+                xamlMember.Getter = get_142_ComicBook_events;
+                xamlMember.Setter = set_142_ComicBook_events;
+                break;
             case "WindowsApp2.ViewModels.SettingsPageViewModel.SettingsPartViewModel":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "SettingsPartViewModel", "WindowsApp2.ViewModels.SettingsPartViewModel");
-                xamlMember.Getter = get_88_SettingsPageViewModel_SettingsPartViewModel;
+                xamlMember.Getter = get_143_SettingsPageViewModel_SettingsPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WindowsApp2.ViewModels.SettingsPageViewModel.AboutPartViewModel":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "AboutPartViewModel", "WindowsApp2.ViewModels.AboutPartViewModel");
-                xamlMember.Getter = get_89_SettingsPageViewModel_AboutPartViewModel;
+                xamlMember.Getter = get_144_SettingsPageViewModel_AboutPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }
