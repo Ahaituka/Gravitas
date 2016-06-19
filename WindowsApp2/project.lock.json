@@ -1911,6 +1911,15 @@
         "runtime": {
           "lib/uap10.0/Template10Library.dll": {}
         }
+      },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0/win10-arm": {
@@ -3688,6 +3697,15 @@
         "runtime": {
           "lib/uap10.0/Template10Library.dll": {}
         }
+      },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
@@ -5421,6 +5439,15 @@
         },
         "runtime": {
           "lib/uap10.0/Template10Library.dll": {}
+        }
+      },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
         }
       }
     },
@@ -7208,6 +7235,15 @@
         "runtime": {
           "lib/uap10.0/Template10Library.dll": {}
         }
+      },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
@@ -8941,6 +8977,15 @@
         },
         "runtime": {
           "lib/uap10.0/Template10Library.dll": {}
+        }
+      },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
         }
       }
     },
@@ -10728,6 +10773,15 @@
         "runtime": {
           "lib/uap10.0/Template10Library.dll": {}
         }
+      },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
@@ -12461,6 +12515,15 @@
         },
         "runtime": {
           "lib/uap10.0/Template10Library.dll": {}
+        }
+      },
+      "WindowsAzure.Messaging.Managed/0.1.7.9": {
+        "type": "package",
+        "compile": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
+        },
+        "runtime": {
+          "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll": {}
         }
       }
     }
@@ -15787,6 +15850,19 @@
         "lib/uap10.0/Template10Library/Themes/PageHeader.xaml",
         "lib/uap10.0/Template10Library/Themes/Resizer.xaml"
       ]
+    },
+    "WindowsAzure.Messaging.Managed/0.1.7.9": {
+      "sha512": "9g7MVL7Odl5qwG9TSsaab/MKFXdeLitrvbbRAO7xWk4CGeD1j17GPeUsuufO8VY5+GAcCQjJcrM6fU+y/eLCBg==",
+      "type": "package",
+      "files": [
+        "WindowsAzure.Messaging.Managed.0.1.7.9.nupkg.sha512",
+        "WindowsAzure.Messaging.Managed.nuspec",
+        "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.dll",
+        "lib/netcore45/Microsoft.WindowsAzure.Messaging.Managed.pri",
+        "lib/windowsphone8/Microsoft.WindowsAzure.Messaging.dll",
+        "lib/wpa81/Microsoft.WindowsAzure.Messaging.Managed.dll",
+        "lib/wpa81/Microsoft.WindowsAzure.Messaging.Managed.pri"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -15794,7 +15870,8 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "Microsoft.Xaml.Behaviors.Uwp.Managed >= 1.1.0",
       "Newtonsoft.Json >= 8.0.3",
-      "Template10 >= 1.1.11"
+      "Template10 >= 1.1.11",
+      "WindowsAzure.Messaging.Managed >= 0.1.7.9"
     ],
     "UAP,Version=v10.0": []
   }
