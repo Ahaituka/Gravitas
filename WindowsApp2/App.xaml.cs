@@ -7,6 +7,9 @@ using Template10.Common;
 using System;
 using System.Linq;
 using Windows.UI.Xaml.Data;
+using Windows.Networking.PushNotifications;
+using Microsoft.WindowsAzure.Messaging;
+using Windows.UI.Popups;
 
 namespace WindowsApp2
 {
@@ -33,6 +36,9 @@ namespace WindowsApp2
 
         public override async Task OnInitializeAsync(IActivatedEventArgs args)
         {
+            InitNotificationsAsync();
+
+
             if (Window.Current.Content as ModalDialog == null)
             {
                 // create a new frame 
@@ -51,11 +57,30 @@ namespace WindowsApp2
 
         public override async Task OnStartAsync(StartKind startKind, IActivatedEventArgs args)
         {
+
+
             // long-running startup tasks go here
             await Task.Delay(5000);
 
             NavigationService.Navigate(typeof(Views.MainPage));
             await Task.CompletedTask;
+        }
+        private async void InitNotificationsAsync()
+        {
+            var channel = await PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
+
+
+            var hub = new NotificationHub("GravitasHub", "Endpoint=sb://gravitashubnamesapce.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=Qlb9cobs7BGZhhJJ10uSjzb7kWcA7MUxgHqk3UHsiiM=");
+            var result = await hub.RegisterNativeAsync(channel.Uri);
+
+            // Displays the registration ID so you know it was successful
+            if (result.RegistrationId != null)
+            {
+                var dialog = new MessageDialog("Registration successful: " + result.RegistrationId);
+                dialog.Commands.Add(new UICommand("OK"));
+                await dialog.ShowAsync();
+            }
+
         }
     }
 }

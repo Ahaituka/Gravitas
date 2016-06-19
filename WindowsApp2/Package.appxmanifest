@@ -1,13 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity
-    Name="918f62b6-1a93-4917-9b39-0f1900748008"
-    Publisher = "CN=RSSGPM"
-    Version = "1.0.0.0" /> 
-  <mp:PhoneIdentity PhoneProductId="918f62b6-1a93-4917-9b39-0f1900748008" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <Identity Name="65150bitloks.Gravitas2016" Publisher="CN=8E5939AC-7500-478F-8DC0-9EAB8C87A9FC" Version="1.1.0.0" />
+  <mp:PhoneIdentity PhoneProductId="918f62b6-1a93-4917-9b39-0f1900748008" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>WindowsApp2</DisplayName>
-    <PublisherDisplayName>RSSGPM</PublisherDisplayName>
+    <DisplayName>Gravitas2016</DisplayName>
+    <PublisherDisplayName>bitloks</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
