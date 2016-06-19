@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\RSSGPM\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-19T12:04:43.695</Modified>
+      <Modified>2016-06-19T13:54:35.740</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.exe">
       <PackagePath>entrypoint\WindowsApp2.exe</PackagePath>
-      <Modified>2016-06-19T12:04:35.943</Modified>
+      <Modified>2016-06-19T13:54:33.019</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RSSGPM\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -458,6 +458,10 @@
       <PackagePath>Template10Library.dll</PackagePath>
       <Modified>2016-05-19T13:17:34.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\RSSGPM\.nuget\packages\WindowsAzure.Messaging.Managed\0.1.7.9\lib\netcore45\Microsoft.WindowsAzure.Messaging.Managed.dll">
+      <PackagePath>Microsoft.WindowsAzure.Messaging.Managed.dll</PackagePath>
+      <Modified>2014-07-30T06:42:22.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\GitHub\Gravitas\WindowsApp2\Assets\7.jpg">
       <PackagePath>Assets\7.jpg</PackagePath>
       <Modified>2016-06-19T08:45:45.008</Modified>
@@ -546,11 +550,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-19T12:04:41.921</Modified>
+      <Modified>2016-06-19T13:54:35.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\RSSGPM\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\Core\WindowsApp2.exe">
       <PackagePath>WindowsApp2.exe</PackagePath>
-      <Modified>2016-06-19T12:04:43.669</Modified>
+      <Modified>2016-06-19T13:54:35.736</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
