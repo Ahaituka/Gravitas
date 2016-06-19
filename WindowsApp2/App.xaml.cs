@@ -36,7 +36,8 @@ namespace WindowsApp2
 
         public override async Task OnInitializeAsync(IActivatedEventArgs args)
         {
-           InitNotificationsAsync();
+            InitNotificationsAsync();
+
 
             if (Window.Current.Content as ModalDialog == null)
             {
@@ -56,7 +57,6 @@ namespace WindowsApp2
 
         public override async Task OnStartAsync(StartKind startKind, IActivatedEventArgs args)
         {
-             InitNotificationsAsync();
 
 
             // long-running startup tasks go here
