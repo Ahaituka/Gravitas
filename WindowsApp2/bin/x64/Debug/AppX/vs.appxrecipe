@@ -10,25 +10,25 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>918f62b6-1a93-4917-9b39-0f1900748008</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>BDDB88E4BC449CC4CA1BF1D90B198307F4B26A91E66D4AE6E9630C72789E50D4</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>918f62b6-1a93-4917-9b39-0f1900748008_1.0.0.0_x64__an4bsv26nc1ym</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>918f62b6-1a93-4917-9b39-0f1900748008_an4bsv26nc1ym!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>918f62b6-1a93-4917-9b39-0f1900748008</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=RSSGPM</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredManifestChecksum>AA71E24485123A1547C93DBB82646833F18DE89E6706235C23B09902E0468FEF</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>65150bitloks.Gravitas2016_1.1.0.0_x64__0mga6vf5p7yxy</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>65150bitloks.Gravitas2016_0mga6vf5p7yxy!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>65150bitloks.Gravitas2016</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=8E5939AC-7500-478F-8DC0-9EAB8C87A9FC</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-16T08:55:35.512</Modified>
+      <Modified>2016-06-19T08:30:02.917</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.exe">
       <PackagePath>entrypoint\WindowsApp2.exe</PackagePath>
-      <Modified>2016-06-16T08:55:33.100</Modified>
+      <Modified>2016-06-19T08:29:42.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -506,7 +506,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.xr.xml">
       <PackagePath>WindowsApp2.xr.xml</PackagePath>
-      <Modified>2016-06-16T08:53:05.969</Modified>
+      <Modified>2016-06-18T13:49:16.392</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -546,11 +546,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-16T08:55:34.994</Modified>
+      <Modified>2016-06-19T08:29:55.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\Core\WindowsApp2.exe">
       <PackagePath>WindowsApp2.exe</PackagePath>
-      <Modified>2016-06-16T08:55:35.500</Modified>
+      <Modified>2016-06-19T08:30:02.891</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
