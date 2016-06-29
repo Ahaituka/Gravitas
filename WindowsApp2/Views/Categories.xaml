@@ -11,7 +11,7 @@
 mc:Ignorable="d">
 
 
-  
+
 
     <Page.Resources>
         <DataTemplate x:DataType="data:Categories" x:Key="CategoryDataTemplate">
@@ -23,8 +23,8 @@ mc:Ignorable="d">
 
             <StackPanel  Margin='60'>
                 <Grid>
-                    <Image Source = "{x:Bind CoverImage}" Stretch="None" />
-                    <TextBlock Text="{x:Bind Name}" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                    <Image Source = "{x:Bind CoverImage}" Width="300" Height="300" />
+                    <TextBlock Text="{x:Bind Name}" VerticalAlignment="Center" HorizontalAlignment="Right" Style="{StaticResource CaptionTextBlockStyle}" />
 
                 </Grid>
                 <TextBlock Text="{x:Bind Description}"  />
@@ -34,45 +34,55 @@ mc:Ignorable="d">
         </DataTemplate>
     </Page.Resources>
 
+
+
+    <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
+            <VisualState x:Name="VisualStateNarrow">
+                <VisualState.StateTriggers>
+                    <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
+                </VisualState.StateTriggers>
+                <VisualState.Setters>
+                    <!--  TODO: change properties for narrow view  -->
+                    <!--<Setter Target="stateTextBox.Text" Value="Narrow Visual State" />-->
+                </VisualState.Setters>
+            </VisualState>
+            <VisualState x:Name="VisualStateNormal">
+                <VisualState.StateTriggers>
+                    <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
+                </VisualState.StateTriggers>
+                <VisualState.Setters>
+                    <!--  TODO: change properties for normal view  -->
+                    <!--<Setter Target="stateTextBox.Text" Value="Normal Visual State" />-->
+                </VisualState.Setters>
+            </VisualState>
+            <VisualState x:Name="VisualStateWide">
+                <VisualState.StateTriggers>
+                    <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
+                </VisualState.StateTriggers>
+                <VisualState.Setters>
+                    <!--  TODO: change properties for wide view  -->
+                    <!--<Setter Target="stateTextBox.Text" Value="Wide Visual State" />-->
+                </VisualState.Setters>
+            </VisualState>
+        </VisualStateGroup>
+    </VisualStateManager.VisualStateGroups>
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+         
+        </Grid.RowDefinitions>
 
 
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
-                <VisualState x:Name="VisualStateNarrow">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <!--  TODO: change properties for narrow view  -->
-                        <!--<Setter Target="stateTextBox.Text" Value="Narrow Visual State" />-->
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:Name="VisualStateNormal">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <!--  TODO: change properties for normal view  -->
-                        <!--<Setter Target="stateTextBox.Text" Value="Normal Visual State" />-->
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:Name="VisualStateWide">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <!--  TODO: change properties for wide view  -->
-                        <!--<Setter Target="stateTextBox.Text" Value="Wide Visual State" />-->
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
+
+
         <controls:PageHeader x:Name="pageHeader" RelativePanel.AlignLeftWithPanel="True"
                              RelativePanel.AlignRightWithPanel="True"
                              RelativePanel.AlignTopWithPanel="True" Text="Categories"
                              Background="WhiteSmoke"
-                             Foreground="Black">
+                             Foreground="Black"  Grid.Row="0">
 
 
             <!--  secondary commands  -->
@@ -83,36 +93,41 @@ mc:Ignorable="d">
 
 
 
-        <GridView ItemsSource="{x:Bind Category}" 
+
+        <GridView Grid.Row="1" ItemsSource="{x:Bind Category}" 
+                  ScrollViewer.BringIntoViewOnFocusChange="True"
+ ScrollViewer.VerticalScrollMode="Auto"
+                  ScrollViewer.HorizontalScrollMode="Auto"
                   IsItemClickEnabled="True" 
                   ItemClick="GridView_ItemClick"
-                  ItemTemplate="{StaticResource CategoryDataTemplate}">
+                  ItemTemplate="{StaticResource CategoryDataTemplate}" Grid.RowSpan="2">
             <GridView.ItemContainerStyle>
-                  <Style TargetType="GridViewItem">
-            <Setter Property="Margin" Value="0,0,4,4" />
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="TabNavigation" Value="Local"/>
-            <Setter Property="IsHoldingEnabled" Value="True"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="GridViewItem">
-                        <ContentPresenter  />
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-                
-                
+                <Style TargetType="GridViewItem">
+                    <Setter Property="Margin" Value="Auto" />
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="TabNavigation" Value="Local"/>
+                    <Setter Property="IsHoldingEnabled" Value="True"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="GridViewItem">
+                                <ContentPresenter  />
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+
+
             </GridView.ItemContainerStyle>
-            
+
 
         </GridView>
 
-
-
-
-
-
-
     </Grid>
+
+
+
+
+
+
+
 </Page>

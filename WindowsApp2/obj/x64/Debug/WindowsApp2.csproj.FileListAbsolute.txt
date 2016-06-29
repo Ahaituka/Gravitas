@@ -1270,3 +1270,5 @@ C:\Users\RSSGPM\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Template10Li
 C:\Users\RSSGPM\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\RSSGPM\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\Microsoft.WindowsAzure.Messaging.Managed.dll
 C:\Users\RSSGPM\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Microsoft.WindowsAzure.Messaging.Managed.pri.xml
+C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\Microsoft.WindowsAzure.Messaging.Managed.dll
+C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Microsoft.WindowsAzure.Messaging.Managed.pri.xml
