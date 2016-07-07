@@ -10,6 +10,7 @@ using Windows.UI.Xaml.Data;
 using Windows.Networking.PushNotifications;
 using Microsoft.WindowsAzure.Messaging;
 using Windows.UI.Popups;
+using Template10GetTheSplashScreen.Controls;
 
 namespace WindowsApp2
 {
@@ -23,10 +24,21 @@ namespace WindowsApp2
         {
             InitializeComponent();
             SplashFactory = (e) => new Views.Splash(e);
+            Template10.Services.LoggingService.LoggingService.Enabled = true;
 
             #region App settings
 
             var _settings = SettingsService.Instance;
+            RequestedTheme = _settings.AppTheme;
+            CacheMaxDuration = _settings.CacheMaxDuration;
+            ShowShellBackButton = _settings.UseShellBackButton;
+
+            #endregion
+
+
+            #region App settings
+
+            //var _settings = SettingsService.Instance;
             RequestedTheme = _settings.AppTheme;
             CacheMaxDuration = _settings.CacheMaxDuration;
             ShowShellBackButton = _settings.UseShellBackButton;
@@ -60,10 +72,10 @@ namespace WindowsApp2
 
 
             // long-running startup tasks go here
-            await Task.Delay(5000);
+           await Task.Delay(TimeSpan.FromSeconds(6));
 
             NavigationService.Navigate(typeof(Views.MainPage));
-            await Task.CompletedTask;
+    //        await Task.CompletedTask;
         }
         private async void InitNotificationsAsync()
         {
@@ -74,12 +86,12 @@ namespace WindowsApp2
             var result = await hub.RegisterNativeAsync(channel.Uri);
 
             // Displays the registration ID so you know it was successful
-            if (result.RegistrationId != null)
-            {
-                var dialog = new MessageDialog("Registration successful: " + result.RegistrationId);
-                dialog.Commands.Add(new UICommand("OK"));
-                await dialog.ShowAsync();
-            }
+            //if (result.RegistrationId != null)
+            //{
+            //    var dialog = new MessageDialog("Registration successful: " + result.RegistrationId);
+            //    dialog.Commands.Add(new UICommand("OK"));
+            //    await dialog.ShowAsync();
+            //}
 
         }
     }

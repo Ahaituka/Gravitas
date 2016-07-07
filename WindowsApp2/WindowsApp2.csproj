@@ -103,6 +103,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\RoundProgressControl.xaml.cs">
+      <DependentUpon>RoundProgressControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Facades\EventFacade.cs" />
     <Compile Include="Facades\MarvelFacade.cs" />
     <Compile Include="Models\CharacterDataWrapper.cs" />
@@ -176,6 +179,10 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Controls\RoundProgressControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Styles\Custom.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

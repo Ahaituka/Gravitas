@@ -9,8 +9,14 @@
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>918f62b6-1a93-4917-9b39-0f1900748008</PackageIdentityName>
+    <PackageIdentityPublisher>CN=8E5939AC-7500-478F-8DC0-9EAB8C87A9FC</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>AA71E24485123A1547C93DBB82646833F18DE89E6706235C23B09902E0468FEF</RegisteredManifestChecksum>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <RegisteredManifestChecksum>2C6B6643AAD65E6215510CA7DEBCAAF0C5FFC835B4A115A3490770DA89BFED3A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>65150bitloks.Gravitas2016_1.1.0.0_x64__0mga6vf5p7yxy</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>65150bitloks.Gravitas2016_0mga6vf5p7yxy!App</RegisteredUserModeAppID>
     <RegisteredPackageID>65150bitloks.Gravitas2016</RegisteredPackageID>
@@ -22,13 +28,13 @@
     <AppXManifest Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-29T13:45:46.210</Modified>
+      <Modified>2016-07-07T16:29:06.976</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.exe">
       <PackagePath>entrypoint\WindowsApp2.exe</PackagePath>
-      <Modified>2016-06-29T13:45:36.987</Modified>
+      <Modified>2016-07-07T16:28:28.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -476,45 +482,45 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2016-06-12T19:31:40.272</Modified>
+      <Modified>2016-07-07T16:19:48.613</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-12T19:31:40.283</Modified>
+      <Modified>2016-07-07T16:19:48.490</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-12T19:31:40.284</Modified>
+      <Modified>2016-07-07T16:19:48.578</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-12T19:31:40.286</Modified>
+      <Modified>2016-07-07T16:19:48.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-12T19:31:40.287</Modified>
+      <Modified>2016-07-07T16:19:48.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-12T19:31:40.302</Modified>
+      <Modified>2016-07-07T16:19:48.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-12T19:31:40.304</Modified>
+      <Modified>2016-07-07T16:19:48.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.xr.xml">
       <PackagePath>WindowsApp2.xr.xml</PackagePath>
-      <Modified>2016-06-26T16:37:08.000</Modified>
+      <Modified>2016-07-07T16:16:04.175</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2016-06-12T15:56:28.845</Modified>
+      <Modified>2016-07-01T14:03:14.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\.nuget\packages\Template10\1.1.11\lib\uap10.0\Template10Library\Template10Library.xr.xml">
       <PackagePath>Template10Library\Template10Library.xr.xml</PackagePath>
@@ -550,11 +556,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-29T13:45:43.745</Modified>
+      <Modified>2016-07-07T16:29:06.313</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\Core\WindowsApp2.exe">
       <PackagePath>WindowsApp2.exe</PackagePath>
-      <Modified>2016-06-29T13:45:46.183</Modified>
+      <Modified>2016-07-07T16:29:06.952</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
@@ -587,27 +593,27 @@
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.23918.0</Version>
+      <Version>14.0.24210.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.23918.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.24210.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.23918.0</Version>
+      <Version>14.0.24210.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.23918.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.24210.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.23918.0</Version>
+      <Version>14.0.24210.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.23918.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.24210.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
