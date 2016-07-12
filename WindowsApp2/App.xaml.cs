@@ -48,7 +48,7 @@ namespace WindowsApp2
 
         public override async Task OnInitializeAsync(IActivatedEventArgs args)
         {
-            InitNotificationsAsync();
+          //  InitNotificationsAsync();
 
 
             if (Window.Current.Content as ModalDialog == null)

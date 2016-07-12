@@ -23,18 +23,18 @@ namespace WindowsApp2.ViewModels
             {
                 var Categry = new List<Categories>();
 
-                Categry.Add(new Categories {  Name = "Applied Engineering", Description = "Futurum", CoverImage = "ms-appx:///Assets/7.jpg" });
-                Categry.Add(new Categories {  Name = "Bioxyn", Description = "Sequiter Que", CoverImage = "ms-appx:///Assets/7.jpg"  });
-                Categry.Add(new Categories {  Name = "Circuitrix", Description = "Tempor", CoverImage = "ms-appx:///Assets/7.jpg" });
-                Categry.Add(new Categories {  Name = "Bits and Bytes", Description = "Option", CoverImage = "ms-appx:///Assets/7.jpg" });
-                Categry.Add(new Categories {  Name = "Builtrix", Description = "Accumsan", CoverImage = "ms-appx:///Assets/7.jpg" });
-                Categry.Add(new Categories {  Name = "Quiz Series", Description = "Legunt Xaepius", CoverImage = "ms-appx:///Assets/7.jpg" });
-                Categry.Add(new Categories {  Name = "Robomania", Description = "Eleifend", CoverImage = "ms-appx:///Assets/7.jpg" });
-                Categry.Add(new Categories {  Name = "Online", Description = "Vero Tation", CoverImage = "ms-appx:///Assets/7.jpg" });
-                Categry.Add(new Categories {  Name = "Premium", Description = "Jack Tibbles", CoverImage = "ms-appx:///Assets/7.jpg" });
-                Categry.Add(new Categories {  Name = "Informals", Description = "Tuffy Tibbles", CoverImage = "ms-appx:///Assets/7.jpg" });
-                Categry.Add(new Categories {  Name = "Management", Description = "Volupat", CoverImage = "ms-appx:///Assets/7.jpg" });
-                Categry.Add(new Categories {  Name = "Workshops", Description = "Est Possim", CoverImage = "ms-appx:///Assets/7.jpg" });
+                Categry.Add(new Categories {  Name = "Applied Engineering", Description = "Futurum", CoverImage = "ms-appx:///Assets/7.png" });
+                Categry.Add(new Categories {  Name = "Bioxyn", Description = "Sequiter Que", CoverImage = "ms-appx:///Assets/7.png"  });
+                Categry.Add(new Categories {  Name = "Circuitrix", Description = "Tempor", CoverImage = "ms-appx:///Assets/7.png" });
+                Categry.Add(new Categories {  Name = "Bits and Bytes", Description = "Option", CoverImage = "ms-appx:///Assets/7.png" });
+                Categry.Add(new Categories {  Name = "Builtrix", Description = "Accumsan", CoverImage = "ms-appx:///Assets/7.png" });
+                Categry.Add(new Categories {  Name = "Quiz Series", Description = "Legunt Xaepius", CoverImage = "ms-appx:///Assets/7.png" });
+                Categry.Add(new Categories {  Name = "Robomania", Description = "Eleifend", CoverImage = "ms-appx:///Assets/7.png" });
+                Categry.Add(new Categories {  Name = "Online", Description = "Vero Tation", CoverImage = "ms-appx:///Assets/7.png" });
+                Categry.Add(new Categories {  Name = "Premium", Description = "Jack Tibbles", CoverImage = "ms-appx:///Assets/7.png" });
+                Categry.Add(new Categories {  Name = "Informals", Description = "Tuffy Tibbles", CoverImage = "ms-appx:///Assets/7.png" });
+                Categry.Add(new Categories {  Name = "Management", Description = "Volupat", CoverImage = "ms-appx:///Assets/7.png" });
+                Categry.Add(new Categories {  Name = "Workshops", Description = "Est Possim", CoverImage = "ms-appx:///Assets/7.png" });
             
 
                 return Categry;
