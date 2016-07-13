@@ -103,6 +103,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\RoundProgressControl.xaml.cs">
+      <DependentUpon>RoundProgressControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Facades\EventFacade.cs" />
     <Compile Include="Facades\MarvelFacade.cs" />
     <Compile Include="Models\CharacterDataWrapper.cs" />
@@ -157,7 +160,8 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\7.jpg" />
+    <Content Include="Assets\8.jpg" />
+    <Content Include="Assets\7.png" />
     <Content Include="Help.htm" />
     <None Include="Package.StoreAssociation.xml" />
     <Content Include="Properties\Default.rd.xml" />
@@ -176,6 +180,10 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Controls\RoundProgressControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Styles\Custom.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

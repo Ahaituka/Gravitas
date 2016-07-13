@@ -11,6 +11,7 @@ namespace WindowsApp2.Views
         {
             InitializeComponent();
             Window.Current.SizeChanged += (s, e) => Resize(splashScreen);
+            RingStoryboard.Begin();
             Resize(splashScreen);
         }
 
@@ -18,19 +19,23 @@ namespace WindowsApp2.Views
         {
             if (splashScreen.ImageLocation.Top == 0)
             {
-                splashImage.Visibility = Visibility.Collapsed;
+                MyImage.Visibility = Visibility.Collapsed;
                 return;
             }
             else
             {
-                rootCanvas.Background = null;
-                splashImage.Visibility = Visibility.Visible;
+                MyCanvas.Background = null;
+                MyImage.Visibility = Visibility.Visible;
             }
-            splashImage.Height = splashScreen.ImageLocation.Height;
-            splashImage.Width = splashScreen.ImageLocation.Width;
-            splashImage.SetValue(Canvas.TopProperty, splashScreen.ImageLocation.Top);
-            splashImage.SetValue(Canvas.LeftProperty, splashScreen.ImageLocation.Left);
-            ProgressTransform.TranslateY = splashImage.Height / 2;
+            MyImage.Height = splashScreen.ImageLocation.Height;
+            MyImage.Width = splashScreen.ImageLocation.Width;
+            MyImage.SetValue(Canvas.TopProperty, splashScreen.ImageLocation.Top);
+            MyImage.SetValue(Canvas.LeftProperty, splashScreen.ImageLocation.Left);
+        }
+
+        private void DoubleAnimationUsingKeyFrames_Completed(object sender, object e)
+        {
+
         }
     }
 }

@@ -7,12 +7,26 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="using:WindowsApp2.Views"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d">
+             xmlns:Controls="using:Template10.Controls"
+             mc:Ignorable="d"
+             >
 
-    <Grid Background="{StaticResource ExtendedSplashBackground}">
+    <UserControl.Resources>
+        <Storyboard x:ConnectionId='1' x:Name="RingStoryboard">
+            <DoubleAnimationUsingKeyFrames x:ConnectionId='2'                                                    
+                                           EnableDependentAnimation="True"
+                                           Storyboard.TargetName="MyRingSlice"
+                                           Storyboard.TargetProperty="(RingSegment.EndAngle)">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0" />
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="55" />
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="359.9999" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
 
-        <Canvas x:ConnectionId='1' x:Name="rootCanvas" HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch">
+    <Grid Background="orangeRed">
+
+        <Canvas x:ConnectionId='3' x:Name="MyCanvas" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <Canvas.Background>
                 <ImageBrush ImageSource="ms-appx:///Assets/SplashScreen.png" Stretch="Uniform">
                     <ImageBrush.Transform>
@@ -20,22 +34,16 @@
                     </ImageBrush.Transform>
                 </ImageBrush>
             </Canvas.Background>
-            <Viewbox x:ConnectionId='4' x:Name="splashImage"
-                     Width="{Binding ActualWidth, ElementName=MyCanvas, Mode=OneWay}"
-                     Height="{Binding ActualHeight, ElementName=MyCanvas, Mode=OneWay}">
-                <Image Source="ms-appx:///Assets/SplashScreen.png" />
+            <Viewbox x:ConnectionId='4' x:Name="MyImage" Width="{Binding ActualWidth, ElementName=MyCanvas, Mode=OneWay}" Height="{Binding ActualHeight, ElementName=MyCanvas, Mode=OneWay}">
+                <Grid>
+                    <Image Source="ms-appx:///Assets/SplashScreen.png" />
+                    <Controls:RingSegment x:ConnectionId='5' x:Name="MyRingSlice" HorizontalAlignment="Center"
+                                          VerticalAlignment="Center" EndAngle="200"
+                                          Fill="{StaticResource ExtendedSplashForeground}"
+                                          InnerRadius="90" Radius="100" />
+                </Grid>
             </Viewbox>
         </Canvas>
-
-        <ProgressRing x:ConnectionId='2' x:Name="progressRing" Width="50"
-                      Height="50" HorizontalAlignment="Center"
-                      VerticalAlignment="Center"
-                      Foreground="{StaticResource ExtendedSplashForeground}"
-                      IsActive="True" RenderTransformOrigin="0.5,0.5">
-            <ProgressRing.RenderTransform>
-                <CompositeTransform x:ConnectionId='3' x:Name="ProgressTransform" TranslateY="120" />
-            </ProgressRing.RenderTransform>
-        </ProgressRing>
 
     </Grid>
 
