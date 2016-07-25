@@ -95,6 +95,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="DataSource\result.json" />
     <None Include="WindowsApp2_StoreKey.pfx" />
     <None Include="WindowsApp2_TemporaryKey.pfx" />
     <None Include="project.json" />
@@ -106,6 +107,8 @@
     <Compile Include="Controls\RoundProgressControl.xaml.cs">
       <DependentUpon>RoundProgressControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataSource\Customers.cs" />
+    <Compile Include="DataSource\SearchQueries.cs" />
     <Compile Include="Facades\EventFacade.cs" />
     <Compile Include="Facades\MarvelFacade.cs" />
     <Compile Include="Models\CharacterDataWrapper.cs" />

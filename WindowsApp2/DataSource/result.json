@@ -1,0 +1,2497 @@
+﻿{
+"events": [
+{
+"name": "propeller display",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IETE"
+],
+"coordinators": [
+{
+"phone": "9944600667",
+"reg_no": "14BEC0203",
+"_id": "14BEC0203",
+"name": "Aditya p.s",
+"email": "psadit@gmail.com"
+}
+],
+"description": "Pov based led display\nPropeller Display is totally based on a moving led row. This led row is rotating at a rate superior to human's eye remanence, making a dot matrix which seems to float in the air. A motor spins the \"propeller\" and a small microcontroller keeps track of time and changes the pattern on LEDs with exact timing to simulate array of LEDs. It is an illusion, but it works nicely.\nPractical1:ProgramforLEDinterfacing.\nPractical2:MechanicalAssemblingofPropeller Display.\nProject3:DigitalClock  Project4:FlowerPattern\nProject5:PAC-manGame\nProject6:AnalogClock",
+"teamSize": 4,
+"participationFee": 750
+},
+{
+"name": " comic designs ",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"Creativity Club"
+],
+"coordinators": [
+{
+"phone": "9400525121",
+"reg_no": "15BAR0011",
+"_id": "15BAR0011",
+"name": "Malvikaa madhuraj",
+"email": ""
+},
+{
+"phone": null,
+"reg_no": "15BCE0080",
+"_id": "15BCE0080",
+"name": "Gonugunta namratha",
+"email": null
+}
+],
+"description": "In this workshop the speaker will demonstrate how to create comic designs from the basics. All the materials will be provided by us and the participants get to design creative cartoons.",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "3-d printing",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"SME"
+],
+"coordinators": [
+{
+"phone": "9943635263",
+"reg_no": "14BM0135",
+"_id": "14BM0135",
+"name": "Kishan koradiya",
+"email": "kkoradiya@gmail.com"
+}
+],
+"description": "3-D Printing has been dubbed as the technology of the future! Indeed it has many reasons that advocate the stance. It is currently the best rapid manufacturing technology for personalised manufacturing and rapid prototyping and is slowly finding its way into the industry. It has been predicted that it will be the harbinger of the 3rd industrial revolution.\nTo familiarise students with this modernistic and cutting-edge technology and to teach them about the basics of 3-D Printing, is the desideratum of this workshop. The workshop will be attended by students from a large verity of branches including computer, electrical, IT, mechanical, civil and even biotech engineering! This goes to show the vast appeal of this technology. \nThe workshop shall havedistinguished guests coming from international companies. The introductory session, consisting of basics of 3-D Printing and additive manufacturing, processes, materials and printers used in the process, 3-D Printers set up during the workshop will demostrate the technology to the students live. The next session will introduce the participants to basics of CAD software designing and slicing technique. The students will be given several useful softwares and taught to design their own objects. The third session, focusses specifically on Metal RP (Rapid Prototyping). The students shall be shown several high grade metal components made using titanium and aluminium. After the lunch break, the fourth session, consisting of 3-D scanning, will showcase state of the art 3-D scanners. At the end the students will have the hands-on sessions with the scanners and printers. This is the most interesting and exciting part for the participants, because most of them haven’t seen or used a 3-D Printer before. The participants also get their designed models 3-D printed given to them as mementos!\nThey will surely looking forward to explore more frontiers of this very unique technology!",
+"teamSize": 1,
+"participationFee": 500
+},
+{
+"name": "Aero modelling",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"SAE-VIT"
+],
+"coordinators": [
+{
+"phone": "9952365233",
+"reg_no": "14BME0496",
+"_id": "14BME0496",
+"name": "Bandaru shivasai",
+"email": "shiva42225@gmail.com"
+}
+],
+"description": "The workshop will be organized in partnership with VIT teamsn\nLabs Pvt. Ltd.\nIt will be a two days workshop. On the very first day from 8:00 to 12:00 pm lecture will be\ngiven on technical details about fabrication of Aeroplanes and from 2:00-5:00 pm fabrication\nof quad copter will start. On the second day from 8:00-12:00 pm and 12:00-4:00 fabrication\nwill be done, 4:00-6:00 testing of fabricated Aeroplanes will take place. ",
+"teamSize": 5,
+"participationFee": 1000
+},
+{
+"name": "Aerodominator",
+"category": "events",
+"subCategory": "applied engineering",
+"organization": [
+"SAE-VIT"
+],
+"coordinators": [
+{
+"phone": "9994788992",
+"reg_no": "14BME0926",
+"_id": "14BME0926",
+"name": "Jeevan raj halonen",
+"email": "jrhalonen1@gmail.com"
+}
+],
+"description": "Aerodominator, where teams compete to achieve the title. Aeromodelling teams from all institutes across India take part in this competition and perform the required. This is",
+"teamSize": 5,
+"participationFee": 500
+},
+{
+"name": "Antenna design",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IEEE-MTTS"
+],
+"coordinators": [
+{
+"phone": "9944822006",
+"reg_no": "14BEC0585",
+"_id": "14BEC0585",
+"name": "Abinaya .k",
+"email": "kabinayaaecs@gmail.com"
+},
+{
+"phone": null,
+"reg_no": "14BEC0839",
+"_id": "14BEC0839",
+"name": "Sri harsha",
+"email": null
+}
+],
+"description": "ANTENNA DESIGN WORKSHOP\nthis is a one day workshop where participants are made aware of basics of antenna and how to design and simulate the antenna using ANSOFT software.",
+"teamSize": 1,
+"participationFee": 200
+},
+{
+"name": "Apollo infinite",
+"category": "events",
+"subCategory": "applied engineering",
+"organization": [
+"SEDS-VIT"
+],
+"coordinators": [
+{
+"phone": "9952491477",
+"reg_no": "14BEI0078",
+"_id": "14BEI0078",
+"name": "Shobhit mittal",
+"email": "kunjninja@gmail.com"
+}
+],
+"description": "1.Apollo infinite was piloted for the first time in Gravitas'15.\n2.Apollo is divided in two major levels.\n3.One is the Kerbal space program. Here the participants are given a problem statement of designing a rocket for a particular purpose, like orbiting the moon or a moon landing.\n4.The other round is the challenger round. This round mainly deals with how creatively can the participants solve a problem which is occurring in/on  their ship. This is not on the software but a normal question answer session.\n5. After each KSP round there is one challenger round.\n6.The participants are judged on various parameters and a leaderboard is made after every round.\n7. This time the challenges will be hard and more technical in order to give the participants an actual feel of the problems faced by space scientists.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Autoexpo",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"indiviual"
+],
+"coordinators": [
+{
+"phone": "9994638211",
+"reg_no": "14BPI0045",
+"_id": "14BPI0045",
+"name": "Akhil reddy",
+"email": "akhileshwarreddydanda@gmail.com"
+}
+],
+"description": "It is a celebration of innovation in engineering which will attract large number of automotive enthusiasts from both VIT and across India.",
+"teamSize": 1,
+"participationFee": 250
+},
+{
+"name": "Automotive",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"SAE-VIT"
+],
+"coordinators": [
+{
+"phone": "9626201113",
+"reg_no": "14BME0660",
+"_id": "14BME0660",
+"name": "Aman sinha",
+"email": "aman.sinha2014@vit.ac.in"
+}
+],
+"description": "This technical workshop will enable the participants to know all they want to about a car. 2 professionals from Pune would enunciate the inside outs of an automotive vehicle .",
+"teamSize": 1,
+"participationFee": 500
+},
+{
+"name": "B quizzed",
+"category": "events",
+"subCategory": "quiz",
+"organization": [
+"IEEE-VIT"
+],
+"coordinators": [
+{
+"phone": "9003773137",
+"reg_no": "15BEC0204",
+"_id": "15BEC0204",
+"name": "Sanskriti rastogi",
+"email": "sddhrth.bhargava@gmail.com"
+}
+],
+"description": "b-quizzed :It is a 2 day quiz-based event that will test the knowledge and awareness of the participants in the world of Business and will pit them against each other in this battle of grey cells.\nit has 3 rounds consisting of pen paper round, rapid fire and betting.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Beg borrow steal",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"IE(I)"
+],
+"coordinators": [
+{
+"phone": "9833455500",
+"reg_no": "15BIT0062",
+"_id": "15BIT0062",
+"name": "Atharva kulkarni",
+"email": "atharvak56@gmail.com"
+}
+],
+"description": "Beg Borrow Steal\nRound 1: Each group will be given a list of things that they have to collect and submit within the given time interval.\nThey can use any means to collect the items.\nRound 2: Each group will be given a list of funny tasks to perform in front of a crowd and they will have submit videos and pictures of the same.\nTasks given will be fun like breaking eggs on someone's head!",
+"teamSize": 3,
+"participationFee": 100
+},
+{
+"name": "Bio-ideathon",
+"category": "events",
+"subCategory": "chemical/bio",
+"organization": [
+"SABEST VIT"
+],
+"coordinators": [
+{
+"phone": "8947915667",
+"reg_no": "15BBT0042",
+"_id": "15BBT0042",
+"name": "Rajnandini shekhawat",
+"email": "rajnandini.shekhawat2015@vit.ac.in"
+}
+],
+"description": "EVENT NAME: BIOIDEATHON\nThis is a technical event. In this event participants will be given bio related problem and they need to give an idea to solve it. The team who comes up with the most innovative and feasible solution wins. For this event they will be judged by our faculty.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Bio-streaking",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IEEE EMBS"
+],
+"coordinators": [
+{
+"phone": "9500232611",
+"reg_no": "15BBT0050",
+"_id": "15BBT0050",
+"name": "Anusha s",
+"email": "anusha1saravanan@gmail.com"
+}
+],
+"description": "The event will happen for 2 days. On day 1, the participants will be taught the art of streaking and then they will be given media plates and culture for them to streak. After 24 hrs of incubation, the participants with the best streaking done will move to the 2nd round. On day 2, the selected participants will be given media plates and bioluminescent cultures to streak artistically. The 3 best artistic culture plates will be awarded.",
+"teamSize": 2,
+"participationFee": 200
+},
+{
+"name": "Build to destroy",
+"category": "events",
+"subCategory": "builtrix",
+"organization": [
+"CREATIVITY CLUB"
+],
+"coordinators": [
+{
+"phone": "7871231289",
+"reg_no": "15BIT0097",
+"_id": "15BIT0097",
+"name": "Sahaj maheshwari",
+"email": "sahaj.maheshwari2015@vit.ac.in"
+}
+],
+"description": "BUILD TO DESTROY\nA fun event with technical touch, in the event the participant has to build a structure with bottles(empty, filled, half filled) and cans. two rival teams will be building the structure within 1 min...and then they have to break each others structures with a tennis ball in round one with hand...and round two with a bazzuka.",
+"teamSize": 2,
+"participationFee": 150
+},
+{
+"name": "Buzzer quiz",
+"category": "events",
+"subCategory": "quiz",
+"organization": [
+"The VIT Quiz Club"
+],
+"coordinators": [
+{
+"phone": "9865308606",
+"reg_no": "13BBT0205",
+"_id": "13BBT0205",
+"name": "Manavi muralidhar",
+"email": "manavi.muralidhar2013@vit.ac.in"
+}
+],
+"description": "The Buzzer Quiz is a General Quiz that is commonly seen in many fests which involves the usage of a buzzer in the final rounds of the event. Participants will be required to appear in teams of 3.",
+"teamSize": 3,
+"participationFee": 100
+},
+{
+"name": "Cad modelling",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"ASME VIT"
+],
+"coordinators": [
+{
+"phone": "9952586060",
+"reg_no": "14BME0797",
+"_id": "14BME0797",
+"name": "Himanshu chowdary,meet joshi",
+"email": "mrhj1996@gmail.com"
+}
+],
+"description": "Catia- a must learn design software.It is used for simulation of solids.It’s a kind of design software through which an engineer can put forth his ideas in designing of machines. A mechanical engineer without the knowledge of catia is just like a ship without rudder. Considering the fact that catia is highly important, success of this workshop may eventually lead to establishment of a learning course program or process in our institute.",
+"teamSize": 1,
+"participationFee": 500
+},
+{
+"name": "Cadwar",
+"category": "events",
+"subCategory": "online",
+"organization": [
+"ASME"
+],
+"coordinators": [
+{
+"phone": "9843888968",
+"reg_no": "14BME0017",
+"_id": "14BME0017",
+"name": "Mayank  bhatia",
+"email": "parth.pramesh1996@gmail.com"
+}
+],
+"description": "Participant will be provided with a set of problem wherein drawing of different components of a assembly along with their dimensions will be given, and participants would be required to assemble it using CAD.",
+"teamSize": 1,
+"participationFee": 0
+},
+{
+"name": "Chain reaction",
+"category": "events",
+"subCategory": "chemical/bio",
+"organization": [
+"IEEE-WIE"
+],
+"coordinators": [
+{
+"phone": "9790020447",
+"reg_no": "15BBT0083",
+"_id": "15BBT0083",
+"name": "Harshita agarwal",
+"email": "harshita.agarwal2015@vit.ac.in"
+}
+],
+"description": "CHAIN REACTION\nNumber of Rounds: 2\nFirst Round: Participants will be given a set of questions, each with four options(multiple choice question).All the four options will lead to a different set of succeeding questions forming a pathway. The questions will be based on chemical reactions, periodic table and basic laboratory experiments. Top 20 teams solving the pathway maze of questions in minimum time will be promoted to the second round.\nSecond Round: This is the practical round in which each will have to perform various practical experiments like redox titrations, color change experiments etc. After each experiment they will get a new color or a new value of titration which is their hint to a location for the final complex. Once they find the location and the final complex of the chain reaction, top three teams fetching it in minimum time will be awarded as the winner",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Chem e car",
+"category": "events",
+"subCategory": "chemical/bio",
+"organization": [
+"IIChe-VIT"
+],
+"coordinators": [
+{
+"phone": "9944715622",
+"reg_no": "14BCH0055",
+"_id": "14BCH0055",
+"name": "Aadil hussain o v",
+"email": "aadilov96@gmail.com"
+}
+],
+"description": "An event, which has remained as IIChe's premium event for years, chem e car is a platform in which young aspiring minds come together to run a car on chemical reactions. A team of 3 people come together with their model of vehicle run solely on chemical reactions. The participants are not allowed to use motor or any other conventional sources of primary batteries.",
+"teamSize": 3,
+"participationFee": 100
+},
+{
+"name": "Chemiclock",
+"category": "events",
+"subCategory": "chemical/bio",
+"organization": [
+"AIChE-VIT"
+],
+"coordinators": [
+{
+"phone": "9826370881",
+"reg_no": "14BCH0058",
+"_id": "14BCH0058",
+"name": "Rishabh parekh",
+"email": "rishabhparekh1996@gmail.com"
+}
+],
+"description": "This event is being proposed for the second time after its success in gravitas�15\nTo find innovative ways to measure time and control a reaction without using electricity.\nYou have to try your hand at making a challenging model which incorporates multiple mechanisms into it like measuring time and triggering trap. \nMake a model which incorporates a Chemical/Mechanical device to measure time and trigger open a trap door after a pre-set time, and simultaneously carry out a Chemical Reaction.\nThe more accurate your time and higher the yields, the better your chances at winning!",
+"teamSize": 4,
+"participationFee": 100
+},
+{
+"name": "Circuitronics",
+"category": "events",
+"subCategory": "circuitrix",
+"organization": [
+"IETE"
+],
+"coordinators": [
+{
+"phone": "9003712532",
+"reg_no": "15BEC0906",
+"_id": "15BEC0906",
+"name": "Amogh raut",
+"email": "ramogh97@gmail.com"
+}
+],
+"description": "CIRCUITRONICS\nThis is a technical event of electronics that needs you to showcase your designing and\nimplementing skills in electronics and present them on a simulating platform.So revive your\nelectronic concepts and a little simulation(softwares like pspice,multisim etc).Bring out the\nelectronic nerd within you.The event has THREE rounds that test your designing skills.\nThe FIRST ROUND is an aptitude test on the fundamentals of digital and analog electronics.\n34 | P a g e\nIn the SECOND ROUND the participants will be tested on their simulation skills. A circuit is\ngiven which they need to simulate using any one of the softwares like Pspice or Multisim,watever\nthey are comfortable with. Based on the performance, teams will be promoted to the final round.\nThe THIRD FINAL ROUND is all about designing a circuit based on the given problem\nstatement. In this, the participants will have to race against time as they compete with one another\nto make the best possible circuit. The accuracy and approach in building the circuit is tested.\nThe best three teams will be awarded first, second and third positions.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Cloud computing",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IEEE-WIE"
+],
+"coordinators": [
+{
+"phone": "9790611205",
+"reg_no": "15BCB0020",
+"_id": "15BCB0020",
+"name": "Sandal bajaj",
+"email": "sandal.bajaj2015@vit.ac.in"
+}
+],
+"description": "Cloud Computing : Understanding the concepts of cloud computing and it's applications. How to implement this knowledge into projects at college level.",
+"teamSize": 1,
+"participationFee": 500
+},
+{
+"name": "Code - relay",
+"category": "events",
+"subCategory": "bits and bytes",
+"organization": [
+"IEEE-VIT"
+],
+"coordinators": [
+{
+"phone": "9819761768",
+"reg_no": "15BIT0212",
+"_id": "15BIT0212",
+"name": "Aditya verma",
+"email": "adi.kiran982gmail.com"
+}
+],
+"description": "Code-Relay is a purely coding based event where participants could use any platform and any language for coding that they felt comfortable with. Each participant will be given the 1st question and will be asked to write a code to simulate the output, on finishing the code the participant will be given the next question which used the output from the previous question which will act as a compulsory hint for the next question, without which, solving the next question's code would be impossible. The difficulty level of the questions increases gradually, and the hints from the outputs become tougher to crack.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Code o poly",
+"category": "events",
+"subCategory": "bits and bytes",
+"organization": [
+"IEEE"
+],
+"coordinators": [
+{
+"phone": "9003695866",
+"reg_no": "15BCE0620",
+"_id": "15BCE0620",
+"name": "Abhishek malik",
+"email": "maps.abhishek@gmail.com"
+}
+],
+"description": "Monopoly wherein coding elements are sold and traded.\nCoding elements instead of properties.\nUsing the bought properties one has to code the given program.\nOne can now program ONLY using bought properties.\n    CODE-O-POLY�s own defination for\nJAIL : restricts the number of lines in the program.\nCHANCE :gives you the option of changing the program you have received.\nTEMPLATES: Liberty to use any Data type.\nRUN TIME ERROR:Limit the use of Logical operator.\nSYNTAX ERROR:Limit the use of data types.\nPROPERTIES ON SALE:\nInput /output statements\nLoops.\nConditionals\nData types\nStrings\nArrays etc.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Code-a-thon",
+"category": "events",
+"subCategory": "bits and bytes",
+"organization": [
+"Indian Society for Technical Education"
+],
+"coordinators": [
+{
+"phone": "9873897464",
+"reg_no": "15BCE0766",
+"_id": "15BCE0766",
+"name": "Sagar goel",
+"email": "yashgupta.2015@vit.ac.in"
+}
+],
+"description": "null",
+"teamSize": 2,
+"participationFee": 200
+},
+{
+"name": "Contraption",
+"category": "events",
+"subCategory": "builtrix",
+"organization": [
+"ASCE",
+"Crerativity Club",
+" ASME"
+],
+"coordinators": [
+{
+"phone": "9003728834",
+"reg_no": "15BCL0255",
+"_id": "15BCL0255",
+"name": "Haridhima bahugunam",
+"email": "tanmay.agarwal2015@vit.ac.in"
+}
+],
+"description": "CONTRAPTION (BITZER)\n\nHave you ever built something that appears strange or unnecessarily complicated? If not then discover, design, develop, complicate, convolute and interweave. Prove your mettle by unlocking your imagination and building the \nmost complex structures to make the object fly, swing, swirl, travel�. \n\n�Bitzer� turns on its head in that where most other events seek to simplify a complex problem, this requires you to enthral the judges and the audience with your ability to convolute the most simplest of actions with an infinite array of steps!! \n\nTEAM OF 3 MEMBERS\n\nThe event consists of 2 rounds\n\n� Round 1: Selection of designs\n\n  All the teams will be given half an hour to present their designs on paper.\n\n� Round 2: Building the contraption\n\n All the selected teams will be given 2 hours to complete their contraptions. \nThe problem statement will be given beforehand.\n\nThe 2nd round is not only about building the contraption. The event consists of 3 modules which if included by the participants in their designs, they will be given extra points. \n\n� Think intelligent: Make use of the following objects in this module to the best as possible � CANDLE, SPOON, BOOK, MOBILE, CLOTHESPIN, BRICK   or any items which you think can fit in. It is not mandatory that you include all these objects. For every use of the object mentioned in the first module, 10 points will be given.\nPut your basic engineering skills to test with so many twists and turns. And then all you need is planning, \ninnovation, efficiency in steps and use of material to stay in the reckoning.",
+"teamSize": 5,
+"participationFee": 150
+},
+{
+"name": "Cook off 2.0",
+"category": "events",
+"subCategory": "bits and bytes",
+"organization": [
+"Codechef - VIT"
+],
+"coordinators": [
+{
+"phone": "9943639320",
+"reg_no": "14BIT0064",
+"_id": "14BIT0064",
+"name": "Rajat pawar",
+"email": "rajat.s.pawar@gmail.com"
+}
+],
+"description": "Cook-0ff 2.0\nAfter the success of the previous edition of cook-off it is back this gravitas.\nThis event is a productive but fun event, with some unique food and entertainment provided to keep things interesting. This is a great way to spend time with a lot of other smart, interesting techies while putting your skills towards something good in the world. \nAs the event will start the participants will be given some brief instructions about the rule and the way to attempt the problems. This 12 hour event will be providing the participants with a specific set of questions. Based on one�s speed and ability to complete a task in the given time frame correctly winners will be decided.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Corporate innovator",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"Visual Bloggers Club VIT"
+],
+"coordinators": [
+{
+"phone": "9933071574",
+"reg_no": "14BCE0202",
+"_id": "14BCE0202",
+"name": "Debabrata ponda",
+"email": "vbcvit@gmail.com"
+}
+],
+"description": "Corporate Innovator is a collection of management games to test your business acumen, skills, and knowledge.\n\nThe game is designed to throw the worst at you to bring out the best in you. The participants need to show their caliber, the power of persuasion and the ability to handle pressure. Preparing the participants yourself to withstand the harsh reality of the corporate world.\nRound 1:\nEach Team may have 3-6 members. And the team members have to find a solution for a tricky situation as per the given scenario by the VBC team. \nThis will be a knock-off round where teams will play to beat the other teams\nWhich includes all the basic and strategical solving of given tricky scenario.\n\nRound 2:\nThe selected teams in round 1 are eligible for the next round where the members of the team works with other team members so that they could know how they adjust to the environment and other aspects and can also know their own strengths and weaknesses in teamwork and the finalists are allowed to make a website on the given scenario.\n\n\nJudging Criteria: Rules of VBC team will be followed. Their will be a Team to judge and provide a result based on all criteria.",
+"teamSize": 6,
+"participationFee": 150
+},
+{
+"name": "Crack jack 5.0",
+"category": "events",
+"subCategory": "bits and bytes",
+"organization": [
+"IETE"
+],
+"coordinators": [
+{
+"phone": "9585394110",
+"reg_no": "15BCE2070",
+"_id": "15BCE2070",
+"name": "Vishesh bijlani",
+"email": "v.bijlani@yahoo.com"
+}
+],
+"description": "Crack Jack\n\nEvent Details\nEvent will be consisting of 2 rounds\nParticipants can come in groups of two or individually.\nThis event is about how tricky, yet accurate coding in C,JAVA and Python language you can make, given a problem statemant by us.\nRound 1:\nAll the participants will be given different programs testing their knowledge in C,JAVA and Python(basics).They will have to write the code for given programs.\nThe participants who are able to complete compilation and execution in  45 minutes are qualified for the second round.If compilation is successfully done, the participants will have to select the lines of code to be displayed to the other participants.\nThey will be awarded 50 points after the first round.\n20 groups of 5 teams each will be given a particular question .\nThe team executing the programs the fastest will proceed to the second round. \nRound 2:\nSelected teams will have to dispaly a portion of the code which they compiled in the first round.\nThe other 19 teams will have to tell what the program is about.\n5 points will be given to those teams which tell the correct answers.\nPoints of the team will be deducted  whose code has been guessed by the other teams.\nThe number of points deducted will be same as the number of teams that tell the correct answer.\n\nRules and regulations\n1. An individual cannot participate in more than one team.\n2. A team comprises of 2 members.\n3. A team once registered cannot re-register.\n4. Organizer has the right to disqualify any team on the basis of misconduct.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Cric-o-bot",
+"category": "events",
+"subCategory": "robotics",
+"organization": [
+"ISA-VIT"
+],
+"coordinators": [
+{
+"phone": "9843960705",
+"reg_no": "14BEC0354",
+"_id": "14BEC0354",
+"name": "Sanya gupta",
+"email": "sanyagupta999@gmail.com"
+}
+],
+"description": "This is the robotic form of the game cricket. In each round 2 participating team each consisting of 3 members, will play against each other. For batting team, only 1 bot is allowed in the arena. Participants are welcomed with their own bots. In case of a failure of the above case, the team has to play with what we are providing. For bowling team, 2 fielding bots will be provided by us, which will be handled by 2 mates. For bowling, the remaining mate will have to throw the ball through pipes from the area marked in the arena.",
+"teamSize": 3,
+"participationFee": 100
+},
+{
+"name": "Cryptography",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"SIAM(Society for Industrial and Applied Mathematics)"
+],
+"coordinators": [
+{
+"phone": "7639796640",
+"reg_no": "14BCE0147",
+"_id": "14BCE0147",
+"name": "Tamalika basu",
+"email": "tamalika.basu.14@gmail.com"
+}
+],
+"description": "CRYPTOGRAPHY WORKSHOP.\n\n\nA completely technical workshop on cryptography that is basically a study on secure communication in the presence of third parties \n\ncalled adversaries.\nExternal speaker is going to brief and help students code the 'Secret Code'. The lecture will comprise of teaching the practise and \nstudy of ethics of secret communication.\nMajor topics will comprise of Micro dots, Crypto scheme comparison, Merging words with images, and other words to hide information in \n\nstorage or transit, scrambling plain text into ciphertext. It is majorly in used in the current era because of its ability to \n\nsecurely store and transfer sensitive information and hence has proved a critical factor in success in war and business.\nA complete interactive session with remarkable learning experience.",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Cyber forensics",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IETE",
+" IET"
+],
+"coordinators": [
+{
+"phone": "7,63,98,09,447",
+"reg_no": "14BCE0658",
+"_id": "14BCE0658",
+"name": "Alkesh bharati,adnan saifee",
+"email": "alkesh.bharati@gmail.com"
+}
+],
+"description": "CYBER forensics\nHacking is not about the illegal things it's all about how to secure your cyberspace and\nsystem from attacks. In this workshop cyber ethics, email hacking & security, malware\nattacks, windows system attacks,online data Investigation,credit card frauds & Cases,\nplaying with google by google hacking, android mobile hacking etc. topics will be covered.\nThis workshop aims to give Technocrats a basic knowledge of hacking and how to protect\nyour system against hazardous effects.\n1. Exposure to Ethical Hacking the latest tools and methods being used by\ncyber criminals & terrorists and how ethical Hackers can fight them.\n2. How attacks bypass your second step verification security of email\nwithin seconds.\n3. Reset Windows admin password (Include Window 7,8,10 within second\nwith the help of guest account without any softwares.\n4. Some most live shocking cases solved by i3indya team.\n5. Career guidance and scope of cyber security by experienced faculty.\n\n1.Fundamental of Ethical Hacking\n2 Virtualization & System Cloning\n3 Windows Hacking & Security (Win 8 & Win 7)\n4 Online Cloud Computer Development\n5 Data Hiding Techniques & Investigation\n6 Hacking By Batch Programming & Scripting\n7 Hacking by Viruses, Trojans, Keyloggers & Spywares\n8 Google Database Hacking\n9 Proxy Server & VPN Technologies\n10 Email Hacking & Security Issues\n11 Facebook Hacking & Security\n12 Website & Database Hacking Attacks\n13 Android Hacking & Security\n14 Credit Card Frauds & Cases\n15 Case Study ( Live Demo By i3indya Team )",
+"teamSize": 1,
+"participationFee": 600
+},
+{
+"name": "Digital image processing\n",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IEEE-WIE",
+" IEEE-SPS"
+],
+"coordinators": [
+{
+"phone": "8098751199",
+"reg_no": "14BMD0006",
+"_id": "14BMD0006",
+"name": "Purvasha dewanjee(wie)",
+"email": "purvashadewanjee@gmail.com"
+}
+],
+"description": "Digital image processing is the processing of image using mathematical operation by using any form of signal processing which is an image  a series of images,or a video; the output of image processing may be either an image or a set of parameter related to the image.\n  image processing is used in many fields like computer graphics ,pattern recognition,robotics, artificial intelligence etc. So this workshop must interest the student who wants to have a basic knowledge of it.",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Dubsmash competition",
+"category": "events",
+"subCategory": "online",
+"organization": [
+"IET"
+],
+"coordinators": [
+{
+"phone": "9600256089",
+"reg_no": "14BME0757",
+"_id": "14BME0757",
+"name": "Naman jain",
+"email": "iet.vit2015@gmail.com"
+}
+],
+"description": "When the world goes crazy over the latest trend dubsmash. What if you can win actually by showing your fun side. This is the most unique in-trend competition of 2016, \"Dubsmash Competition\"\nRULES FOR DUBSMASH COMPETITION:\nROUND 1-\n1) this event is of Individual participation.\n2) Short audio ranging from movies to television shows, songs, internet hits, and much more.\n3) exclusively, Participants can choose any audio they want from the dubsmash android application.\n3) Time limit is (10-30) secs.\n4) Participants will have to lip-sync with the audio on stage.\n5) One retake will be allowed in first round.\n6) The judge's decision will be final.\n7) Any participant not following the rules or exceeding the time limit will be disqualified.\nROUND 2- \nthis round will be in a team of 2 and they have to dubsmash a scene or conversation of a movie.",
+"teamSize": 1,
+"participationFee": 50
+},
+{
+"name": "Electricity",
+"category": "events",
+"subCategory": "circuitrix",
+"organization": [
+"IETE"
+],
+"coordinators": [
+{
+"phone": "8939945994",
+"reg_no": "15BBT0034",
+"_id": "15BBT0034",
+"name": "Rithika ramesh",
+"email": "dhruv.tyagi2015@vit.ac.in"
+}
+],
+"description": "Event Details : \nThe event electri-City is essentially a technical event which involves breaking codes to debug errors and make a functional electrical circuit. \n\nROUND 1\nThe first round is essentially an elimination round which involves a test which is used to determine the basic knowledge of the participants in the electrical and electronics field. Participants will take part in teams of 2 or individually.\n40 questions will be asked and based on the results of the test, 10 teams will be selected for the 2nd round.\n\nROUND 2\n\nIn the 2nd round each team will be provided with a city map. The different monuments , landmarks ,buildings will represent the different electrical components that will go into making the circuit .The items will not be mentioned directly but in the form of codes which will require them to first decode the code to determine the item and then connect them correctly on the circuit board.\n\nEx: A 100 ohm resistor can be represented as !))  666-444-6. Here the participants are expected to guess that 100 is got from the symbolic representation on the keyboard and �ohm� is got by typing the text on the mobile keypad with the T9 dictionary switched off.\nAlso the circuit elements such as the IC-555 timer cannot be connected directly unless one knows the basic pin terminology thus testing the participant knowledge in the field. \nThe city map will be divided into 3-Zones: Industrial, Residential and Commercial. The city layout will be toyed with and the participants will have to correctly debug the errors in the city planning to finally obtain a correct circuit design which when implemented will give a correct output.\n \nFor Ex:  A children�s park placed in the industrial area and the toxic waste disposal in the residential area are not expected traits of a well planned city and therefore have to be rearranged to obtain the correct circuit.\n\nRules and Regulations\n\nThe event will be conducted in two rounds:\n\nFirst Round : \nBasic knowledge test\n \n1) Maximum of 2 participants per team.\n2) Time Limit : 30 minutes \n3) Use of mobiles prohibited.\n4) Total 40 questions (MCQ and fill in the blanks format) with no negative marking for an incorrect answer.\n\nA total of 10 teams will qualify for the next round.\n\nSecond Round:\n\n1)  Only 1 map will be provided per team.\n2)  Time limit: 1 hour\n3)  All the required components will be provided to the participants on their request.\n4)  First team to debug and show the final output will be declared the winner.\n5)  If none of the teams get the desired output then depending on the extent of debugging  the winner will be determined.\n\nRaw Materials and Event Budget\n\nLab Components (Breadboards, Resistors, ICs, Transistors, LEDs, Capacitors) � Rs. 1000\nPhotocopies and Print-outs � Rs. 300\nA4 Sheets, Pens,Banners",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Electro hunt",
+"category": "events",
+"subCategory": "circuitrix",
+"organization": [
+"IEEE-PES"
+],
+"coordinators": [
+{
+"phone": "9003799708",
+"reg_no": "15BEI0018",
+"_id": "15BEI0018",
+"name": "Arunava basu",
+"email": "arunava.basu2015@vit.ac.in"
+}
+],
+"description": "Event name- ElectroHunt\n\nRound 1- Questionnaire (pen and paper round): 15 questions in 15 minutes. Questions would be related to basic network theory, different electrical components, their working, etc.\nRound 2- Candidates would be given an output and they will have to design a circuit on the bread board using resistors in series, parallel or their combination.\nRound 3- The finalists will have to play a treasure hunt round and using the clues, they will have to find the components required to design the given circuit.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Electropedia",
+"category": "events",
+"subCategory": "circuitrix",
+"organization": [
+"tec"
+],
+"coordinators": [
+{
+"phone": "9843960639",
+"reg_no": "14BEC0033",
+"_id": "14BEC0033",
+"name": "Vidhika tiwari",
+"email": "vidhika.t2014@vit.ac.in"
+}
+],
+"description": "Quiz Themed Electronics event consisting of three rounds that covers diverse fields like Robotics, IT , circuit building and debugging etc.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Floating concrete",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"ASCE"
+],
+"coordinators": [
+{
+"phone": "9003763461",
+"reg_no": "15BCL0323",
+"_id": "15BCL0323",
+"name": "Saahil gupta",
+"email": "coolsaahil17@gmail.com"
+}
+],
+"description": "FLOATING CONCRETE:\nEver imagined concrete that could float on water? With construction of structures expanding over the seas and a new found focus towards sustainability, this competition is designed to give the students an idea about the emerging concrete technologies. \nThis is workshop cum competition, at first participants in a team of 5 will be taught how to make a structure using light weight concrete material, coarse aggregate, rubber scrap etc. which will float on water, then they will be allowed to make a floating structure in a given time constraint  and will be given 1 week time for its proper casting. the structure which will bear the maximum load without sinking will be considered as the best structure.",
+"teamSize": 5,
+"participationFee": 300
+},
+{
+"name": "Forensics 4.0",
+"category": "events",
+"subCategory": "chemical/bio",
+"organization": [
+"IET VIT"
+],
+"coordinators": [
+{
+"phone": "9629008233",
+"reg_no": "14BEC0256",
+"_id": "14BEC0256",
+"name": "Aditya sharma",
+"email": "sharma.aditya0014@gmail.com"
+}
+],
+"description": "FORENSICS 4.0   The first round will consist of participants being tested of their logical and analytical skills in a general scenario. Suitable elimination will be done on the basis of the scores obtained in the round. The top scorers proceed to the next round. \nThe second round will consists of participants being divided into teams, after which they�ll be moving in and around the campus to find in the clues for the murder mystery. With the help of maps and clues they find during the investigation the participants will then have to prepare a case study and make the required eliminations from a range of suspects on the basis of Q&A and the clues they found out during the investigation. \nThe third round will consist of participants investigating a murder mystery, as they will interview their suspects and work on the case study which will include the forensics clues. Suspects will be spread all over the VIT campus, with multiple crimes scenes created.",
+"teamSize": 3,
+"participationFee": 100
+},
+{
+"name": "Fork the code",
+"category": "events",
+"subCategory": "bits and bytes",
+"organization": [
+"Computer Society of India- VIT Chapter"
+],
+"coordinators": [
+{
+"phone": "9560971052",
+"reg_no": "15BEC0382",
+"_id": "15BEC0382",
+"name": "Aarushi bisht",
+"email": "aarushibisht07@gmail.com"
+}
+],
+"description": "CSI Riddler having been a huge success over its past 5 editions, it would be fun to have a tech spin off of Riddler. Now coding is something we all have to live with for the next ~4 years. So, in Codein, We can have riddles, visual puzzles, limericks, etc pertaining to SOCIAL ISSUES. Now these �questions�, will be scattered all over the campus. All participants will be provided with their first chit with the riddle and from there on, they have to FIND them. Unlocking the riddle directs them to their next destination which gives them their next clue.",
+"teamSize": 1,
+"participationFee": 50
+},
+{
+"name": "Free  fall",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"Creativity Club"
+],
+"coordinators": [
+{
+"phone": "9882763879",
+"reg_no": "14BCL0116",
+"_id": "14BCL0116",
+"name": "Ayush chandel",
+"email": "akshay.bhatt2014@vit.ac.in"
+}
+],
+"description": "A team of two players. One person from each team will be made to sit on a ft high pole.Mattresses will be laid below the pole .  Another person has to hit the opponent sitting on the pole with the help of a pillow. The person to fall first loses.",
+"teamSize": 1,
+"participationFee": 50
+},
+{
+"name": "Geefie-the geek�s selfie contest",
+"category": "events",
+"subCategory": "online",
+"organization": [
+"VIT Spartans"
+],
+"coordinators": [
+{
+"phone": "9466115981",
+"reg_no": "15BME0819",
+"_id": "15BME0819",
+"name": "Sumit pilania",
+"email": "summitpilania1@gmail.com"
+}
+],
+"description": "This event is a basically a selfie competition in which students will upload their picture (selfie) with the model they made, giving a description of what their model is all about.\nThis will take place throughout the Gravitas.Throughout the gravitas if students make something innovative or develop or do something out of the box, they�ll have to take a selfie with the model they made, giving a description of what their model is all about.Once they�ve finished taking the selfie and are ready with the description the picture is to be posted onto the VIT Spartans page with hashtags #geefie #gravitas #vitspartans. Pictures without hashtags won�t be considered.",
+"teamSize": 1,
+"participationFee": 0
+},
+{
+"name": "General quiz",
+"category": "events",
+"subCategory": "quiz",
+"organization": [
+"The VIT Quiz Club"
+],
+"coordinators": [
+{
+"phone": "9604726630",
+"reg_no": "14BCE0727",
+"_id": "14BCE0727",
+"name": "Varun gajendragadkar",
+"email": "mail7varun@gmail.com"
+}
+],
+"description": "General Quiz.\nThis is the standard event present at any tech fest in any college. A mixed bag of questions from the fields of India, entertainment, science, Technology etc will be asked. The event will have 2 rounds: written prelims and finals on stage. Prelims will have approximately 25 questions. Pounce and bounce will be used in the finals with about 5 rounds in it, including  theme rounds.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Gravitaspremier league",
+"category": "events",
+"subCategory": "online",
+"organization": [
+"IEEE-CS"
+],
+"coordinators": [
+{
+"phone": "9585581787",
+"reg_no": "15BIT0136",
+"_id": "15BIT0136",
+"name": "Vishwajeet singh",
+"email": "vishwajeetsinhjadeja4@gmail.com"
+}
+],
+"description": "Gravitas premier league is an online event where the participants are required to make their own cricket team by buying the players using the amount of money they will be given at the start. There are three rounds in this event and for qualifying from one round to the next, the participant has to win a certain number of matches. Winning or losing a match is purely based on an online simulation between the competing teams. The final round will be an online auction among the top ten teams.",
+"teamSize": 1,
+"participationFee": 0
+},
+{
+"name": "Greatest  heist",
+"category": "events",
+"subCategory": "circuitrix",
+"organization": [
+"IETE"
+],
+"coordinators": [
+{
+"phone": "9051081001",
+"reg_no": "15BEE0177",
+"_id": "15BEE0177",
+"name": "Gaurav huria",
+"email": "ghuria96@gmail.com"
+}
+],
+"description": "Greatest Heist is an exciting classroom maze event wherein the participants (in teams of 2) make their way through a challenging\nobstacle course �  dodging the lasers, crossing the ropes, avoiding different types of sensors : IR sensors, Piezoelectric sensors, PIR sensors and much more. It consists of a single round and both the participants of the team enter the arena together solving through the maze. Both of them complete a segment of the course and reach a point where they separate. At this point the participants have to make a quick decision which one will go through which path. One of the course will consist of lasers and sensors whereas in the other the participant will have to cross through a demanding track made of ropes, tyres and bamboos. The event requires good co-ordination among the team members. The scoring is based on the number of lasers, sensors left undisturbed as well as how well the Rope track has been crossed. The team to finish the course in least time possible as well as complete the tasks efficiently is declared a winner.\n\nSOCIAL PERSPECTIVE\nWhen the participants open the money vault, they surprisingly find no money but rather old clothes which they need to choose one out of them and the cloths would be given to the needy by their name bringing out a social initiative in the event. Though the winners are declared by the least time taken but adding this kind of surprise would be a meaningful initiative taken up in the event.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Hill climber",
+"category": "events",
+"subCategory": "robotics",
+"organization": [
+"IET"
+],
+"coordinators": [
+{
+"phone": "9952687588",
+"reg_no": "14BEE0143",
+"_id": "14BEE0143",
+"name": "Anupam adhikari",
+"email": "19anupamadhikari97@gmail.com"
+}
+],
+"description": "The event will be based around a hill like structure on which the participants would race uphill using their mini bots to be titled king of the hill. The objective of the event is to design a robotic mini-locomotive that could climb steep slopes with increasing elevation. Most of the mobile robot design by the beginners is based on the fact that the robot will at all time be on a level ground. This event encourages the participants to design a robot that can conquer the hills as well.",
+"teamSize": 4,
+"participationFee": 100
+},
+{
+"name": "Human foosball",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"Indian Society for Technical Education"
+],
+"coordinators": [
+{
+"phone": "9003745522",
+"reg_no": "15BEE0081",
+"_id": "15BEE0081",
+"name": "Pranav sethi",
+"email": "adityan.elangovan2015@vit.ac.in"
+}
+],
+"description": "HUMAN FOOSBALL : Human Foosball is the LIFESIZE version of the table game Foosball. Participants will be playing in teams of 5 and it will be a versus match where teams will try to score maximum goals. A knockout tournament will follow on the final day which will decide the winners",
+"teamSize": 5,
+"participationFee": 40
+},
+{
+"name": "Ieys",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"Toastmasters International VIT"
+],
+"coordinators": [
+{
+"phone": "9943017776",
+"reg_no": "14MSE0006",
+"_id": "14MSE0006",
+"name": "Kanishk sanghi",
+"email": "kanishkk27@gmail.com"
+}
+],
+"description": "India Emerge Youth Summit 2016 is a summit that is going to be conducted for 5th time in VIT, it is a forum where speakers from various fields of interest come and deliver their key note add in order to motivate the youth. Along with that we would like to organize a competition (month before IEYS), a grand launch for IEYS(a week before IEYS) and a  gala dinner for the team IEYS at the end of the event.",
+"teamSize": 1,
+"participationFee": 500
+},
+{
+"name": "Igti conference",
+"category": "events",
+"subCategory": "applied engineering",
+"organization": [
+"ASME"
+],
+"coordinators": [
+{
+"phone": "9843888968",
+"reg_no": "14BME0017",
+"_id": "14BME0017",
+"name": "Atharv kulkani",
+"email": "parth.pramesh1996@gmail.com"
+}
+],
+"description": "Gas turbine concept",
+"teamSize": 1,
+"participationFee": 250
+},
+{
+"name": "Incentivizing speaker",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"Nature Club"
+],
+"coordinators": [
+{
+"phone": "9994717355",
+"reg_no": "14BCL0060",
+"_id": "14BCL0060",
+"name": "Shikhar srivastava",
+"email": "shikhar345.sri@gmail.com"
+}
+],
+"description": "Name : Incentivizing speaker\n\nEvent description\n  \nOur young minds have lot of craze for providing solutions to issues faced by our country.\nNow its time for such minds to socialize their conspiracy which could reach the thousands and may incentivize our fellow mates and all others who can hear you.\n\n1. Every candidate is given a social issue to speak in for 5 minutes.\n2. Topic would be surprise and 2 minutes will be given to him to prepare.\n3. Factual data provided by candidate during speech will be verified .\n4. Body language, ideology on issue, feasablility of solution and effectiveness in speaker \nWould be considered for judging criteria.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Insta-shootout",
+"category": "events",
+"subCategory": "online",
+"organization": [
+"The Photography Club"
+],
+"coordinators": [
+{
+"phone": "918220000000",
+"reg_no": "13BCE0402",
+"_id": "13BCE0402",
+"name": "Sameer sethi",
+"email": "sameer.sethi2013@vit.ac.in"
+}
+],
+"description": "The event is a video competition in which the participant has to post  a Boomerang Clip on Instagram. Each participant can submit a maximum one clip with #gravitas16shootout. The clips will be judged by a renowned photographer and 1 winner will be decided.",
+"teamSize": 1,
+"participationFee": 0
+},
+{
+"name": "Ios fusion",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"APPLE DEVELOPERS GROUP"
+],
+"coordinators": [
+{
+"phone": "9994541110",
+"reg_no": "14BCE0703",
+"_id": "14BCE0703",
+"name": "Pulkit mittal",
+"email": "pulkitsanjaymittal@gmail.com"
+}
+],
+"description": "The objectives of the event are to teach the basics of iOS application development to the participants, and to do so in a manner that they do not require any prior technical knowledge.\nThe focus will be on teaching students the fundamentals behind the application’s code rather than the coding itself. \nThe 2 day event will cover all the necessary aspects of a full fledged working iOS app which students can use as a reference to learn and develop their own apps.",
+"teamSize": 1,
+"participationFee": 500
+},
+{
+"name": "Java and problem solving ",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IEEE-CS"
+],
+"coordinators": [
+{
+"phone": "9552544054",
+"reg_no": "15BCE0785",
+"_id": "15BCE0785",
+"name": "Ankur sarode",
+"email": "ankur.sarode@gmail.com"
+}
+],
+"description": "Java and Problem Solving Algorithm will be a workshop involving and training participants to program according to provided specifications, preparing them for several organizations who host programming competitions on a regular basis.Focusing on the best programming practices and time complexity of the programs.competative coding ,STL and optimize data structures",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Jenga reloaded",
+"category": "events",
+"subCategory": "builtrix",
+"organization": [
+"ASCE"
+],
+"coordinators": [
+{
+"phone": "9003746505",
+"reg_no": "15BCL0243",
+"_id": "15BCL0243",
+"name": "Shubhanshu raj",
+"email": "subhanshu.raj20152vit.ac.in"
+}
+],
+"description": "It is a general event which takes into consideration \n the patience level and the concentration ability of \n the participant. During the event, participants take \n turns to remove a block from a tower and balance it \n on top, creating a taller and increasingly unstable \n structure as the game progresses. The guidelines and \n rules will be given to them just before the event. At \n a time 2 players can compete with each other. The \n player during whose move, the tower topples or any \n block falls will be eliminated.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Jenga++",
+"category": "events",
+"subCategory": "bits and bytes",
+"organization": [
+"IEEE-VIT"
+],
+"coordinators": [
+{
+"phone": "8965876545",
+"reg_no": "15BIT0212",
+"_id": "15BIT0212",
+"name": "Arnav dubey",
+"email": "barkhaa2020@gmail.com"
+}
+],
+"description": "The event will be an amalgamation of Jenga and coding. It'll comprise of teams of two.\n2 teams will be put up against each other. They have to mutually decide which person will play the Jenga puzzle and which will code the given question.\nEach Jenga stick will have a certain time written on it. The coder will get to type for the amount of time the team has.\nSo for example, the Jenga guy pulls a stick for 2 mins, the coder gets to code for 2 mins uninterrupted after which he'll be paused, until the Jenga guy pulls another stick. This will force the game to happen at a fast pace and cause chances of the Jenga stack to fall down. If this scenario arises the other team gets a time bonus to code while the team which made it fall will be stopped until they rebuild the Jenga tower.\nThe difficulty level of the questions will be easy to medium considering they're first years with hardly any coding experience.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Jumble coding",
+"category": "events",
+"subCategory": "bits and bytes",
+"organization": [
+"IEEE-CS"
+],
+"coordinators": [
+{
+"phone": "8940241871",
+"reg_no": "15BEE0160",
+"_id": "15BEE0160",
+"name": "Alimpan pal",
+"email": "pal.alimpan@gmail.com"
+}
+],
+"description": "The basic idea was to attract more first year students for a coding event. And therefore in place of high-level coding questions which are a major part of coding events, the questions were simple and the almost similar to the ones they were already taught in class. The main part of the event was that the keys of the keyboard were jumbled up, that is, they were mapped according to an algorithm which the participants had to detect and then write the correct code for the problem. The concept  introduced in Jumble Coding is that the algorithm used is not constant; it changed depending on certain fixed events.\nThe participants were judged on the basis of correctness of their code and the time taken to solve the given problem. The event had an amazing response from not only CSE or IT students but also from the students of other branches.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Junkyared genius 2.0",
+"category": "events",
+"subCategory": "applied engineering",
+"organization": [
+"Codechef-Vit"
+],
+"coordinators": [
+{
+"phone": "9013557983",
+"reg_no": "14BIT0276",
+"_id": "14BIT0276",
+"name": "Mallika rai",
+"email": "mallika.rai1@gmail.com"
+}
+],
+"description": "Junkyared Genius 3.0\nJunkyard Genius 3.0 is a legacy event. It was organized in Gravitas-14 & 15 and attracted a huge audience. Over 250 participants registered in previous versions of this event. The event is technical and consists of two rounds. It tests the creativity of the participant as well as his/her knowledge in science.\nIt is a team event with team of 2.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Kodachrome",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"Photography Club"
+],
+"coordinators": [
+{
+"phone": "9092365367",
+"reg_no": "14BCB0038",
+"_id": "14BCB0038",
+"name": "Tanmay kalra",
+"email": "thephotographyclub2016@gmail.com"
+}
+],
+"description": "A photograph is a secret about a secret. The more it tells you the less you know.\nIntroduction\nKodachrome is a photography workshop where the basics of nature and wildlife photography will be taught by a renowned photographer.\nDescription\n•\tA three to four hour workshop on nature and wildlife photography will be conducted.\n•\tThe expert to teach the participants, from scratch to advanced level of photography.\n•\tTo be followed by, an on-spot photography event and to be judged by the expert.",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Labomania",
+"category": "events",
+"subCategory": "chemical/bio",
+"organization": [
+"AIChE-VIT"
+],
+"coordinators": [
+{
+"phone": "9790533397",
+"reg_no": "15BCM0061",
+"_id": "15BCM0061",
+"name": "Suyash pathak",
+"email": "diptarkoroy@gmai8l.com"
+}
+],
+"description": "AIChE-VIT brings to you a small and a fun-filled event for all the labomanics out here in VIT and abroad that checks the practical precision of the participants .To begin the event, we will first show them a youtube video of an expert of NIT Trichy who has performed the experiment of estimating the type of alkalinity in waste water i.e., (finding out the presence of OH-,CO32-and HCO3-  ions in given water sample) by doing two easy titrations. Participants shall be provided with formulae to calculate the strength of HCl and finding the type of alkalinity. The event can be performed in SMV G09 chemistry with the consent of KANNADASAN SIR. Out of all the groups participating, the three groups that gets the answer most accurately (calculated with respect to reading that lab experts obtain) will qualify for the round 2. The three participants of the groups that wins the first round will qualify for the second round. In the second round we will have a small quiz of five questions on the topic alkalinity without providing any MCQ�s and based on the result the prizes will be given.",
+"teamSize": 3,
+"participationFee": 100
+},
+{
+"name": "Labview",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"ISA-VIT"
+],
+"coordinators": [
+{
+"phone": "8975651177",
+"reg_no": "14BEE0229",
+"_id": "14BEE0229",
+"name": "Aniket mahajan, dinesh kumar choragudi",
+"email": "isavitss@gmail.com"
+}
+],
+"description": "LabVIEW is a graphical programming platform that helps engineers scale from design to test and from small to large systems. LabVIEW offers unprecedented integration with all measurement hardware, existing legacy software, and IP while capitalizing on the latest computing technologies. This introductory workshop will be conducted by experts from NATIONAL INSTRUMENTS giving an insight on how LabVIEW works with real-world. The workshop will be followed by a competition in which the students will be given a task. The students will be judged on the basis of the task completion.Certificates and prize money will be given.",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Lanka reloaded",
+"category": "events",
+"subCategory": "robotics",
+"organization": [
+"IEEE ROBOTICS AND AUTOMATION SOCIETY"
+],
+"coordinators": [
+{
+"phone": "9944360860",
+"reg_no": "14BCE0127",
+"_id": "14BCE0127",
+"name": "Gaurav agarwal",
+"email": "agaurav47@yahoo.com"
+}
+],
+"description": "Lanka reloaded- a fun eevent comsisting a person to use a robotics arm to pick up a ball and drop ot after completing an arena of difficulties and hurdles. At the secons round the arena will become more complex and the team woth best time will win",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Laser tag",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"CSI"
+],
+"coordinators": [
+{
+"phone": "9611358806",
+"reg_no": "15BCE0349",
+"_id": "15BCE0349",
+"name": "Dhanush samdaria",
+"email": "shreya.verma97@gmail.com"
+}
+],
+"description": "LASER Tag is a live game that simulates an actual battle-field. It is similar to the classic Counter Strike wherein you strategize with your team on how to defeat your opponent. Laser Tag is a team activity that involves the use of hand � held infrared-emitting targeting device. So this means no pain, as targeting or shooting is done via light or simply put, laser .\n\nThe game is played with 5 people in each team. Each team�s mission is to shoot all players on the other team. Laser Tag team missions help the team strategize on LIVE, ACTUAL battlefield arena.",
+"teamSize": 5,
+"participationFee": 100
+},
+{
+"name": "Live quizup",
+"category": "events",
+"subCategory": "quiz",
+"organization": [
+"Creativity Club"
+],
+"coordinators": [
+{
+"phone": "9585422182",
+"reg_no": "15BBT0039",
+"_id": "15BBT0039",
+"name": "Krishnav biyani",
+"email": "keyur.kariya556@gmail.com"
+}
+],
+"description": "LIVE QUIZ-UP\n\ngroup of 2 \n\nRound 1-Normal General quiz will be asked in the first round\nRound 2-Rapid Fire round will be conducted \nRound 3-Answer the question based on the video shown on the screen\n\n the winner will be choosen on based on the three round",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Lubrislide",
+"category": "events",
+"subCategory": "chemical/bio",
+"organization": [
+"AIChE-VIT"
+],
+"coordinators": [
+{
+"phone": "9454328418",
+"reg_no": "15BCH0079",
+"_id": "15BCH0079",
+"name": "Anubhav mishra",
+"email": "anuvhav.mishra2015@vit.ac.in"
+}
+],
+"description": "Lubrislide can be considered but the only constraint being that the slide and the chemicals should be taken into strict account. Expense clarification. Initial setup cost. How the second team will start over since the chemicals will still be there.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "M. md (masters of morse decoding)",
+"category": "events",
+"subCategory": "applied engineering",
+"organization": [
+"IEEE-PES"
+],
+"coordinators": [
+{
+"phone": "9003717027",
+"reg_no": "15BEC0261",
+"_id": "15BEC0261",
+"name": "Anjali anil",
+"email": "anjali.anil2015@vit.ac.in"
+}
+],
+"description": "M. Md (MASTERS OF MORSE DECODING)\n\nRound 1:\nQuestions will be asked to participants where they will be encoding and decoding the morse code (written and audio beeps).\nHere both the members of a team will have to give the answers indiviually.\nThey will be required to complete the task in a limited time frame.\nThe scores of both the indiviuals of the team add up, which will be the basis of their selection.\nThe team with highest score advances to the next round.  \n5 teams will be selected.\n\nRound 2:\nA message will be given to one of the team members. \nThis message is expected to be communicated with the use of a torch to the other member using morse codes.\nThe correctness of the message decoded and the time taken are the criteria for declaring the winner.\nThe one with less mistakes in decoded message and less time taken wins.\n\nNote: Basics of Morse Decoding will be taught during the event.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Mad-ad",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"VIT Spartans"
+],
+"coordinators": [
+{
+"phone": "9555251370",
+"reg_no": "15BCE0068",
+"_id": "15BCE0068",
+"name": "Shruthi ranjani",
+"email": "shruthi.ranjani2015@vit.ac.in"
+}
+],
+"description": "It is an advertisement making competition for students who will be judged by the creativity in marketing and services. Participants need to design ,script and create an ad in a stipulated time.For example: PUR -water based purification system in collaboration with US center for disease control for commercial market, targeting low income customers This competition judges the participant's creativity streak and will enhance social innovation among them.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Mashup",
+"category": "events",
+"subCategory": "bits and bytes",
+"organization": [
+"ACM VIT"
+],
+"coordinators": [
+{
+"phone": "9994348200",
+"reg_no": "14BCE0155",
+"_id": "14BCE0155",
+"name": "Lekhani ray",
+"email": "lekhaniray@gmail.com"
+}
+],
+"description": "Mashup\nIn the first round, participants will be given jumbled lines of code, and will need to frame an executable code out of them. In the second round, participants will be given pictures with a problem statement at the back, which they will have to relate to code the required program.",
+"teamSize": 2,
+"participationFee": 25
+},
+{
+"name": "Math bee",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"IISE"
+],
+"coordinators": [
+{
+"phone": "9994286855",
+"reg_no": "14BEE0127",
+"_id": "14BEE0127",
+"name": "Prasoon anand",
+"email": "prasoonanandgrd@gmail.com"
+}
+],
+"description": "MathBee is a Mathematics quiz competition organised by an\n\nexternal franchise throughout the country. The event focuses\n\non development of basic mathematical skills in students of\n\nschool as well as university.\n\nThe event would be organised during pre-Gravitas events. The\n\nduration of for the event is 12 hours divided into two days.\n\nThe CEO of the franchise will conduct the event.\n\nThe participants include students from schools of all South\n\nIndia as well as VIT University. The competition is divided into\n\nthree rounds- Round 1 and Round 2 are written exams while\n\nthe Round 3 would an oral one.\n\nThe winners would be provided with merit certificates and\n\ncash prizes. Participation certificates from the franchise would\n\nbe provided to all participants.",
+"teamSize": 1,
+"participationFee": 200
+},
+{
+"name": "Matlab",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"ASME VIT",
+" ISTE "
+],
+"coordinators": [
+{
+"phone": "9843888968",
+"reg_no": "14BME0017",
+"_id": "14BME0017",
+"name": "Subham thod,atharva ",
+"email": "asme.mechnovate2016@gmail.com"
+}
+],
+"description": "MATLAB- The MATLAB platform is optimized for solving engineering and scientific problems. The matrix-based MATLAB language is the world’s most natural way to express computational mathematics.A great resource for the students interested in control design of mechanical systems.Mechanical Engineers of the Design and Manufacturing fields use  MATLAB heavily.You can do almost everything in MATLAB, any simulation, plotting, coding, making GUI. That makes it one of the most used software in all graduate schools. Solving assignments, writing codes, plotting graphs, simulating models.MATLAB will be taught according to Mechanical based operations.\nCurriculum\nDay 1: Details of Matlab tools and hand's on session on Matlab",
+"teamSize": 1,
+"participationFee": 400
+},
+{
+"name": "Mini militia",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"VIT Spartans"
+],
+"coordinators": [
+{
+"phone": "9466115981",
+"reg_no": "15BME0819",
+"_id": "15BME0819",
+"name": "Sumit pilania",
+"email": "summitpilania1@gmail.com"
+}
+],
+"description": "Mini militia experience intense multiplayer combat with up to 6 players online or locally in multiplayer mode. Hear the whiz of bullets flying past your face as you tumble for over. Out smart the enemy with a well placed grenade and watch them explode into bloody confetti.\n\nRules:\nGame Rules:\nGame mode: Team death.\nTime: 6mins 30secs.\nPlayers: 3 per team\n-Coin Toss is used to decide which map is to be selected.\n-In the incident of tie the other team gets to choose the map for rematch.\n-Each team can choose a variety of weapons depending upon the map.\n-If one of the players forfeits the match, the team will be disqualified and the other team will be declared winner(IRRESPECTIVE OF THE SCORE).",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Minute 2 win  it",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"Innovator Quest",
+" Creativity Club"
+],
+"coordinators": [
+{
+"phone": "9585426213",
+"reg_no": "15BBT0160",
+"_id": "15BBT0160",
+"name": "Shivona",
+"email": "shivona.sinha.2015@vit.ac.in"
+}
+],
+"description": "MINUTE TO WIN IT :IT WILL HAVE MANY GAMES/CHALLENGE IN IT:-\n1.COOKIE FACE:Each player places a cookie on their forehead, and the goal is to get the cookie into your mouth using only your facial muscles in under 1 minute. No hands\n2.STACK IT UP:Players must stack 25 pennies in under a minute using only one hand. \n3.SUCK IT UP:Players place a straw in their mouth and use suction to transfer a pile of 25 M&M�s chocolate from one plate to another in under one minute. Only one hand may be used to hold the straw. Everyone gets to eat their candy when the round is finished\n4.PONG TAC TOE:In This three trays are required and is assigned one to each of the three players. Each player had one minute to bounce ping pong balls down the length of the table and into their tray � 3 in a row (in any direction) wins!\n5.SCOOP IT UP:Using nothing but a spoon in your mouth, transfer six ping pong balls from one bowl to another) in less than one minute. \n6.MOVIN� ON UP: Each player starts with a stack of 25 red cups with one blue cup at the top of the stack. Start by moving the top blue cup to the bottom of the stack, and continue moving cups from the top to the bottom until the blue cup is back at the bottom of the stack again. \n7.NUTSTACKER:Thread five hex nuts onto a wooden stick. Using only one hand on the stick, stack up all of the nuts in under one minute. Only two players compete per round.\n8.DEFY GRAVITY:Using only one hand, players must keep two or even three  balloons from touching the ground for one minute.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Mozilla",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IEEE-CS"
+],
+"coordinators": [
+{
+"phone": "9603058470",
+"reg_no": "15BCE0264",
+"_id": "15BCE0264",
+"name": "Sai nikhil",
+"email": "sainikhil.ds123@gmail.com"
+}
+],
+"description": "24 Hour continuous workshop-cum-hackathon on web Development taken by the Mozilla Developers, which provides the golden opportunity to the freshers to get the insight knowledge of web dev by the developers. An exposure to vast Mozilla respositories and APIs (of firefox OS). Participants will learn HTML and CSS from basics and will also be exposed to the website development procedures.",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Mystery maze",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"IEEE-IAS"
+],
+"coordinators": [
+{
+"phone": "9944626799",
+"reg_no": "14BIT0225",
+"_id": "14BIT0225",
+"name": "Dhaval thakur",
+"email": "idhavalthakur@gmail.com"
+}
+],
+"description": "This event will be a team event consisting of two participants in a team. The event will be conducted in two rounds.\n\nFirst round: Quiz Round\nIt will be a quiz round, where teams will be given 20 questions to solve based on general logical thinking. Top 20 teams will be selected from this round based on their quiz scores and will compete in round 2. \n\nSecond Round: Mystery Maze\nEach team will be asked to pick up a card, each card consists of two questions. After that, all of them together will be shown a poster consisting of 16 squares, containing images related to the answers of those questions. \nThe teams to find the answers earliest will win.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Nanotechnology",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IEEE-EMBS"
+],
+"coordinators": [
+{
+"phone": "9003762288",
+"reg_no": "15BMD0028",
+"_id": "15BMD0028",
+"name": "Anshuli arya",
+"email": "anshuliarya222@gmail.com"
+}
+],
+"description": "Today the benefits of nanotechnology are apparent, especially that of gold nanoparticles as part of hand-held diagnostic devices. Examples include lateral flow assays used for the detection of analytes in diverse fields like agriculture and medicine. A well known example is the pregnancy test kit. This workshop aims to gives you a glimpse of how visible nanoparticles can be utilized in detecting invisible biomolecules of interest in healthcare diagnosis. A demonstration on how fiber optics along with nanoparticles can be exploited for biomolecule detection using immunoassays and nucleid acid assays will be held.",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Pac man",
+"category": "events",
+"subCategory": "robotics",
+"organization": [
+"International Society of Automation(ISA)"
+],
+"coordinators": [
+{
+"phone": "9585487775",
+"reg_no": "14BEC0137",
+"_id": "14BEC0137",
+"name": "Archit dwivedi",
+"email": "kruthika.937@gmail.com"
+}
+],
+"description": "PacMan: The event will be conducted in a team of two. A gesture controlled robot will be provided to participants (If they want they can bring their own robot). It would basically follow the pac-man game. Some balls will be kept in a maze structure that will have to be collected by moving the robot. Now for the challenge, organizers will be using the same robots and if they catch the player-bot then the participant gets out and the score is calculated on the basis of the number of balls touched. For the second round other team will be the challengers.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Parachute race",
+"category": "events",
+"subCategory": "applied engineering",
+"organization": [
+"Creativity Club"
+],
+"coordinators": [
+{
+"phone": "9935945744",
+"reg_no": "15BIT0260",
+"_id": "15BIT0260",
+"name": "Shikhar saxena",
+"email": "shikhar.saxena2015@vit.ac.in"
+}
+],
+"description": "Make a parachute and release from top of the building",
+"teamSize": 3,
+"participationFee": 100
+},
+{
+"name": "Pcb fabrication",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"TEC-The Electronics Club "
+],
+"coordinators": [
+{
+"phone": "8884349349",
+"reg_no": "14BEC0546",
+"_id": "14BEC0546",
+"name": "Goutham anand",
+"email": "goutham.anand.96@gmail.com "
+}
+],
+"description": "A comprehensive, fully hands-on workshop that focuses on the intricacies of PCB Fabrication using softwares such as CadSoft EAGLE(Easily Applicable Graphical Layout Editor ) and NI Ultiboard. Moreover, various approaches to translate the digital sketch to a physical single-layer Printed Circuit Board will be discussed.",
+"teamSize": 2,
+"participationFee": 300
+},
+{
+"name": "Phonegap",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IEEE RAS"
+],
+"coordinators": [
+{
+"phone": "9597632913",
+"reg_no": "14BCE0117",
+"_id": "14BCE0117",
+"name": "Rahil bansal",
+"email": "rahilbansal0404@gmail.com"
+}
+],
+"description": "The Phonegap workshop involves teaching students how to create cross platform applications which can work on android iOS windows and blackberry.  ",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Pitch'-em",
+"category": "events",
+"subCategory": "chemical/bio",
+"organization": [
+"IIChe-VIT"
+],
+"coordinators": [
+{
+"phone": "9087858868",
+"reg_no": "14BCH0017",
+"_id": "14BCH0017",
+"name": "Swapnil sharma",
+"email": "swapnils794@gmail.com"
+}
+],
+"description": "Our event emphasizes the need for alternative sources of power for vehicles today and encourage engineering minds to open new possibilites of future powering.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Pokemon go",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"creativity club"
+],
+"coordinators": [
+{
+"phone": "9790067238",
+"reg_no": "15BCE0661",
+"_id": "15BCE0661",
+"name": "Abhishek chauhan",
+"email": "divyu.dg@gmail.com"
+}
+],
+"description": "? Every player will play individually.\n\n? The players will be required to assemble at given place on a specific\n\ndate and time during GraVITas\n\n? The players will be cross checked from the registration list and their last\n\ncaught POKEMON?will be noted.\n\n? Total CP of the already caught pokemons will be noted.\n\n? The players will be given a limited time limit of 5 hrs in this time frame\n\nthe player has to catch the maximum no. of POKEMONS?he can catch,\n\n? Out of the total registrations the top 20 players will be called for a final\n\nround.\n\n? The event will have the same rules for the next round to find a winner.\n\n? The winning players would be provided with some cash prize.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Polyglot 2.0",
+"category": "events",
+"subCategory": "bits and bytes",
+"organization": [
+"IET VIT"
+],
+"coordinators": [
+{
+"phone": "9597633943",
+"reg_no": "14BIT0257",
+"_id": "14BIT0257",
+"name": "Dhruv rastogi",
+"email": "dhruvrastogi1996@gmail.com"
+}
+],
+"description": "Polyglot 2.0 is a coding event that falls under the coding category of GraVITas16. The event shall test and reward programmers that can code challenging codes fluently in C/C++/JAVA/Python. The event will also test the fast thinking abilities and solution solving skill of the participant along with there resource management skills, where the judging criteria will solely depend on the accuracy of code , the amount of virtual money left at the end of round 3. Contrary to other programming competitions the questions in Polyglot are based on algorithm creation rather than just some particular code.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Project x",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"Computer Society of India- VIT Chapter"
+],
+"coordinators": [
+{
+"phone": "9560971052",
+"reg_no": "15BEC0382",
+"_id": "15BEC0382",
+"name": "Aarushi bisht",
+"email": "eatprayflush@gmail.com"
+}
+],
+"description": "Project X is to provide a platform for game developers to come up with games, in a limited amount of time. But the event is for both gamers and the aspiring game developers. This is a 3 day Game development workshop. The first two days will be given to all the teams (or individuals) to prototype a game. The games can range from anything from PC games to console games to even arcade games. On the last day we open the floor to gamers or anyone who wants to try out these games.",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Python and google app engine workshop",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"ACM VIT"
+],
+"coordinators": [
+{
+"phone": "9944904048",
+"reg_no": "14BCE0222",
+"_id": "14BCE0222",
+"name": "Mugdha pandya",
+"email": "pandya.mugdha4@gmail.com"
+}
+],
+"description": "Python and Google App Engine Workshop\nThis workshop will begin with the basics of Python.  Participants will then be introduced to Google App Engine, and be shown the benefits of GAE. They will be encouraged to develop their own web app and then be shown how to deploy the app on a Google developer console, with a unique URL.",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Quad copter ",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IEEE-RAS"
+],
+"coordinators": [
+{
+"phone": "9952453330",
+"reg_no": "14BCE0130",
+"_id": "14BCE0130",
+"name": "Shivin sinha",
+"email": ""
+},
+{
+"phone": null,
+"reg_no": "14BIT0278",
+"_id": "14BIT0278",
+"name": "Vaqaas raja",
+"email": null
+}
+],
+"description": "Quadcopter workshop, where students in groups of 5, are allowed to fabricate their own quadcopter and fly it after a training session which doesn't last more than 4 hours. This is a two day event, half of the day for theory and remaining for fabrication and flying. Certificates will be provided for the participants.",
+"teamSize": 1,
+"participationFee": 400
+},
+{
+"name": "Rc drag racing",
+"category": "events",
+"subCategory": "applied engineering",
+"organization": [
+"ASME"
+],
+"coordinators": [
+{
+"phone": "9843888968",
+"reg_no": "14BME0017",
+"_id": "14BME0017",
+"name": "Atharva kulkarni",
+"email": "atharvakulkarni45@gmail.com"
+}
+],
+"description": "RC Drag RacingThere will be two stages for this completion.\n1)Qualification Round: Slalom-and-Sprint Competitions shall be held on one combined track, by individual runs, with Best Elapsed Times determining Seeding for Bracket match-up�s in the Baja Event. This event calls for two Drivers from each Team. Each Driver will be given one individual run. The total elapsed time to complete each run, from 'Start!' signal to Finish line, will be recorded by stopwatch or equivalent.\n2)Drag round: The drag Competition shall be vehicle vs. vehicle, on two lanes of full width and matching lengths to the Finish Line. Vehicles advance by �double-elimination� Brackets to determine a Racing Competition Champion, one Finalist (�Second Place�), and two Semi-Finalists (�Third Place tie�).\nAlso there will be a design contest in which teams need to present the design of their car.\nPrior to the competition there will be one more qualification round in which participants need to submit their report on the basis of report top 30 teams will be selected for the event. There will be 30 teams participating in the event for the qualification round then 16 teams will be selected for drag round. Out of which top 4 will compete in semi-finals and winners of this semifinal would contest for 1st place and the rest of the two team defeated in semifinal would fight for the 3rd place.\nFor qualification round during the event following things are required:\n? Jumps\n? Drop offs\n? Bumps (single or multiple)\n? Large ramp or platform\n? Slalom or tight manoeuvring section\n? Off-tilted and changing-radius or sharp-radius turns\n? Sand, gravel, or rock-filled pit",
+"teamSize": 10,
+"participationFee": 300
+},
+{
+"name": "Re-assemble",
+"category": "events",
+"subCategory": "applied engineering",
+"organization": [
+"IE(I)"
+],
+"coordinators": [
+{
+"phone": "9003688959",
+"reg_no": "15BCE0892",
+"_id": "15BCE0892",
+"name": "Mukul mittal",
+"email": "atharvak56@gmail.com"
+}
+],
+"description": "A team of 2 participants should be formed. Each team should be given disassembled parts of computer and must be asked to assemble them in proper order. The team which assembles all the parts in proper order in least time should be declared the winner. Along with the disassembled parts some unknown parts should be mixed to confuse  the participants.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Reverse engineering",
+"category": "events",
+"subCategory": "applied engineering",
+"organization": [
+"ASME"
+],
+"coordinators": [
+{
+"phone": "7092067051",
+"reg_no": "14BME0686",
+"_id": "14BME0686",
+"name": "Samrat kar",
+"email": "samratkr252@gmail.com"
+}
+],
+"description": "The competition inherent in the modern mark5et structure forces firms to produce only the best; simultaneously keeping in mind the customer's needs. Reverse Engineering, as many of you might already have heard of involves going back to a concept from the prototype. This technique is often adopted by organizations while developing new products or improving the existing products. It is also used for studying the technology used by competitors and Market leaders of that Industry. In this competition, the participant has to prove his understanding of fundamental concepts as an engineer. It requires them to have a systematic approach to analyzing and reasoning the engineering design of devices and systems.",
+"teamSize": 2,
+"participationFee": 150
+},
+{
+"name": "Robo laser battle",
+"category": "events",
+"subCategory": "robotics",
+"organization": [
+"IEEE RAS"
+],
+"coordinators": [
+{
+"phone": "9597632913",
+"reg_no": "14BCE0117",
+"_id": "14BCE0117",
+"name": "Rahil bansal",
+"email": "rahilbansal0404@gmail.com"
+}
+],
+"description": "The Robo Laser Battles is basically a fun event in which robots with a laser genrator and a reciever at one end will compete. Each team contains 5 players with remote controls controling the robots. The job is to target the recievers installed on the robots of the opponent team. Each hit will score points and the team with maximum points wins. The game is a thrilling event and takes place after dark in an arena.",
+"teamSize": 5,
+"participationFee": 100
+},
+{
+"name": "Robotix",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"ISTE"
+],
+"coordinators": [
+{
+"phone": "",
+"reg_no": "",
+"_id": "",
+"name": "",
+"email": ""
+}
+],
+"description": "In this workshop we will teach around 400 participants how to build 5 kinds of bots. These bots are Laptop Controlled, Obstacle Avoider, DTMF controlled, Gesture Controlled and Joystick Controlled. There are going to be teams of 4 participants each and each team will be provided with a kit to build their own bot. The base for these bots is Arduino.",
+"teamSize": 4,
+"participationFee": 1000
+},
+{
+"name": "Robowars",
+"category": "events",
+"subCategory": "robotics",
+"organization": [
+"roboVITics"
+],
+"coordinators": [
+{
+"phone": "8098469331",
+"reg_no": "14BIT0157",
+"_id": "14BIT0157",
+"name": "Anmol varma",
+"email": "amananand175@gmail.com"
+}
+],
+"description": "Sparks, battles and zest is all what roboWARs is about. The individual team prepares a fighting bot. Then according to the fixtures generated matches are done. The whole procedure is round based. A total of 3 rounds are planned with the final round of royal rumble for which only 6 bots would qualify. Round two and round three will be knockout rounds. \nRules for round 1:\nA team can touch their bot for a total for 2 mins two times in a fight. Each fight is given a maximum time limit of 6 mins.\nRules for round 2:\nEach fight will be of 8 mins\nTeams can touch their bot for a total of 5 mins which can be used in broken pieces.\nLast would be the royal rumble round in which the top 6 bots will be inside one arena to fight for the ultimate championship.",
+"teamSize": 5,
+"participationFee": 100
+},
+{
+"name": "Rubik's cube",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"creativity club"
+],
+"coordinators": [
+{
+"phone": "9953955442",
+"reg_no": "15BCE0573",
+"_id": "15BCE0573",
+"name": "Rishabh maheshwari",
+"email": "rishabhmaheshwari901@gmail.com"
+}
+],
+"description": "Rubic's cube will be given to the participants and the person who takes less time wins it would notbe a knockout rounds it will be a league .",
+"teamSize": 1,
+"participationFee": 150
+},
+{
+"name": "Scibiz tech quiz",
+"category": "events",
+"subCategory": "quiz",
+"organization": [
+"The VIT Quiz Club"
+],
+"coordinators": [
+{
+"phone": "9944534349",
+"reg_no": "14BCE0853",
+"_id": "14BCE0853",
+"name": "Surya shekhar chakraborty",
+"email": "f.inbesat@gmail.com"
+}
+],
+"description": "The SciBizTech Quiz combines the three main essences of any technical fest: Science, Business, and Technology. \nWith questions ranging from Isaac Newton to Apple, this quiz is a mainstay of every Gravitas. You will be able to work out most answers and learn quite a few things to impress friends with. Come for this event in teams of 3 or fewer.",
+"teamSize": 3,
+"participationFee": 100
+},
+{
+"name": "Segway",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"Creativity Club"
+],
+"coordinators": [
+{
+"phone": "7728043204",
+"reg_no": "15BIT0340",
+"_id": "15BIT0340",
+"name": "Dhaivat",
+"email": "raghav.khandelwal2015@vit.ac.in"
+}
+],
+"description": "SEGWAY\n \n � A FREEGO is a battery operated two wheel vehicle where a person stands on it and controls it with their body weight and pressure. It�s an EASY-TO-RIDE vehicle which anyone of us can ride without much of a training.\n � Firstly, participants will be taught how to ride the vehicle before the start of the game.\n � In this event, two arenas (40 m long) on the road will be created. It has two entry points through which participants will be entering the arena. There will be ropes tied overhead around the area. On the ropes, there will be 10 different TAGS are tied, in the path of the participant. Participants will have to open the tags while riding the freego and reach the centre of the arena where one GOLDEN BALL is kept. They have to lift the golden ball and finish the game",
+"teamSize": 1,
+"participationFee": 150
+},
+{
+"name": "Sensor development",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IEEE VIT Student Chapter"
+],
+"coordinators": [
+{
+"phone": "9003779833",
+"reg_no": "15BEC0318",
+"_id": "15BEC0318",
+"name": "Varun prakash",
+"email": "varun.prakash2015@vit.ac.in"
+}
+],
+"description": "This workshop is titled \"Sensor Development\". The workshop covers everything about sensors. The topics to be covered are: 1)Introduction 2)Types of sensors 3)How sensor works 4)What are sensor modules 5)How to make sensors 6)Hands-on session to make a custom sensor. The workshop will also include session on basics of arduino, so no prior knowledge is required.",
+"teamSize": 5,
+"participationFee": 300
+},
+{
+"name": "Sensored",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"The Electronics Club"
+],
+"coordinators": [
+{
+"phone": "9943499937",
+"reg_no": "14BEC0709",
+"_id": "14BEC0709",
+"name": "Manu sharma",
+"email": "manusharma0603@gmail.com"
+}
+],
+"description": "\"Sensored\" is a technical workshop being conducted by TEC which aims at teaching students about working and applications of various sensors and basic electronics components. We successfully conducted this workshop in Gravitas'15 with the participation of 40 teams(160 students).",
+"teamSize": 4,
+"participationFee": 500
+},
+{
+"name": "Shipwrecked",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"HINDU E PLUS CLUB",
+" ELA"
+],
+"coordinators": [
+{
+"phone": "9655913033",
+"reg_no": "14BBT0133",
+"_id": "14BBT0133",
+"name": "Ramita singh",
+"email": "ramitasingh@gmail.com"
+}
+],
+"description": "Shipwrecked\nThe participants will be given a personality to impersonate as they try to convince the judges that they are the best person to be saved from the proverbial storm. For example, a participant will be given the character of Barack Obama, and they have to convince the judge why it should be Obama.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Sixth sense technology",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"Indian Society For technical Education"
+],
+"coordinators": [
+{
+"phone": "9952126466",
+"reg_no": "14BCE0337",
+"_id": "14BCE0337",
+"name": "Kinnri sinha",
+"email": "sinha.kinnri@gmail.com"
+}
+],
+"description": "Sixth Sense Technology is a revolutionary way to aggrandize the physical world around us and lets the user to use natural hand gestures to interact with digital information. It involves almost all sections of modern technology. \nThe workshop is a secure platform for students to enter into the field of robotics and work on image processing. It helps the students to learn all the basics and apply them in reality. The workshop helps the students to fight all the competitions related to robotics, Image processing, Aerial Robotics etc.\nThe workshop will be conducted in two consecutive days. Each day will have  eight hours session (in total 16 hours). This will be properly divided into theory and hands-on sessions.\nAlso some time will be exclusively left for Interactive Session and  for Problem Discussion and discussing new ideas etc",
+"teamSize": 4,
+"participationFee": 1000
+},
+{
+"name": "Snakes and ladders",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"IEEE-MTTS"
+],
+"coordinators": [
+{
+"phone": "9787588271",
+"reg_no": "14BEC0585",
+"_id": "14BEC0585",
+"name": "K.abinaya",
+"email": "kabinayaaecs@gmail.com"
+}
+],
+"description": "snakes and ladder\n Basically,in this event there will be a huge poster of snakes and ladder laid on the ground and a screen displaying numbers . now the participant has to choose a number from the lot . there will be a question behind every number along with the points being displayed on the screen. if the participant answers the question correctly , he/she will move in the snakes and ladder according to the points they earned. this will be a team event consisting of two members each.also each team will be given two minutes. whichever team reaches the maximum point in the snakes and ladder will be the winner of the day.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Social entrepreneurship",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"AYUDA"
+],
+"coordinators": [
+{
+"phone": "8344846082",
+"reg_no": "14BEC0494",
+"_id": "14BEC0494",
+"name": "Lakshay jain",
+"email": "lakshay.jain9693@gmail.com"
+}
+],
+"description": "SOCIAL ENTREPRENEURSHIP\n\nThe participants will be provided with a social problem, a day before the event via e-mail. The participants have to come up with an innovative and feasible solution of the given problem, and convert it into a startup at their level. They have to pitch their idea in front of the panel of judges and have to answer the questions regarding their idea and it's feasibility in real life. Points will be awarded based on the idea, pitching and question answer session.\n\nThis event will not only bring out the creative sides of the participants but also help in eradicating several social issues.",
+"teamSize": 1,
+"participationFee": 200
+},
+{
+"name": "Social hub",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"The Hindu E Plus Club"
+],
+"coordinators": [
+{
+"phone": "9767740864",
+"reg_no": "15BCL0082",
+"_id": "15BCL0082",
+"name": "Vrajesh ved",
+"email": "rajat.gupta2015a@vit.ac.in"
+}
+],
+"description": "Social Hub\n\"3 round on social issues\nRound 1 writing\nRound 2 debate/ GD\nRound 3 Poster making\"",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Speak up",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"Debate Society VIT"
+],
+"coordinators": [
+{
+"phone": "9566068866",
+"reg_no": "13BBT0131",
+"_id": "13BBT0131",
+"name": "Arjun vignesh",
+"email": "arjunvignesh96@gmail.com"
+}
+],
+"description": "In the lead up to the tournament itself, we will be organizing a workshop for VIT students called Speak Up, where one of our stellar invited Chief Adjudicators will teach students valuable critical thinking and public speaking skills to help with their personality development on a one-on-one basis. ",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Staad.pro",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"ASCE"
+],
+"coordinators": [
+{
+"phone": "9003763461",
+"reg_no": "15BCL0323",
+"_id": "15BCL0323",
+"name": "Saahil gupta",
+"email": "coolsaahil17@gmail.com"
+}
+],
+"description": "STAAD or (STAAD.Pro) is a structural analysis and design computer program originally developed by Research Engineers International at Yorba Linda, CA in year 1997. it has become part of integrated structural analysis and design solutions mainly using an exposed API called OpenSTAAD to access and drive the program using an VB macro system included in the application or other by including OpenSTAAD functionality in applications that themselves include suitable programmable macro systems\nCurriculum:\nDay 1: Introduction to Staad-Pro and tools for staad pro.\nDay 2:Hand's on session on the software",
+"teamSize": 1,
+"participationFee": 1000
+},
+{
+"name": "Star party",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"SEDS-VIT"
+],
+"coordinators": [
+{
+"phone": "9865309895",
+"reg_no": "13BBT0002",
+"_id": "13BBT0002",
+"name": "Shreyas ganesan",
+"email": "kunjninja@gmail.com"
+}
+],
+"description": "The event consists of two sessions (theory and practical). It will be held on both days of the fest, entertaining a maximum of 125 participants per day, and will span a total duration of 7 hours (2 hours theory + 5 hours practical) each day.\nThe theory session consists of 2 hours of image processing, methods and techniques in astrophotography and basics of visual or observational astronomy (through naked eyes, binoculars and telescopes). This session will also provide a layout of the practical counterpart and familiarize the participants with the theory, rules, pre-requisites and setup of the latter.\nThe practical session will commence at the TT rooftop/Ground during the night. This will be divided into several zones and the participants will be visiting all the zones in turns. The zones will cover the following aspects; astrophotography (star trails, prime photography, Afocal photography, lunar imaging through webcam, picturing using a T-Ring, piggyback photography and light painting), general cosmology and astrophysics (including recent discoveries), observation techniques (star charts, maps and Stellarium), visual astronomy (through naked eyes, binoculars and telescopes) and finally an individual task sheet to test what each person has learnt.",
+"teamSize": 1,
+"participationFee": 150
+},
+{
+"name": "Start up street 2.0",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"SHEILD & CSED"
+],
+"coordinators": [
+{
+"phone": "9952878502",
+"reg_no": "14BME0194",
+"_id": "14BME0194",
+"name": "Abhilekh tripathy",
+"email": "abhilekh.tripathy2014@vit.ac.in"
+}
+],
+"description": "The stairway to the land where your dreams and ideas get the financial boost that they required. \n\nStartUp Street 2.0 is the successor of the immensely appreciated event of graVITas'15, StartUp Street.\nThis event makes up for the lack of technical knowledge that hindered the chances of participants to get the investment they wanted. The first day of the event involves guest lectures and interactive sessions by investors and experts which focus on the essentials required by a startup during the important phase of business plan development, presentation and pitching. This will be followed by a time period where the participants can interact and network with the experts of the specific fields. This helps them to brush up their different aspects and skills before the big second day. The second day provides a chance to the participating startups to present their startup ideas in front of the investors, aiming to add some financial muscle to their brain childs.\nThe workshop includes -\nMarketing and sales\nFinance and accounting\nArts of pitching \nIdea discovery\nCustomer validation \nMVP and product development \nGrowth and distribution\nInternational and establishment \nExit and IPO",
+"teamSize": 1,
+"participationFee": 350
+},
+{
+"name": "Stockastic",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"Creativity Club",
+" Bulls and Bears"
+],
+"coordinators": [
+{
+"phone": "9087022685",
+"reg_no": "15BBT0128",
+"_id": "15BBT0128",
+"name": "Shubhangi das",
+"email": "shubhangidas.barman2015@vit.ac.in"
+}
+],
+"description": "STOCKASTIC:A heated debate dicussion on shares and investments where groups of 5 are formed representing the top companies  known  and debate on them ,more like a business debate.",
+"teamSize": 5,
+"participationFee": 100
+},
+{
+"name": "Stockgyaan",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"Indian Society for Technical Education"
+],
+"coordinators": [
+{
+"phone": "9585369967",
+"reg_no": "15BCB0066",
+"_id": "15BCB0066",
+"name": "Rio arora",
+"email": "ria.arora2015@vit.ac.in"
+}
+],
+"description": "STOCKGYAAN: Stockgyaan is workshop which provides stock market enthusiasts and management students the knowledge required for getting into the market and being financial advisors, covering all bases including, practicality, feasibility, worldly knowledge etc.",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Suits",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"CREATIVITY CLUB"
+],
+"coordinators": [
+{
+"phone": "9790545399",
+"reg_no": "15BCH0001",
+"_id": "15BCH0001",
+"name": "Viraj phatarphod",
+"email": "phatarphodviraj.satyajit2015@vit.ac.in"
+}
+],
+"description": "SUITS\nTeams of 2 will be made to debate in the given Cases \nThey will have to show their talents, convincing skills,  etc\nJudges will give points to the teams and only qualified teams will move to next round.\n3 rounds will be conducted  and winner will be decided .",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Suspendo",
+"category": "events",
+"subCategory": "builtrix",
+"organization": [
+"Creativity club",
+"ASCE"
+],
+"coordinators": [
+{
+"phone": "9452935942",
+"reg_no": "15BCL0004",
+"_id": "15BCL0004",
+"name": "Suyash gupta",
+"email": "shubham.saraogi2015@vit.ac.in"
+}
+],
+"description": "Name of the event : SUSPENDO \nThis event will require ice-cream sticks to be arranged appropriately \nIn order to make a suspension bridge which can handle the maximum load winner will be decided on the basis of the quantity of load a bridge model can handle",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "The 13 cards fim festival",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"VIT FILM SOCIETY"
+],
+"coordinators": [
+{
+"phone": "9626620111",
+"reg_no": "14BCE0777",
+"_id": "14BCE0777",
+"name": "Khushbu chopra",
+"email": "rajyashu45@gmail.com"
+}
+],
+"description": "The 13 cards Film Festival' is an event that we are planning to organise during this gravitas. This is first time that VIT FILM SOCIETY is organising an event in Gravitas. \nThis event basically is a film festival, where teams would be sending their short films from across the country. Out of which, 13 films will be shortlisted and will be judged. They would be judged on the various  technical aspects. Prizes of worth 6000 would be given for different categories.",
+"teamSize": 1,
+"participationFee": 250
+},
+{
+"name": "The amazing race",
+"category": "events",
+"subCategory": "informals",
+"organization": [
+"Indian Society for Technical Education"
+],
+"coordinators": [
+{
+"phone": "9790039906",
+"reg_no": "15BIT0103",
+"_id": "15BIT0103",
+"name": "Snehil",
+"email": "vaishnavi.shah2015@vit.ac.in"
+}
+],
+"description": "THE AMAZING RACE : The Amazing Race is inspired by the TV Show, TAR, which will require the participants to race around the campus by solving clues based on their technical knowledge and performing some technical tasks to find the next clue.The event overall is informal, but technical touches will be added to it to match with graVITas'16 and its theme.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Trafficking",
+"category": "events",
+"subCategory": "builtrix",
+"organization": [
+"ASCE"
+],
+"coordinators": [
+{
+"phone": "9003763461",
+"reg_no": "15BCL0323",
+"_id": "15BCL0323",
+"name": "Sahil",
+"email": "coolsaahil17@gmail.com"
+}
+],
+"description": "Trafficking\n A fun competitive event organized with the aim to test the innovative side to an individual when it came to dealing with real world problem-traffic. A team consisting of a maximum of 2 players will be allowed to design a path on a rectangular 3D model given using the threads provided. The main idea is to construct the most effective path using different routes which will differ on the basis of their assigned speed limits. Penalties includes the traffic lights and speed breakers which will be present at various places over the model. Each team is given 2 mins to design their path after which the teams are evaluated on the basis of the time taken by their paths over the distance covered and also the uniqueness and effectiveness of their idea.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "True detective",
+"category": "events",
+"subCategory": "chemical/bio",
+"organization": [
+"IEEE-WIE"
+],
+"coordinators": [
+{
+"phone": "9585581854",
+"reg_no": "15BCB0070",
+"_id": "15BCB0070",
+"name": "Pragya tewari",
+"email": "pragya.undersco16@gmail.com"
+}
+],
+"description": "True Detective:\nRound-1: 3 clues are given for tracking back the murder on the campus which will lead the team to the location of the crime in the major buildings like sjt, smv or tt.\nThe clues could also  lead to witnesses and finally the victims.\nThe first 15 teams are selected for the round 2.\nRound-2: they will be provided with a set of reactions and depending upon the situation they get they have to apply 3 basic reactions based on their knowledge from the given list of chemical reactions (related to forensic analysis) to come to the conclusion. All the necessary components for the experiments will be provided and due to their limited quality the participants have to use it wisely.\nNow the first 5 teams who are fastest to complete the task of round-2 are qualified to enter the round-3.\nRound-3: in this round the 5 teams will be given a sheet and a pen and they have to write their observations, conclusion and inference as to who was guilty, why he/she committed the crime and by which means i.e. how he did it�? i.e. they have to draw conclusions and the team whose answer is closest to the original answer wins the the title of �true detectives�.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Ui/ux",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"VIT ANIMATION CLUB"
+],
+"coordinators": [
+{
+"phone": "9585588578",
+"reg_no": "15BME0699",
+"_id": "15BME0699",
+"name": "Srinath rajagopalan ",
+"email": "srinath.rajagopalan1997@gmail.com"
+}
+],
+"description": "Ui/UX skills are gaining significance day by day. The number of people/professionals  i.e engineers without much knowledge in design tools like Photoshop are very less, making it essential for an individual to learn these skills. The workshop aims at educating/empowering the participants with the knowledge of the following software:\nAdobe Master\n•\tPhotoshop\n•\tIllustrator\n•\tAfter Effects\n•\tIndesign",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Ultimate engineer",
+"category": "events",
+"subCategory": "applied engineering",
+"organization": [
+"ISTE",
+" IET"
+],
+"coordinators": [
+{
+"phone": "9585601724",
+"reg_no": "15BCE0004",
+"_id": "15BCE0004",
+"name": "Guneet bhatia",
+"email": "guneetkaur.bhatia2015@vit.ac.in"
+}
+],
+"description": "Ultimate Engineer : This event will comprise a series of rounds testing the knowledge of the participants in various fields of engineering like, computer science, mechanical engineering, biotechnology, etc. These rounds will consist of questions and tasks respective to the field of engineering selected by the participant in that particular round.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Under the hood",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"Computer Society of India- VIT Chapter"
+],
+"coordinators": [
+{
+"phone": "7358922872",
+"reg_no": "15BCE0461",
+"_id": "15BCE0461",
+"name": "Tanaya yadav",
+"email": "tanaya.yadav2015@vit.ac.in"
+}
+],
+"description": "Under The Hood is a workshop where students will be taught how to assemble their own computers. The students will get to know how to purchase necessary parts, understand how they work together and eventually learn the skills involved in building a Personal Computer. This workshop will be open to students of all branches. The students will also take turns and work with the various components that go into building the computer.",
+"teamSize": 1,
+"participationFee": 250
+},
+{
+"name": "Uni-dev",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IEEE-PES"
+],
+"coordinators": [
+{
+"phone": "9799656599",
+"reg_no": "14BEI0073",
+"_id": "14BEI0073",
+"name": "Shubhi mathur",
+"email": "shubhijaipur@rediffmail.com "
+}
+],
+"description": "This workshop is for beginners who want to get into the world of Augmented as well as virtual reality.We will make make an Android application using the Unity 3D Software on an Android platform called Vuforia.We will start with a broad overview about the different mediums and how they pertain to modern scenarios. We will also go over some unique challenges we face ass developers including simulator sicknesses.\n",
+"teamSize": 1,
+"participationFee": 200
+},
+{
+"name": "Urbanization innovation",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"Individual"
+],
+"coordinators": [
+{
+"phone": "9479397938",
+"reg_no": "14BEE0122",
+"_id": "14BEE0122",
+"name": "Tanmay choudhary",
+"email": "tc7938@gmail.com"
+}
+],
+"description": "URBANIZATION  INNOVATION\nthis event mainly focuses on the social sustainable innovation on the concept of smart city . \nThere will be different problem statements regarding the problems faced by the people on the existing city infrastructure which need to be solved with an innovative idea covering the smart city concept of the government  and also the carbon credit concept. \nthe problem statement may be technical dealing with sewage, waste management or an efficient electrical supply or it can be a social problem dealing with day to day life problems like parking, traffic jams etc .the solution should be feasible and after winning the certain amount will be allocated for the pilot project regarding the idea and then the total winning amount will be given .",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Very-large-scale integration (vlsi)",
+"category": "workshop",
+"subCategory": null,
+"organization": [
+"IEEE-SPS",
+" IEEE-CAS",
+"IEEE"
+],
+"coordinators": [
+{
+"phone": "8110020449",
+"reg_no": "13BEC0577",
+"_id": "13BEC0577",
+"name": "Rachitha karnani",
+"email": "anusha1saravanan@gmail.com"
+}
+],
+"description": "Very-large-scale integration (VLSI) is the process of creating an integrated circuit (IC) by combining thousands of transistors into a single chip. In the workshop we'll be teaching VLSI design using VHDL(a Dataflow language).\nA renowned speaker will be called from Bangalore to conduct this workshop.",
+"teamSize": 1,
+"participationFee": 300
+},
+{
+"name": "Vit dt",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"Debate Society VIT"
+],
+"coordinators": [
+{
+"phone": "9566068866",
+"reg_no": "13BBT0131",
+"_id": "13BBT0131",
+"name": "Arjun vignesh",
+"email": "arjunvignesh96@gmail.com"
+}
+],
+"description": "In line with the theme of GraVITas 2016, �Social Innovations�, we intend to provide a platform to students across India to debate the most relevant issues in a way that brings out the best of their ideas. We aim to offer them an opportunity to truly explore their personalities and freely engage with the ideas of others, because it is only by examining oneself that an individual can bloom into the seed that generates change in society. We believe that the VIT Debating tournament can provide just the chance all of these motivated young individuals are looking for after all these are the people who will lead these Social Innovations .\n\nIn the lead up to the tournament itself, we will be organizing a workshop for VIT students called Speak Up, where one of our stellar invited Chief Adjudicators will teach students valuable critical thinking and public speaking skills to help with their personality development on a one-on-one basis.",
+"teamSize": 1,
+"participationFee": 1000
+},
+{
+"name": "Vlsualblog a-thon",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"Visual Bloggers Club VIT"
+],
+"coordinators": [
+{
+"phone": "9944494899",
+"reg_no": "14BCE0157",
+"_id": "14BCE0157",
+"name": "Ruchir arora",
+"email": "vbcvit@gmail.com"
+}
+],
+"description": "VlsualBlog a-thon:This event is related to the content writing. It will consists of 4 rounds in which the participants will be judged by their writing skill. Participant will have to go through the basic theme writing , picture perception test, climax writing, blogging on VBC page. The participant will be judged by a faculty and the shortlisted participants of the final round will be judged by the VBC.\n \n Objective: It will help the participant to improve their writing skills, creativity, presentation of the content , imagination and help them to get a basic knowledge of writing a visual blogs.\n \n Arena:The arena for the event will be the smart classroom with a minimum capacity of 120 members.\n \n Specifications:Their will be 4 rounds :\n ROUND 1: There will be random distribution of envelope which will have the random topic related tosports ,humour , lifestyle, travel, history etc. In this participantswill have to write a content/blog on paper related to the given topic or theme. \n \n ROUND 2: Picture perception test-�You will see a slideshow of some pictures for short time and then you will get time to note down few details and then time will be given to write your story. The story written by the participant will be judged based on creativity, imagination and the relation to the given images.\n \n ROUND 3: Change the end- In this round the participant will be given a famous movie or a novel as a topic and they have to the change the end of the given movie or novel in limited words on paper.They need to write an alternate ending to the world class story.\n \n ROUND 4: The VBC account- The participant will have to make the bluegape user account on VBC website. The participant will have to write a blog through their respective VBC account related to the given interesting topic and their blogs will be judged by the VBC itself.\n \n \n RESULT: The participant will be eliminated in each and every round according to the result of the judges.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Wolf of wall street",
+"category": "events",
+"subCategory": "debate - discussion",
+"organization": [
+"IEEE-PES"
+],
+"coordinators": [
+{
+"phone": "9790024793",
+"reg_no": "15BEC0910",
+"_id": "15BEC0910",
+"name": "Tarush kakkar",
+"email": "mitul1771@gmail.com"
+}
+],
+"description": "NAME OF THE EVENT: WOLF of WALL STREET\n\nEVENT DESCRIPTION (brief): The Wolf of Wall Street is an online virtual stock market game with real time stock exchange from Indian (NSE,BSE) and American (NASDAQ,NYSE) stock market. It is your chance to experience and lead the real life market. Event start at the opening of the stock market it is a five day event NSE, BSE starts at actual Indian time of share market and NYSE, NASDAQ starts at their actual timing of operation. Every participant will be given 2 million dollars virtual money to spend on shares. Everyone has the brainpower to follow the stock market. If you made it through fifth-grade math, you can do it !!\nThe Shares and their market prices are real time and will be synchronized with the real market prices using a server.",
+"teamSize": 1,
+"participationFee": 100
+},
+{
+"name": "Yuvana",
+"category": "events",
+"subCategory": "bits and bytes",
+"organization": [
+"Computer Society of India- VIT Chapter"
+],
+"coordinators": [
+{
+"phone": "9503339966",
+"reg_no": "15BIT0147",
+"_id": "15BIT0147",
+"name": "Yash anand",
+"email": "yashanand1910@gmail.com"
+}
+],
+"description": "Yuvana is a multitasking competition which incorporates coding under stress brought about by challenges/tasks. This is a team event where the team members will be judged on the basis of not only technical skills but also how they perform under stress. This competition will be open to students of all branches. Basic C or C++ knowledge is required. This event brings together coders and non coders. We aim to create a really incredible environment during the event with music, and the tasks given to the contestants throughout.",
+"teamSize": 2,
+"participationFee": 100
+},
+{
+"name": "Zenith",
+"category": "events",
+"subCategory": "builtrix",
+"organization": [
+"ASCE"
+],
+"coordinators": [
+{
+"phone": "9790530350",
+"reg_no": "15BCL0150",
+"_id": "15BCL0150",
+"name": "Anurag",
+"email": "tanishq.chawla2015@vit.ac.in"
+}
+],
+"description": "ZENITH:\nThe word put itself with meaning the height of culmination, is a formal event where we will test the creativity and material management skills of the participants. the participants will be given an arc on which they have to construct a bridge using maximum 30 bricks with gravel, sand and small stones for the support. there will also be a time barrier of 30 minutes. after the time is over, the strength of the bridge will be tested using weights. the bridge bearing the maximum weight wins the event.",
+"teamSize": 2,
+"participationFee": 100
+}
+]
+}
