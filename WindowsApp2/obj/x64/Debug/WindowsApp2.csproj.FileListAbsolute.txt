@@ -1277,3 +1277,4 @@ C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Controls\Roun
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Controls\RoundProgressControl.g.cs
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Controls\RoundProgressControl.xaml
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Controls\RoundProgressControl.xbf
+C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\DataSource\result.json

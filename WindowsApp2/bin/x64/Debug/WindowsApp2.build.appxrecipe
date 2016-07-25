@@ -349,6 +349,9 @@
     <AppxPackagedFile Include="C:\Users\mails\.nuget\packages\WindowsAzure.Messaging.Managed\0.1.7.9\lib\netcore45\Microsoft.WindowsAzure.Messaging.Managed.dll">
       <PackagePath>Microsoft.WindowsAzure.Messaging.Managed.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\DataSource\result.json">
+      <PackagePath>DataSource\result.json</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\8.jpg">
       <PackagePath>Assets\8.jpg</PackagePath>
     </AppxPackagedFile>

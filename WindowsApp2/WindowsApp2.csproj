@@ -95,7 +95,9 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <None Include="DataSource\result.json" />
+    <Content Include="DataSource\result.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="WindowsApp2_StoreKey.pfx" />
     <None Include="WindowsApp2_TemporaryKey.pfx" />
     <None Include="project.json" />
