@@ -5,11 +5,46 @@ using System.Linq;
 using System.Threading.Tasks;
 using Template10.Services.NavigationService;
 using Windows.UI.Xaml.Navigation;
+using NewsClient.Services.DataService;
+using WindowsApp2.Models;
 
 namespace WindowsApp2.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
+
+        private DataService _dataService;
+
+
+        private Event _article;
+        public Event Article { get { return _article; } set { Set(ref _article, value); } }
+
+
+
+        public async void UpdateIsFavorite()
+        {
+            var favorites = await _dataService.GetFavoritesAsync();
+            IsFavorite = favorites.Any(x => x.name.Equals(Article?.name));
+            RaisePropertyChanged(nameof(IsFavorite));
+        }
+
+        public bool IsFavorite { get; set; }
+
+
+        public async void AddToFavorites()
+        {
+            await _dataService.AddToFavoritesAsync(Article);
+            UpdateIsFavorite();
+        }
+
+        public async void RemoveFromFavorites()
+        {
+            await _dataService.RemoveFromFavoritesAsync(Article);
+            UpdateIsFavorite();
+        }
+
+
+
         public MainPageViewModel()
         {
             if (Windows.ApplicationModel.DesignMode.DesignModeEnabled)

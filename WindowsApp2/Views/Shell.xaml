@@ -8,105 +8,108 @@
       xmlns:local="using:WindowsApp2.Views"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:views="using:WindowsApp2.Views"
+      xmlns:app="using:AppStartupGuide"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       mc:Ignorable="d">
 
     <Controls:HamburgerMenu x:Name="MyHamburgerMenu"
-                    HamburgerBackground="#FFD13438"
-                    HamburgerForeground="White"
-                    NavAreaBackground="#FF2B2B2B"
-                   NavButtonCheckedBackground="#FFD13438"
-                            
-                    SecondarySeparator="White"
-                    NavButtonForeground="White"
-                    VisualStateWideDisplayMode="CompactOverlay"
-                            >
+                            HamburgerBackground="#FFD13438"
+                            HamburgerForeground="White"
+                            NavAreaBackground="#FF2B2B2B"
+                            NavButtonCheckedBackground="#FFD13438"
+                            NavButtonForeground="White"
+                            SecondarySeparator="White"
+                            VisualStateWideDisplayMode="CompactOverlay">
 
         <Controls:HamburgerMenu.PrimaryButtons>
             <!--  mainpage button  -->
-            <Controls:HamburgerButtonInfo ClearHistory="True" PageType="views:MainPage" 
-                                          AutomationProperties.Name="Jerry"
-
-                                          >
+            <Controls:HamburgerButtonInfo AutomationProperties.Name="Jerry"
+                                          ClearHistory="True"
+                                          PageType="app:MainPage">
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
+                    <SymbolIcon Width="48"
+                                Height="48"
                                 Symbol="Home" />
-                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
                                Text="Home" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
             <!--  Category button  -->
 
-            <Controls:HamburgerButtonInfo  PageType="views:Categories" 
-                                          AutomationProperties.Name="Jerry"
-                                          >
+            <Controls:HamburgerButtonInfo AutomationProperties.Name="Jerry" PageType="views:CategoryPage">
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
+                    <SymbolIcon Width="48"
+                                Height="48"
                                 Symbol="ViewAll" />
-                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
                                Text="Category" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
             <!--  Favourites button  -->
 
-            <Controls:HamburgerButtonInfo  PageType="views:Marvel" 
-                                          AutomationProperties.Name="Jerry"
-                                          >
+            <Controls:HamburgerButtonInfo AutomationProperties.Name="Jerry" PageType="views:Past">
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
+                    <SymbolIcon Width="48"
+                                Height="48"
                                 Symbol="Home" />
-                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
-                               Text="Favourites" />
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
+                               Text="Gallery" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
             <!--  Sponsors button  -->
 
-            <Controls:HamburgerButtonInfo  PageType="views:Sponsors" 
-                                          AutomationProperties.Name="Jerry"
-                                          >
+            <Controls:HamburgerButtonInfo AutomationProperties.Name="Jerry" PageType="views:Sponsors">
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
+                    <SymbolIcon Width="48"
+                                Height="48"
                                 Symbol="Home" />
-                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
                                Text="Sponsors" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
-            <!-- Organisiners  button  -->
+            <!--  Organisiners  button  -->
 
-            <Controls:HamburgerButtonInfo  PageType="views:Organisers" 
-                                          AutomationProperties.Name="Jerry"
-                                          >
+            <Controls:HamburgerButtonInfo AutomationProperties.Name="Jerry" PageType="views:Organisers">
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
+                    <SymbolIcon Width="48"
+                                Height="48"
                                 Symbol="Home" />
-                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
                                Text="Organisers" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
 
-            </Controls:HamburgerMenu.PrimaryButtons>
+        </Controls:HamburgerMenu.PrimaryButtons>
 
 
 
 
 
 
-                <Controls:HamburgerMenu.SecondaryButtons>
+        <Controls:HamburgerMenu.SecondaryButtons>
             <!--  settingspage button  -->
-            <Controls:HamburgerButtonInfo x:Name="SettingsButton" PageParameter="0"
+            <Controls:HamburgerButtonInfo x:Name="SettingsButton"
+                                          PageParameter="0"
                                           PageType="views:SettingsPage">
                 <Controls:HamburgerButtonInfo.NavigationTransitionInfo>
                     <SuppressNavigationTransitionInfo />
                 </Controls:HamburgerButtonInfo.NavigationTransitionInfo>
                 <StackPanel Orientation="Horizontal">
-                    <SymbolIcon Width="48" Height="48"
+                    <SymbolIcon Width="48"
+                                Height="48"
                                 Symbol="Setting" />
-                    <TextBlock Margin="12,0,0,0" VerticalAlignment="Center"
+                    <TextBlock Margin="12,0,0,0"
+                               VerticalAlignment="Center"
                                Text="Settings" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>

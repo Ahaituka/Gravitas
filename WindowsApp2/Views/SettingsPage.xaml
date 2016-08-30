@@ -103,7 +103,7 @@
                 <ScrollViewer Margin="0,0,-12,0" VerticalScrollBarVisibility="Auto">
                     <TextBlock Margin="0,12,24,12" LineHeight="24"
                                TextWrapping="Wrap">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra dictum nibh vel ornare. Donec sem urna, rhoncus sed cursus ac, aliquet at nisl. Pellentesque cursus et lacus vel porta. Morbi iaculis efficitur volutpat. Curabitur sit amet cursus nisl, ac suscipit mauris. Nulla a tellus a odio tincidunt maximus. Maecenas non eros lacus. Donec aliquam libero nec ex ullamcorper, in lobortis nibh dapibus. Mauris vehicula, tellus quis congue tincidunt, neque massa auctor ante, ut laoreet felis nisi id tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc sed dapibus quam, in viverra arcu. Vivamus ut metus non magna viverra porttitor a ultrices dui.
+                       graVITas is VIT University's annual knowledge carnival which aims to empower the young minds by giving them a national platform to showcase their genius and innovation. The Technical festival is spread over 3 days with over 100 events, 50 workshops with over 30,000 footfalls. Started in 2009 by a group of enthusiastic VITians, graVITas now in its 8th edition has become the largest technical festival of its kind. Each year graVITas bring in a new theme, thus providing the eager participants a new experience every time.
                         <LineBreak />
                         <LineBreak />
                         <Bold>Section</Bold>
@@ -156,20 +156,36 @@
                                FontSize="24" RelativePanel.AlignLeftWithPanel="True"
                                RelativePanel.AlignRightWith="LogoImage"
                                RelativePanel.AlignTopWithPanel="True"
-                               Text="{Binding DisplayName}" />
+                               Text="Gravitas 2016" />
 
                     <TextBlock x:Name="PublisherTextBlock"
                                RelativePanel.AlignLeftWithPanel="True"
                                RelativePanel.Below="DisplayNameTextBlock"
-                               Text="{Binding Publisher}" />
+                               Text="Publisher : " 
+                               Style="{StaticResource HeaderTextBlockStyle}"      />
 
-                    <TextBlock x:Name="VersionTextBlock"
+                    <TextBlock x:Name="PublissherTextBlock"
                                RelativePanel.AlignLeftWithPanel="True"
-                               RelativePanel.Below="PublisherTextBlock">
-                        <Run>Version</Run>
-                        <Run Text="{Binding Version}" />
-                    </TextBlock>
+                               RelativePanel.Below="PublisherTextBlock"
+                               Text="Vinay Gupta " 
+                               Style="{StaticResource HeaderTextBlockStyle}"      />
 
+                    <TextBlock x:Name="PublisssherTextBlock"
+                               RelativePanel.AlignLeftWithPanel="True"
+                               RelativePanel.Below="PublissherTextBlock"
+                               Text="Shubham Jain " 
+                               Style="{StaticResource HeaderTextBlockStyle}"      />
+
+
+
+
+
+
+                    <TextBlock x:Name="Version"
+                               RelativePanel.AlignLeftWithPanel="True"
+                               RelativePanel.Below="PublisssherTextBlock"
+                               Text="Version 1.1.1.0 " 
+                               Style="{StaticResource HeaderTextBlockStyle}"      />
                 </RelativePanel>
             </PivotItem>
         </Pivot>

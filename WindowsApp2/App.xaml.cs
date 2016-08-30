@@ -11,6 +11,8 @@ using Windows.Networking.PushNotifications;
 using Microsoft.WindowsAzure.Messaging;
 using Windows.UI.Popups;
 using Template10GetTheSplashScreen.Controls;
+using WindowsApp2.Managers;
+using System.Diagnostics;
 
 namespace WindowsApp2
 {
@@ -20,6 +22,9 @@ namespace WindowsApp2
     [Bindable]
     sealed partial class App : Template10.Common.BootStrapper
     {
+
+        internal static string SomeImportantValue;
+
         public App()
         {
             InitializeComponent();
@@ -34,22 +39,12 @@ namespace WindowsApp2
             ShowShellBackButton = _settings.UseShellBackButton;
 
             #endregion
-
-
-            #region App settings
-
-            //var _settings = SettingsService.Instance;
-            RequestedTheme = _settings.AppTheme;
-            CacheMaxDuration = _settings.CacheMaxDuration;
-            ShowShellBackButton = _settings.UseShellBackButton;
-
-            #endregion
+            
         }
 
         public override async Task OnInitializeAsync(IActivatedEventArgs args)
         {
           //  InitNotificationsAsync();
-
 
             if (Window.Current.Content as ModalDialog == null)
             {
@@ -69,14 +64,16 @@ namespace WindowsApp2
 
         public override async Task OnStartAsync(StartKind startKind, IActivatedEventArgs args)
         {
-
-
             // long-running startup tasks go here
-           await Task.Delay(TimeSpan.FromSeconds(6));
+            await Task.Delay(TimeSpan.FromSeconds(6));
 
-            NavigationService.Navigate(typeof(Views.MainPage));
-    //        await Task.CompletedTask;
+            await DataManager.LoadCacheAsync();
+            Debug.WriteLine("Data Status: ", DataManager.IsReady);
+
+            NavigationService.Navigate(typeof(AppStartupGuide.MainPage));
+            // await Task.CompletedTask;
         }
+
         private async void InitNotificationsAsync()
         {
             var channel = await PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
