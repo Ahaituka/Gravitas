@@ -14,6 +14,14 @@ namespace WindowsApp2.Views
         public static Shell Instance { get; set; }
         public static HamburgerMenu HamburgerMenu => Instance.MyHamburgerMenu;
 
+
+        public HamburgerMenu _MyHamburgerMenu
+        {
+            get { return MyHamburgerMenu;     }
+
+            set { MyHamburgerMenu = value;                    }
+        }
+
         public Shell()
         {
             Instance = this;

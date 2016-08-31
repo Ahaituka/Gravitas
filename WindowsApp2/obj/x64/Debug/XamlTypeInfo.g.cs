@@ -1183,6 +1183,7 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             case 92:   //  WindowsApp2.Views.Shell
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_92_Shell;
+                userType.AddMemberName("_MyHamburgerMenu");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -2467,52 +2468,62 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             var that = (global::WindowsApp2.ViewModels.SettingsPageViewModel)instance;
             return that.AboutPartViewModel;
         }
-        private object get_125_RingSegment_EndAngle(object instance)
+        private object get_125_Shell__MyHamburgerMenu(object instance)
+        {
+            var that = (global::WindowsApp2.Views.Shell)instance;
+            return that._MyHamburgerMenu;
+        }
+        private void set_125_Shell__MyHamburgerMenu(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Views.Shell)instance;
+            that._MyHamburgerMenu = (global::Template10.Controls.HamburgerMenu)Value;
+        }
+        private object get_126_RingSegment_EndAngle(object instance)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             return that.EndAngle;
         }
-        private void set_125_RingSegment_EndAngle(object instance, object Value)
+        private void set_126_RingSegment_EndAngle(object instance, object Value)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             that.EndAngle = (global::System.Double)Value;
         }
-        private object get_126_RingSegment_InnerRadius(object instance)
+        private object get_127_RingSegment_InnerRadius(object instance)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             return that.InnerRadius;
         }
-        private void set_126_RingSegment_InnerRadius(object instance, object Value)
+        private void set_127_RingSegment_InnerRadius(object instance, object Value)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             that.InnerRadius = (global::System.Double)Value;
         }
-        private object get_127_RingSegment_Radius(object instance)
+        private object get_128_RingSegment_Radius(object instance)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             return that.Radius;
         }
-        private void set_127_RingSegment_Radius(object instance, object Value)
+        private void set_128_RingSegment_Radius(object instance, object Value)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             that.Radius = (global::System.Double)Value;
         }
-        private object get_128_RingSegment_StartAngle(object instance)
+        private object get_129_RingSegment_StartAngle(object instance)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             return that.StartAngle;
         }
-        private void set_128_RingSegment_StartAngle(object instance, object Value)
+        private void set_129_RingSegment_StartAngle(object instance, object Value)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             that.StartAngle = (global::System.Double)Value;
         }
-        private object get_129_RingSegment_Center(object instance)
+        private object get_130_RingSegment_Center(object instance)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             return that.Center;
         }
-        private void set_129_RingSegment_Center(object instance, object Value)
+        private void set_130_RingSegment_Center(object instance, object Value)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             that.Center = (global::System.Nullable<global::Windows.Foundation.Point>)Value;
@@ -3360,40 +3371,46 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
                 xamlMember.Getter = get_124_SettingsPageViewModel_AboutPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "WindowsApp2.Views.Shell._MyHamburgerMenu":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Views.Shell");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "_MyHamburgerMenu", "Template10.Controls.HamburgerMenu");
+                xamlMember.Getter = get_125_Shell__MyHamburgerMenu;
+                xamlMember.Setter = set_125_Shell__MyHamburgerMenu;
+                break;
             case "Template10.Controls.RingSegment.EndAngle":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.RingSegment");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "EndAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_125_RingSegment_EndAngle;
-                xamlMember.Setter = set_125_RingSegment_EndAngle;
+                xamlMember.Getter = get_126_RingSegment_EndAngle;
+                xamlMember.Setter = set_126_RingSegment_EndAngle;
                 break;
             case "Template10.Controls.RingSegment.InnerRadius":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.RingSegment");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "InnerRadius", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_126_RingSegment_InnerRadius;
-                xamlMember.Setter = set_126_RingSegment_InnerRadius;
+                xamlMember.Getter = get_127_RingSegment_InnerRadius;
+                xamlMember.Setter = set_127_RingSegment_InnerRadius;
                 break;
             case "Template10.Controls.RingSegment.Radius":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.RingSegment");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Radius", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_127_RingSegment_Radius;
-                xamlMember.Setter = set_127_RingSegment_Radius;
+                xamlMember.Getter = get_128_RingSegment_Radius;
+                xamlMember.Setter = set_128_RingSegment_Radius;
                 break;
             case "Template10.Controls.RingSegment.StartAngle":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.RingSegment");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "StartAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_128_RingSegment_StartAngle;
-                xamlMember.Setter = set_128_RingSegment_StartAngle;
+                xamlMember.Getter = get_129_RingSegment_StartAngle;
+                xamlMember.Setter = set_129_RingSegment_StartAngle;
                 break;
             case "Template10.Controls.RingSegment.Center":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.RingSegment");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Center", "System.Nullable`1<Windows.Foundation.Point>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_129_RingSegment_Center;
-                xamlMember.Setter = set_129_RingSegment_Center;
+                xamlMember.Getter = get_130_RingSegment_Center;
+                xamlMember.Setter = set_130_RingSegment_Center;
                 break;
             }
             return xamlMember;

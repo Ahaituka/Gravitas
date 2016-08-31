@@ -307,7 +307,6 @@
       <RootProperty Name="Transitions" />
       <RootProperty Name="Resources" />
       <RootEvent Name="Loaded" />
-      <RootEvent Name="Unloaded" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
       <RootProperty Name="ScaleX" />

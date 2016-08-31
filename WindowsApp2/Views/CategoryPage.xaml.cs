@@ -44,6 +44,8 @@ namespace WindowsApp2.Views
         {
             var parameter = (CategoryViewModel)e.ClickedItem;
             var service = this.Frame.GetNavigationService();
+
+
             await service.NavigateAsync(typeof(Views.MasterDetailPage), parameter.Name);
 
       // Frame.Navigate(typeof(MasterDetailPage));

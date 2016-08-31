@@ -35,10 +35,15 @@
                         <Grid.Background>
                             <ImageBrush ImageSource="{Binding CoverImage}" Stretch="UniformToFill" />
                         </Grid.Background>
+                        <Button x:Name="ToggleFullScreenModeButton" Margin="0,10,0,0" Click="ToggleFullScreenModeButton_Click" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                            <SymbolIcon x:Name="ToggleFullScreenModeSymbol" Symbol="FullScreen" />
+                        </Button>
                     </Grid>
 
                 </DataTemplate>
             </FlipView.ItemTemplate>
+
+            
         </FlipView>
         <ItemsControl Margin="0,50"
                       HorizontalAlignment="Center"
@@ -70,5 +75,9 @@
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
+
+
+      
+
     </Grid>
 </Page>

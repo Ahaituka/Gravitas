@@ -160,14 +160,19 @@ namespace WindowsApp2.Views
             UpdateForVisualState(e.NewState, e.OldState);
         }
 
-        private void UpdateForVisualState(VisualState newState, VisualState oldState = null)
+        private async void UpdateForVisualState(VisualState newState, VisualState oldState = null)
         {
             var isNarrow = newState == NarrowState;
 
             if (isNarrow && oldState == DefaultState && _lastSelectedItem != null)
             {
                 // Resize down to the detail item. Don't play a transition.
-                Frame.Navigate(typeof(DetailPage), _lastSelectedItem.name, new SuppressNavigationTransitionInfo());
+                var service = this.Frame.GetNavigationService();
+
+
+                await service.NavigateAsync(typeof(Views.DetailPage), _lastSelectedItem.name, new SuppressNavigationTransitionInfo());
+
+                //Frame.Navigate(typeof(DetailPage), _lastSelectedItem.name, new SuppressNavigationTransitionInfo());
             }
 
             EntranceNavigationTransitionInfo.SetIsTargetElement(MasterListView, isNarrow);
@@ -177,7 +182,7 @@ namespace WindowsApp2.Views
             }
         }
 
-        private void MasterListView_ItemClick(object sender, ItemClickEventArgs e)
+        private async void MasterListView_ItemClick(object sender, ItemClickEventArgs e)
         {
 
             //var EventList = MasterListView.ItemsSource as ObservableCollection<Event>;
@@ -187,16 +192,16 @@ namespace WindowsApp2.Views
             //    MasterListView.ItemsSource = EventList;
             //Item = EventList.Where((item) => item.name == (Event)e).FirstOrDefault();
 
-            
+
             var clickedItem = (Event)e.ClickedItem;
 
 
 
-            
+
 
             Item = clickedItem;
 
-           
+
 
             x = Item.coordinators.Where((item) => Item.name == clickedItem.name).FirstOrDefault();
             _lastSelectedItem = clickedItem;
@@ -204,7 +209,13 @@ namespace WindowsApp2.Views
             if (AdaptiveStates.CurrentState == NarrowState)
             {
                 // Use "drill in" transition for navigating from master list to detail view
-                Frame.Navigate(typeof(DetailPage), clickedItem.name, new DrillInNavigationTransitionInfo());
+                // Frame.Navigate(typeof(DetailPage), clickedItem.name, new DrillInNavigationTransitionInfo());
+
+                var service = this.Frame.GetNavigationService();
+
+                await service.NavigateAsync(typeof(Views.DetailPage), clickedItem.name, new DrillInNavigationTransitionInfo());
+
+
             }
             else
             {

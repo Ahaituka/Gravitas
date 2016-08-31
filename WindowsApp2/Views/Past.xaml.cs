@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -12,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using WindowsApp2.Views;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,6 +27,39 @@ namespace WindowsApp2.Views
         public Past()
         {
             this.InitializeComponent();
+        }
+
+        private void ToggleFullScreenModeButton_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            //   page.MyTextBox.Text = "some text";
+
+            //var page = new Shell();
+
+            //page._MyHamburgerMenu.DisplayMode = Visibility.Collapsed;
+
+          //  Shell.HamburgerMenu.Visibility = Visibility.Collapsed;
+            var view = ApplicationView.GetForCurrentView();
+            if (view.IsFullScreenMode)
+            {
+                view.ExitFullScreenMode();
+              
+              //  rootPage.NotifyUser("Exiting full screen mode", NotifyType.StatusMessage);
+                // The SizeChanged event will be raised when the exit from full screen mode is complete.
+            }
+            else
+            {
+                if (view.TryEnterFullScreenMode())
+                {
+//rootPage.NotifyUser("Entering full screen mode", NotifyType.StatusMessage);
+                    // The SizeChanged event will be raised when the entry to full screen mode is complete.
+                }
+                else
+                {
+                    //rootPage.NotifyUser("Failed to enter full screen mode", NotifyType.ErrorMessage);
+                }
+            }
         }
     }
 

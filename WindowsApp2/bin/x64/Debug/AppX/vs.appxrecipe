@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>AE2595CEB3FC9035FFA656B10B84120493E4B5FE63CF5B7A4FA0AB0AFC9165D8</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>E98516E6CA2618058F91E2E16FEB2FAE761627E152711B90D2B41BFAD1D20FE3</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>65150bitloks.Gravitas2016_1.1.0.0_x64__0mga6vf5p7yxy</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>65150bitloks.Gravitas2016_0mga6vf5p7yxy!App</RegisteredUserModeAppID>
     <RegisteredPackageID>65150bitloks.Gravitas2016</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-08-31T07:43:59.994</Modified>
+      <Modified>2016-08-31T10:15:16.265</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.exe">
       <PackagePath>entrypoint\WindowsApp2.exe</PackagePath>
-      <Modified>2016-08-31T07:43:58.220</Modified>
+      <Modified>2016-08-31T10:15:13.454</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -512,12 +512,12 @@
       <PackagePath>Microsoft.WindowsAzure.Messaging.Managed.dll</PackagePath>
       <Modified>2014-07-30T06:42:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\1.jpg">
-      <PackagePath>Assets\1.jpg</PackagePath>
-      <Modified>2016-08-12T21:32:09.296</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\10.jpg">
       <PackagePath>Assets\10.jpg</PackagePath>
+      <Modified>2016-08-12T21:32:09.296</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\1.jpg">
+      <PackagePath>Assets\1.jpg</PackagePath>
       <Modified>2016-08-11T12:26:26.960</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\12.jpg">
@@ -720,7 +720,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.xr.xml">
       <PackagePath>WindowsApp2.xr.xml</PackagePath>
-      <Modified>2016-08-30T10:10:37.194</Modified>
+      <Modified>2016-08-31T10:09:25.851</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -760,11 +760,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-08-31T07:43:59.022</Modified>
+      <Modified>2016-08-31T10:15:15.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\Core\WindowsApp2.exe">
       <PackagePath>WindowsApp2.exe</PackagePath>
-      <Modified>2016-08-31T07:43:59.991</Modified>
+      <Modified>2016-08-31T10:15:16.260</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

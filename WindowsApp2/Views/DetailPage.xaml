@@ -6,9 +6,9 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       x:Name="PageRoot"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-      Loaded="PageRoot_Loaded"
+     
       NavigationCacheMode="Enabled"
-      Unloaded="PageRoot_Unloaded"
+     
       mc:Ignorable="d">
     <Page.Transitions>
         <TransitionCollection>
