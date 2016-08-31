@@ -52,8 +52,13 @@
 
                 <!--<TextBlock Style="{ThemeResource BaseTextBlockStyle}" Text="{x:Bind name}" />-->
 
-                <Ellipse Width="45"
-                         Height="45"
+                <Ellipse Width="20"
+                         Height="20"
+                         Stroke="White"
+                         
+                         StrokeThickness="2"
+                         
+                         
                          HorizontalAlignment="Right"
                          VerticalAlignment="Center">
                     <Ellipse.Fill>

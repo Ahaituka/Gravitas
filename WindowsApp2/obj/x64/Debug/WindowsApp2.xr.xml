@@ -345,10 +345,11 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Fill" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeThickness" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="RenderTransform" />
-      <RootProperty Name="Stroke" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">

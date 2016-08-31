@@ -37,20 +37,180 @@ namespace WindowsApp2.Services
                 var ms = new MemoryStream(Encoding.UTF8.GetBytes(arrayString));
                 var eventList = new ObservableCollection<Event>((List<Event>)jsonSerializer.ReadObject(ms));
 
+
+
+                
                 foreach (var x in eventList)
                 {
-                    if(x.organization[0]=="SME")
-                    {
+                    
+                    x.chapterpath = String.Format("ms-appx:///Assets/ChapterLogos/{0}.png",x.organization[0].ToLower());
 
-                        x.chapterpath = "ms-appx:///Assets/appliedengineering.png";                   
-
-                     }
+                  
 
 
-                    else
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
 
-                        x.chapterpath = "ms-appx:///Assets/workshop.png";
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
 
+                    //else if ((x.organization[0] == "ASCE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/asce.png";
+                    //}
+                    //else if ((x.organization[0] == "ASMEE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+
+                    //else if ((x.organization[0] == "AYUDA"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+
+                    //else if ((x.organization[0] == "CODECHEF"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+
+                    
                 }
 
                
