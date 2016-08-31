@@ -30,14 +30,16 @@ namespace WindowsApp2.Views
             this.InitializeComponent();
         }
 
-        private   void WebView_LoadCompleted(object sender, NavigationEventArgs e)
+        private async void WebView_LoadCompleted(object sender, NavigationEventArgs e)
         {
             ProgressRing.Visibility = Visibility.Collapsed;
+            string functionString = String.Format("document.getElementById('portfolio').getElementsByTagName('h2')[0].innerHTML = 'Team Gravitas 16';");
+
 
             //string functionString = String.Format("document.getElementById('section-title').innerText = 'Hello';");
-            //await WebView.InvokeScriptAsync("eval", new string[] { functionString });
+            await WebView.InvokeScriptAsync("eval", new string[] { functionString });
 
-            
+
         }
 
         //private async void WebView_Loading(FrameworkElement sender, object args)
