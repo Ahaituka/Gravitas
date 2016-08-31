@@ -302,6 +302,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
       <RootProperty Name="DataContext" />
+      <RootProperty Name="RequestedTheme" />
       <RootProperty Name="Background" />
       <RootProperty Name="NavigationCacheMode" />
       <RootProperty Name="Transitions" />
@@ -321,7 +322,6 @@
       <RootProperty Name="Width" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="IsTapEnabled" />
-      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="FontSize" />
@@ -411,12 +411,12 @@
       <RootProperty Name="GrabberVisibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Style" />
-      <RootProperty Name="Content" />
       <RootProperty Name="Command" />
       <RootProperty Name="CommandParameter" />
       <RootEvent Name="Click" />
@@ -489,10 +489,6 @@
     <RootType FullName="WindowsApp2.Views.CategoryPage" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition" />
-    <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo">
-      <RootMethod Name="GetIsTargetElement" />
-      <RootMethod Name="SetIsTargetElement" />
-    </RootType>
     <RootType FullName="WindowsApp2.Views.DetailPage" />
     <RootType FullName="WindowsApp2.Views.Favourites" />
     <RootType FullName="WindowsApp2.Views.MainPage" />

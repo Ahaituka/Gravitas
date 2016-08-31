@@ -50,7 +50,7 @@ namespace WindowsApp2.Views
             this.InitializeComponent();
         }
 
-        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
 
             var param = e.Parameter?.ToString();
@@ -87,6 +87,9 @@ namespace WindowsApp2.Views
             // Item = DataManager.EventList.First((ev) => ev.name == (string)e.Parameter);
             Item = DataManager.EventList.Where((ev) => ev.name == value).FirstOrDefault();
 
+      //       MyTextBox.Text = Item.name;
+            
+
             //List<Event> Source = Item.ToList<Event>();
             //Source
 
@@ -110,9 +113,9 @@ namespace WindowsApp2.Views
             //}
 
             // Register for hardware and software back request from the system
-            SystemNavigationManager systemNavigationManager = SystemNavigationManager.GetForCurrentView();
+          //  SystemNavigationManager systemNavigationManager = SystemNavigationManager.GetForCurrentView();
        //   systemNavigationManager.BackRequested += DetailPage_BackRequested;
-            systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+          //  systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
 
             base.OnNavigatedTo(e);
         }
@@ -154,27 +157,27 @@ namespace WindowsApp2.Views
             return Window.Current.Bounds.Width >= 720;
         }
 
-        private void PageRoot_Loaded(object sender, RoutedEventArgs e)
-        {
-            if (ShouldGoToWideState())
-            {
-                // We shouldn't see this page since we are in "wide master-detail" mode.
-                // Play a transition as we are navigating from a separate page.
-                NavigateBackForWideState(useTransition: true);
-            }
-            else
-            {
-                // Realize the main page content.
-                FindName("RootPanel");
-            }
+        //private void PageRoot_Loaded(object sender, RoutedEventArgs e)
+        //{
+        //    if (ShouldGoToWideState())
+        //    {
+        //        // We shouldn't see this page since we are in "wide master-detail" mode.
+        //        // Play a transition as we are navigating from a separate page.
+        //        NavigateBackForWideState(useTransition: true);
+        //    }
+        //    else
+        //    {
+        //        // Realize the main page content.
+        //        FindName("RootPanel");
+        //    }
 
-            Window.Current.SizeChanged += Window_SizeChanged;
-        }
+        //    Window.Current.SizeChanged += Window_SizeChanged;
+        //}
 
-        private void PageRoot_Unloaded(object sender, RoutedEventArgs e)
-        {
-            Window.Current.SizeChanged -= Window_SizeChanged;
-        }
+        //private void PageRoot_Unloaded(object sender, RoutedEventArgs e)
+        //{
+        //    Window.Current.SizeChanged -= Window_SizeChanged;
+        //}
 
         private void Window_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
         {

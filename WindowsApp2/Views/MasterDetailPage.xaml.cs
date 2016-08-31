@@ -257,7 +257,20 @@ namespace WindowsApp2.Views
            // MainPageViewModel.AddToFavorites();
         }
 
-        private async void SymbolIcon_Tapped(object sender, TappedRoutedEventArgs e)
+        //private async void SymbolIcon_Tapped(object sender, TappedRoutedEventArgs e)
+        //{
+            
+        //}
+
+
+        private void ShowPopupOffsetClicked(object sender, RoutedEventArgs e)
+        {
+            // open the Popup if it isn't open already 
+            if (!StandardPopup.IsOpen) { StandardPopup.IsOpen = true; }
+        }
+
+  
+        private async void SymbolIcon_Tapped(object sender, RoutedEventArgs e)
         {
             EmailMessage emailMessage = new EmailMessage()
             {
@@ -267,17 +280,10 @@ namespace WindowsApp2.Views
 
             emailMessage.To.Add(new EmailRecipient() { Address = x.email });
             await EmailManager.ShowComposeNewEmailAsync(emailMessage);
-                        
+
         }
 
-
-        private void ShowPopupOffsetClicked(object sender, RoutedEventArgs e)
-        {
-            // open the Popup if it isn't open already 
-            if (!StandardPopup.IsOpen) { StandardPopup.IsOpen = true; }
-        }
-
-        private async void SymbolIcon_Tapped_1(object sender, TappedRoutedEventArgs e)
+        private async void SymbolIcon_Tapped_1(object sender, RoutedEventArgs e)
         {
             var uriSkype = new Uri(@"Skype:(9952549997)?call");
 

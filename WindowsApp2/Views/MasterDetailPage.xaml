@@ -16,7 +16,7 @@
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       NavigationCacheMode="Enabled"
       mc:Ignorable="d">
-    
+
     <Page.Transitions>
         <TransitionCollection>
             <NavigationThemeTransition />
@@ -39,7 +39,7 @@
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
-                <controls:PageHeader Text="{x:Bind name,Mode=OneWay}">
+                <controls:PageHeader Text="{x:Bind name, Mode=OneWay}">
                     <Interactivity:Interaction.Behaviors>
                         <Behaviors:EllipsisBehavior Visibility="Auto" />
                         <Behaviors:DeviceDispositionBehavior Continuum="True"
@@ -57,7 +57,7 @@
                          HorizontalAlignment="Right"
                          VerticalAlignment="Center">
                     <Ellipse.Fill>
-                        <ImageBrush ImageSource="{x:Bind chapterpath,Mode=TwoWay}" />
+                        <ImageBrush ImageSource="{x:Bind chapterpath, Mode=TwoWay}" />
                     </Ellipse.Fill>
                 </Ellipse>
 
@@ -87,7 +87,7 @@
                         <ImageBrush ImageSource="ms-appx:///Assets/8.JPG" Stretch="Fill" />
                     </Grid.Background>
                     <TextBlock MaxWidth="250"
-                               Margin="36,62,34,68"
+                               Margin="36,62,34,68" 
                                FontFamily="Baskerville Old Face"
                                FontSize="30"
                                Foreground="{ThemeResource ToggleButtonPressedForegroundThemeBrush}"
@@ -140,8 +140,6 @@
                         <RelativePanel>
                             <TextBlock x:Name="symbllol"
                                        Margin="10,0"
-                                      
-                                     
                                        Text="&#x20b9;" />
 
                             <!--<SymbolIcon x:Name="symbllol"
@@ -172,33 +170,35 @@
                     </Grid.ColumnDefinitions>
 
 
-                    <SymbolIcon Grid.Column="0"
-                                Height="150"
-                                Width="150"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                Symbol="Phone" 
-                                 IsTapEnabled="True"
-                                Tapped="SymbolIcon_Tapped_1"
+                    <Button  HorizontalAlignment="Center"
+                                VerticalAlignment="Center"                                                             
+                                Click="SymbolIcon_Tapped_1">
+                        <SymbolIcon Grid.Column="0"
+                                     Symbol="Phone"
                                 />
-                    
-                    
-                    <SymbolIcon x:Name="People"
-                                Grid.Column="1"
+                    </Button>
+
+
+                    <Button Click="ShowPopupOffsetClicked"  Grid.Column="1"
                                 HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
+                                VerticalAlignment="Center">
+                        <SymbolIcon x:Name="People"
+                                
                                 IsTapEnabled="True"
                                 Symbol="People"
-                                Tapped="ShowPopupOffsetClicked" />
+                                 />
+                    </Button>
 
 
-
-                    <SymbolIcon Grid.Column="2"
-                                HorizontalAlignment="Center"
+                    <Button Click="SymbolIcon_Tapped"        HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
-                                Symbol="Mail"
+                             Grid.Column="2"
+                           >
+                        <SymbolIcon
                                 IsTapEnabled="True"
-                                Tapped="SymbolIcon_Tapped" />
+                                Symbol="Mail"
+                                />
+                    </Button>
 
                 </Grid>
 
