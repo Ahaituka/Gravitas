@@ -10,16 +10,34 @@
       xmlns:views="using:WindowsApp2.Views"
       xmlns:app="using:AppStartupGuide"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+      xmlns:converters="using:Template10.Converters"
       mc:Ignorable="d">
 
-    <Controls:HamburgerMenu x:ConnectionId='1' x:Name="MyHamburgerMenu"
+
+    <Page.Resources>
+        <converters:ValueWhenConverter x:Key="VisBoolConverter">
+            <converters:ValueWhenConverter.When>
+                <x:Boolean>True</x:Boolean>
+            </converters:ValueWhenConverter.When>
+            <converters:ValueWhenConverter.Value>
+                <Visibility>Collapsed</Visibility>
+            </converters:ValueWhenConverter.Value>
+            <converters:ValueWhenConverter.Otherwise>
+                <Visibility>Visible</Visibility>
+            </converters:ValueWhenConverter.Otherwise>
+        </converters:ValueWhenConverter>
+    </Page.Resources>
+
+
+        <Controls:HamburgerMenu x:ConnectionId='1' x:Name="MyHamburgerMenu"
                             HamburgerBackground="#FFD13438"
                             HamburgerForeground="White"
                             NavAreaBackground="#FF2B2B2B"
                             NavButtonCheckedBackground="#FFD13438"
                             NavButtonForeground="White"
                             SecondarySeparator="White"
-                            VisualStateWideDisplayMode="CompactOverlay">
+                            VisualStateWideDisplayMode="CompactOverlay"
+                          >
 
         <Controls:HamburgerMenu.PrimaryButtons>
             <!--  mainpage button  -->

@@ -15,6 +15,9 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using static Template10.Common.BootStrapper;
+using WindowsApp2.Services;
+using Template10.Services.NavigationService;
+using Template10.Utils;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -28,7 +31,19 @@ namespace WindowsApp2.Views
         public Organisers()
         {
             this.InitializeComponent();
+
+            bool x = NetworkService.IsInternet();
+
+            if (!x)
+            {
+                //var service = this.Frame.GetNavigationService();
+                //await service.NavigateAsync(typeof(Views.Icheck));
+
+                Stop();
+
+            }
         }
+
 
         private async void WebView_LoadCompleted(object sender, NavigationEventArgs e)
         {
@@ -41,6 +56,25 @@ namespace WindowsApp2.Views
 
 
         }
+
+
+
+        public async void    WebView_Loading_1(FrameworkElement sender, object args)
+        {
+            
+        }
+
+        public async void Stop()
+        {
+            await Task.Delay(10000);
+
+            ProgressRing.Visibility = Visibility.Collapsed;
+            
+            MyTextBox.Visibility = Visibility.Visible;
+
+        }
+
+
 
         //private async void WebView_Loading(FrameworkElement sender, object args)
         //{

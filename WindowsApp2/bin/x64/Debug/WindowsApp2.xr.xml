@@ -59,6 +59,7 @@
       <RootProperty Name="CacheMode" />
       <RootProperty Name="MaxWidth" />
       <RootProperty Name="Style" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="LineHeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
@@ -493,8 +494,8 @@
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition" />
     <RootType FullName="WindowsApp2.Views.DetailPage" />
-    <RootType FullName="WindowsApp2.Views.Error" />
     <RootType FullName="WindowsApp2.Views.Favourites" />
+    <RootType FullName="WindowsApp2.Views.Icheck" />
     <RootType FullName="WindowsApp2.Views.MainPage" />
     <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
       <RootMethod Name="GetBehaviors" />
@@ -529,6 +530,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.WebView">
       <RootProperty Name="Source" />
       <RootEvent Name="LoadCompleted" />
+      <RootEvent Name="Loading" />
     </RootType>
     <RootType FullName="WindowsApp2.Views.Organisers" />
     <RootType FullName="WindowsApp2.Converters.VisibleWhenTrue" />

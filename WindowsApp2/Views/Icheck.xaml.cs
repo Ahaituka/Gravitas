@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -20,11 +21,35 @@ namespace WindowsApp2.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Error : Page
+    public sealed partial class Icheck : Page
     {
-        public Error()
-        {
+        public  Icheck()
+        { 
+
+            
             this.InitializeComponent();
+
+
+            Stop();
+            //TimeSpan delay = TimeSpan.FromMinutes(1);
+
         }
+
+
+        public async void Stop()
+        {
+            await Task.Delay(10000);
+
+            ProgressRing.Visibility = Visibility.Collapsed;
+            MyTextBox.Visibility = Visibility.Visible;
+
+        }
+
+        
+        
+
+
     }
+
+    
 }

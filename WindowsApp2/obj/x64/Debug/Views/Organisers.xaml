@@ -11,13 +11,20 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <WebView x:ConnectionId='1' x:Name="WebView"
-                                                                  
+                                                         
+                                            
                  Source="http://info.vit.ac.in/gravitas2015/tg15/index.html" />
         <ProgressRing x:ConnectionId='2' x:Name="ProgressRing"
                       Width="100"
                       Height="100"
                       Foreground="BlueViolet"
                       IsActive="True" />
+
+        <TextBlock x:ConnectionId='3' x:Name="MyTextBox" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"   FontSize="30" Visibility="Collapsed"  TextWrapping="WrapWholeWords"  >
+            Houston! We Got a problem .No Internet Connection!
+
+        </TextBlock>
+
     </Grid>
     <!--  Source="ms-appdata:///local/WebPages/as/graVITas 16_ Design . Create . Patent.html" />  -->
     <!--<Button Name="searchbtn" Grid.Row="1" Click="searchbtn_Click"
