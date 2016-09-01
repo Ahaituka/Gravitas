@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Networking.Connectivity;
 using Windows.Web.Http;
 using Windows.Web.Http.Filters;
 
@@ -97,6 +98,13 @@ namespace WindowsApp2.Services
         public static async Task<Response<string>> TryGetEventsJsonAsync(/*string currentDataVersion*/)
         {
             return await GetResponseAsync(/*currentDataVersion*/);
+        }
+
+        public static bool IsInternet()
+        {
+            ConnectionProfile connections = NetworkInformation.GetInternetConnectionProfile();
+            bool internet = connections != null && connections.GetNetworkConnectivityLevel() == NetworkConnectivityLevel.InternetAccess;
+            return internet;
         }
 
         #endregion

@@ -13,7 +13,9 @@ using Windows.UI.Popups;
 using Template10GetTheSplashScreen.Controls;
 using WindowsApp2.Managers;
 using System.Diagnostics;
+using WindowsApp2.Services;
 
+using WindowsApp2.Views;
 namespace WindowsApp2
 {
     /// Documentation on APIs used in this page:
@@ -23,7 +25,7 @@ namespace WindowsApp2
     sealed partial class App : Template10.Common.BootStrapper
     {
 
-        internal static string SomeImportantValue;
+   
 
         public App()
         {
@@ -44,20 +46,20 @@ namespace WindowsApp2
 
         public override async Task OnInitializeAsync(IActivatedEventArgs args)
         {
-          //  InitNotificationsAsync();
-
+            //  InitNotificationsAsync();
+           // NavigationService.Navigate(typeof(Views.Error));
             if (Window.Current.Content as ModalDialog == null)
             {
                 // create a new frame 
-                var nav = NavigationServiceFactory(BackButton.Attach, ExistingContent.Include);
+             //   var nav = NavigationServiceFactory(BackButton.Attach, ExistingContent.Include);
 
                 // create modal root
-                Window.Current.Content = new ModalDialog
-                {
-                    DisableBackButtonWhenModal = true,
-                    Content = new Views.Shell(nav),
-                    ModalContent = new Views.Busy(),
-                };
+            //    Window.Current.Content = new ModalDialog
+            //    {
+            //        DisableBackButtonWhenModal = true,
+            //        Content = new Views.Shell(nav),
+            //        ModalContent = new Views.Busy(),
+            //    };
             }
             await Task.CompletedTask;
         }
@@ -67,11 +69,46 @@ namespace WindowsApp2
             // long-running startup tasks go here
             await Task.Delay(TimeSpan.FromSeconds(6));
 
-            await DataManager.LoadCacheAsync();
+            await Windows.Storage.ApplicationData.Current.ClearAsync();
+ 
+            await DataManager.LoadCacheAsync()
+                ;
             Debug.WriteLine("Data Status: ", DataManager.IsReady);
 
-            NavigationService.Navigate(typeof(AppStartupGuide.MainPage));
-            // await Task.CompletedTask;
+            var x = NetworkService.IsInternet();
+
+            if (DataManager.IsReady)
+            {
+
+                NavigationService.Navigate(typeof(AppStartupGuide.MainPage));
+            }
+            else if(!DataManager.IsReady)
+            {
+                //if(x)
+                //{
+                //    await DataManager.RefreshDataAsync();
+
+                //    if(DataManager.IsReady)
+                //    {
+
+                //        NavigationService.Navigate(typeof(AppStartupGuide.MainPage));
+
+                //    }
+
+                //}
+
+                if(!x)
+                {
+                    // NavigationService.Navigate(typeof(Views.Error));
+
+                    Window.Current.Content = new Error();
+                    NavigationService.Navigate(typeof(Error));
+                }             
+                }
+
+
+         
+            await Task.CompletedTask;
         }
 
         private async void InitNotificationsAsync()

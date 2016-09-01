@@ -1604,3 +1604,8 @@ C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Template10Lib
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Microsoft.WindowsAzure.Messaging.Managed.pri.xml
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\WindowsApp2.build.appxrecipe
+C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\Views\Error.xbf
+C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Views\Error.g.i.cs
+C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Views\Error.g.cs
+C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Views\Error.xaml
+C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Views\Error.xbf

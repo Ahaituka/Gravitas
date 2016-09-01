@@ -586,6 +586,9 @@
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\trekkingclub.png">
       <PackagePath>Assets\ChapterLogos\trekkingclub.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\Visual Bloggers Club VIT.png">
+      <PackagePath>Assets\ChapterLogos\Visual Bloggers Club VIT.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\VIT ANIMATION CLUB.png">
       <PackagePath>Assets\ChapterLogos\VIT ANIMATION CLUB.png</PackagePath>
     </AppxPackagedFile>

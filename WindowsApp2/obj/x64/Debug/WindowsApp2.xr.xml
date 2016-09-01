@@ -209,6 +209,7 @@
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Padding" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="CornerRadius" />
@@ -492,6 +493,7 @@
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition" />
     <RootType FullName="WindowsApp2.Views.DetailPage" />
+    <RootType FullName="WindowsApp2.Views.Error" />
     <RootType FullName="WindowsApp2.Views.Favourites" />
     <RootType FullName="WindowsApp2.Views.MainPage" />
     <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">

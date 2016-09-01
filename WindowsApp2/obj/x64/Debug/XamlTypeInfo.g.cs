@@ -156,7 +156,7 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[98];
+            _typeNameTable = new string[99];
             _typeNameTable[0] = "Template10.Common.BootStrapper";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Template10.Common.StateItems";
@@ -228,35 +228,36 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             _typeNameTable[68] = "System.Collections.ObjectModel.Collection`1<WindowsApp2.ViewModels.CategoryViewModel>";
             _typeNameTable[69] = "WindowsApp2.ViewModels.CategoryViewModel";
             _typeNameTable[70] = "WindowsApp2.Views.DetailPage";
-            _typeNameTable[71] = "WindowsApp2.Views.Favourites";
-            _typeNameTable[72] = "WindowsApp2.Views.MainPage";
-            _typeNameTable[73] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[74] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[75] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[76] = "Template10.Behaviors.EllipsisBehavior";
-            _typeNameTable[77] = "Template10.Behaviors.DeviceDispositionBehavior";
-            _typeNameTable[78] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[79] = "WindowsApp2.Views.MasterDetailPage";
-            _typeNameTable[80] = "WindowsApp2.Models.Coordinator";
-            _typeNameTable[81] = "WindowsApp2.Views.Organisers";
-            _typeNameTable[82] = "WindowsApp2.Converters.VisibleWhenTrue";
-            _typeNameTable[83] = "WindowsApp2.Views.ViewModels.Locator";
-            _typeNameTable[84] = "WindowsApp2.Views.Common.BindableBase";
-            _typeNameTable[85] = "WindowsApp2.Views.ViewModels.MainPageViewModel";
-            _typeNameTable[86] = "WindowsApp2.Views.Common.ViewModelBase";
-            _typeNameTable[87] = "WindowsApp2.Views.Past";
-            _typeNameTable[88] = "WindowsApp2.ViewModels.SettingsPageViewModel";
-            _typeNameTable[89] = "WindowsApp2.ViewModels.SettingsPartViewModel";
-            _typeNameTable[90] = "WindowsApp2.ViewModels.AboutPartViewModel";
-            _typeNameTable[91] = "WindowsApp2.Views.SettingsPage";
-            _typeNameTable[92] = "WindowsApp2.Views.Shell";
-            _typeNameTable[93] = "Template10.Controls.RingSegment";
-            _typeNameTable[94] = "Windows.UI.Xaml.Shapes.Path";
-            _typeNameTable[95] = "System.Nullable`1<Windows.Foundation.Point>";
-            _typeNameTable[96] = "WindowsApp2.Views.Splash";
-            _typeNameTable[97] = "WindowsApp2.Views.Sponsors";
+            _typeNameTable[71] = "WindowsApp2.Views.Error";
+            _typeNameTable[72] = "WindowsApp2.Views.Favourites";
+            _typeNameTable[73] = "WindowsApp2.Views.MainPage";
+            _typeNameTable[74] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[75] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[76] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[77] = "Template10.Behaviors.EllipsisBehavior";
+            _typeNameTable[78] = "Template10.Behaviors.DeviceDispositionBehavior";
+            _typeNameTable[79] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[80] = "WindowsApp2.Views.MasterDetailPage";
+            _typeNameTable[81] = "WindowsApp2.Models.Coordinator";
+            _typeNameTable[82] = "WindowsApp2.Views.Organisers";
+            _typeNameTable[83] = "WindowsApp2.Converters.VisibleWhenTrue";
+            _typeNameTable[84] = "WindowsApp2.Views.ViewModels.Locator";
+            _typeNameTable[85] = "WindowsApp2.Views.Common.BindableBase";
+            _typeNameTable[86] = "WindowsApp2.Views.ViewModels.MainPageViewModel";
+            _typeNameTable[87] = "WindowsApp2.Views.Common.ViewModelBase";
+            _typeNameTable[88] = "WindowsApp2.Views.Past";
+            _typeNameTable[89] = "WindowsApp2.ViewModels.SettingsPageViewModel";
+            _typeNameTable[90] = "WindowsApp2.ViewModels.SettingsPartViewModel";
+            _typeNameTable[91] = "WindowsApp2.ViewModels.AboutPartViewModel";
+            _typeNameTable[92] = "WindowsApp2.Views.SettingsPage";
+            _typeNameTable[93] = "WindowsApp2.Views.Shell";
+            _typeNameTable[94] = "Template10.Controls.RingSegment";
+            _typeNameTable[95] = "Windows.UI.Xaml.Shapes.Path";
+            _typeNameTable[96] = "System.Nullable`1<Windows.Foundation.Point>";
+            _typeNameTable[97] = "WindowsApp2.Views.Splash";
+            _typeNameTable[98] = "WindowsApp2.Views.Sponsors";
 
-            _typeTable = new global::System.Type[98];
+            _typeTable = new global::System.Type[99];
             _typeTable[0] = typeof(global::Template10.Common.BootStrapper);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::Template10.Common.StateItems);
@@ -328,33 +329,34 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             _typeTable[68] = typeof(global::System.Collections.ObjectModel.Collection<global::WindowsApp2.ViewModels.CategoryViewModel>);
             _typeTable[69] = typeof(global::WindowsApp2.ViewModels.CategoryViewModel);
             _typeTable[70] = typeof(global::WindowsApp2.Views.DetailPage);
-            _typeTable[71] = typeof(global::WindowsApp2.Views.Favourites);
-            _typeTable[72] = typeof(global::WindowsApp2.Views.MainPage);
-            _typeTable[73] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[74] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[75] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[76] = typeof(global::Template10.Behaviors.EllipsisBehavior);
-            _typeTable[77] = typeof(global::Template10.Behaviors.DeviceDispositionBehavior);
-            _typeTable[78] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[79] = typeof(global::WindowsApp2.Views.MasterDetailPage);
-            _typeTable[80] = typeof(global::WindowsApp2.Models.Coordinator);
-            _typeTable[81] = typeof(global::WindowsApp2.Views.Organisers);
-            _typeTable[82] = typeof(global::WindowsApp2.Converters.VisibleWhenTrue);
-            _typeTable[83] = typeof(global::WindowsApp2.Views.ViewModels.Locator);
-            _typeTable[84] = typeof(global::WindowsApp2.Views.Common.BindableBase);
-            _typeTable[85] = typeof(global::WindowsApp2.Views.ViewModels.MainPageViewModel);
-            _typeTable[86] = typeof(global::WindowsApp2.Views.Common.ViewModelBase);
-            _typeTable[87] = typeof(global::WindowsApp2.Views.Past);
-            _typeTable[88] = typeof(global::WindowsApp2.ViewModels.SettingsPageViewModel);
-            _typeTable[89] = typeof(global::WindowsApp2.ViewModels.SettingsPartViewModel);
-            _typeTable[90] = typeof(global::WindowsApp2.ViewModels.AboutPartViewModel);
-            _typeTable[91] = typeof(global::WindowsApp2.Views.SettingsPage);
-            _typeTable[92] = typeof(global::WindowsApp2.Views.Shell);
-            _typeTable[93] = typeof(global::Template10.Controls.RingSegment);
-            _typeTable[94] = typeof(global::Windows.UI.Xaml.Shapes.Path);
-            _typeTable[95] = typeof(global::System.Nullable<global::Windows.Foundation.Point>);
-            _typeTable[96] = typeof(global::WindowsApp2.Views.Splash);
-            _typeTable[97] = typeof(global::WindowsApp2.Views.Sponsors);
+            _typeTable[71] = typeof(global::WindowsApp2.Views.Error);
+            _typeTable[72] = typeof(global::WindowsApp2.Views.Favourites);
+            _typeTable[73] = typeof(global::WindowsApp2.Views.MainPage);
+            _typeTable[74] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[75] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[76] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[77] = typeof(global::Template10.Behaviors.EllipsisBehavior);
+            _typeTable[78] = typeof(global::Template10.Behaviors.DeviceDispositionBehavior);
+            _typeTable[79] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[80] = typeof(global::WindowsApp2.Views.MasterDetailPage);
+            _typeTable[81] = typeof(global::WindowsApp2.Models.Coordinator);
+            _typeTable[82] = typeof(global::WindowsApp2.Views.Organisers);
+            _typeTable[83] = typeof(global::WindowsApp2.Converters.VisibleWhenTrue);
+            _typeTable[84] = typeof(global::WindowsApp2.Views.ViewModels.Locator);
+            _typeTable[85] = typeof(global::WindowsApp2.Views.Common.BindableBase);
+            _typeTable[86] = typeof(global::WindowsApp2.Views.ViewModels.MainPageViewModel);
+            _typeTable[87] = typeof(global::WindowsApp2.Views.Common.ViewModelBase);
+            _typeTable[88] = typeof(global::WindowsApp2.Views.Past);
+            _typeTable[89] = typeof(global::WindowsApp2.ViewModels.SettingsPageViewModel);
+            _typeTable[90] = typeof(global::WindowsApp2.ViewModels.SettingsPartViewModel);
+            _typeTable[91] = typeof(global::WindowsApp2.ViewModels.AboutPartViewModel);
+            _typeTable[92] = typeof(global::WindowsApp2.Views.SettingsPage);
+            _typeTable[93] = typeof(global::WindowsApp2.Views.Shell);
+            _typeTable[94] = typeof(global::Template10.Controls.RingSegment);
+            _typeTable[95] = typeof(global::Windows.UI.Xaml.Shapes.Path);
+            _typeTable[96] = typeof(global::System.Nullable<global::Windows.Foundation.Point>);
+            _typeTable[97] = typeof(global::WindowsApp2.Views.Splash);
+            _typeTable[98] = typeof(global::WindowsApp2.Views.Sponsors);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -413,26 +415,27 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
         private object Activate_67_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WindowsApp2.ViewModels.CategoryViewModel>(); }
         private object Activate_68_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WindowsApp2.ViewModels.CategoryViewModel>(); }
         private object Activate_70_DetailPage() { return new global::WindowsApp2.Views.DetailPage(); }
-        private object Activate_71_Favourites() { return new global::WindowsApp2.Views.Favourites(); }
-        private object Activate_72_MainPage() { return new global::WindowsApp2.Views.MainPage(); }
-        private object Activate_74_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_76_EllipsisBehavior() { return new global::Template10.Behaviors.EllipsisBehavior(); }
-        private object Activate_77_DeviceDispositionBehavior() { return new global::Template10.Behaviors.DeviceDispositionBehavior(); }
-        private object Activate_78_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_79_MasterDetailPage() { return new global::WindowsApp2.Views.MasterDetailPage(); }
-        private object Activate_80_Coordinator() { return new global::WindowsApp2.Models.Coordinator(); }
-        private object Activate_81_Organisers() { return new global::WindowsApp2.Views.Organisers(); }
-        private object Activate_82_VisibleWhenTrue() { return new global::WindowsApp2.Converters.VisibleWhenTrue(); }
-        private object Activate_83_Locator() { return new global::WindowsApp2.Views.ViewModels.Locator(); }
-        private object Activate_85_MainPageViewModel() { return new global::WindowsApp2.Views.ViewModels.MainPageViewModel(); }
-        private object Activate_87_Past() { return new global::WindowsApp2.Views.Past(); }
-        private object Activate_88_SettingsPageViewModel() { return new global::WindowsApp2.ViewModels.SettingsPageViewModel(); }
-        private object Activate_89_SettingsPartViewModel() { return new global::WindowsApp2.ViewModels.SettingsPartViewModel(); }
-        private object Activate_90_AboutPartViewModel() { return new global::WindowsApp2.ViewModels.AboutPartViewModel(); }
-        private object Activate_91_SettingsPage() { return new global::WindowsApp2.Views.SettingsPage(); }
-        private object Activate_92_Shell() { return new global::WindowsApp2.Views.Shell(); }
-        private object Activate_93_RingSegment() { return new global::Template10.Controls.RingSegment(); }
-        private object Activate_97_Sponsors() { return new global::WindowsApp2.Views.Sponsors(); }
+        private object Activate_71_Error() { return new global::WindowsApp2.Views.Error(); }
+        private object Activate_72_Favourites() { return new global::WindowsApp2.Views.Favourites(); }
+        private object Activate_73_MainPage() { return new global::WindowsApp2.Views.MainPage(); }
+        private object Activate_75_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_77_EllipsisBehavior() { return new global::Template10.Behaviors.EllipsisBehavior(); }
+        private object Activate_78_DeviceDispositionBehavior() { return new global::Template10.Behaviors.DeviceDispositionBehavior(); }
+        private object Activate_79_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_80_MasterDetailPage() { return new global::WindowsApp2.Views.MasterDetailPage(); }
+        private object Activate_81_Coordinator() { return new global::WindowsApp2.Models.Coordinator(); }
+        private object Activate_82_Organisers() { return new global::WindowsApp2.Views.Organisers(); }
+        private object Activate_83_VisibleWhenTrue() { return new global::WindowsApp2.Converters.VisibleWhenTrue(); }
+        private object Activate_84_Locator() { return new global::WindowsApp2.Views.ViewModels.Locator(); }
+        private object Activate_86_MainPageViewModel() { return new global::WindowsApp2.Views.ViewModels.MainPageViewModel(); }
+        private object Activate_88_Past() { return new global::WindowsApp2.Views.Past(); }
+        private object Activate_89_SettingsPageViewModel() { return new global::WindowsApp2.ViewModels.SettingsPageViewModel(); }
+        private object Activate_90_SettingsPartViewModel() { return new global::WindowsApp2.ViewModels.SettingsPartViewModel(); }
+        private object Activate_91_AboutPartViewModel() { return new global::WindowsApp2.ViewModels.AboutPartViewModel(); }
+        private object Activate_92_SettingsPage() { return new global::WindowsApp2.Views.SettingsPage(); }
+        private object Activate_93_Shell() { return new global::WindowsApp2.Views.Shell(); }
+        private object Activate_94_RingSegment() { return new global::Template10.Controls.RingSegment(); }
+        private object Activate_98_Sponsors() { return new global::WindowsApp2.Views.Sponsors(); }
         private void MapAdd_2_StateItems(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -489,13 +492,13 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             var newItem = (global::WindowsApp2.ViewModels.CategoryViewModel)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_74_BehaviorCollection(object instance, object item)
+        private void VectorAdd_75_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_78_ActionCollection(object instance, object item)
+        private void VectorAdd_79_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
@@ -1021,48 +1024,55 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 71:   //  WindowsApp2.Views.Favourites
+            case 71:   //  WindowsApp2.Views.Error
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_71_Favourites;
+                userType.Activator = Activate_71_Error;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 72:   //  WindowsApp2.Views.MainPage
+            case 72:   //  WindowsApp2.Views.Favourites
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_72_MainPage;
+                userType.Activator = Activate_72_Favourites;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 73:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 73:   //  WindowsApp2.Views.MainPage
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_73_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 74:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 74:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 75:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_74_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_75_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 75:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 76:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 76:   //  Template10.Behaviors.EllipsisBehavior
+            case 77:   //  Template10.Behaviors.EllipsisBehavior
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_76_EllipsisBehavior;
+                userType.Activator = Activate_77_EllipsisBehavior;
                 userType.AddMemberName("Visibility");
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 77:   //  Template10.Behaviors.DeviceDispositionBehavior
+            case 78:   //  Template10.Behaviors.DeviceDispositionBehavior
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_77_DeviceDispositionBehavior;
+                userType.Activator = Activate_78_DeviceDispositionBehavior;
                 userType.SetContentPropertyName("Template10.Behaviors.DeviceDispositionBehavior.Actions");
                 userType.AddMemberName("Actions");
                 userType.AddMemberName("Continuum");
@@ -1078,16 +1088,16 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 78:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 79:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_78_ActionCollection;
+                userType.CollectionAdd = VectorAdd_79_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 79:   //  WindowsApp2.Views.MasterDetailPage
+            case 80:   //  WindowsApp2.Views.MasterDetailPage
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_79_MasterDetailPage;
+                userType.Activator = Activate_80_MasterDetailPage;
                 userType.AddMemberName("Item");
                 userType.AddMemberName("x");
                 userType.AddMemberName("Header");
@@ -1095,102 +1105,102 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 80:   //  WindowsApp2.Models.Coordinator
+            case 81:   //  WindowsApp2.Models.Coordinator
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 81:   //  WindowsApp2.Views.Organisers
+            case 82:   //  WindowsApp2.Views.Organisers
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_81_Organisers;
+                userType.Activator = Activate_82_Organisers;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 82:   //  WindowsApp2.Converters.VisibleWhenTrue
+            case 83:   //  WindowsApp2.Converters.VisibleWhenTrue
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_82_VisibleWhenTrue;
+                userType.Activator = Activate_83_VisibleWhenTrue;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 83:   //  WindowsApp2.Views.ViewModels.Locator
+            case 84:   //  WindowsApp2.Views.ViewModels.Locator
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WindowsApp2.Views.Common.BindableBase"));
-                userType.Activator = Activate_83_Locator;
+                userType.Activator = Activate_84_Locator;
                 userType.AddMemberName("MainPageViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 84:   //  WindowsApp2.Views.Common.BindableBase
+            case 85:   //  WindowsApp2.Views.Common.BindableBase
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 85:   //  WindowsApp2.Views.ViewModels.MainPageViewModel
+            case 86:   //  WindowsApp2.Views.ViewModels.MainPageViewModel
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WindowsApp2.Views.Common.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 86:   //  WindowsApp2.Views.Common.ViewModelBase
+            case 87:   //  WindowsApp2.Views.Common.ViewModelBase
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WindowsApp2.Views.Common.BindableBase"));
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 87:   //  WindowsApp2.Views.Past
+            case 88:   //  WindowsApp2.Views.Past
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_87_Past;
+                userType.Activator = Activate_88_Past;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 88:   //  WindowsApp2.ViewModels.SettingsPageViewModel
+            case 89:   //  WindowsApp2.ViewModels.SettingsPageViewModel
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_88_SettingsPageViewModel;
+                userType.Activator = Activate_89_SettingsPageViewModel;
                 userType.AddMemberName("SettingsPartViewModel");
                 userType.AddMemberName("AboutPartViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 89:   //  WindowsApp2.ViewModels.SettingsPartViewModel
+            case 90:   //  WindowsApp2.ViewModels.SettingsPartViewModel
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 90:   //  WindowsApp2.ViewModels.AboutPartViewModel
+            case 91:   //  WindowsApp2.ViewModels.AboutPartViewModel
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 91:   //  WindowsApp2.Views.SettingsPage
+            case 92:   //  WindowsApp2.Views.SettingsPage
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_91_SettingsPage;
+                userType.Activator = Activate_92_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 92:   //  WindowsApp2.Views.Shell
+            case 93:   //  WindowsApp2.Views.Shell
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_92_Shell;
+                userType.Activator = Activate_93_Shell;
                 userType.AddMemberName("_MyHamburgerMenu");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 93:   //  Template10.Controls.RingSegment
+            case 94:   //  Template10.Controls.RingSegment
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Shapes.Path"));
-                userType.Activator = Activate_93_RingSegment;
+                userType.Activator = Activate_94_RingSegment;
                 userType.AddMemberName("EndAngle");
                 userType.AddMemberName("InnerRadius");
                 userType.AddMemberName("Radius");
@@ -1199,25 +1209,25 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 94:   //  Windows.UI.Xaml.Shapes.Path
+            case 95:   //  Windows.UI.Xaml.Shapes.Path
                 xamlType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 95:   //  System.Nullable`1<Windows.Foundation.Point>
+            case 96:   //  System.Nullable`1<Windows.Foundation.Point>
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 96:   //  WindowsApp2.Views.Splash
+            case 97:   //  WindowsApp2.Views.Splash
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 97:   //  WindowsApp2.Views.Sponsors
+            case 98:   //  WindowsApp2.Views.Sponsors
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_97_Sponsors;
+                userType.Activator = Activate_98_Sponsors;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
