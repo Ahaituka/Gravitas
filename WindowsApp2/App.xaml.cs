@@ -25,7 +25,7 @@ namespace WindowsApp2
     sealed partial class App : Template10.Common.BootStrapper
     {
 
-   
+        internal static string SomeImportantValue;
 
         public App()
         {
@@ -46,20 +46,20 @@ namespace WindowsApp2
 
         public override async Task OnInitializeAsync(IActivatedEventArgs args)
         {
-            //  InitNotificationsAsync();
-           // NavigationService.Navigate(typeof(Views.Error));
+          //  InitNotificationsAsync();
+
             if (Window.Current.Content as ModalDialog == null)
             {
                 // create a new frame 
-             //   var nav = NavigationServiceFactory(BackButton.Attach, ExistingContent.Include);
+                var nav = NavigationServiceFactory(BackButton.Attach, ExistingContent.Include);
 
                 // create modal root
-            //    Window.Current.Content = new ModalDialog
-            //    {
-            //        DisableBackButtonWhenModal = true,
-            //        Content = new Views.Shell(nav),
-            //        ModalContent = new Views.Busy(),
-            //    };
+                Window.Current.Content = new ModalDialog
+                {
+                    DisableBackButtonWhenModal = true,
+                    Content = new Views.Shell(nav),
+                    ModalContent = new Views.Busy(),
+                };
             }
             await Task.CompletedTask;
         }
@@ -84,25 +84,24 @@ namespace WindowsApp2
             }
             else if(!DataManager.IsReady)
             {
-                //if(x)
-                //{
-                //    await DataManager.RefreshDataAsync();
+                if(x)
+                {
+                    await DataManager.RefreshDataAsync();
 
-                //    if(DataManager.IsReady)
-                //    {
+                    if(DataManager.IsReady)
+                    {
 
-                //        NavigationService.Navigate(typeof(AppStartupGuide.MainPage));
+                        NavigationService.Navigate(typeof(AppStartupGuide.MainPage));
 
-                //    }
+                    }
 
-                //}
+                }
 
                 if(!x)
                 {
-                    // NavigationService.Navigate(typeof(Views.Error));
 
-                    Window.Current.Content = new Error();
-                    NavigationService.Navigate(typeof(Error));
+                 
+                    NavigationService.Navigate(typeof(Views.Error));
                 }             
                 }
 
