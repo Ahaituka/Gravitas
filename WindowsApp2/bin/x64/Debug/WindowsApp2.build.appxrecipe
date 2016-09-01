@@ -457,11 +457,14 @@
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\builtrix.png">
       <PackagePath>Assets\builtrix.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\acm.png">
-      <PackagePath>Assets\ChapterLogos\acm.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\ACM VIT.png">
+      <PackagePath>Assets\ChapterLogos\ACM VIT.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\aiche.png">
-      <PackagePath>Assets\ChapterLogos\aiche.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\AIChE-VIT.png">
+      <PackagePath>Assets\ChapterLogos\AIChE-VIT.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\APPLE DEVELOPERS GROUP.png">
+      <PackagePath>Assets\ChapterLogos\APPLE DEVELOPERS GROUP.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\asce.png">
       <PackagePath>Assets\ChapterLogos\asce.png</PackagePath>
@@ -472,20 +475,23 @@
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\ayuda.png">
       <PackagePath>Assets\ChapterLogos\ayuda.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\codechef.png">
-      <PackagePath>Assets\ChapterLogos\codechef.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\Codechef - VIT.png">
+      <PackagePath>Assets\ChapterLogos\Codechef - VIT.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\creativityclub.png">
-      <PackagePath>Assets\ChapterLogos\creativityclub.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\Computer Society of India- VIT Chapter.png">
+      <PackagePath>Assets\ChapterLogos\Computer Society of India- VIT Chapter.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\csi.png">
-      <PackagePath>Assets\ChapterLogos\csi.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\Creativity Club.png">
+      <PackagePath>Assets\ChapterLogos\Creativity Club.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\Debate Society VIT.png">
+      <PackagePath>Assets\ChapterLogos\Debate Society VIT.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\ecell.png">
       <PackagePath>Assets\ChapterLogos\ecell.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\hindue-plus.png">
-      <PackagePath>Assets\ChapterLogos\hindue-plus.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\HINDU E PLUS CLUB.png">
+      <PackagePath>Assets\ChapterLogos\HINDU E PLUS CLUB.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\huaweiclubvit.png">
       <PackagePath>Assets\ChapterLogos\huaweiclubvit.png</PackagePath>
@@ -499,11 +505,14 @@
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\ieee-ras.png">
       <PackagePath>Assets\ChapterLogos\ieee-ras.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\ieee.png">
-      <PackagePath>Assets\ChapterLogos\ieee.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\IEEE-VIT.png">
+      <PackagePath>Assets\ChapterLogos\IEEE-VIT.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\ieeecs.png">
-      <PackagePath>Assets\ChapterLogos\ieeecs.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\IEEE-WIE.png">
+      <PackagePath>Assets\ChapterLogos\IEEE-WIE.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\IEEE-CS.png">
+      <PackagePath>Assets\ChapterLogos\IEEE-CS.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\ieeeembs.png">
       <PackagePath>Assets\ChapterLogos\ieeeembs.png</PackagePath>
@@ -513,9 +522,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\ieeepcs.png">
       <PackagePath>Assets\ChapterLogos\ieeepcs.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\ieeewie.png">
-      <PackagePath>Assets\ChapterLogos\ieeewie.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\iei.png">
       <PackagePath>Assets\ChapterLogos\iei.png</PackagePath>
@@ -529,14 +535,11 @@
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\iete.png">
       <PackagePath>Assets\ChapterLogos\iete.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\iiche.png">
-      <PackagePath>Assets\ChapterLogos\iiche.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\IIChe-VIT.png">
+      <PackagePath>Assets\ChapterLogos\IIChe-VIT.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\iosdevelopers.png">
-      <PackagePath>Assets\ChapterLogos\iosdevelopers.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\isa.png">
-      <PackagePath>Assets\ChapterLogos\isa.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\ISA-VIT.png">
+      <PackagePath>Assets\ChapterLogos\ISA-VIT.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\isoi.png">
       <PackagePath>Assets\ChapterLogos\isoi.png</PackagePath>
@@ -547,23 +550,20 @@
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\kairossociety.png">
       <PackagePath>Assets\ChapterLogos\kairossociety.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\natureclub.png">
-      <PackagePath>Assets\ChapterLogos\natureclub.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\Nature Club.png">
+      <PackagePath>Assets\ChapterLogos\Nature Club.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\photographyclub.png">
-      <PackagePath>Assets\ChapterLogos\photographyclub.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\roboVITics.png">
+      <PackagePath>Assets\ChapterLogos\roboVITics.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\robovitics.png">
-      <PackagePath>Assets\ChapterLogos\robovitics.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\SABEST VIT.png">
+      <PackagePath>Assets\ChapterLogos\SABEST VIT.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\sabest.png">
-      <PackagePath>Assets\ChapterLogos\sabest.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\SAE-VIT.png">
+      <PackagePath>Assets\ChapterLogos\SAE-VIT.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\sae.png">
-      <PackagePath>Assets\ChapterLogos\sae.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\seds.png">
-      <PackagePath>Assets\ChapterLogos\seds.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\SEDS-VIT.png">
+      <PackagePath>Assets\ChapterLogos\SEDS-VIT.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\smce.png">
       <PackagePath>Assets\ChapterLogos\smce.png</PackagePath>
@@ -571,26 +571,26 @@
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\sme.png">
       <PackagePath>Assets\ChapterLogos\sme.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\tag.png">
-      <PackagePath>Assets\ChapterLogos\tag.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\tec.png">
       <PackagePath>Assets\ChapterLogos\tec.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\thedebatesociety.png">
-      <PackagePath>Assets\ChapterLogos\thedebatesociety.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\Technology and Gaming Club %28TAG%29.png">
+      <PackagePath>Assets\ChapterLogos\Technology and Gaming Club %28TAG%29.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\The Photography Club.png">
+      <PackagePath>Assets\ChapterLogos\The Photography Club.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\The VIT Quiz Club.png">
+      <PackagePath>Assets\ChapterLogos\The VIT Quiz Club.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\trekkingclub.png">
       <PackagePath>Assets\ChapterLogos\trekkingclub.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\vitanimationclub.png">
-      <PackagePath>Assets\ChapterLogos\vitanimationclub.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\VIT ANIMATION CLUB.png">
+      <PackagePath>Assets\ChapterLogos\VIT ANIMATION CLUB.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\vitquizclub.png">
-      <PackagePath>Assets\ChapterLogos\vitquizclub.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\vitspartans.png">
-      <PackagePath>Assets\ChapterLogos\vitspartans.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\VIT Spartans.png">
+      <PackagePath>Assets\ChapterLogos\VIT Spartans.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\ChapterLogos\yrc.png">
       <PackagePath>Assets\ChapterLogos\yrc.png</PackagePath>
