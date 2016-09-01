@@ -148,11 +148,11 @@
     <Compile Include="Views\DetailPage.xaml.cs">
       <DependentUpon>DetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Error.xaml.cs">
-      <DependentUpon>Error.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\Favourites.xaml.cs">
       <DependentUpon>Favourites.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Icheck.xaml.cs">
+      <DependentUpon>Icheck.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -325,11 +325,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Error.xaml">
+    <Page Include="Views\Favourites.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Favourites.xaml">
+    <Page Include="Views\Icheck.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

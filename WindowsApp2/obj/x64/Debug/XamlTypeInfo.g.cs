@@ -228,8 +228,8 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             _typeNameTable[68] = "System.Collections.ObjectModel.Collection`1<WindowsApp2.ViewModels.CategoryViewModel>";
             _typeNameTable[69] = "WindowsApp2.ViewModels.CategoryViewModel";
             _typeNameTable[70] = "WindowsApp2.Views.DetailPage";
-            _typeNameTable[71] = "WindowsApp2.Views.Error";
-            _typeNameTable[72] = "WindowsApp2.Views.Favourites";
+            _typeNameTable[71] = "WindowsApp2.Views.Favourites";
+            _typeNameTable[72] = "WindowsApp2.Views.Icheck";
             _typeNameTable[73] = "WindowsApp2.Views.MainPage";
             _typeNameTable[74] = "Microsoft.Xaml.Interactivity.Interaction";
             _typeNameTable[75] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
@@ -329,8 +329,8 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             _typeTable[68] = typeof(global::System.Collections.ObjectModel.Collection<global::WindowsApp2.ViewModels.CategoryViewModel>);
             _typeTable[69] = typeof(global::WindowsApp2.ViewModels.CategoryViewModel);
             _typeTable[70] = typeof(global::WindowsApp2.Views.DetailPage);
-            _typeTable[71] = typeof(global::WindowsApp2.Views.Error);
-            _typeTable[72] = typeof(global::WindowsApp2.Views.Favourites);
+            _typeTable[71] = typeof(global::WindowsApp2.Views.Favourites);
+            _typeTable[72] = typeof(global::WindowsApp2.Views.Icheck);
             _typeTable[73] = typeof(global::WindowsApp2.Views.MainPage);
             _typeTable[74] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
             _typeTable[75] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
@@ -415,8 +415,8 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
         private object Activate_67_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WindowsApp2.ViewModels.CategoryViewModel>(); }
         private object Activate_68_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WindowsApp2.ViewModels.CategoryViewModel>(); }
         private object Activate_70_DetailPage() { return new global::WindowsApp2.Views.DetailPage(); }
-        private object Activate_71_Error() { return new global::WindowsApp2.Views.Error(); }
-        private object Activate_72_Favourites() { return new global::WindowsApp2.Views.Favourites(); }
+        private object Activate_71_Favourites() { return new global::WindowsApp2.Views.Favourites(); }
+        private object Activate_72_Icheck() { return new global::WindowsApp2.Views.Icheck(); }
         private object Activate_73_MainPage() { return new global::WindowsApp2.Views.MainPage(); }
         private object Activate_75_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
         private object Activate_77_EllipsisBehavior() { return new global::Template10.Behaviors.EllipsisBehavior(); }
@@ -1024,16 +1024,16 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 71:   //  WindowsApp2.Views.Error
+            case 71:   //  WindowsApp2.Views.Favourites
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_71_Error;
+                userType.Activator = Activate_71_Favourites;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 72:   //  WindowsApp2.Views.Favourites
+            case 72:   //  WindowsApp2.Views.Icheck
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_72_Favourites;
+                userType.Activator = Activate_72_Icheck;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

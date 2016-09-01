@@ -69,10 +69,10 @@ namespace WindowsApp2
             // long-running startup tasks go here
             await Task.Delay(TimeSpan.FromSeconds(6));
 
-            await Windows.Storage.ApplicationData.Current.ClearAsync();
- 
-            await DataManager.LoadCacheAsync()
-                ;
+            //   await Windows.Storage.ApplicationData.Current.ClearAsync();
+
+            await DataManager.LoadCacheAsync();
+               
             Debug.WriteLine("Data Status: ", DataManager.IsReady);
 
             var x = NetworkService.IsInternet();
@@ -84,11 +84,11 @@ namespace WindowsApp2
             }
             else if(!DataManager.IsReady)
             {
-                if(x)
+                if (x)
                 {
                     await DataManager.RefreshDataAsync();
 
-                    if(DataManager.IsReady)
+                    if (DataManager.IsReady)
                     {
 
                         NavigationService.Navigate(typeof(AppStartupGuide.MainPage));
@@ -97,11 +97,13 @@ namespace WindowsApp2
 
                 }
 
-                if(!x)
+                if (!x)
                 {
 
-                 
-                    NavigationService.Navigate(typeof(Views.Error));
+                      Shell.Instance._MyHamburgerMenu.IsFullScreen = true;
+                //    Shell.HamburgerMenu.IsFullScreen = true;
+                    NavigationService.Navigate(typeof(Views.Icheck));
+                    
                 }             
                 }
 

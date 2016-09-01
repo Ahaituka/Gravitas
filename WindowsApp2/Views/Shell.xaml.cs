@@ -28,6 +28,19 @@ namespace WindowsApp2.Views
             InitializeComponent();
         }
 
+
+        public static void SetDiable()
+        {
+
+            Instance.MyHamburgerMenu.IsFullScreen = true;
+            Instance.Visibility = Visibility.Collapsed;
+            Instance.MyHamburgerMenu.Visibility = Visibility.Collapsed;
+            Instance.MyHamburgerMenu.HamburgerButtonVisibility = Visibility.Collapsed;
+            HamburgerMenu.IsFullScreen = true;
+
+        }
+        public static bool IsVisbible = false;
+
         public Shell(INavigationService navigationService) : this()
         {
             SetNavigationService(navigationService);
