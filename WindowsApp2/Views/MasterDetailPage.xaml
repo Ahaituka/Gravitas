@@ -78,18 +78,19 @@
         </DataTemplate>
 
         <DataTemplate x:Key="DetailContentTemplate" x:DataType="data:Event">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="200" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto"  />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Grid     x:Name="Section2" Grid.Row="0">
-                    <Grid.Background>
-                        <ImageBrush ImageSource="ms-appx:///Assets/8.JPG" Stretch="Fill" />
-                    </Grid.Background>
-                    <TextBlock MaxWidth="250"
+            <ScrollViewer>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto"  />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid     x:Name="Section2" Grid.Row="0">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="ms-appx:///Assets/8.JPG" Stretch="Fill" />
+                        </Grid.Background>
+                        <TextBlock MaxWidth="250"
                                Margin="36,62,34,68" 
                                FontFamily="Baskerville Old Face"
                                FontSize="30"
@@ -97,124 +98,125 @@
                                TextWrapping="WrapWholeWords"
                                d:LayoutOverrides="Width, LeftPosition, RightPosition, TopPosition, BottomPosition">
                         <Run Text="{x:Bind name}" />
-                    </TextBlock>
-                </Grid>
-                <Grid x:Name="Content"
+                        </TextBlock>
+                    </Grid>
+                    <Grid x:Name="Content"
                       Grid.Row="1"
                        Background="#FFDDBB0C"
                      >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <StackPanel Grid.Column="0" HorizontalAlignment="Right">
-                        <RelativePanel>
-                            <SymbolIcon x:Name="symbol"
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" HorizontalAlignment="Right">
+                            <RelativePanel>
+                                <SymbolIcon x:Name="symbol"
                                         Margin="10,0"
                                         HorizontalAlignment="Left"
                                         RelativePanel.AlignLeftWithPanel="True"
                                         Symbol="Globe" />
 
-                            <TextBlock HorizontalAlignment="Right"
+                                <TextBlock HorizontalAlignment="Right"
                                        FontWeight="Bold"
                                        VerticalAlignment="Top"
                                        RelativePanel.RightOf="symbol"
                                        Style="{ThemeResource BaseTextBlockStyle}"
                                        Text="{x:Bind subCategory}" />
-                        </RelativePanel>
-                    </StackPanel>
+                            </RelativePanel>
+                        </StackPanel>
 
-                    <StackPanel Grid.Column="1" HorizontalAlignment="Center">
-                        <RelativePanel>
-                            <SymbolIcon x:Name="symboll"
+                        <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                            <RelativePanel>
+                                <SymbolIcon x:Name="symboll"
                                         Margin="10,0"
                                         HorizontalAlignment="Left"
                                         
                                         Symbol="People" />
 
 
-                            <TextBlock HorizontalAlignment="Right"
+                                <TextBlock HorizontalAlignment="Right"
                                        
                                        FontWeight="Bold"
                                        VerticalAlignment="Top"
                                        RelativePanel.RightOf="symboll"
                                        Style="{ThemeResource BaseTextBlockStyle}"
                                        Text="{x:Bind teamSize}" />
-                        </RelativePanel>
-                    </StackPanel>
-                    <StackPanel Grid.Column="2" d:LayoutOverrides="Width, LeftPosition, RightPosition">
-                        <RelativePanel>
-                            <TextBlock x:Name="symbllol"
+                            </RelativePanel>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2" d:LayoutOverrides="Width, LeftPosition, RightPosition">
+                            <RelativePanel>
+                                <TextBlock x:Name="symbllol"
                                        FontWeight="Bold"
                                        Margin="10,0"
                                        Text="&#x20b9;" />
 
-                            <!--<SymbolIcon x:Name="symbllol"
+                                <!--<SymbolIcon x:Name="symbllol"
                                         Margin="0,0,5,0"
                                         HorizontalAlignment="Left"
                                         RelativePanel.AlignLeftWithPanel="True"
                                         Symbol="Bullets" />-->
 
 
-                            <TextBlock FontWeight="Bold"
+                                <TextBlock FontWeight="Bold"
                                        HorizontalAlignment="Right"
                                        VerticalAlignment="Top"
                                        RelativePanel.RightOf="symbllol"
                                        Style="{ThemeResource BaseTextBlockStyle}"
                                        Text="{x:Bind participationFee}" />
-                        </RelativePanel>
-                    </StackPanel>
-                </Grid>
-                <Grid  Grid.Row="2"  BorderBrush="White" BorderThickness="2" Margin="0,10,0,0">
-                    <TextBlock 
+                            </RelativePanel>
+                        </StackPanel>
+                    </Grid>
+                    <Grid  Grid.Row="2"  BorderBrush="White" BorderThickness="2" Margin="0,10,0,0">
+                        <TextBlock 
                            HorizontalAlignment="Center"
                            Style="{ThemeResource ScenarioDescriptionTextStyle}"
                            Text="{x:Bind description}"
                            TextWrapping="WrapWholeWords" />
-                </Grid>
+                    </Grid>
 
-                <Grid Grid.Row="3" Margin="20">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Row="3" Margin="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
 
 
-                    <Button  HorizontalAlignment="Center"
+                        <Button  HorizontalAlignment="Center"
                                 VerticalAlignment="Center"                                                             
                                 Click="SymbolIcon_Tapped_1">
-                        <SymbolIcon Grid.Column="0"
+                            <SymbolIcon Grid.Column="0"
                                      Symbol="Phone"
                                 />
-                    </Button>
+                        </Button>
 
 
-                    <Button Click="ShowPopupOffsetClicked"  Grid.Column="1"
+                        <Button Click="ShowPopupOffsetClicked"  Grid.Column="1"
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center">
-                        <SymbolIcon x:Name="People"
+                            <SymbolIcon x:Name="People"
                                 
                                 IsTapEnabled="True"
                                 Symbol="People"
                                  />
-                    </Button>
+                        </Button>
 
 
-                    <Button Click="SymbolIcon_Tapped"        HorizontalAlignment="Center"
+                        <Button Click="SymbolIcon_Tapped"        HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
                              Grid.Column="2"
                            >
-                        <SymbolIcon
+                            <SymbolIcon
                                 IsTapEnabled="True"
                                 Symbol="Mail"
                                 />
-                    </Button>
+                        </Button>
+
+                    </Grid>
 
                 </Grid>
-
-            </Grid>
+            </ScrollViewer>
         </DataTemplate>
     </Page.Resources>
 
@@ -453,8 +455,8 @@
             </controls:ModalDialog.Content>
         </controls:ModalDialog>-->
 
-
-        <ContentPresenter x:Name="DetailContentPresenter"
+        
+            <ContentPresenter x:Name="DetailContentPresenter"
                           Grid.RowSpan="2"
                           Grid.Column="1"
                           BorderBrush="{ThemeResource SystemControlForegroundBaseLowBrush}"
@@ -462,11 +464,12 @@
                           Content="{x:Bind MasterListView.SelectedItem, Mode=OneWay}"
                           ContentTemplate="{StaticResource DetailContentTemplate}"
                           >
-            <ContentPresenter.ContentTransitions>
-                <!--  Empty by default. See MasterListView_ItemClick  -->
-                <TransitionCollection />
-            </ContentPresenter.ContentTransitions>
-        </ContentPresenter>
+                <ContentPresenter.ContentTransitions>
+                    <!--  Empty by default. See MasterListView_ItemClick  -->
+                    <TransitionCollection />
+                </ContentPresenter.ContentTransitions>
+            </ContentPresenter>
+     
 
         <ListView x:Name="MasterListView"
                   Grid.Row="1"

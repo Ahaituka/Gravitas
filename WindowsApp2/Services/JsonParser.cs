@@ -27,24 +27,24 @@ namespace WindowsApp2.Services
         }
         */
 
-         public  async  static  Task<string> GetfilesAsync()
-        {
-            StringBuilder outputText = new StringBuilder();
-            StorageFolder appInstalledFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
-             StorageFolder assets = await appInstalledFolder.GetFolderAsync("Assets");
-            var files = await assets.GetFilesAsync();
+        // public  async  static  Task<string> GetfilesAsync()
+        //{
+        //    StringBuilder outputText = new StringBuilder();
+        //    StorageFolder appInstalledFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+        //     StorageFolder assets = await appInstalledFolder.GetFolderAsync("Assets");
+        //    var files = await assets.GetFilesAsync();
 
 
-            foreach (StorageFile file in files)
-            {
-                outputText.Append(file.Name + "\n");
-            }
+        //    foreach (StorageFile file in files)
+        //    {
+        //        outputText.Append(file.Name + "\n");
+        //    }
 
-            //List<string> files = new DirectoryInfo(yourPath).GetDirectories().Select(d => d.Name).ToArray();
-            return outputText.ToString();
+        //    //List<string> files = new DirectoryInfo(yourPath).GetDirectories().Select(d => d.Name).ToArray();
+        //    return outputText.ToString();
 
 
-        }
+        //}
 
         public static ObservableCollection<Event> TryGetEvents(string eventsJson)
         {
@@ -59,9 +59,9 @@ namespace WindowsApp2.Services
                 var ms = new MemoryStream(Encoding.UTF8.GetBytes(arrayString));
                 var eventList = new ObservableCollection<Event>((List<Event>)jsonSerializer.ReadObject(ms));
 
-                var xg = GetfilesAsync();
+                //var xg = GetfilesAsync();
 
-                string g = xg.ToString();
+                //string g = xg.ToString();
 
 
 
@@ -71,7 +71,7 @@ namespace WindowsApp2.Services
                 {
 
 
-                    x.chapterpath = String.Format("ms-appx:///Assets/ChapterLogos/{0}.png", g.Select(d => d.Equals("x.organization[0].ToLower()").ToString()));
+                    x.chapterpath = String.Format("ms-appx:///Assets/ChapterLogos/{0}.png",x.organization[0].ToLower());
 
                   
 
