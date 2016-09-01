@@ -1,4 +1,5 @@
 ﻿using System;
+
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,6 +9,8 @@ using Windows.Data.Json;
 using System.Collections.ObjectModel;
 
 using WindowsApp2.Models;
+using System.Threading.Tasks;
+using Windows.Storage;
 
 namespace WindowsApp2.Services
 {
@@ -24,6 +27,25 @@ namespace WindowsApp2.Services
         }
         */
 
+         public  async  static  Task<string> GetfilesAsync()
+        {
+            StringBuilder outputText = new StringBuilder();
+            StorageFolder appInstalledFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+             StorageFolder assets = await appInstalledFolder.GetFolderAsync("Assets");
+            var files = await assets.GetFilesAsync();
+
+
+            foreach (StorageFile file in files)
+            {
+                outputText.Append(file.Name + "\n");
+            }
+
+            //List<string> files = new DirectoryInfo(yourPath).GetDirectories().Select(d => d.Name).ToArray();
+            return outputText.ToString();
+
+
+        }
+
         public static ObservableCollection<Event> TryGetEvents(string eventsJson)
         {
             try
@@ -37,20 +59,186 @@ namespace WindowsApp2.Services
                 var ms = new MemoryStream(Encoding.UTF8.GetBytes(arrayString));
                 var eventList = new ObservableCollection<Event>((List<Event>)jsonSerializer.ReadObject(ms));
 
+                var xg = GetfilesAsync();
+
+                string g = xg.ToString();
+
+
+
+
+
                 foreach (var x in eventList)
                 {
-                    if(x.organization[0]=="SME")
-                    {
-
-                        x.chapterpath = "ms-appx:///Assets/appliedengineering.png";                   
-
-                     }
 
 
-                    else
+                    x.chapterpath = String.Format("ms-appx:///Assets/ChapterLogos/{0}.png", g.Select(d => d.Equals("x.organization[0].ToLower()").ToString()));
 
-                        x.chapterpath = "ms-appx:///Assets/workshop.png";
+                  
 
+
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+
+                    //else if ((x.organization[0] == "ASCE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/asce.png";
+                    //}
+                    //else if ((x.organization[0] == "ASMEE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+
+                    //else if ((x.organization[0] == "AYUDA"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+
+                    //else if ((x.organization[0] == "CODECHEF"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+                    //else if ((x.organization[0] == "AICHE"))
+                    //{
+
+                    //    x.chapterpath = "ms-appx:///Assets/ChapterLogos/aiche.png";
+                    //}
+
+                    
                 }
 
                
