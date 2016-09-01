@@ -1,13 +1,30 @@
-﻿<Page
-    x:Class="WindowsApp2.Views.Organisers"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:WindowsApp2.Views"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+﻿<Page x:Class="WindowsApp2.Views.Organisers"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:WindowsApp2.Views"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
+
+
+
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <WebView x:Name="WebView"
+                 LoadCompleted="WebView_LoadCompleted"            
+                 Source="http://info.vit.ac.in/gravitas2015/tg15/index.html" />
+        <ProgressRing x:Name="ProgressRing"
+                      Width="100"
+                      Height="100"
+                      Foreground="BlueViolet"
+                      IsActive="True" />
     </Grid>
+    <!--  Source="ms-appdata:///local/WebPages/as/graVITas 16_ Design . Create . Patent.html" />  -->
+    <!--<Button Name="searchbtn" Grid.Row="1" Click="searchbtn_Click"
+   HorizontalAlignment="Right"
+   Width="100" Height="80" Content="Search"
+   FontSize="25" FontWeight="Bold" />-->
+
+
+
 </Page>

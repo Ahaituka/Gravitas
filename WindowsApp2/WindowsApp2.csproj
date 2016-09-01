@@ -95,6 +95,10 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="Design\projectGuides.guides" />
+    <None Include="SampleData\DesignDataSource\DesignDataSource.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="WindowsApp2_StoreKey.pfx" />
     <None Include="WindowsApp2_TemporaryKey.pfx" />
     <None Include="project.json" />
@@ -106,13 +110,31 @@
     <Compile Include="Controls\RoundProgressControl.xaml.cs">
       <DependentUpon>RoundProgressControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Facades\EventFacade.cs" />
-    <Compile Include="Facades\MarvelFacade.cs" />
+    <Compile Include="Converters\VisibleWhenTrue.cs">
+      <DependentUpon>Past.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\DataManager.cs" />
+    <Compile Include="Managers\StorageHelper.cs" />
     <Compile Include="Models\CharacterDataWrapper.cs" />
-    <Compile Include="Models\ComicDataWrapper.cs" />
-    <Compile Include="Models\EventDataWrapper.cs" />
+    <Compile Include="Models\Coordinator.cs" />
+    <Compile Include="Models\Event.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleData\DesignDataSource\DesignDataSource.xaml.cs">
+      <DependentUpon>DesignDataSource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ContentSerializer.cs" />
+    <Compile Include="Services\DataService.cs" />
+    <Compile Include="Services\FileHelper.cs" />
+    <Compile Include="Services\JsonParser.cs" />
+    <Compile Include="Services\NetworkService.cs" />
+    <Compile Include="Services\SearchQueries.cs" />
+    <Compile Include="Services\ServiceResponse.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
+    <Compile Include="ViewModels\PastPageViewModel.cs" />
     <Compile Include="ViewModels\CategoriesViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\DetailPageViewModel.cs" />
@@ -120,14 +142,11 @@
     <Compile Include="Views\Busy.xaml.cs">
       <DependentUpon>Busy.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Categories.xaml.cs">
-      <DependentUpon>Categories.xaml</DependentUpon>
+    <Compile Include="Views\CategoryPage.xaml.cs">
+      <DependentUpon>CategoryPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DetailPage.xaml.cs">
       <DependentUpon>DetailPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\EventPage.xaml.cs">
-      <DependentUpon>EventPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Favourites.xaml.cs">
       <DependentUpon>Favourites.xaml</DependentUpon>
@@ -135,11 +154,14 @@
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Marvel.xaml.cs">
-      <DependentUpon>Marvel.xaml</DependentUpon>
+    <Compile Include="Views\MasterDetailPage.xaml.cs">
+      <DependentUpon>MasterDetailPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Organisers.xaml.cs">
       <DependentUpon>Organisers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Past.xaml.cs">
+      <DependentUpon>Past.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
@@ -160,9 +182,48 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\10.jpg" />
+    <Content Include="Assets\1.jpg" />
+    <Content Include="Assets\12.jpg" />
+    <Content Include="Assets\13.jpg" />
+    <Content Include="Assets\14.jpg" />
+    <Content Include="Assets\15.jpg" />
+    <Content Include="Assets\16.jpg" />
+    <Content Include="Assets\2.jpg" />
+    <Content Include="Assets\20.jpg" />
+    <Content Include="Assets\3.jpg" />
+    <Content Include="Assets\4.jpg" />
+    <Content Include="Assets\6.jpg" />
+    <Content Include="Assets\7.jpg" />
     <Content Include="Assets\8.jpg" />
     <Content Include="Assets\7.png" />
+    <Content Include="Assets\9.jpg" />
+    <Content Include="Assets\9.png" />
+    <Content Include="Assets\appliedengineering.png" />
+    <Content Include="Assets\bioxyn.png" />
+    <Content Include="Assets\bitsandbytes.png" />
+    <Content Include="Assets\builtrix.png" />
+    <Content Include="Assets\circuitrix.png" />
+    <Content Include="Assets\email.png" />
+    <Content Include="Assets\fb.png" />
+    <Content Include="Assets\gravitasquizseries.png" />
+    <Content Include="Assets\informals.png" />
+    <Content Include="Assets\instagram.jpg" />
+    <Content Include="Assets\management.png" />
+    <Content Include="Assets\manifesto4.jpg" />
+    <Content Include="Assets\online.png" />
+    <Content Include="Assets\premium.png" />
+    <Content Include="Assets\robomania.png" />
+    <Content Include="Assets\school.png" />
+    <Content Include="Assets\twiiter.png" />
+    <Content Include="Assets\workshop.png" />
     <Content Include="Help.htm" />
+    <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Day1.MOV" />
+    <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Gravitas.MP4" />
+    <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Week1.png" />
+    <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Week2.JPG" />
+    <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Week3.JPG" />
+    <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Week3.png" />
     <None Include="Package.StoreAssociation.xml" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -184,7 +245,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SampleData\DesignDataSource\DesignDataSource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Styles\Custom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Styles\GlassButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -193,17 +267,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Categories.xaml">
+    <Page Include="Views\CategoryPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\DetailPage.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\EventPage.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Favourites.xaml">
       <SubType>Designer</SubType>
@@ -213,11 +283,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Marvel.xaml">
+    <Page Include="Views\MasterDetailPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Organisers.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Organisers.xaml">
+    <Page Include="Views\Past.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

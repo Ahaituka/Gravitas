@@ -8,57 +8,41 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="using:WindowsApp2.Views"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      xmlns:vm="using:WindowsApp2.ViewModels" mc:Ignorable="d">
+      xmlns:vm="using:WindowsApp2.ViewModels"
+      mc:Ignorable="d"
+  >
 
     <Page.DataContext>
         <vm:MainPageViewModel x:ConnectionId='1' x:Name="ViewModel" />
     </Page.DataContext>
+    
+    
+    
 
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='2' x:Name="AdaptiveVisualStateGroup">
-                <VisualState x:ConnectionId='3' x:Name="VisualStateNarrow">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <!--  TODO: change properties for narrow view  -->
-                        <!--<Setter Target="stateTextBox.Text" Value="Narrow Visual State" />-->
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:ConnectionId='4' x:Name="VisualStateNormal">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <!--  TODO: change properties for normal view  -->
-                        <!--<Setter Target="stateTextBox.Text" Value="Normal Visual State" />-->
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:ConnectionId='5' x:Name="VisualStateWide">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <!--  TODO: change properties for wide view  -->
-                        <!--<Setter Target="stateTextBox.Text" Value="Wide Visual State" />-->
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
-
-        <controls:PageHeader x:ConnectionId='6' x:Name="pageHeader" RelativePanel.AlignLeftWithPanel="True"
-                             RelativePanel.AlignRightWithPanel="True"
-                             RelativePanel.AlignTopWithPanel="True" Text="Main Page"
+       <controls:PageHeader x:ConnectionId='2' x:Name="pageHeader"
                              Background="WhiteSmoke"
-                             Foreground="Black">
-
+                             Foreground="Black"
+                             RelativePanel.AlignLeftWithPanel="True"
+                             RelativePanel.AlignRightWithPanel="True"
+                             RelativePanel.AlignTopWithPanel="True"
+                             Text="Main Page">
 
             <!--  secondary commands  -->
-            
 
         </controls:PageHeader>
+
+
+        <!--<controls:ModalDialog   Foreground="Black"  RelativePanel.Below="pageHeader" Content="segsdrfgfdgh">
+
+
+        </controls:ModalDialog>-->
+
+        <Button x:ConnectionId='3'                     >
+            
+            
+        </Button>
+
 
         <!--<controls:Resizer x:Name="parameterResizer" Margin="16,16,16,0"
                           RelativePanel.AlignLeftWithPanel="True"
@@ -68,13 +52,13 @@
                      Text="{Binding Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                      TextWrapping="Wrap">
                 <Interactivity:Interaction.Behaviors>
-                    -->
+        -->
         <!--  enable submit on enter key  -->
         <!--
                     <Behaviors:KeyBehavior Key="Enter">
                         <Core:CallMethodAction MethodName="GotoDetailsPage" TargetObject="{Binding}" />
                     </Behaviors:KeyBehavior>
-                    -->
+        -->
         <!--  focus on textbox when page loads  -->
         <!--
                     <Core:EventTriggerBehavior>
@@ -92,33 +76,62 @@
                    RelativePanel.Below="parameterResizer"
                    Text="Current Visual State" />-->
 
-
-
-
-        <AutoSuggestBox x:ConnectionId='7'
+        <!--<AutoSuggestBox
                         x:Name="asb"
                        RelativePanel.AlignRightWithPanel="True"
                         RelativePanel.AlignTopWithPanel="True"
                        RelativePanel.AlignRightWith="pageHeader"
-                        PlaceholderText="Type a Event Name" 
-                                                     
+                        PlaceholderText="Type a Event Name"
+                        TextChanged="asb_TextChanged"
                         QueryIcon="Find"
-                                                           
-                                                               
-                        
+                        QuerySubmitted="asb_QuerySubmitted"
+                        SuggestionChosen="asb_SuggestionChosen"
+
                         MinWidth="296"
-                        HorizontalAlignment="Left" Margin="-300,10,0,-10" 
-            
-         
-            
+                        HorizontalAlignment="Left" Margin="-300,10,0,-10"
+
+
+
                        >
 
-        </AutoSuggestBox>
+        </AutoSuggestBox>-->
 
 
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+          
+        </Grid>
 
-
-
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='4' x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:ConnectionId='5' x:Name="VisualStateNarrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for narrow view  -->
+                        <!--<Setter Target="stateTextBox.Text" Value="Narrow Visual State" />-->
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='6' x:Name="VisualStateNormal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for normal view  -->
+                        <!--<Setter Target="stateTextBox.Text" Value="Normal Visual State" />-->
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='7' x:Name="VisualStateWide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource WideMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <!--  TODO: change properties for wide view  -->
+                        <!--<Setter Target="stateTextBox.Text" Value="Wide Visual State" />-->
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
     </RelativePanel>
 </Page>
 
