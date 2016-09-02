@@ -6,32 +6,23 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d">
 
-
-
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <WebView x:Name="WebView"
-                 LoadCompleted="WebView_LoadCompleted"   
-                 Loading="WebView_Loading_1"
+                 LoadCompleted="WebView_LoadCompleted"                
                  Source="http://info.vit.ac.in/gravitas2015/tg15/index.html" />
         <ProgressRing x:Name="ProgressRing"
                       Width="100"
                       Height="100"
                       Foreground="BlueViolet"
                       IsActive="True" />
-
-        <TextBlock x:Name="MyTextBox" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"   FontSize="30" Visibility="Collapsed"  TextWrapping="WrapWholeWords"  >
+        <TextBlock x:Name="MyTextBox"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="30"
+                   Foreground="Black"
+                   TextWrapping="WrapWholeWords"
+                   Visibility="Collapsed">
             Houston! We Got a problem .No Internet Connection!
-
         </TextBlock>
-
     </Grid>
-    <!--  Source="ms-appdata:///local/WebPages/as/graVITas 16_ Design . Create . Patent.html" />  -->
-    <!--<Button Name="searchbtn" Grid.Row="1" Click="searchbtn_Click"
-   HorizontalAlignment="Right"
-   Width="100" Height="80" Content="Search"
-   FontSize="25" FontWeight="Bold" />-->
-
-
-
 </Page>

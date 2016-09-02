@@ -14,18 +14,21 @@ namespace WindowsApp2.Views
     public sealed partial class MainPage : Page
     {
 
+        #region Constructor
         public MainPage()
         {
             InitializeComponent();
             NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
+        #endregion
 
+        #region Methods
         private void nextPageButton_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
-        private async  void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
             var newCoreAppView = CoreApplication.CreateNewView();
             var appView = ApplicationView.GetForCurrentView();
@@ -154,7 +157,11 @@ namespace WindowsApp2.Views
         //        }
 
         //    }*/
+
+        #endregion
+
     }
-    }
+
+ }
 
 

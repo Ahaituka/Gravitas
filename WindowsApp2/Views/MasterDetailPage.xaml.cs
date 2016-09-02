@@ -25,8 +25,9 @@ namespace WindowsApp2.Views
 {
     public sealed partial class MasterDetailPage : Page
     {
+        #region Properties
         private static DependencyProperty s_itemProperty
-            = DependencyProperty.Register("Item", typeof(ObservableCollection<Event>), typeof(MasterDetailPage), new PropertyMetadata(null));
+          = DependencyProperty.Register("Item", typeof(ObservableCollection<Event>), typeof(MasterDetailPage), new PropertyMetadata(null));
 
         public static DependencyProperty ItemProperty
         {
@@ -72,33 +73,18 @@ namespace WindowsApp2.Views
             set { SetValue(s_HeaderProperty, value); }
         }
 
-
-
-
-
-
-
         private Event _lastSelectedItem;
+        #endregion
 
-     //   public ObservableCollection<Event> EventList { get; set; }
-
+        #region Constructor
         public MasterDetailPage()
         {
             this.InitializeComponent();
-          // no memory allocated, undefined pointer
-            // EventList = new ObservableCollection<Event>();  // initialized with zero elements
         }
+        #endregion
 
-        //private void ClosePopupClicked(object sender, RoutedEventArgs e)
-        //{
-        //    // if the Popup is open, then close it 
-        //    if (StandardPopup.IsOpen) { StandardPopup.IsOpen = false; }
-        //}
-
-        // Handles the Click event on the Button on the page and opens the Popup. 
-      
-
-        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        #region Methods
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
 
 
@@ -113,16 +99,16 @@ namespace WindowsApp2.Views
             if (EventList == null)
             {
 
-                CategoryList = DataManager.EventList.Where((x) =>x.subCategory == value).ToObservableCollection<Event>();
+                CategoryList = DataManager.EventList.Where((x) => x.subCategory == value).ToObservableCollection<Event>();
                 //EventList = DataManager.EventList;
                 EventList = CategoryList;
                 Header = EventList[0];
-                
+
                 MasterListView.ItemsSource = EventList;
             }
 
 
-            if (EventList[0].subCategory !=value)
+            if (EventList[0].subCategory != value)
             {
 
                 CategoryList = DataManager.EventList.Where((x) => x.subCategory == value).ToObservableCollection<Event>();
@@ -143,7 +129,7 @@ namespace WindowsApp2.Views
 
 
             }
-            
+
             UpdateForVisualState(AdaptiveStates.CurrentState);
 
             // Don't play a content transition for first item load.
@@ -151,15 +137,13 @@ namespace WindowsApp2.Views
             DisableContentTransitions();
 
             base.OnNavigatedTo(e);
-            
+
 
         }
-
         private void AdaptiveStates_CurrentStateChanged(object sender, VisualStateChangedEventArgs e)
         {
             UpdateForVisualState(e.NewState, e.OldState);
         }
-
         private async void UpdateForVisualState(VisualState newState, VisualState oldState = null)
         {
             var isNarrow = newState == NarrowState;
@@ -181,7 +165,6 @@ namespace WindowsApp2.Views
                 EntranceNavigationTransitionInfo.SetIsTargetElement(DetailContentPresenter, !isNarrow);
             }
         }
-
         private async void MasterListView_ItemClick(object sender, ItemClickEventArgs e)
         {
 
@@ -223,19 +206,16 @@ namespace WindowsApp2.Views
                 EnableContentTransitions();
             }
         }
-
         private void LayoutRoot_Loaded(object sender, RoutedEventArgs e)
         {
             // Assure we are displaying the correct item. This is necessary in certain adaptive cases.
             MasterListView.SelectedItem = _lastSelectedItem;
         }
-
         private void EnableContentTransitions()
         {
             DetailContentPresenter.ContentTransitions.Clear();
             DetailContentPresenter.ContentTransitions.Add(new EntranceThemeTransition());
         }
-
         private void DisableContentTransitions()
         {
             if (DetailContentPresenter != null)
@@ -243,33 +223,22 @@ namespace WindowsApp2.Views
                 DetailContentPresenter.ContentTransitions.Clear();
             }
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
-        
+
         {
             // open the Popup if it isn't open already 
             if (StandardPopup.IsOpen) { StandardPopup.IsOpen = false; }
-           
-        }
 
+        }
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
-           // MainPageViewModel.AddToFavorites();
+            // MainPageViewModel.AddToFavorites();
         }
-
-        //private async void SymbolIcon_Tapped(object sender, TappedRoutedEventArgs e)
-        //{
-            
-        //}
-
-
         private void ShowPopupOffsetClicked(object sender, RoutedEventArgs e)
         {
             // open the Popup if it isn't open already 
             if (!StandardPopup.IsOpen) { StandardPopup.IsOpen = true; }
         }
-
-  
         private async void SymbolIcon_Tapped(object sender, RoutedEventArgs e)
         {
             EmailMessage emailMessage = new EmailMessage()
@@ -282,7 +251,6 @@ namespace WindowsApp2.Views
             await EmailManager.ShowComposeNewEmailAsync(emailMessage);
 
         }
-
         private async void SymbolIcon_Tapped_1(object sender, RoutedEventArgs e)
         {
             var uriSkype = new Uri(@"Skype:(9952549997)?call");
@@ -304,6 +272,7 @@ namespace WindowsApp2.Views
             }
 
 
-        }
+        } 
+        #endregion
     }
 }

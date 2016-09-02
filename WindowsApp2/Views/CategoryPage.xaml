@@ -11,7 +11,6 @@
       xmlns:vm="using:WindowsApp2.ViewModels"
       mc:Ignorable="d">
 
-
     <Page.DataContext>
         <vm:MainPageViewModel x:Name="ViewModel" />
     </Page.DataContext>
@@ -31,17 +30,14 @@
         </controls:PageHeader>
 
         <GridView x:Name="ItemsGridView"
+                  IsItemClickEnabled="True"
+                  ItemClick="GridView_ItemClick"
                   ItemTemplate="{StaticResource ArticleListItemTemplate}"
                   ItemsSource="{x:Bind Categories}"
                   Padding="16,24,16,16"
-                  SelectionMode="Single"
-                  ItemClick="GridView_ItemClick"
-                  IsItemClickEnabled="True">
+                  SelectionMode="Single">
 
-            <!--
-                SelectedItem="{Binding Item,
-                Mode=TwoWay}"
-            -->
+
             <!--  place under to filter textbox  -->
             <RelativePanel.Below>pageHeader</RelativePanel.Below>
             <RelativePanel.AlignLeftWith>pageHeader</RelativePanel.AlignLeftWith>

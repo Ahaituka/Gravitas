@@ -7,6 +7,7 @@ namespace WindowsApp2.Views
 {
     public sealed partial class Splash : UserControl
     {
+        #region Constructor
         public Splash(SplashScreen splashScreen)
         {
             InitializeComponent();
@@ -14,7 +15,9 @@ namespace WindowsApp2.Views
             RingStoryboard.Begin();
             Resize(splashScreen);
         }
+        #endregion
 
+        #region Methods
         private void Resize(SplashScreen splashScreen)
         {
             if (splashScreen.ImageLocation.Top == 0)
@@ -36,7 +39,8 @@ namespace WindowsApp2.Views
         private void DoubleAnimationUsingKeyFrames_Completed(object sender, object e)
         {
 
-        }
+        } 
+        #endregion
     }
 }
 

@@ -26,12 +26,15 @@ using Windows.ApplicationModel;
 
 namespace WindowsApp2.Views
 {
-
+    /// <summary>
+    ///A page that displays the information of selected item in narrow state of masterdetail page
+    /// </summary>
     public sealed partial class DetailPage : Page
     {
-       
+
+        #region Properties
         private static DependencyProperty s_itemProperty
-            = DependencyProperty.Register("Item", typeof(ObservableCollection<Event>), typeof(DetailPage), new PropertyMetadata(null));
+          = DependencyProperty.Register("Item", typeof(ObservableCollection<Event>), typeof(DetailPage), new PropertyMetadata(null));
 
         public static DependencyProperty ItemProperty
         {
@@ -44,87 +47,44 @@ namespace WindowsApp2.Views
             set { SetValue(s_itemProperty, value); }
         }
 
-
-        private static DependencyProperty s_xProperty
-      = DependencyProperty.Register("x", typeof(ObservableCollection<Coordinator>), typeof(MasterDetailPage), new PropertyMetadata(null));
-
+        private static DependencyProperty s_xProperty = DependencyProperty.Register("x", typeof(ObservableCollection<Coordinator>), typeof(MasterDetailPage), new PropertyMetadata(null));
         public static DependencyProperty xProperty
         {
             get { return s_xProperty; }
         }
-
         public Coordinator x
         {
             get { return (Coordinator)GetValue(s_xProperty); }
             set { SetValue(s_xProperty, value); }
         }
-        
+        #endregion
 
+        #region Constructor
 
         public DetailPage()
         {
             this.InitializeComponent();
         }
+        #endregion
 
+        #region Methods
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
 
             var param = e.Parameter?.ToString();
             var service = Template10.Services.SerializationService.SerializationService.Json;
             var value = service.Deserialize<string>(param);
-
             Item = DataManager.EventList.Where((ev) => ev.name == value).FirstOrDefault();
-
             x = Item.coordinators[0];
-
-          
-
-
-        
-
-
-            //var backStack = Frame.BackStack;
-            //var backStackCount = backStack.Count;
-
-            //if (backStackCount > 0)
-            //{
-            //    var masterPageEntry = backStack[backStackCount - 1];
-            //    backStack.RemoveAt(backStackCount - 1);
-
-            //    // Doctor the navigation parameter for the master page so it
-            //    // will show the correct item in the side-by-side view.
-            //    var modifiedEntry = new PageStackEntry(
-            //        masterPageEntry.SourcePageType,
-            //        Item.name,
-            //        masterPageEntry.NavigationTransitionInfo
-            //        );
-            //    backStack.Add(modifiedEntry);
-            //}
-
-            // Register for hardware and software back request from the system
-            //  SystemNavigationManager systemNavigationManager = SystemNavigationManager.GetForCurrentView();
-            //   systemNavigationManager.BackRequested += DetailPage_BackRequested;
-            //  systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
-
             base.OnNavigatedTo(e);
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
-
             SystemNavigationManager systemNavigationManager = SystemNavigationManager.GetForCurrentView();
-       //     systemNavigationManager.BackRequested -= DetailPage_BackRequested;
             systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
         }
-
-        //private void OnBackRequested()
-        //{
-        //    // Page above us will be our master view.
-        //    // Make sure we are using the "drill out" animation in this transition.
-
-        //    Frame.GoBack(new DrillInNavigationTransitionInfo());
-        //}
 
         void NavigateBackForWideState(bool useTransition)
         {
@@ -140,7 +100,6 @@ namespace WindowsApp2.Views
                 Frame.GoBack(new SuppressNavigationTransitionInfo());
             }
         }
-
         private bool ShouldGoToWideState()
         {
             return Window.Current.Bounds.Width >= 720;
@@ -162,7 +121,6 @@ namespace WindowsApp2.Views
 
             Window.Current.SizeChanged += Window_SizeChanged;
         }
-
         private void PageRoot_Unloaded(object sender, RoutedEventArgs e)
         {
             Window.Current.SizeChanged -= Window_SizeChanged;
@@ -179,14 +137,11 @@ namespace WindowsApp2.Views
                 NavigateBackForWideState(useTransition: false);
             }
         }
-
         private void ShowPopupOffsetClicked(object sender, RoutedEventArgs e)
         {
             // open the Popup if it isn't open already 
             if (!StandardPopup.IsOpen) { StandardPopup.IsOpen = true; }
         }
-
-
         private async void SymbolIcon_Tapped(object sender, RoutedEventArgs e)
         {
             EmailMessage emailMessage = new EmailMessage()
@@ -199,7 +154,6 @@ namespace WindowsApp2.Views
             await EmailManager.ShowComposeNewEmailAsync(emailMessage);
 
         }
-
         private async void SymbolIcon_Tapped_1(object sender, RoutedEventArgs e)
         {
             var uriSkype = new Uri(@"Skype:(9952549997)?call");
@@ -219,10 +173,7 @@ namespace WindowsApp2.Views
             {
                 // URI launch failed
             }
-
-
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
 
         {
@@ -230,16 +181,6 @@ namespace WindowsApp2.Views
             if (StandardPopup.IsOpen) { StandardPopup.IsOpen = false; }
 
         }
-
-
-
-
-        //private void DetailPage_BackRequested(object sender, BackRequestedEventArgs e)
-        //{
-        //    // Mark event as handled so we don't get bounced out of the app.
-        //    e.Handled = true;
-
-        //    OnBackRequested();
-        //}
-    }
+    } 
+    #endregion
 }

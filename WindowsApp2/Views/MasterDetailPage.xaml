@@ -16,29 +16,27 @@
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       NavigationCacheMode="Enabled"
       mc:Ignorable="d">
+
     <Page.Transitions>
         <TransitionCollection>
             <NavigationThemeTransition />
         </TransitionCollection>
     </Page.Transitions>
 
-    <!--<Page.DataContext>
-        <vm:MainPageViewModel x:Name="ViewModel" />
-    </Page.DataContext>-->
     <Page.Resources>
+
+        <!--  ListViewDataTemplate  -->
         <DataTemplate x:Key="MasterListViewItemTemplate" x:DataType="data:Event">
             <Grid Margin="0,11,0,13">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-
-                <controls:PageHeader Text="{x:Bind name, Mode=OneWay}" >
+                <controls:PageHeader Text="{x:Bind name, Mode=OneWay}">
                     <Interactivity:Interaction.Behaviors>
                         <Behaviors:EllipsisBehavior Visibility="Auto" />
                         <Behaviors:DeviceDispositionBehavior Continuum="True"
@@ -46,17 +44,12 @@
                                                              IoT="True" />
                     </Interactivity:Interaction.Behaviors>
                 </controls:PageHeader>
-
-
-
-                <!--<TextBlock Style="{ThemeResource BaseTextBlockStyle}" Text="{x:Bind name}" />-->
-
                 <Ellipse Width="50"
                          Height="50"
-                         Stroke="White"                         
-                         StrokeThickness="2"                       
                          HorizontalAlignment="Right"
-                         VerticalAlignment="Center">
+                         VerticalAlignment="Center"
+                         Stroke="White"
+                         StrokeThickness="2">
                     <Ellipse.Fill>
                         <ImageBrush ImageSource="{x:Bind chapterpath, Mode=TwoWay}" />
                     </Ellipse.Fill>
@@ -65,16 +58,13 @@
                 <TextBlock Grid.Row="1"
                            MaxLines="1"
                            Style="{ThemeResource ListBodyTextBlockStyle}"
-                           Text="{x:Bind description}" 
-                           />
-
-                <!--<TextBlock
-                    Text="{x:Bind DateCreatedHourMinute}"
-                    Grid.Column="1"
-                    Margin="12,1,0,0"
-                    Style="{ThemeResource ListCaptionAltTextblockStyle}" />-->
+                           Text="{x:Bind description}" />
             </Grid>
         </DataTemplate>
+
+        <!--  ListViewDataTemplate  Ends  -->
+
+        <!--  DetailContentTemplate  Starts  -->
 
         <DataTemplate x:Key="DetailContentTemplate" x:DataType="data:Event">
             <ScrollViewer>
@@ -82,27 +72,26 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="200" />
                         <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto"  />
+                        <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
-                    <Grid     x:Name="Section2" Grid.Row="0">
+                    <Grid x:Name="Section2" Grid.Row="0">
                         <Grid.Background>
                             <ImageBrush ImageSource="ms-appx:///Assets/8.JPG" Stretch="Fill" />
                         </Grid.Background>
                         <TextBlock MaxWidth="250"
-                               Margin="36,62,34,68" 
-                               FontFamily="Baskerville Old Face"
-                               FontSize="30"
-                               Foreground="{ThemeResource ToggleButtonPressedForegroundThemeBrush}"
-                               TextWrapping="WrapWholeWords"
-                               d:LayoutOverrides="Width, LeftPosition, RightPosition, TopPosition, BottomPosition">
-                        <Run Text="{x:Bind name}" />
+                                   Margin="36,62,34,68"
+                                   FontFamily="Baskerville Old Face"
+                                   FontSize="30"
+                                   Foreground="{ThemeResource ToggleButtonPressedForegroundThemeBrush}"
+                                   TextWrapping="WrapWholeWords"
+                                   d:LayoutOverrides="Width, LeftPosition, RightPosition, TopPosition, BottomPosition">
+                            <Run Text="{x:Bind name}" />
                         </TextBlock>
                     </Grid>
                     <Grid x:Name="Content"
-                      Grid.Row="1"
-                       Background="#FFDDBB0C"
-                     >
+                          Grid.Row="1"
+                          Background="#FFDDBB0C">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
@@ -111,131 +100,103 @@
                         <StackPanel Grid.Column="0" HorizontalAlignment="Right">
                             <RelativePanel>
                                 <SymbolIcon x:Name="symbol"
-                                        Margin="10,0"
-                                        HorizontalAlignment="Left"
-                                        RelativePanel.AlignLeftWithPanel="True"
-                                        Symbol="Globe" />
+                                            Margin="10,0"
+                                            HorizontalAlignment="Left"
+                                            RelativePanel.AlignLeftWithPanel="True"
+                                            Symbol="Globe" />
 
                                 <TextBlock HorizontalAlignment="Right"
-                                       FontWeight="Bold"
-                                       VerticalAlignment="Top"
-                                       RelativePanel.RightOf="symbol"
-                                       Style="{ThemeResource BaseTextBlockStyle}"
-                                       Text="{x:Bind subCategory}" />
+                                           VerticalAlignment="Top"
+                                           FontWeight="Bold"
+                                           RelativePanel.RightOf="symbol"
+                                           Style="{ThemeResource BaseTextBlockStyle}"
+                                           Text="{x:Bind subCategory}" />
                             </RelativePanel>
                         </StackPanel>
-
                         <StackPanel Grid.Column="1" HorizontalAlignment="Center">
                             <RelativePanel>
                                 <SymbolIcon x:Name="symboll"
-                                        Margin="10,0"
-                                        HorizontalAlignment="Left"
-                                        
-                                        Symbol="People" />
-
-
+                                            Margin="10,0"
+                                            HorizontalAlignment="Left"
+                                            Symbol="People" />
                                 <TextBlock HorizontalAlignment="Right"
-                                       
-                                       FontWeight="Bold"
-                                       VerticalAlignment="Top"
-                                       RelativePanel.RightOf="symboll"
-                                       Style="{ThemeResource BaseTextBlockStyle}"
-                                       Text="{x:Bind teamSize}" />
+                                           VerticalAlignment="Top"
+                                           FontWeight="Bold"
+                                           RelativePanel.RightOf="symboll"
+                                           Style="{ThemeResource BaseTextBlockStyle}"
+                                           Text="{x:Bind teamSize}" />
                             </RelativePanel>
                         </StackPanel>
                         <StackPanel Grid.Column="2" d:LayoutOverrides="Width, LeftPosition, RightPosition">
                             <RelativePanel>
                                 <TextBlock x:Name="symbllol"
-                                       FontWeight="Bold"
-                                       Margin="10,0"
-                                       Text="&#x20b9;" />
-
-                                <!--<SymbolIcon x:Name="symbllol"
-                                        Margin="0,0,5,0"
-                                        HorizontalAlignment="Left"
-                                        RelativePanel.AlignLeftWithPanel="True"
-                                        Symbol="Bullets" />-->
-
-
-                                <TextBlock FontWeight="Bold"
-                                       HorizontalAlignment="Right"
-                                       VerticalAlignment="Top"
-                                       RelativePanel.RightOf="symbllol"
-                                       Style="{ThemeResource BaseTextBlockStyle}"
-                                       Text="{x:Bind participationFee}" />
+                                           Margin="10,0"
+                                           FontWeight="Bold"
+                                           Text="&#x20b9;" />
+                                <TextBlock HorizontalAlignment="Right"
+                                           VerticalAlignment="Top"
+                                           FontWeight="Bold"
+                                           RelativePanel.RightOf="symbllol"
+                                           Style="{ThemeResource BaseTextBlockStyle}"
+                                           Text="{x:Bind participationFee}" />
                             </RelativePanel>
                         </StackPanel>
                     </Grid>
-                    <Grid  Grid.Row="2"  BorderBrush="White" BorderThickness="2" Margin="0,10,0,0" Padding="10">
-                        <TextBlock 
-                           HorizontalAlignment="Center"
-                           Style="{ThemeResource ScenarioDescriptionTextStyle}"
-                           Text="{x:Bind description}"
-                           TextWrapping="WrapWholeWords" />
+                    <Grid Grid.Row="2"
+                          Margin="0,10,0,0"
+                          BorderBrush="White"
+                          BorderThickness="2"
+                          Padding="10">
+                        <TextBlock HorizontalAlignment="Center"
+                                   Style="{ThemeResource ScenarioDescriptionTextStyle}"
+                                   Text="{x:Bind description}"
+                                   TextWrapping="WrapWholeWords" />
                     </Grid>
-
                     <Grid Grid.Row="3" Margin="20">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-
-
-                        <Button  HorizontalAlignment="Center"
-                                VerticalAlignment="Center"                                                             
-                                Click="SymbolIcon_Tapped_1">
-                            <SymbolIcon Grid.Column="0"
-                                     Symbol="Phone"
-                                />
-                        </Button>
-
-
-                        <Button Click="ShowPopupOffsetClicked"  Grid.Column="1"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center">
-                            <SymbolIcon x:Name="People"
-                                
-                                IsTapEnabled="True"
-                                Symbol="People"
-                                 />
-                        </Button>
-
-
-                        <Button Click="SymbolIcon_Tapped"        HorizontalAlignment="Center"
+                        <Button HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
-                             Grid.Column="2"
-                           >
-                            <SymbolIcon
-                                IsTapEnabled="True"
-                                Symbol="Mail"
-                                />
+                                Click="SymbolIcon_Tapped_1">
+                            <SymbolIcon Grid.Column="0" Symbol="Phone" />
                         </Button>
-
+                        <Button Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Click="ShowPopupOffsetClicked">
+                            <SymbolIcon x:Name="People"
+                                        IsTapEnabled="True"
+                                        Symbol="People" />
+                        </Button>
+                        <Button Grid.Column="2"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Click="SymbolIcon_Tapped">
+                            <SymbolIcon IsTapEnabled="True" Symbol="Mail" />
+                        </Button>
                     </Grid>
-
                 </Grid>
             </ScrollViewer>
         </DataTemplate>
+
+        <!--  DetailContentTemplate Ends  -->
     </Page.Resources>
 
 
+    <!--  MainPage Grid  -->
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-
         <Grid.ColumnDefinitions>
             <ColumnDefinition x:Name="MasterColumn" Width="320" />
             <ColumnDefinition x:Name="DetailColumn" Width="*" />
         </Grid.ColumnDefinitions>
-
-
-        <!--<TextBlock Margin="12,8,8,8"
-                   Style="{ThemeResource TitleTextBlockStyle}"
-                   Text="{x:Bind Header.subCategory, Mode=OneWay }"></TextBlock>-->
 
         <controls:PageHeader Frame="{x:Bind Frame}" Text="{x:Bind Header.subCategory, Mode=OneWay}">
             <Interactivity:Interaction.Behaviors>
@@ -247,16 +208,7 @@
         </controls:PageHeader>
 
 
-        <!--<AppBarButton Click="AppBarButton_Click"
-                          Foreground="White"
-                          Icon="Favorite"
-                          Visibility="{Binding IsFavorite,
-                                               Converter={StaticResource CollapsedWhenTrueConverter}}" />
-        <AppBarButton
-                          Foreground="White"
-                          Icon="UnFavorite"
-                          Visibility="{Binding IsFavorite,
-                                               Converter={StaticResource VisibleWhenTrueConverter}}" />-->
+        <!--  Coordinator Popup Starts  -->
 
         <Popup x:Name="StandardPopup"
                HorizontalAlignment="Center"
@@ -420,55 +372,20 @@
 
         </Popup>
 
+        <!--  Coordinator Popup Ends  -->
 
-        <!--<Border Width="200"
-                    Height="200"
-                    Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
-                    BorderBrush="{StaticResource ApplicationForegroundThemeBrush}"
-                    BorderThickness="2"
-                    CornerRadius="30">
-                <Grid CornerRadius="30">
-                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <TextBlock Text="{x:Bind Item.name, Mode=OneWay}" />
-                        <Button HorizontalAlignment="Center" Content="Close" />
-                    </StackPanel>
-                </Grid>
-            </Border>-->
-        <!--<controls:ModalDialog x:Name="StandardPopup" IsModal="{x:Bind IsModal, Mode=OneWay}"
-               Grid.RowSpan="2"
-               Grid.ColumnSpan="2"
-               HorizontalAlignment="Center"
-               VerticalAlignment="Center"
-               >
-            <controls:ModalDialog.Content>
-                <Border Width="200"
-                    Height="200"
-                    Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
-                    BorderBrush="{StaticResource ApplicationForegroundThemeBrush}"
-                    BorderThickness="2">
-                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <TextBlock Text="{x:Bind name}" />
-                        <Button HorizontalAlignment="Center" Content="Close" />
-                    </StackPanel>
-                </Border>
-            </controls:ModalDialog.Content>
-        </controls:ModalDialog>-->
-
-        
-            <ContentPresenter x:Name="DetailContentPresenter"
+        <ContentPresenter x:Name="DetailContentPresenter"
                           Grid.RowSpan="2"
                           Grid.Column="1"
                           BorderBrush="{ThemeResource SystemControlForegroundBaseLowBrush}"
                           BorderThickness="1,0,0,0"
                           Content="{x:Bind MasterListView.SelectedItem, Mode=OneWay}"
-                          ContentTemplate="{StaticResource DetailContentTemplate}"
-                          >
-                <ContentPresenter.ContentTransitions>
-                    <!--  Empty by default. See MasterListView_ItemClick  -->
-                    <TransitionCollection />
-                </ContentPresenter.ContentTransitions>
-            </ContentPresenter>
-     
+                          ContentTemplate="{StaticResource DetailContentTemplate}">
+            <ContentPresenter.ContentTransitions>
+                <!--  Empty by default. See MasterListView_ItemClick  -->
+                <TransitionCollection />
+            </ContentPresenter.ContentTransitions>
+        </ContentPresenter>
 
         <ListView x:Name="MasterListView"
                   Grid.Row="1"

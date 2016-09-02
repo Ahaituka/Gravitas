@@ -16,7 +16,6 @@
     <RootPropertyPathName Name="AboutPartViewModel" />
     <RootPropertyPathName Name="Logo" />
     <RootPropertyPathName Name="SettingsPartViewModel" />
-    <RootPropertyPathName Name="BusyText" />
     <RootPropertyPathName Name="UseLightThemeButton" />
     <RootPropertyPathName Name="UseShellBackButton" />
     <RootPropertyPathName Name="ActualWidth" />
@@ -255,7 +254,6 @@
       <RootProperty Name="Mode" />
       <RootProperty Name="ElementName" />
       <RootProperty Name="Converter" />
-      <RootProperty Name="UpdateSourceTrigger" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="VerticalAlignment" />
@@ -305,9 +303,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
       <RootProperty Name="DataContext" />
-      <RootProperty Name="RequestedTheme" />
       <RootProperty Name="Background" />
       <RootProperty Name="NavigationCacheMode" />
+      <RootProperty Name="RequestedTheme" />
       <RootProperty Name="Transitions" />
       <RootProperty Name="Resources" />
       <RootEvent Name="Loaded" />
@@ -475,15 +473,13 @@
       <RootMethod Name="SetRightOf" />
       <RootMethod Name="GetAlignRightWith" />
       <RootMethod Name="SetAlignRightWith" />
-      <RootMethod Name="GetAlignBottomWith" />
-      <RootMethod Name="SetAlignBottomWith" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
+      <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="Padding" />
       <RootProperty Name="SelectionMode" />
-      <RootProperty Name="IsItemClickEnabled" />
       <RootEvent Name="ItemClick" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
@@ -531,7 +527,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.WebView">
       <RootProperty Name="Source" />
       <RootEvent Name="LoadCompleted" />
-      <RootEvent Name="Loading" />
     </RootType>
     <RootType FullName="WindowsApp2.Views.Organisers" />
     <RootType FullName="WindowsApp2.Converters.VisibleWhenTrue" />
@@ -561,13 +556,6 @@
       <RootProperty Name="IsOn" />
       <RootProperty Name="OffContent" />
       <RootProperty Name="OnContent" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="Width" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Header" />
-      <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="WindowsApp2.Views.SettingsPage" />
     <RootType FullName="Template10.Controls.HamburgerButtonInfo">

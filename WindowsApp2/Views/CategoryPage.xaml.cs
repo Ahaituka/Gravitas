@@ -23,13 +23,15 @@ using Template10.Utils;
 namespace WindowsApp2.Views
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// Categoy page displays the list of all categories
     /// </summary>
     public sealed partial class CategoryPage : Page
     {
-
+        #region Properties
         public ObservableCollection<CategoryViewModel> Categories { get; set; }
+        #endregion
 
+        #region Constructos
         public CategoryPage()
         {
             this.InitializeComponent();
@@ -39,17 +41,16 @@ namespace WindowsApp2.Views
                 ; // Can give error
             this.DataContext = this;
         }
+        #endregion
 
+        #region Methods
         private async void GridView_ItemClick(object sender, ItemClickEventArgs e)
         {
             var parameter = (CategoryViewModel)e.ClickedItem;
             var service = this.Frame.GetNavigationService();
-
-
-            await service.NavigateAsync(typeof(Views.MasterDetailPage), parameter.Name);
-
-      // Frame.Navigate(typeof(MasterDetailPage));
+            await service.NavigateAsync(typeof(Views.MasterDetailPage), parameter.Name);     
         }
+        #endregion
 
     }
 }

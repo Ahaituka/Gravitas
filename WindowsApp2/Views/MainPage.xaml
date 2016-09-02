@@ -9,72 +9,22 @@
       xmlns:local="using:WindowsApp2.Views"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:vm="using:WindowsApp2.ViewModels"
-      mc:Ignorable="d"
-  >
+      mc:Ignorable="d">
 
     <Page.DataContext>
         <vm:MainPageViewModel x:Name="ViewModel" />
     </Page.DataContext>
-    
-    
-    
 
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-       <controls:PageHeader x:Name="pageHeader"
+        <controls:PageHeader x:Name="pageHeader"
                              Background="WhiteSmoke"
                              Foreground="Black"
                              RelativePanel.AlignLeftWithPanel="True"
                              RelativePanel.AlignRightWithPanel="True"
                              RelativePanel.AlignTopWithPanel="True"
-                             Text="Main Page">
+                             Text="Main Page" />
 
-            <!--  secondary commands  -->
-
-        </controls:PageHeader>
-
-
-        <!--<controls:ModalDialog   Foreground="Black"  RelativePanel.Below="pageHeader" Content="segsdrfgfdgh">
-
-
-        </controls:ModalDialog>-->
-
-        <Button Click="Button_Click">
-            
-            
-        </Button>
-
-
-        <!--<controls:Resizer x:Name="parameterResizer" Margin="16,16,16,0"
-                          RelativePanel.AlignLeftWithPanel="True"
-                          RelativePanel.Below="pageHeader">
-            <TextBox MinWidth="150" MinHeight="62"
-                     Header="Parameter to pass"
-                     Text="{Binding Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                     TextWrapping="Wrap">
-                <Interactivity:Interaction.Behaviors>
-        -->
-        <!--  enable submit on enter key  -->
-        <!--
-                    <Behaviors:KeyBehavior Key="Enter">
-                        <Core:CallMethodAction MethodName="GotoDetailsPage" TargetObject="{Binding}" />
-                    </Behaviors:KeyBehavior>
-        -->
-        <!--  focus on textbox when page loads  -->
-        <!--
-                    <Core:EventTriggerBehavior>
-                        <Behaviors:FocusAction />
-                    </Core:EventTriggerBehavior>
-                </Interactivity:Interaction.Behaviors>
-            </TextBox>
-        </controls:Resizer>
-        <Button x:Name="submitButton"
-                Click="{x:Bind ViewModel.GotoDetailsPage}" Content="Submit"
-                RelativePanel.AlignBottomWith="parameterResizer"
-                RelativePanel.RightOf="parameterResizer" />
-        <TextBlock x:Name="stateTextBox" Margin="16,16,0,0"
-                   RelativePanel.AlignLeftWith="parameterResizer"
-                   RelativePanel.Below="parameterResizer"
-                   Text="Current Visual State" />-->
+        <Button Click="Button_Click" />
 
         <!--<AutoSuggestBox
                         x:Name="asb"
@@ -86,20 +36,12 @@
                         QueryIcon="Find"
                         QuerySubmitted="asb_QuerySubmitted"
                         SuggestionChosen="asb_SuggestionChosen"
-
                         MinWidth="296"
                         HorizontalAlignment="Left" Margin="-300,10,0,-10"
-
-
-
                        >
-
         </AutoSuggestBox>-->
 
-
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-          
-        </Grid>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" />
 
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:Name="AdaptiveVisualStateGroup">

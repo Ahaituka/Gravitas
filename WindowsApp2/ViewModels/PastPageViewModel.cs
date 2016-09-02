@@ -46,37 +46,7 @@ namespace WindowsApp2.ViewModels
 
             return Photo;
         }
-
-
-    }
-
-
-
-
-    /*
-    public class CategoryManager
-    {
-        public static List<Category> GetCategory()
-        {
-            var Categry = new List<Category>();
-
-            Categry.Add(new Category {  Name = "Applied Engineering", Description = "Futurum", CoverImage = "ms-appx:///Assets/7.png" });
-            Categry.Add(new Category {  Name = "Bioxyn", Description = "Sequiter Que", CoverImage = "ms-appx:///Assets/7.png"  });
-            Categry.Add(new Category {  Name = "Circuitrix", Description = "Tempor", CoverImage = "ms-appx:///Assets/7.png" });
-            Categry.Add(new Category {  Name = "Bits and Bytes", Description = "Option", CoverImage = "ms-appx:///Assets/7.png" });
-            Categry.Add(new Category {  Name = "Builtrix", Description = "Accumsan", CoverImage = "ms-appx:///Assets/7.png" });
-            Categry.Add(new Category {  Name = "Quiz Series", Description = "Legunt Xaepius", CoverImage = "ms-appx:///Assets/7.png" });
-            Categry.Add(new Category {  Name = "Robomania", Description = "Eleifend", CoverImage = "ms-appx:///Assets/7.png" });
-            Categry.Add(new Category {  Name = "Online", Description = "Vero Tation", CoverImage = "ms-appx:///Assets/7.png" });
-            Categry.Add(new Category {  Name = "Premium", Description = "Jack Tibbles", CoverImage = "ms-appx:///Assets/7.png" });
-            Categry.Add(new Category {  Name = "Informals", Description = "Tuffy Tibbles", CoverImage = "ms-appx:///Assets/7.png" });
-            Categry.Add(new Category {  Name = "Management", Description = "Volupat", CoverImage = "ms-appx:///Assets/7.png" });
-            Categry.Add(new Category {  Name = "Workshops", Description = "Est Possim", CoverImage = "ms-appx:///Assets/7.png" });
-
-            return Categry;
-        }
-    }
-    */
+    } 
 
     }
 

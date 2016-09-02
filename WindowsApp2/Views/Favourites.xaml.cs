@@ -23,19 +23,24 @@ namespace WindowsApp2.Views
     /// </summary>
     public sealed partial class Favourites : Page
     {
+        #region Constructor
         public Favourites()
         {
             this.InitializeComponent();
         }
+        #endregion
 
+        #region Methods
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-               
-        {
-            var s = ApplicationView.GetForCurrentView();
-            s.TryResizeView(new Size { Width = 600, Height = 320 });
-                
+
+            {
+                var s = ApplicationView.GetForCurrentView();
+                s.TryResizeView(new Size { Width = 600, Height = 320 });              
+
+           }
         }
-    }
+        #endregion
+
     }
 }

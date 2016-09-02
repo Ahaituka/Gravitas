@@ -19,23 +19,20 @@ using Windows.UI.Xaml.Navigation;
 namespace WindowsApp2.Views
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// A page that displays error if no data is loaded
     /// </summary>
     public sealed partial class Icheck : Page
     {
-        public  Icheck()
-        { 
-
-            
+        #region Constructor
+        public Icheck()
+        {
             this.InitializeComponent();
-
-
             Stop();
-            //TimeSpan delay = TimeSpan.FromMinutes(1);
-
         }
 
+        #endregion
 
+        #region Methods
         public async void Stop()
         {
             await Task.Delay(10000);
@@ -43,13 +40,8 @@ namespace WindowsApp2.Views
             ProgressRing.Visibility = Visibility.Collapsed;
             MyTextBox.Visibility = Visibility.Visible;
 
-        }
+        } 
+        #endregion
 
-        
-        
-
-
-    }
-
-    
+    }    
 }
