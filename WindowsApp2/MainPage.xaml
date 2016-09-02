@@ -4,17 +4,23 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="using:AppStartupGuide"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      mc:Ignorable="d">
+      mc:Ignorable="d"
+      xmlns:controls="using:Template10.Controls">
     <Grid x:Name="LayoutRoot">
-        <Grid>
-            <MediaElement IsLooping="True"
-                          IsMuted="True"
-                          Source="SampleData/DesignDataSource/DesignDataSource_Files/Gravitas.MP4"
-                          Stretch="UniformToFill">
-                <MediaElement.Clip>
-                    <RectangleGeometry x:Name="Geometry1" />
-                </MediaElement.Clip>
-            </MediaElement>
+        <Grid>         
+
+                <MediaElement x:Name="asd"
+                              IsLooping="True"
+                              IsMuted="True"
+                              RelativePanel.Below="asb"
+                              Source="SampleData/DesignDataSource/DesignDataSource_Files/Gravitas.MP4"
+                              Stretch="UniformToFill">
+                    <MediaElement.Clip>
+                        <RectangleGeometry x:Name="Geometry1" />
+                    </MediaElement.Clip>
+                </MediaElement>      
+              
+                
             <Image Source="SampleData/DesignDataSource/DesignDataSource_Files/Week1.png" Stretch="UniformToFill">
                 <Image.Clip>
                     <RectangleGeometry x:Name="Geometry2" />
@@ -33,6 +39,7 @@
         </Grid>
         <ScrollViewer x:Name="ScrollingHost">
             <StackPanel>
+                
                 <Grid Height="{x:Bind PageHeight, Mode=OneWay}">
                     <Grid.RowDefinitions>
                         <RowDefinition />
@@ -41,6 +48,17 @@
                     <Grid x:Name="Section1"
                           Grid.Row="1"
                           Background="White">
+                        
+                        <AutoSuggestBox x:Name="ajsb"
+                                MinWidth="296"                              
+                                HorizontalAlignment="Left"
+                                PlaceholderText="Type a Event Name"
+                                QueryIcon="Find"
+                                QuerySubmitted="asb_QuerySubmitted"
+                                
+                                SuggestionChosen="asb_SuggestionChosen"
+                                TextChanged="asb_TextChanged" />
+                        
                         <StackPanel Margin="40"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center">
@@ -74,6 +92,9 @@
                     <Grid x:Name="Section2"
                           Grid.Row="1"
                           Background="#FFDDBB0C">
+
+
+                      
                         <StackPanel Margin="40" HorizontalAlignment="Center">
                             <SymbolIcon Margin="0,0,0,12"
                                         HorizontalAlignment="Left"
@@ -156,33 +177,31 @@
 
 
 
-                        <HyperlinkButton 
-                                         Grid.Column="0"
+                        <HyperlinkButton Grid.Column="0"
                                          Margin="0"
                                          HorizontalAlignment="Center"
                                          VerticalAlignment="Center"
                                          NavigateUri="https://www.facebook.com/graVITasVITU">
-                                <Ellipse x:Name="fb" Width="150"
+                            <Ellipse x:Name="fb"
+                                     Width="150"
                                      Height="150"
                                      Margin="0,15,0,0"
                                      HorizontalAlignment="Left"
-                                     VerticalAlignment="Center" Stroke="White"
-                                     
-                                     
-                                     >
-                                    <Ellipse.Fill>
-                                        <ImageBrush ImageSource="/Assets/fb.png" />
-                                    </Ellipse.Fill>
-                                </Ellipse>
+                                     VerticalAlignment="Center"
+                                     Stroke="White">
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="/Assets/fb.png" />
+                                </Ellipse.Fill>
+                            </Ellipse>
                         </HyperlinkButton>
 
-                        <HyperlinkButton 
-                                         Grid.Column="1"
+                        <HyperlinkButton Grid.Column="1"
                                          Margin="0"
                                          HorizontalAlignment="Center"
                                          VerticalAlignment="Center"
                                          NavigateUri="https://www.instagram.com/vitgravitas">
-                            <Ellipse Width="150" x:Name="insta"
+                            <Ellipse x:Name="insta"
+                                     Width="150"
                                      Height="150"
                                      Margin="0,15,0,0"
                                      HorizontalAlignment="Left"
@@ -193,31 +212,31 @@
                             </Ellipse>
                         </HyperlinkButton>
 
-                        <HyperlinkButton 
-                                         Grid.Column="2"
+                        <HyperlinkButton Grid.Column="2"
                                          Margin="0"
                                          HorizontalAlignment="Center"
                                          VerticalAlignment="Center"
                                          NavigateUri="https://www.twitter.com/gravitas_vit">
-                            <Ellipse Width="150"
+                            <Ellipse x:Name="twitter"
+                                     Width="150"
                                      Height="150"
                                      Margin="0,15,0,0"
                                      HorizontalAlignment="Left"
-                                     VerticalAlignment="Center" x:Name="twitter">
+                                     VerticalAlignment="Center">
                                 <Ellipse.Fill>
                                     <ImageBrush ImageSource="/Assets/twiiter.png" />
                                 </Ellipse.Fill>
                             </Ellipse>
                         </HyperlinkButton>
 
-                        <HyperlinkButton
-                                         Grid.Column="3"
+                        <HyperlinkButton Grid.Column="3"
                                          Margin="0"
                                          HorizontalAlignment="Center"
                                          VerticalAlignment="Center"
                                          NavigateUri="http://www.bing.com">
-                            <Ellipse Width="150"
-                                   x:Name="call"   Height="150"
+                            <Ellipse x:Name="call"
+                                     Width="150"
+                                     Height="150"
                                      Margin="0,15,0,0"
                                      HorizontalAlignment="Left"
                                      VerticalAlignment="Center">
@@ -402,11 +421,11 @@
 
                     <Setter Target="fb.Height" Value="15" />
                     <Setter Target="fb.Width" Value="15" />
-                    <Setter Target="insta.Height" Value="15"  />
-                    <Setter Target="insta.Width" Value="15"  />
-                    <Setter Target="twitter.Height" Value="15"  />
+                    <Setter Target="insta.Height" Value="15" />
+                    <Setter Target="insta.Width" Value="15" />
+                    <Setter Target="twitter.Height" Value="15" />
                     <Setter Target="twitter.Width" Value="15" />
-                    <Setter Target="call.Height" Value="15"  />
+                    <Setter Target="call.Height" Value="15" />
                     <Setter Target="call.Width" Value="15" />
                 </VisualState.Setters>
             </VisualState>
