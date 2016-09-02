@@ -141,7 +141,7 @@
                     </Grid.RowDefinitions>
                     <Grid x:Name="Section4"
                           Grid.Row="1"
-                          Background="White">
+                          Background="#FF1A80F0">
 
                         <Grid.ColumnDefinitions>
 
@@ -162,15 +162,18 @@
                                          HorizontalAlignment="Center"
                                          VerticalAlignment="Center"
                                          NavigateUri="https://www.facebook.com/graVITasVITU">
-                            <Ellipse x:Name="fb" Width="150"
+                                <Ellipse x:Name="fb" Width="150"
                                      Height="150"
                                      Margin="0,15,0,0"
                                      HorizontalAlignment="Left"
-                                     VerticalAlignment="Center">
-                                <Ellipse.Fill>
-                                    <ImageBrush ImageSource="/Assets/fb.png" />
-                                </Ellipse.Fill>
-                            </Ellipse>
+                                     VerticalAlignment="Center" Stroke="White"
+                                     
+                                     
+                                     >
+                                    <Ellipse.Fill>
+                                        <ImageBrush ImageSource="/Assets/fb.png" />
+                                    </Ellipse.Fill>
+                                </Ellipse>
                         </HyperlinkButton>
 
                         <HyperlinkButton 

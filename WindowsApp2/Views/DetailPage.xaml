@@ -6,10 +6,10 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       x:Name="PageRoot"
       RequestedTheme="Light"
-         xmlns:vm="using:WindowsApp2.ViewModels"
-           xmlns:data="using:WindowsApp2.Models"
-   
-
+      xmlns:vm="using:WindowsApp2.ViewModels"
+      xmlns:data="using:WindowsApp2.Models"
+      Loaded="PageRoot_Loaded"
+      Unloaded="PageRoot_Unloaded"  
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"     
       NavigationCacheMode="Enabled"     
       mc:Ignorable="d">
@@ -41,136 +41,308 @@
                    Style="{ThemeResource BodyTextBlockStyle}"
                    Text="{x:Bind Item.description, Mode=OneWay}" />
         </StackPanel>-->
-
-
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="200" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <Grid x:Name="Section2" Grid.Row="0">
-                <Grid.Background>
-                    <ImageBrush ImageSource="ms-appx:///Assets/8.JPG" Stretch="Fill" />
-                </Grid.Background>
-                <TextBlock MaxWidth="250"
-                               Margin="36,62,34,68"
+        <ScrollViewer>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto"  />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid     x:Name="Section2" Grid.Row="0">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="ms-appx:///Assets/8.JPG" Stretch="Fill" />
+                    </Grid.Background>
+                    <TextBlock MaxWidth="250"
+                               Margin="36,62,34,68" 
                                FontFamily="Baskerville Old Face"
                                FontSize="30"
                                Foreground="{ThemeResource ToggleButtonPressedForegroundThemeBrush}"
                                TextWrapping="WrapWholeWords"
                                d:LayoutOverrides="Width, LeftPosition, RightPosition, TopPosition, BottomPosition">
-                        <Run Text="{x:Bind Item.name}" />
-                </TextBlock>
-            </Grid>
-            <Grid x:Name="Content"
+                        <Run Text="{x:Bind Item.name ,Mode=OneWay}" />
+                    </TextBlock>
+                </Grid>
+                <Grid x:Name="Content"
                       Grid.Row="1"
-                      Margin="20">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <StackPanel Grid.Column="0">
-                    <RelativePanel>
-                        <SymbolIcon x:Name="symbol"
+                       Background="#FFDDBB0C"
+                     >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" HorizontalAlignment="Right">
+                        <RelativePanel>
+                            <SymbolIcon x:Name="symbol"
                                         Margin="10,0"
                                         HorizontalAlignment="Left"
                                         RelativePanel.AlignLeftWithPanel="True"
                                         Symbol="Globe" />
 
-                        <TextBlock HorizontalAlignment="Right"
+                            <TextBlock HorizontalAlignment="Right"
+                                       FontWeight="Bold"
                                        VerticalAlignment="Top"
                                        RelativePanel.RightOf="symbol"
                                        Style="{ThemeResource BaseTextBlockStyle}"
-                                       Text="{x:Bind Item.subCategory}" />
-                    </RelativePanel>
-                </StackPanel>
+                                       Text="{x:Bind Item.subCategory ,Mode=OneWay}" />
+                        </RelativePanel>
+                    </StackPanel>
 
-                <StackPanel Grid.Column="1" HorizontalAlignment="Center">
-                    <RelativePanel>
-                        <SymbolIcon x:Name="symboll"
+                    <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                        <RelativePanel>
+                            <SymbolIcon x:Name="symboll"
                                         Margin="10,0"
                                         HorizontalAlignment="Left"
-                                        RelativePanel.AlignLeftWithPanel="True"
+                                        
                                         Symbol="People" />
 
 
-                        <TextBlock HorizontalAlignment="Right"
+                            <TextBlock HorizontalAlignment="Right"
+                                       
+                                       FontWeight="Bold"
                                        VerticalAlignment="Top"
                                        RelativePanel.RightOf="symboll"
                                        Style="{ThemeResource BaseTextBlockStyle}"
-                                       Text="{x:Bind Item.teamSize}" />
-                    </RelativePanel>
-                </StackPanel>
-                <StackPanel Grid.Column="2" d:LayoutOverrides="Width, LeftPosition, RightPosition">
-                    <RelativePanel>
-                        <TextBlock x:Name="symbllol"
+                                       Text="{x:Bind Item.teamSize ,Mode=OneWay}" />
+                        </RelativePanel>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" d:LayoutOverrides="Width, LeftPosition, RightPosition">
+                        <RelativePanel>
+                            <TextBlock x:Name="symbllol"
+                                       FontWeight="Bold"
                                        Margin="10,0"
-                                      
-                                     
                                        Text="&#x20b9;" />
 
-                        <!--<SymbolIcon x:Name="symbllol"
+                            <!--<SymbolIcon x:Name="symbllol"
                                         Margin="0,0,5,0"
                                         HorizontalAlignment="Left"
                                         RelativePanel.AlignLeftWithPanel="True"
                                         Symbol="Bullets" />-->
 
-                        <TextBlock HorizontalAlignment="Right"
+
+                            <TextBlock FontWeight="Bold"
+                                       HorizontalAlignment="Right"
                                        VerticalAlignment="Top"
                                        RelativePanel.RightOf="symbllol"
                                        Style="{ThemeResource BaseTextBlockStyle}"
-                                       Text="{x:Bind Item.participationFee}" />
-                    </RelativePanel>
-                </StackPanel>
-            </Grid>
-            <TextBlock Grid.Row="2"
+                                       Text="{x:Bind Item.participationFee ,Mode=OneWay}" />
+                        </RelativePanel>
+                    </StackPanel>
+                </Grid>
+                <Grid  Grid.Row="2"  BorderBrush="White" BorderThickness="2" Margin="0,10,0,0" Padding="10">
+                    <TextBlock 
                            HorizontalAlignment="Center"
                            Style="{ThemeResource ScenarioDescriptionTextStyle}"
-                           Text="{x:Bind Item.description}"
+                           Text="{x:Bind Item.description ,Mode=OneWay}"
                            TextWrapping="WrapWholeWords" />
+                </Grid>
 
-            <Grid Grid.Row="3" Margin="20">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
+                <Grid Grid.Row="3" Margin="20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
 
 
-                <SymbolIcon Grid.Column="0"
-                                Height="150"
-                                Width="150"
-                                HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
-                                Symbol="Phone" 
-                                 IsTapEnabled="True"
-                               
+                    <Button  HorizontalAlignment="Center"
+                                VerticalAlignment="Center"                                                             
+                                Click="SymbolIcon_Tapped_1">
+                      
+                        <SymbolIcon Grid.Column="0"
+                                     Symbol="Phone"
                                 />
+                    </Button>
 
 
-                <SymbolIcon x:Name="People"
-                                Grid.Column="1"
+                    <Button Click="ShowPopupOffsetClicked"  Grid.Column="1"
                                 HorizontalAlignment="Center"
-                                VerticalAlignment="Center"
+                                VerticalAlignment="Center">
+                        <SymbolIcon x:Name="People"
+                                
                                 IsTapEnabled="True"
                                 Symbol="People"
-                                />
+                                 />
+                    </Button>
 
 
-
-                <SymbolIcon Grid.Column="2"
-                                HorizontalAlignment="Center"
+                    <Button Click="SymbolIcon_Tapped"        HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
-                                Symbol="Mail"
+                             Grid.Column="2"
+                           >
+                        <SymbolIcon
                                 IsTapEnabled="True"
-                              />
+                                Symbol="Mail"
+                                />
+                    </Button>
+
+                </Grid>
+
+            </Grid>
+        </ScrollViewer>
+
+        <Popup x:Name="StandardPopup"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               HorizontalOffset="500"
+               IsLightDismissEnabled="True"
+               VerticalOffset="250">
+            <Grid Width="250"
+                  Height="300"
+                  HorizontalAlignment="Center"
+                  VerticalAlignment="Center"
+                  Background="White"
+                  CornerRadius="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <TextBlock Margin="20,0"
+                           VerticalAlignment="Center"
+                           FontSize="24"
+                           Foreground="Black">
+                    Cordinator Details
+                </TextBlock>
+                <Button Margin="12"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Click="Button_Click"
+                        Foreground="Black"
+                        Style="{StaticResource TextBlockButtonStyle}">
+                    <SymbolIcon Symbol="Clear" />
+                </Button>
+                <StackPanel Grid.Row="1"
+                            Height="75"
+                            Background="#FF1E1E20">
+
+                    <RelativePanel>
+                        <Ellipse x:Name="img"
+                                 Width="45"
+                                 Height="45"
+                                 Margin="0,15,0,0"
+                                 HorizontalAlignment="Left"
+                                 VerticalAlignment="Center">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="/Assets/7.png" />
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <TextBlock Margin="15,15,0,0"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Foreground="White"
+                                   RelativePanel.AlignHorizontalCenterWithPanel="True"
+                                   RelativePanel.AlignVerticalCenterWithPanel="True"
+                                   RelativePanel.RightOf="img"
+                                   Text="{x:Bind Item.name, Mode=OneWay}" />
+                    </RelativePanel>
+
+                </StackPanel>
+
+                <StackPanel Grid.Row="2">
+
+                    <Border Height="1"
+                            Margin="15,0"
+                            Background="#FFE2E2E2" />
+                    <RelativePanel>
+                        <Border Height="1"
+                                Margin="15,0"
+                                Background="#FFE2E2E2" />
+                        <SymbolIcon x:Name="imhg"
+                                    Width="45"
+                                    Height="32"
+                                    Margin="0,0,10,0"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    Foreground="Black"
+                                    Symbol="People" />
+                        <TextBlock Grid.Row="2"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontSize="24"
+                                   Foreground="Black"
+                                   RelativePanel.AlignHorizontalCenterWithPanel="True"
+                                   RelativePanel.AlignVerticalCenterWithPanel="True"
+                                   RelativePanel.RightOf="imhg"
+                                   Text="{x:Bind x.name, Mode=OneWay}"
+                                   TextWrapping="Wrap" />
+
+                    </RelativePanel>
+                </StackPanel>
+                <Border Grid.Row="2"
+                        Height="1"
+                        Margin="0,5,0,0"
+                        VerticalAlignment="Bottom"
+                        Background="#FFE2E2E2" />
+                <StackPanel Grid.Row="3">
+
+                    <RelativePanel>
+                        <SymbolIcon x:Name="phoe"
+                                    Width="45"
+                                    Height="32"
+                                    Margin="0,0,10,0"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    Foreground="Black"
+                                    Symbol="Phone" />
+                        <TextBlock Grid.Row="2"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontSize="24"
+                                   Foreground="Black"
+                                   RelativePanel.AlignHorizontalCenterWithPanel="True"
+                                   RelativePanel.AlignVerticalCenterWithPanel="True"
+                                   RelativePanel.RightOf="phoe"
+                                   Text="{x:Bind x.phone, Mode=OneWay}"
+                                   TextWrapping="Wrap" />
+
+                    </RelativePanel>
+                </StackPanel>
+                <Border Grid.Row="3"
+                        Height="1"
+                        Margin="0,5,0,0"
+                        VerticalAlignment="Bottom"
+                        Background="#FFE2E2E2" />
+                <Border Grid.Row="4"
+                        Height="1"
+                        Margin="0,5,0,0"
+                        VerticalAlignment="Bottom"
+                        Background="#FFE2E2E2" />
+                <StackPanel Grid.Row="4">
+                    <Rectangle Width="1"
+                               Margin="2"
+                               VerticalAlignment="Stretch"
+                               Stroke="Black" />
+                    <RelativePanel>
+                        <SymbolIcon x:Name="email"
+                                    Width="45"
+                                    Height="32"
+                                    Margin="0,0,10,0"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    Foreground="Black"
+                                    Symbol="mail" />
+                        <TextBlock Grid.Row="2"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   FontSize="24"
+                                   Foreground="Black"
+                                   RelativePanel.AlignHorizontalCenterWithPanel="True"
+                                   RelativePanel.AlignVerticalCenterWithPanel="True"
+                                   RelativePanel.RightOf="email"
+                                   Text="{x:Bind x.email, Mode=OneWay}"
+                                   TextWrapping="Wrap" />
+
+                    </RelativePanel>
+                </StackPanel>
+
 
             </Grid>
 
-        </Grid>
+        </Popup>
 
     </Grid>
 </Page>

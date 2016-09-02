@@ -228,17 +228,17 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             _typeNameTable[68] = "System.Collections.ObjectModel.Collection`1<WindowsApp2.ViewModels.CategoryViewModel>";
             _typeNameTable[69] = "WindowsApp2.ViewModels.CategoryViewModel";
             _typeNameTable[70] = "WindowsApp2.Views.DetailPage";
-            _typeNameTable[71] = "WindowsApp2.Views.Favourites";
-            _typeNameTable[72] = "WindowsApp2.Views.Icheck";
-            _typeNameTable[73] = "WindowsApp2.Views.MainPage";
-            _typeNameTable[74] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[75] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[76] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[77] = "Template10.Behaviors.EllipsisBehavior";
-            _typeNameTable[78] = "Template10.Behaviors.DeviceDispositionBehavior";
-            _typeNameTable[79] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[80] = "WindowsApp2.Views.MasterDetailPage";
-            _typeNameTable[81] = "WindowsApp2.Models.Coordinator";
+            _typeNameTable[71] = "WindowsApp2.Models.Coordinator";
+            _typeNameTable[72] = "WindowsApp2.Views.Favourites";
+            _typeNameTable[73] = "WindowsApp2.Views.Icheck";
+            _typeNameTable[74] = "WindowsApp2.Views.MainPage";
+            _typeNameTable[75] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[76] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[77] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[78] = "Template10.Behaviors.EllipsisBehavior";
+            _typeNameTable[79] = "Template10.Behaviors.DeviceDispositionBehavior";
+            _typeNameTable[80] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[81] = "WindowsApp2.Views.MasterDetailPage";
             _typeNameTable[82] = "WindowsApp2.Views.Organisers";
             _typeNameTable[83] = "WindowsApp2.Converters.VisibleWhenTrue";
             _typeNameTable[84] = "WindowsApp2.Views.ViewModels.Locator";
@@ -329,17 +329,17 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             _typeTable[68] = typeof(global::System.Collections.ObjectModel.Collection<global::WindowsApp2.ViewModels.CategoryViewModel>);
             _typeTable[69] = typeof(global::WindowsApp2.ViewModels.CategoryViewModel);
             _typeTable[70] = typeof(global::WindowsApp2.Views.DetailPage);
-            _typeTable[71] = typeof(global::WindowsApp2.Views.Favourites);
-            _typeTable[72] = typeof(global::WindowsApp2.Views.Icheck);
-            _typeTable[73] = typeof(global::WindowsApp2.Views.MainPage);
-            _typeTable[74] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[75] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[76] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[77] = typeof(global::Template10.Behaviors.EllipsisBehavior);
-            _typeTable[78] = typeof(global::Template10.Behaviors.DeviceDispositionBehavior);
-            _typeTable[79] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[80] = typeof(global::WindowsApp2.Views.MasterDetailPage);
-            _typeTable[81] = typeof(global::WindowsApp2.Models.Coordinator);
+            _typeTable[71] = typeof(global::WindowsApp2.Models.Coordinator);
+            _typeTable[72] = typeof(global::WindowsApp2.Views.Favourites);
+            _typeTable[73] = typeof(global::WindowsApp2.Views.Icheck);
+            _typeTable[74] = typeof(global::WindowsApp2.Views.MainPage);
+            _typeTable[75] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[76] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[77] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[78] = typeof(global::Template10.Behaviors.EllipsisBehavior);
+            _typeTable[79] = typeof(global::Template10.Behaviors.DeviceDispositionBehavior);
+            _typeTable[80] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[81] = typeof(global::WindowsApp2.Views.MasterDetailPage);
             _typeTable[82] = typeof(global::WindowsApp2.Views.Organisers);
             _typeTable[83] = typeof(global::WindowsApp2.Converters.VisibleWhenTrue);
             _typeTable[84] = typeof(global::WindowsApp2.Views.ViewModels.Locator);
@@ -415,15 +415,15 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
         private object Activate_67_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WindowsApp2.ViewModels.CategoryViewModel>(); }
         private object Activate_68_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WindowsApp2.ViewModels.CategoryViewModel>(); }
         private object Activate_70_DetailPage() { return new global::WindowsApp2.Views.DetailPage(); }
-        private object Activate_71_Favourites() { return new global::WindowsApp2.Views.Favourites(); }
-        private object Activate_72_Icheck() { return new global::WindowsApp2.Views.Icheck(); }
-        private object Activate_73_MainPage() { return new global::WindowsApp2.Views.MainPage(); }
-        private object Activate_75_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_77_EllipsisBehavior() { return new global::Template10.Behaviors.EllipsisBehavior(); }
-        private object Activate_78_DeviceDispositionBehavior() { return new global::Template10.Behaviors.DeviceDispositionBehavior(); }
-        private object Activate_79_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_80_MasterDetailPage() { return new global::WindowsApp2.Views.MasterDetailPage(); }
-        private object Activate_81_Coordinator() { return new global::WindowsApp2.Models.Coordinator(); }
+        private object Activate_71_Coordinator() { return new global::WindowsApp2.Models.Coordinator(); }
+        private object Activate_72_Favourites() { return new global::WindowsApp2.Views.Favourites(); }
+        private object Activate_73_Icheck() { return new global::WindowsApp2.Views.Icheck(); }
+        private object Activate_74_MainPage() { return new global::WindowsApp2.Views.MainPage(); }
+        private object Activate_76_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_78_EllipsisBehavior() { return new global::Template10.Behaviors.EllipsisBehavior(); }
+        private object Activate_79_DeviceDispositionBehavior() { return new global::Template10.Behaviors.DeviceDispositionBehavior(); }
+        private object Activate_80_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_81_MasterDetailPage() { return new global::WindowsApp2.Views.MasterDetailPage(); }
         private object Activate_82_Organisers() { return new global::WindowsApp2.Views.Organisers(); }
         private object Activate_83_VisibleWhenTrue() { return new global::WindowsApp2.Converters.VisibleWhenTrue(); }
         private object Activate_84_Locator() { return new global::WindowsApp2.Views.ViewModels.Locator(); }
@@ -492,13 +492,13 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             var newItem = (global::WindowsApp2.ViewModels.CategoryViewModel)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_75_BehaviorCollection(object instance, object item)
+        private void VectorAdd_76_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_79_ActionCollection(object instance, object item)
+        private void VectorAdd_80_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
@@ -1020,59 +1020,67 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_70_DetailPage;
                 userType.AddMemberName("Item");
+                userType.AddMemberName("x");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 71:   //  WindowsApp2.Views.Favourites
+            case 71:   //  WindowsApp2.Models.Coordinator
+                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 72:   //  WindowsApp2.Views.Favourites
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_71_Favourites;
+                userType.Activator = Activate_72_Favourites;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 72:   //  WindowsApp2.Views.Icheck
+            case 73:   //  WindowsApp2.Views.Icheck
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_72_Icheck;
+                userType.Activator = Activate_73_Icheck;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 73:   //  WindowsApp2.Views.MainPage
+            case 74:   //  WindowsApp2.Views.MainPage
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_73_MainPage;
+                userType.Activator = Activate_74_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 74:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 75:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 75:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 76:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_75_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_76_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 76:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 77:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 77:   //  Template10.Behaviors.EllipsisBehavior
+            case 78:   //  Template10.Behaviors.EllipsisBehavior
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_77_EllipsisBehavior;
+                userType.Activator = Activate_78_EllipsisBehavior;
                 userType.AddMemberName("Visibility");
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 78:   //  Template10.Behaviors.DeviceDispositionBehavior
+            case 79:   //  Template10.Behaviors.DeviceDispositionBehavior
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_78_DeviceDispositionBehavior;
+                userType.Activator = Activate_79_DeviceDispositionBehavior;
                 userType.SetContentPropertyName("Template10.Behaviors.DeviceDispositionBehavior.Actions");
                 userType.AddMemberName("Actions");
                 userType.AddMemberName("Continuum");
@@ -1088,26 +1096,19 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 79:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 80:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_79_ActionCollection;
+                userType.CollectionAdd = VectorAdd_80_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 80:   //  WindowsApp2.Views.MasterDetailPage
+            case 81:   //  WindowsApp2.Views.MasterDetailPage
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_80_MasterDetailPage;
+                userType.Activator = Activate_81_MasterDetailPage;
                 userType.AddMemberName("Item");
                 userType.AddMemberName("x");
                 userType.AddMemberName("Header");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 81:   //  WindowsApp2.Models.Coordinator
-                userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -2305,235 +2306,245 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             var that = (global::WindowsApp2.Views.DetailPage)instance;
             that.Item = (global::WindowsApp2.Models.Event)Value;
         }
-        private object get_105_Interaction_Behaviors(object instance)
+        private object get_105_DetailPage_x(object instance)
+        {
+            var that = (global::WindowsApp2.Views.DetailPage)instance;
+            return that.x;
+        }
+        private void set_105_DetailPage_x(object instance, object Value)
+        {
+            var that = (global::WindowsApp2.Views.DetailPage)instance;
+            that.x = (global::WindowsApp2.Models.Coordinator)Value;
+        }
+        private object get_106_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_105_Interaction_Behaviors(object instance, object Value)
+        private void set_106_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_106_EllipsisBehavior_Visibility(object instance)
+        private object get_107_EllipsisBehavior_Visibility(object instance)
         {
             var that = (global::Template10.Behaviors.EllipsisBehavior)instance;
             return that.Visibility;
         }
-        private void set_106_EllipsisBehavior_Visibility(object instance, object Value)
+        private void set_107_EllipsisBehavior_Visibility(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.EllipsisBehavior)instance;
             that.Visibility = (global::Template10.Behaviors.EllipsisBehavior.Visibilities)Value;
         }
-        private object get_107_EllipsisBehavior_AssociatedObject(object instance)
+        private object get_108_EllipsisBehavior_AssociatedObject(object instance)
         {
             var that = (global::Template10.Behaviors.EllipsisBehavior)instance;
             return that.AssociatedObject;
         }
-        private object get_108_DeviceDispositionBehavior_Actions(object instance)
+        private object get_109_DeviceDispositionBehavior_Actions(object instance)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             return that.Actions;
         }
-        private object get_109_DeviceDispositionBehavior_Continuum(object instance)
+        private object get_110_DeviceDispositionBehavior_Continuum(object instance)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             return that.Continuum;
         }
-        private void set_109_DeviceDispositionBehavior_Continuum(object instance, object Value)
+        private void set_110_DeviceDispositionBehavior_Continuum(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             that.Continuum = (global::System.Boolean)Value;
         }
-        private object get_110_DeviceDispositionBehavior_Desktop(object instance)
+        private object get_111_DeviceDispositionBehavior_Desktop(object instance)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             return that.Desktop;
         }
-        private void set_110_DeviceDispositionBehavior_Desktop(object instance, object Value)
+        private void set_111_DeviceDispositionBehavior_Desktop(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             that.Desktop = (global::System.Boolean)Value;
         }
-        private object get_111_DeviceDispositionBehavior_IoT(object instance)
+        private object get_112_DeviceDispositionBehavior_IoT(object instance)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             return that.IoT;
         }
-        private void set_111_DeviceDispositionBehavior_IoT(object instance, object Value)
+        private void set_112_DeviceDispositionBehavior_IoT(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             that.IoT = (global::System.Boolean)Value;
         }
-        private object get_112_DeviceDispositionBehavior_AssociatedObject(object instance)
+        private object get_113_DeviceDispositionBehavior_AssociatedObject(object instance)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             return that.AssociatedObject;
         }
-        private void set_112_DeviceDispositionBehavior_AssociatedObject(object instance, object Value)
+        private void set_113_DeviceDispositionBehavior_AssociatedObject(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             that.AssociatedObject = (global::Windows.UI.Xaml.DependencyObject)Value;
         }
-        private object get_113_DeviceDispositionBehavior_Xbox(object instance)
+        private object get_114_DeviceDispositionBehavior_Xbox(object instance)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             return that.Xbox;
         }
-        private void set_113_DeviceDispositionBehavior_Xbox(object instance, object Value)
+        private void set_114_DeviceDispositionBehavior_Xbox(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             that.Xbox = (global::System.Boolean)Value;
         }
-        private object get_114_DeviceDispositionBehavior_Team(object instance)
+        private object get_115_DeviceDispositionBehavior_Team(object instance)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             return that.Team;
         }
-        private void set_114_DeviceDispositionBehavior_Team(object instance, object Value)
+        private void set_115_DeviceDispositionBehavior_Team(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             that.Team = (global::System.Boolean)Value;
         }
-        private object get_115_DeviceDispositionBehavior_HoloLens(object instance)
+        private object get_116_DeviceDispositionBehavior_HoloLens(object instance)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             return that.HoloLens;
         }
-        private void set_115_DeviceDispositionBehavior_HoloLens(object instance, object Value)
+        private void set_116_DeviceDispositionBehavior_HoloLens(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             that.HoloLens = (global::System.Boolean)Value;
         }
-        private object get_116_DeviceDispositionBehavior_Mobile(object instance)
+        private object get_117_DeviceDispositionBehavior_Mobile(object instance)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             return that.Mobile;
         }
-        private void set_116_DeviceDispositionBehavior_Mobile(object instance, object Value)
+        private void set_117_DeviceDispositionBehavior_Mobile(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             that.Mobile = (global::System.Boolean)Value;
         }
-        private object get_117_DeviceDispositionBehavior_Phone(object instance)
+        private object get_118_DeviceDispositionBehavior_Phone(object instance)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             return that.Phone;
         }
-        private void set_117_DeviceDispositionBehavior_Phone(object instance, object Value)
+        private void set_118_DeviceDispositionBehavior_Phone(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             that.Phone = (global::System.Boolean)Value;
         }
-        private object get_118_DeviceDispositionBehavior_Virtual(object instance)
+        private object get_119_DeviceDispositionBehavior_Virtual(object instance)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             return that.Virtual;
         }
-        private void set_118_DeviceDispositionBehavior_Virtual(object instance, object Value)
+        private void set_119_DeviceDispositionBehavior_Virtual(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.DeviceDispositionBehavior)instance;
             that.Virtual = (global::System.Boolean)Value;
         }
-        private object get_119_MasterDetailPage_Item(object instance)
+        private object get_120_MasterDetailPage_Item(object instance)
         {
             var that = (global::WindowsApp2.Views.MasterDetailPage)instance;
             return that.Item;
         }
-        private void set_119_MasterDetailPage_Item(object instance, object Value)
+        private void set_120_MasterDetailPage_Item(object instance, object Value)
         {
             var that = (global::WindowsApp2.Views.MasterDetailPage)instance;
             that.Item = (global::WindowsApp2.Models.Event)Value;
         }
-        private object get_120_MasterDetailPage_x(object instance)
+        private object get_121_MasterDetailPage_x(object instance)
         {
             var that = (global::WindowsApp2.Views.MasterDetailPage)instance;
             return that.x;
         }
-        private void set_120_MasterDetailPage_x(object instance, object Value)
+        private void set_121_MasterDetailPage_x(object instance, object Value)
         {
             var that = (global::WindowsApp2.Views.MasterDetailPage)instance;
             that.x = (global::WindowsApp2.Models.Coordinator)Value;
         }
-        private object get_121_MasterDetailPage_Header(object instance)
+        private object get_122_MasterDetailPage_Header(object instance)
         {
             var that = (global::WindowsApp2.Views.MasterDetailPage)instance;
             return that.Header;
         }
-        private void set_121_MasterDetailPage_Header(object instance, object Value)
+        private void set_122_MasterDetailPage_Header(object instance, object Value)
         {
             var that = (global::WindowsApp2.Views.MasterDetailPage)instance;
             that.Header = (global::WindowsApp2.Models.Event)Value;
         }
-        private object get_122_Locator_MainPageViewModel(object instance)
+        private object get_123_Locator_MainPageViewModel(object instance)
         {
             var that = (global::WindowsApp2.Views.ViewModels.Locator)instance;
             return that.MainPageViewModel;
         }
-        private object get_123_SettingsPageViewModel_SettingsPartViewModel(object instance)
+        private object get_124_SettingsPageViewModel_SettingsPartViewModel(object instance)
         {
             var that = (global::WindowsApp2.ViewModels.SettingsPageViewModel)instance;
             return that.SettingsPartViewModel;
         }
-        private object get_124_SettingsPageViewModel_AboutPartViewModel(object instance)
+        private object get_125_SettingsPageViewModel_AboutPartViewModel(object instance)
         {
             var that = (global::WindowsApp2.ViewModels.SettingsPageViewModel)instance;
             return that.AboutPartViewModel;
         }
-        private object get_125_Shell__MyHamburgerMenu(object instance)
+        private object get_126_Shell__MyHamburgerMenu(object instance)
         {
             var that = (global::WindowsApp2.Views.Shell)instance;
             return that._MyHamburgerMenu;
         }
-        private void set_125_Shell__MyHamburgerMenu(object instance, object Value)
+        private void set_126_Shell__MyHamburgerMenu(object instance, object Value)
         {
             var that = (global::WindowsApp2.Views.Shell)instance;
             that._MyHamburgerMenu = (global::Template10.Controls.HamburgerMenu)Value;
         }
-        private object get_126_RingSegment_EndAngle(object instance)
+        private object get_127_RingSegment_EndAngle(object instance)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             return that.EndAngle;
         }
-        private void set_126_RingSegment_EndAngle(object instance, object Value)
+        private void set_127_RingSegment_EndAngle(object instance, object Value)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             that.EndAngle = (global::System.Double)Value;
         }
-        private object get_127_RingSegment_InnerRadius(object instance)
+        private object get_128_RingSegment_InnerRadius(object instance)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             return that.InnerRadius;
         }
-        private void set_127_RingSegment_InnerRadius(object instance, object Value)
+        private void set_128_RingSegment_InnerRadius(object instance, object Value)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             that.InnerRadius = (global::System.Double)Value;
         }
-        private object get_128_RingSegment_Radius(object instance)
+        private object get_129_RingSegment_Radius(object instance)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             return that.Radius;
         }
-        private void set_128_RingSegment_Radius(object instance, object Value)
+        private void set_129_RingSegment_Radius(object instance, object Value)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             that.Radius = (global::System.Double)Value;
         }
-        private object get_129_RingSegment_StartAngle(object instance)
+        private object get_130_RingSegment_StartAngle(object instance)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             return that.StartAngle;
         }
-        private void set_129_RingSegment_StartAngle(object instance, object Value)
+        private void set_130_RingSegment_StartAngle(object instance, object Value)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             that.StartAngle = (global::System.Double)Value;
         }
-        private object get_130_RingSegment_Center(object instance)
+        private object get_131_RingSegment_Center(object instance)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             return that.Center;
         }
-        private void set_130_RingSegment_Center(object instance, object Value)
+        private void set_131_RingSegment_Center(object instance, object Value)
         {
             var that = (global::Template10.Controls.RingSegment)instance;
             that.Center = (global::System.Nullable<global::Windows.Foundation.Point>)Value;
@@ -3245,182 +3256,189 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
                 xamlMember.Getter = get_104_DetailPage_Item;
                 xamlMember.Setter = set_104_DetailPage_Item;
                 break;
+            case "WindowsApp2.Views.DetailPage.x":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Views.DetailPage");
+                xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "x", "WindowsApp2.Models.Coordinator");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_105_DetailPage_x;
+                xamlMember.Setter = set_105_DetailPage_x;
+                break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_105_Interaction_Behaviors;
-                xamlMember.Setter = set_105_Interaction_Behaviors;
+                xamlMember.Getter = get_106_Interaction_Behaviors;
+                xamlMember.Setter = set_106_Interaction_Behaviors;
                 break;
             case "Template10.Behaviors.EllipsisBehavior.Visibility":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.EllipsisBehavior");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Visibility", "Template10.Behaviors.EllipsisBehavior.Visibilities");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_106_EllipsisBehavior_Visibility;
-                xamlMember.Setter = set_106_EllipsisBehavior_Visibility;
+                xamlMember.Getter = get_107_EllipsisBehavior_Visibility;
+                xamlMember.Setter = set_107_EllipsisBehavior_Visibility;
                 break;
             case "Template10.Behaviors.EllipsisBehavior.AssociatedObject":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.EllipsisBehavior");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_107_EllipsisBehavior_AssociatedObject;
+                xamlMember.Getter = get_108_EllipsisBehavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Behaviors.DeviceDispositionBehavior.Actions":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.DeviceDispositionBehavior");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_108_DeviceDispositionBehavior_Actions;
+                xamlMember.Getter = get_109_DeviceDispositionBehavior_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Behaviors.DeviceDispositionBehavior.Continuum":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.DeviceDispositionBehavior");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Continuum", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_109_DeviceDispositionBehavior_Continuum;
-                xamlMember.Setter = set_109_DeviceDispositionBehavior_Continuum;
+                xamlMember.Getter = get_110_DeviceDispositionBehavior_Continuum;
+                xamlMember.Setter = set_110_DeviceDispositionBehavior_Continuum;
                 break;
             case "Template10.Behaviors.DeviceDispositionBehavior.Desktop":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.DeviceDispositionBehavior");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Desktop", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_110_DeviceDispositionBehavior_Desktop;
-                xamlMember.Setter = set_110_DeviceDispositionBehavior_Desktop;
+                xamlMember.Getter = get_111_DeviceDispositionBehavior_Desktop;
+                xamlMember.Setter = set_111_DeviceDispositionBehavior_Desktop;
                 break;
             case "Template10.Behaviors.DeviceDispositionBehavior.IoT":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.DeviceDispositionBehavior");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "IoT", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_111_DeviceDispositionBehavior_IoT;
-                xamlMember.Setter = set_111_DeviceDispositionBehavior_IoT;
+                xamlMember.Getter = get_112_DeviceDispositionBehavior_IoT;
+                xamlMember.Setter = set_112_DeviceDispositionBehavior_IoT;
                 break;
             case "Template10.Behaviors.DeviceDispositionBehavior.AssociatedObject":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.DeviceDispositionBehavior");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_112_DeviceDispositionBehavior_AssociatedObject;
-                xamlMember.Setter = set_112_DeviceDispositionBehavior_AssociatedObject;
+                xamlMember.Getter = get_113_DeviceDispositionBehavior_AssociatedObject;
+                xamlMember.Setter = set_113_DeviceDispositionBehavior_AssociatedObject;
                 break;
             case "Template10.Behaviors.DeviceDispositionBehavior.Xbox":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.DeviceDispositionBehavior");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Xbox", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_113_DeviceDispositionBehavior_Xbox;
-                xamlMember.Setter = set_113_DeviceDispositionBehavior_Xbox;
+                xamlMember.Getter = get_114_DeviceDispositionBehavior_Xbox;
+                xamlMember.Setter = set_114_DeviceDispositionBehavior_Xbox;
                 break;
             case "Template10.Behaviors.DeviceDispositionBehavior.Team":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.DeviceDispositionBehavior");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Team", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_114_DeviceDispositionBehavior_Team;
-                xamlMember.Setter = set_114_DeviceDispositionBehavior_Team;
+                xamlMember.Getter = get_115_DeviceDispositionBehavior_Team;
+                xamlMember.Setter = set_115_DeviceDispositionBehavior_Team;
                 break;
             case "Template10.Behaviors.DeviceDispositionBehavior.HoloLens":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.DeviceDispositionBehavior");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "HoloLens", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_115_DeviceDispositionBehavior_HoloLens;
-                xamlMember.Setter = set_115_DeviceDispositionBehavior_HoloLens;
+                xamlMember.Getter = get_116_DeviceDispositionBehavior_HoloLens;
+                xamlMember.Setter = set_116_DeviceDispositionBehavior_HoloLens;
                 break;
             case "Template10.Behaviors.DeviceDispositionBehavior.Mobile":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.DeviceDispositionBehavior");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Mobile", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_116_DeviceDispositionBehavior_Mobile;
-                xamlMember.Setter = set_116_DeviceDispositionBehavior_Mobile;
+                xamlMember.Getter = get_117_DeviceDispositionBehavior_Mobile;
+                xamlMember.Setter = set_117_DeviceDispositionBehavior_Mobile;
                 break;
             case "Template10.Behaviors.DeviceDispositionBehavior.Phone":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.DeviceDispositionBehavior");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Phone", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_117_DeviceDispositionBehavior_Phone;
-                xamlMember.Setter = set_117_DeviceDispositionBehavior_Phone;
+                xamlMember.Getter = get_118_DeviceDispositionBehavior_Phone;
+                xamlMember.Setter = set_118_DeviceDispositionBehavior_Phone;
                 break;
             case "Template10.Behaviors.DeviceDispositionBehavior.Virtual":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.DeviceDispositionBehavior");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Virtual", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_118_DeviceDispositionBehavior_Virtual;
-                xamlMember.Setter = set_118_DeviceDispositionBehavior_Virtual;
+                xamlMember.Getter = get_119_DeviceDispositionBehavior_Virtual;
+                xamlMember.Setter = set_119_DeviceDispositionBehavior_Virtual;
                 break;
             case "WindowsApp2.Views.MasterDetailPage.Item":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Views.MasterDetailPage");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Item", "WindowsApp2.Models.Event");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_119_MasterDetailPage_Item;
-                xamlMember.Setter = set_119_MasterDetailPage_Item;
+                xamlMember.Getter = get_120_MasterDetailPage_Item;
+                xamlMember.Setter = set_120_MasterDetailPage_Item;
                 break;
             case "WindowsApp2.Views.MasterDetailPage.x":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Views.MasterDetailPage");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "x", "WindowsApp2.Models.Coordinator");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_120_MasterDetailPage_x;
-                xamlMember.Setter = set_120_MasterDetailPage_x;
+                xamlMember.Getter = get_121_MasterDetailPage_x;
+                xamlMember.Setter = set_121_MasterDetailPage_x;
                 break;
             case "WindowsApp2.Views.MasterDetailPage.Header":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Views.MasterDetailPage");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Header", "WindowsApp2.Models.Event");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_121_MasterDetailPage_Header;
-                xamlMember.Setter = set_121_MasterDetailPage_Header;
+                xamlMember.Getter = get_122_MasterDetailPage_Header;
+                xamlMember.Setter = set_122_MasterDetailPage_Header;
                 break;
             case "WindowsApp2.Views.ViewModels.Locator.MainPageViewModel":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Views.ViewModels.Locator");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "MainPageViewModel", "WindowsApp2.Views.ViewModels.MainPageViewModel");
-                xamlMember.Getter = get_122_Locator_MainPageViewModel;
+                xamlMember.Getter = get_123_Locator_MainPageViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WindowsApp2.ViewModels.SettingsPageViewModel.SettingsPartViewModel":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "SettingsPartViewModel", "WindowsApp2.ViewModels.SettingsPartViewModel");
-                xamlMember.Getter = get_123_SettingsPageViewModel_SettingsPartViewModel;
+                xamlMember.Getter = get_124_SettingsPageViewModel_SettingsPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WindowsApp2.ViewModels.SettingsPageViewModel.AboutPartViewModel":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.ViewModels.SettingsPageViewModel");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "AboutPartViewModel", "WindowsApp2.ViewModels.AboutPartViewModel");
-                xamlMember.Getter = get_124_SettingsPageViewModel_AboutPartViewModel;
+                xamlMember.Getter = get_125_SettingsPageViewModel_AboutPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WindowsApp2.Views.Shell._MyHamburgerMenu":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.Views.Shell");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "_MyHamburgerMenu", "Template10.Controls.HamburgerMenu");
-                xamlMember.Getter = get_125_Shell__MyHamburgerMenu;
-                xamlMember.Setter = set_125_Shell__MyHamburgerMenu;
+                xamlMember.Getter = get_126_Shell__MyHamburgerMenu;
+                xamlMember.Setter = set_126_Shell__MyHamburgerMenu;
                 break;
             case "Template10.Controls.RingSegment.EndAngle":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.RingSegment");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "EndAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_126_RingSegment_EndAngle;
-                xamlMember.Setter = set_126_RingSegment_EndAngle;
+                xamlMember.Getter = get_127_RingSegment_EndAngle;
+                xamlMember.Setter = set_127_RingSegment_EndAngle;
                 break;
             case "Template10.Controls.RingSegment.InnerRadius":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.RingSegment");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "InnerRadius", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_127_RingSegment_InnerRadius;
-                xamlMember.Setter = set_127_RingSegment_InnerRadius;
+                xamlMember.Getter = get_128_RingSegment_InnerRadius;
+                xamlMember.Setter = set_128_RingSegment_InnerRadius;
                 break;
             case "Template10.Controls.RingSegment.Radius":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.RingSegment");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Radius", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_128_RingSegment_Radius;
-                xamlMember.Setter = set_128_RingSegment_Radius;
+                xamlMember.Getter = get_129_RingSegment_Radius;
+                xamlMember.Setter = set_129_RingSegment_Radius;
                 break;
             case "Template10.Controls.RingSegment.StartAngle":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.RingSegment");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "StartAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_129_RingSegment_StartAngle;
-                xamlMember.Setter = set_129_RingSegment_StartAngle;
+                xamlMember.Getter = get_130_RingSegment_StartAngle;
+                xamlMember.Setter = set_130_RingSegment_StartAngle;
                 break;
             case "Template10.Controls.RingSegment.Center":
                 userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.RingSegment");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "Center", "System.Nullable`1<Windows.Foundation.Point>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_130_RingSegment_Center;
-                xamlMember.Setter = set_130_RingSegment_Center;
+                xamlMember.Getter = get_131_RingSegment_Center;
+                xamlMember.Setter = set_131_RingSegment_Center;
                 break;
             }
             return xamlMember;

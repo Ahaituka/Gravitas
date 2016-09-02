@@ -21,16 +21,15 @@ using WindowsApp2.Managers;
 using System.Collections.ObjectModel;
 using WindowsApp2.Models;
 using Template10.Utils;
+using Windows.ApplicationModel.Email;
+using Windows.ApplicationModel;
 
 namespace WindowsApp2.Views
 {
 
     public sealed partial class DetailPage : Page
     {
-        /*
-        public ObservableCollection<Event> EventList { get; set; }
-        */
-
+       
         private static DependencyProperty s_itemProperty
             = DependencyProperty.Register("Item", typeof(ObservableCollection<Event>), typeof(DetailPage), new PropertyMetadata(null));
 
@@ -45,6 +44,23 @@ namespace WindowsApp2.Views
             set { SetValue(s_itemProperty, value); }
         }
 
+
+        private static DependencyProperty s_xProperty
+      = DependencyProperty.Register("x", typeof(ObservableCollection<Coordinator>), typeof(MasterDetailPage), new PropertyMetadata(null));
+
+        public static DependencyProperty xProperty
+        {
+            get { return s_xProperty; }
+        }
+
+        public Coordinator x
+        {
+            get { return (Coordinator)GetValue(s_xProperty); }
+            set { SetValue(s_xProperty, value); }
+        }
+        
+
+
         public DetailPage()
         {
             this.InitializeComponent();
@@ -57,41 +73,14 @@ namespace WindowsApp2.Views
             var service = Template10.Services.SerializationService.SerializationService.Json;
             var value = service.Deserialize<string>(param);
 
-
-
-
-            //ObservableCollection<Event> eventDataWrapper =  EventList.Select((x) => x.name = (string)e.Parameter)
-
-            //var characters = (Event)eventDataWrapper.ToList();
-
-            //foreach (var character in characters)
-            //{
-            //    Item.Add(character);
-
-
-            //}
-
-
-
-            /*
-            this.EventList = DataManager.EventList;
-            // Parameter is item ID
-            IEnumerable<Event> categoryNames = EventList.Where(x => x.name == (string)e.Parameter);
-            var categories = new ObservableCollection<Event>(categoryNames);
-            */
-
-            //            var linqResults = foos.Where(f => f.Name == "Widget");
-
-            //var observable = new ObservableCollection<Foo>(linqResults);
-
-            // Item = DataManager.EventList.First((ev) => ev.name == (string)e.Parameter);
             Item = DataManager.EventList.Where((ev) => ev.name == value).FirstOrDefault();
 
-      //       MyTextBox.Text = Item.name;
-            
+            x = Item.coordinators[0];
 
-            //List<Event> Source = Item.ToList<Event>();
-            //Source
+          
+
+
+        
 
 
             //var backStack = Frame.BackStack;
@@ -113,9 +102,9 @@ namespace WindowsApp2.Views
             //}
 
             // Register for hardware and software back request from the system
-          //  SystemNavigationManager systemNavigationManager = SystemNavigationManager.GetForCurrentView();
-       //   systemNavigationManager.BackRequested += DetailPage_BackRequested;
-          //  systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            //  SystemNavigationManager systemNavigationManager = SystemNavigationManager.GetForCurrentView();
+            //   systemNavigationManager.BackRequested += DetailPage_BackRequested;
+            //  systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
 
             base.OnNavigatedTo(e);
         }
@@ -157,27 +146,27 @@ namespace WindowsApp2.Views
             return Window.Current.Bounds.Width >= 720;
         }
 
-        //private void PageRoot_Loaded(object sender, RoutedEventArgs e)
-        //{
-        //    if (ShouldGoToWideState())
-        //    {
-        //        // We shouldn't see this page since we are in "wide master-detail" mode.
-        //        // Play a transition as we are navigating from a separate page.
-        //        NavigateBackForWideState(useTransition: true);
-        //    }
-        //    else
-        //    {
-        //        // Realize the main page content.
-        //        FindName("RootPanel");
-        //    }
+        private void PageRoot_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (ShouldGoToWideState())
+            {
+                // We shouldn't see this page since we are in "wide master-detail" mode.
+                // Play a transition as we are navigating from a separate page.
+                NavigateBackForWideState(useTransition: true);
+            }
+            else
+            {
+                // Realize the main page content.
+                FindName("RootPanel");
+            }
 
-        //    Window.Current.SizeChanged += Window_SizeChanged;
-        //}
+            Window.Current.SizeChanged += Window_SizeChanged;
+        }
 
-        //private void PageRoot_Unloaded(object sender, RoutedEventArgs e)
-        //{
-        //    Window.Current.SizeChanged -= Window_SizeChanged;
-        //}
+        private void PageRoot_Unloaded(object sender, RoutedEventArgs e)
+        {
+            Window.Current.SizeChanged -= Window_SizeChanged;
+        }
 
         private void Window_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
         {
@@ -190,6 +179,60 @@ namespace WindowsApp2.Views
                 NavigateBackForWideState(useTransition: false);
             }
         }
+
+        private void ShowPopupOffsetClicked(object sender, RoutedEventArgs e)
+        {
+            // open the Popup if it isn't open already 
+            if (!StandardPopup.IsOpen) { StandardPopup.IsOpen = true; }
+        }
+
+
+        private async void SymbolIcon_Tapped(object sender, RoutedEventArgs e)
+        {
+            EmailMessage emailMessage = new EmailMessage()
+            {
+                Subject = "App Feedback " + Package.Current.DisplayName + " ",
+                Body = "First Line\r\nSecondLine"
+            };
+
+            emailMessage.To.Add(new EmailRecipient() { Address = x.email });
+            await EmailManager.ShowComposeNewEmailAsync(emailMessage);
+
+        }
+
+        private async void SymbolIcon_Tapped_1(object sender, RoutedEventArgs e)
+        {
+            var uriSkype = new Uri(@"Skype:(9952549997)?call");
+
+            // Set the option to show a warning
+            var promptOptions = new Windows.System.LauncherOptions();
+            promptOptions.TreatAsUntrusted = true;
+
+            // Launch the URI
+            var success = await Windows.System.Launcher.LaunchUriAsync(uriSkype, promptOptions);
+
+            if (success)
+            {
+                // URI launched
+            }
+            else
+            {
+                // URI launch failed
+            }
+
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+
+        {
+            // open the Popup if it isn't open already 
+            if (StandardPopup.IsOpen) { StandardPopup.IsOpen = false; }
+
+        }
+
+
+
 
         //private void DetailPage_BackRequested(object sender, BackRequestedEventArgs e)
         //{

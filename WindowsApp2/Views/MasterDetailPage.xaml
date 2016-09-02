@@ -16,7 +16,6 @@
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       NavigationCacheMode="Enabled"
       mc:Ignorable="d">
-
     <Page.Transitions>
         <TransitionCollection>
             <NavigationThemeTransition />

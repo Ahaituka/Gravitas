@@ -24,8 +24,7 @@ namespace WindowsApp2
     [Bindable]
     sealed partial class App : Template10.Common.BootStrapper
     {
-
-        internal static string SomeImportantValue;
+        
 
         public App()
         {
@@ -46,7 +45,7 @@ namespace WindowsApp2
 
         public override async Task OnInitializeAsync(IActivatedEventArgs args)
         {
-          //  InitNotificationsAsync();
+            InitNotificationsAsync();
 
             if (Window.Current.Content as ModalDialog == null)
             {
@@ -120,7 +119,7 @@ namespace WindowsApp2
             var hub = new NotificationHub("GravitasHub", "Endpoint=sb://gravitashubnamesapce.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=Qlb9cobs7BGZhhJJ10uSjzb7kWcA7MUxgHqk3UHsiiM=");
             var result = await hub.RegisterNativeAsync(channel.Uri);
 
-            // Displays the registration ID so you know it was successful
+           // Displays the registration ID so you know it was successful
             //if (result.RegistrationId != null)
             //{
             //    var dialog = new MessageDialog("Registration successful: " + result.RegistrationId);
