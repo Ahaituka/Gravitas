@@ -31,9 +31,10 @@
 
         <AutoSuggestBox x:Name="ajsb"
                         MinWidth="229"
-                        HorizontalAlignment="Right"
+                        Margin="10"
+                        VerticalAlignment="Center"
                         RelativePanel.AlignRightWithPanel="True"
-                        PlaceholderText="Type a Event Name"
+                        PlaceholderText="Type an Event Name"
                         QueryIcon="Find"
                         QuerySubmitted="asb_QuerySubmitted"
                         SuggestionChosen="asb_SuggestionChosen"

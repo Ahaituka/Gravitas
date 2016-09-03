@@ -66,19 +66,19 @@
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 
-            <!--  Favourites button  -->
-            <!--
+            <!--  Gallery button  -->
+            
 
             <Controls:HamburgerButtonInfo AutomationProperties.Name="Jerry" PageType="views:Past">
                 <StackPanel Orientation="Horizontal">
                     <SymbolIcon Width="48"
                                 Height="48"
-                                Symbol="Home" />
+                                Symbol="Pictures" />
                     <TextBlock Margin="12,0,0,0"
                                VerticalAlignment="Center"
                                Text="Gallery" />
                 </StackPanel>
-            </Controls:HamburgerButtonInfo>-->
+            </Controls:HamburgerButtonInfo>
 
             <!--  Sponsors button  -->
             <!--
@@ -100,10 +100,10 @@
                 <StackPanel Orientation="Horizontal">
                     <SymbolIcon Width="48"
                                 Height="48"
-                                Symbol="Home" />
+                                Symbol="People" />
                     <TextBlock Margin="12,0,0,0"
                                VerticalAlignment="Center"
-                               Text="Organisers" />
+                               Text="Team Gravitas '16 " />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
 

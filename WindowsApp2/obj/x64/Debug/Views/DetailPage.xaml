@@ -10,7 +10,7 @@
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
                               
       NavigationCacheMode="Enabled"
-      RequestedTheme="Light"
+    
                                   
       mc:Ignorable="d">
 
@@ -133,7 +133,8 @@
                                                           >
                         <SymbolIcon x:ConnectionId='17' x:Name="People"
                                     IsTapEnabled="True"
-                                    Symbol="People" />
+                                    Symbol="People" 
+                                    Margin="10,0,0,0" />
                     </Button>
                     <Button x:ConnectionId='16' Grid.Column="2"
                             HorizontalAlignment="Center"

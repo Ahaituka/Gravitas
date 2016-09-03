@@ -385,8 +385,8 @@
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\10.jpg">
       <PackagePath>Assets\10.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\1.jpg">
-      <PackagePath>Assets\1.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\2.jpg">
+      <PackagePath>Assets\2.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\12.jpg">
       <PackagePath>Assets\12.jpg</PackagePath>
@@ -403,8 +403,8 @@
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\16.jpg">
       <PackagePath>Assets\16.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\2.jpg">
-      <PackagePath>Assets\2.jpg</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\1.jpg">
+      <PackagePath>Assets\1.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\Assets\20.jpg">
       <PackagePath>Assets\20.jpg</PackagePath>
