@@ -120,9 +120,17 @@ namespace WindowsApp2.Views
                     Header = EventList[0];
                     MasterListView.ItemsSource = EventList;
 
+                   ;
+
                     Item = EventList[0];                    
                     x = Item.coordinators.Where((item) => Item.name == value).FirstOrDefault();
-                   //lastSelectedItem = clickedItem;
+                 
+
+                    EventList = DataManager.EventList.Where((x) => x.subCategory == Item.subCategory).ToObservableCollection<Event>();
+                    MasterListView.ItemsSource = EventList;
+                    MasterListView.SelectedItem = Item;
+
+                    //lastSelectedItem = clickedItem;
 
 
                 }
@@ -137,7 +145,7 @@ namespace WindowsApp2.Views
 
             else if (EventList == null)
             {
-
+                MasterListView.SelectedItem = null;
                 CategoryList = DataManager.EventList.Where((x) => x.subCategory == value).ToObservableCollection<Event>();
                 //EventList = DataManager.EventList;
                 EventList = CategoryList;
@@ -149,6 +157,8 @@ namespace WindowsApp2.Views
 
             else if (e.Parameter != null)
             {   // Parameter is item ID
+
+                MasterListView.SelectedItem = null;
                 var id = (string)e.Parameter;
                 _lastSelectedItem =
                     EventList.Where((item) => item.name == id).FirstOrDefault();
