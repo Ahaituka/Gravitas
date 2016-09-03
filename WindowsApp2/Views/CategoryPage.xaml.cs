@@ -52,5 +52,44 @@ namespace WindowsApp2.Views
         }
         #endregion
 
+        private void asb_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+        {
+            //  ObservableCollection<Event> Names = DataManager.EventList;
+            if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
+            {
+
+                var x = StringComparison.OrdinalIgnoreCase;
+                List<Event> eventList = DataManager.EventList.ToList();
+                var matchingEvents = eventList.Where(s => s.name.StartsWith(sender.Text, x)).Select((s) => s.name);
+
+                var count = matchingEvents.Count();
+                if(count!=0)
+                sender.ItemsSource = matchingEvents.ToList();
+
+                else
+                    sender.ItemsSource = "No Results";
+            }
+
+
+
+        }
+
+        private void asb_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+        {
+
+        }
+
+        private async void asb_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
+        {
+
+            var eventChosen = args.SelectedItem as string;
+
+
+            var service = this.Frame.GetNavigationService();
+            await service.NavigateAsync(typeof(Views.MasterDetailPage),eventChosen);
+
+
+
+        }
     }
 }

@@ -29,6 +29,17 @@
             </controls:PageHeader.SecondaryCommands>
         </controls:PageHeader>
 
+        <AutoSuggestBox x:Name="ajsb"
+                        MinWidth="229"
+                        HorizontalAlignment="Right"
+                        RelativePanel.AlignRightWithPanel="True"
+                        PlaceholderText="Type a Event Name"
+                        QueryIcon="Find"
+                        QuerySubmitted="asb_QuerySubmitted"
+                        SuggestionChosen="asb_SuggestionChosen"
+                        TextChanged="asb_TextChanged" />
+
+
         <GridView x:Name="ItemsGridView"
                   IsItemClickEnabled="True"
                   ItemClick="GridView_ItemClick"

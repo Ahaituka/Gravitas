@@ -96,7 +96,46 @@ namespace WindowsApp2.Views
 
             var EventList = MasterListView.ItemsSource as ObservableCollection<Event>;
             var CategoryList = MasterListView.ItemsSource as ObservableCollection<Event>;
-            if (EventList == null)
+
+            if (value is string && !string.IsNullOrEmpty(value))
+            {
+                CategoryList = DataManager.EventList.Where((x) => x.name == value).ToObservableCollection<Event>();
+                //EventList = DataManager.EventList;
+                EventList = CategoryList;
+
+                if(EventList.Count==0)
+                {
+
+                    CategoryList = DataManager.EventList.Where((x) => x.subCategory == value).ToObservableCollection<Event>();
+                    //EventList = DataManager.EventList;
+                    EventList = CategoryList;
+                    Header = EventList[0];
+                    MasterListView.ItemsSource = EventList;
+                }
+                else
+                {
+
+
+
+                    Header = EventList[0];
+                    MasterListView.ItemsSource = EventList;
+
+                    Item = EventList[0];                    
+                    x = Item.coordinators.Where((item) => Item.name == value).FirstOrDefault();
+                   //lastSelectedItem = clickedItem;
+
+
+                }
+
+
+             
+
+            }
+
+
+         
+
+            else if (EventList == null)
             {
 
                 CategoryList = DataManager.EventList.Where((x) => x.subCategory == value).ToObservableCollection<Event>();
@@ -108,19 +147,7 @@ namespace WindowsApp2.Views
             }
 
 
-            if (EventList[0].subCategory != value)
-            {
-
-                CategoryList = DataManager.EventList.Where((x) => x.subCategory == value).ToObservableCollection<Event>();
-                //EventList = DataManager.EventList;
-                EventList = CategoryList;
-                Header = EventList[0];
-                MasterListView.ItemsSource = EventList;
-            }
-
-
-
-            if (e.Parameter != null)
+            else if (e.Parameter != null)
             {   // Parameter is item ID
                 var id = (string)e.Parameter;
                 _lastSelectedItem =
@@ -129,6 +156,7 @@ namespace WindowsApp2.Views
 
 
             }
+
 
             UpdateForVisualState(AdaptiveStates.CurrentState);
 
@@ -175,20 +203,10 @@ namespace WindowsApp2.Views
             //    MasterListView.ItemsSource = EventList;
             //Item = EventList.Where((item) => item.name == (Event)e).FirstOrDefault();
 
-
             var clickedItem = (Event)e.ClickedItem;
-
-
-
-
-
             Item = clickedItem;
-
-
-
             x = Item.coordinators.Where((item) => Item.name == clickedItem.name).FirstOrDefault();
             _lastSelectedItem = clickedItem;
-
             if (AdaptiveStates.CurrentState == NarrowState)
             {
                 // Use "drill in" transition for navigating from master list to detail view
@@ -197,8 +215,6 @@ namespace WindowsApp2.Views
                 var service = this.Frame.GetNavigationService();
 
                 await service.NavigateAsync(typeof(Views.DetailPage), clickedItem.name, new DrillInNavigationTransitionInfo());
-
-
             }
             else
             {

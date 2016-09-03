@@ -49,15 +49,7 @@
                           Grid.Row="1"
                           Background="White">
                         
-                        <AutoSuggestBox x:Name="ajsb"
-                                MinWidth="296"                              
-                                HorizontalAlignment="Left"
-                                PlaceholderText="Type a Event Name"
-                                QueryIcon="Find"
-                                QuerySubmitted="asb_QuerySubmitted"
-                                
-                                SuggestionChosen="asb_SuggestionChosen"
-                                TextChanged="asb_TextChanged" />
+                
                         
                         <StackPanel Margin="40"
                                     HorizontalAlignment="Center"
