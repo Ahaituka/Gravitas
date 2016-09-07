@@ -4,6 +4,7 @@ using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Navigation;
 
 namespace AppStartupGuide
 {
@@ -32,14 +33,12 @@ namespace AppStartupGuide
             Loaded += (s, e) =>
             {
                 UpdateBackgroundBounds();
-
                 _loaded = true;
             };
 
             SizeChanged += (s, e) =>
             {
                 PageHeight = ActualHeight;
-
                 if (_loaded)
                 {
                     UpdateBackgroundBounds();
@@ -49,7 +48,6 @@ namespace AppStartupGuide
             ScrollingHost.ViewChanged += (s, e) =>
             {
                 UpdateBackgroundBounds();
-
                 UpdateHeaders();
             };
         }
@@ -71,19 +69,33 @@ namespace AppStartupGuide
 
         #region methods
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+        }
+
         void UpdateBackgroundBounds()
         {
             if (ScrollingHost.IsItemVisible(Section3))
             {
                 UpdateCurrentAndNext(Section3, Geometry3, Geometry4);
+                // Hide other screens
+                Geometry1.Rect = new Rect();
+                Geometry2.Rect = new Rect();
             }
             else if (ScrollingHost.IsItemVisible(Section2))
             {
                 UpdateCurrentAndNext(Section2, Geometry2, Geometry3);
+                // Hide other screens
+                Geometry1.Rect = new Rect();
+                Geometry4.Rect = new Rect();
             }
             else if (ScrollingHost.IsItemVisible(Section1))
             {
                 UpdateCurrentAndNext(Section1, Geometry1, Geometry2);
+                // Hide other screens
+                Geometry3.Rect = new Rect();
+                Geometry4.Rect = new Rect();
             }
         }
 

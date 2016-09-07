@@ -27,7 +27,7 @@
 
         <!--  ListViewItemTemplate  -->
         <DataTemplate x:Key="MasterListViewItemTemplate" x:DataType="data:Event">
-            <Grid Margin="0,10,0,10">
+            <Grid Margin="0,10,0,15">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50" />
                     <RowDefinition Height="Auto" />
@@ -36,6 +36,17 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
+                <Grid Background="White">
+                    <Ellipse Grid.Column="1"
+                             Width="50"
+                             Height="50"
+                             HorizontalAlignment="Right"
+                             VerticalAlignment="Center">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="{x:Bind chapterpath, Mode=OneWay}" Stretch="UniformToFill" />
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </Grid>
                 <!--
                 <controls:PageHeader Grid.Row="0"
                                      Grid.Column="0"
@@ -48,9 +59,12 @@
                     </Interactivity:Interaction.Behaviors>
                 </controls:PageHeader>
                 -->
-                <TextBlock FontSize="30"
+                <TextBlock Grid.Column="0"
+                           VerticalAlignment="Center"
+                           FontSize="20"
                            Foreground="{Binding Source={ThemeResource SystemControlHighlightAccentBrush}}"
-                           Text="{x:Bind name, Mode=OneWay}">
+                           Text="{x:Bind name, Mode=OneWay}"
+                           TextLineBounds="Tight">
                     <!--
                     <Interactivity:Interaction.Behaviors>
                         <Behaviors:EllipsisBehavior Visibility="Auto" />
@@ -60,16 +74,10 @@
                     </Interactivity:Interaction.Behaviors>
                     -->
                 </TextBlock>
-                <Ellipse Grid.Column="1"
-                         HorizontalAlignment="Stretch"
-                         VerticalAlignment="Stretch"
-                         StrokeThickness="2">
-                    <Ellipse.Fill>
-                        <ImageBrush ImageSource="{x:Bind chapterpath, Mode=OneWay}" Stretch="UniformToFill" />
-                    </Ellipse.Fill>
-                </Ellipse>
                 <TextBlock Grid.Row="1"
                            Grid.ColumnSpan="2"
+                           Margin="0,0,10,0"
+                           VerticalAlignment="Top"
                            MaxLines="1"
                            Style="{ThemeResource ListBodyTextBlockStyle}"
                            Text="{x:Bind description}"
@@ -164,7 +172,8 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Grid.Column="0" HorizontalAlignment="Left">
-                        Coordinator:<Run Text="{Binding name}" />
+                        Coordinator:
+                        <LineBreak /><Run Text="{Binding name}" />
                     </TextBlock>
                     <StackPanel Grid.Column="1"
                                 HorizontalAlignment="Right"

@@ -8,13 +8,12 @@
       mc:Ignorable="d">
     <Grid x:Name="LayoutRoot">
         <Grid>
-
             <MediaElement x:Name="asd"
                           IsLooping="True"
                           IsMuted="True"
                           RelativePanel.Below="asb"
                           Source="SampleData/DesignDataSource/DesignDataSource_Files/Gravitas.MP4"
-                          Stretch="UniformToFill">
+                          Stretch="Fill">
                 <MediaElement.Clip>
                     <RectangleGeometry x:Name="Geometry1" />
                 </MediaElement.Clip>
@@ -36,6 +35,7 @@
                 </Image.Clip>
             </Image>
         </Grid>
+
         <ScrollViewer x:Name="ScrollingHost">
             <StackPanel>
 
@@ -358,7 +358,7 @@
                     <StackPanel.RenderTransform>
                         <CompositeTransform x:Name="Section4HeaderTransform" />
                     </StackPanel.RenderTransform>
-                    <TextBlock Text="">
+                    <TextBlock Text="LEARN MORE">
                         <TextBlock.RenderTransform>
                             <CompositeTransform x:Name="Section4HeaderContentTransform" />
                         </TextBlock.RenderTransform>
