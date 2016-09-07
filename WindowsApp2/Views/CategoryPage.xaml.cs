@@ -48,7 +48,8 @@ namespace WindowsApp2.Views
         {
             var parameter = (CategoryViewModel)e.ClickedItem;
             var service = this.Frame.GetNavigationService();
-            await service.NavigateAsync(typeof(Views.MasterDetailPage), parameter.Name);     
+            
+            await service.NavigateAsync(typeof(Views.MasterDetailPage), string.Format("{0}#{1}", "category", parameter.Name));     
         }
         #endregion
 
@@ -57,7 +58,6 @@ namespace WindowsApp2.Views
             //  ObservableCollection<Event> Names = DataManager.EventList;
             if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
             {
-
                 var x = StringComparison.OrdinalIgnoreCase;
                 List<Event> eventList = DataManager.EventList.ToList();
                 var matchingEvents = eventList.Where(s => s.name.StartsWith(sender.Text, x)).Select((s) => s.name);
@@ -67,29 +67,31 @@ namespace WindowsApp2.Views
                 sender.ItemsSource = matchingEvents.ToList();
 
                 else
-                    sender.ItemsSource = "No Results";
+                    sender.ItemsSource = new List<string>() ;
             }
 
 
 
         }
 
-        private void asb_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+        private async void asb_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
+            var service = this.Frame.GetNavigationService();
 
+            if (args.ChosenSuggestion != null)
+                await service.NavigateAsync(typeof(Views.MasterDetailPage), string.Format("{0}#{1}", "event", (args.ChosenSuggestion as Event).name));
+            else
+                await service.NavigateAsync(typeof(Views.MasterDetailPage), string.Format("{0}#{1}", "event", args.QueryText as string));
         }
-
+        /*
         private async void asb_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
         {
 
             var eventChosen = args.SelectedItem as string;
 
-
             var service = this.Frame.GetNavigationService();
-            await service.NavigateAsync(typeof(Views.MasterDetailPage),eventChosen);
-
-
-
+            await service.NavigateAsync(typeof(Views.MasterDetailPage), );
         }
+        */
     }
 }

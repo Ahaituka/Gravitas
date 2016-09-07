@@ -1452,7 +1452,6 @@ C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\System.Xml.Xm
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\System.Xml.XmlSerializer.dll
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\Template10Library.dll
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\bin\x64\Debug\Microsoft.WindowsAzure.Messaging.Managed.dll
-C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\WindowsApp2.csprojResolveAssemblyReference.cache
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\App.g.i.cs
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\App.g.cs
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Controls\RoundProgressControl.g.i.cs
@@ -1609,3 +1608,4 @@ C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Views\Icheck.
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Views\Icheck.g.cs
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Views\Icheck.xaml
 C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\Views\Icheck.xbf
+C:\Users\mails\Documents\GitHub\Gravitas\WindowsApp2\obj\x64\Debug\WindowsApp2.csprojResolveAssemblyReference.cache

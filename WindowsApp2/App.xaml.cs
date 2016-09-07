@@ -68,7 +68,7 @@ namespace WindowsApp2
             // long-running startup tasks go here
             await Task.Delay(TimeSpan.FromSeconds(6));
 
-            //   await Windows.Storage.ApplicationData.Current.ClearAsync();
+       //     await Windows.Storage.ApplicationData.Current.ClearAsync();
 
             await DataManager.LoadCacheAsync();
                

@@ -70,6 +70,8 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="VerticalContentAlignment" />
       <RootProperty Name="NavigateUri" />
       <RootProperty Name="Content" />
     </RootType>
@@ -347,8 +349,9 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Fill" />
-      <RootProperty Name="Stroke" />
+      <RootProperty Name="Stretch" />
       <RootProperty Name="StrokeThickness" />
+      <RootProperty Name="Stroke" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="RenderTransform" />

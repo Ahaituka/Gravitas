@@ -46,8 +46,8 @@ namespace WindowsApp2.Views
         private async void WebView_LoadCompleted(object sender, NavigationEventArgs e)
         {
             ProgressRing.Visibility = Visibility.Collapsed;
-            string functionString = String.Format("document.getElementById('portfolio').getElementsByTagName('h2')[0].innerHTML = 'Team Gravitas 16';");
-            await WebView.InvokeScriptAsync("eval", new string[] { functionString });
+            //string functionString = String.Format("document.getElementById('portfolio').getElementsByTagName('h2')[0].innerHTML = 'Team Gravitas 16';");
+            //await WebView.InvokeScriptAsync("eval", new string[] { functionString });
 
 
         }

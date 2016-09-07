@@ -87,62 +87,69 @@ namespace WindowsApp2.Views
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
 
+            // e.Param syntax:
+            // string of the format "{0}#{1}"
+            // {0} - type of string
+            // {1} - content
 
             var param = e.Parameter?.ToString();
             var service = Template10.Services.SerializationService.SerializationService.Json;
             var value = service.Deserialize<string>(param);
 
-
-
             var EventList = MasterListView.ItemsSource as ObservableCollection<Event>;
-            var CategoryList = MasterListView.ItemsSource as ObservableCollection<Event>;
 
-            if (value is string && !string.IsNullOrEmpty(value))
+            if (!string.IsNullOrEmpty(value))
             {
-                CategoryList = DataManager.EventList.Where((x) => x.name == value).ToObservableCollection<Event>();
-                //EventList = DataManager.EventList;
-                EventList = CategoryList;
+                int ind = value.IndexOf("#");
+               string key = value.Substring(0, ind);
+                string data = value.Substring(ind + 1);
 
-                if(EventList.Count==0)
+                Event ev = null;
+                bool headerSet = false;
+                switch (key)
                 {
+                    case "category":
+                        EventList = DataManager.EventList.Where((x) => x.subCategory == data).ToObservableCollection<Event>();
+                        break;
+                    case "search":
+                        EventList = DataManager.EventList.Where((x) => x.name.StartsWith(data, StringComparison.OrdinalIgnoreCase)).ToObservableCollection<Event>();
+                        Header = new Event() { subCategory = "Search Results" };
+                        headerSet = true;
+                        break;
+                    case "event":
+                        ev = DataManager.EventList.Where((x) => x.name == data).First();
+                        EventList = DataManager.EventList.Where((x) => x.subCategory == ev.subCategory).ToObservableCollection<Event>();
+                        break;
+                    default:
+                        EventList = new ObservableCollection<Event>();
+                        break;
+                }
 
-                    CategoryList = DataManager.EventList.Where((x) => x.subCategory == value).ToObservableCollection<Event>();
-                    //EventList = DataManager.EventList;
-                    EventList = CategoryList;
-                    Header = EventList[0];
-                    MasterListView.ItemsSource = EventList;
+                if (EventList == null || EventList.Count == 0)
+                {
+                    // Display sad smiley with nothing found message
                 }
                 else
                 {
-
-
-
-                    Header = EventList[0];
+                    if (headerSet == false)
+                        Header = EventList[0];
                     MasterListView.ItemsSource = EventList;
-
-                   ;
-
-                    Item = EventList[0];                    
-                    x = Item.coordinators.Where((item) => Item.name == value).FirstOrDefault();
-                 
-
-                    EventList = DataManager.EventList.Where((x) => x.subCategory == Item.subCategory).ToObservableCollection<Event>();
-                    MasterListView.ItemsSource = EventList;
-                    MasterListView.SelectedItem = Item;
-
-                    //lastSelectedItem = clickedItem;
-
-
+                    if (ev != null)
+                        MasterListView.SelectedItem = ev;
                 }
-
-
-             
-
             }
 
-
-         
-
+            /*
+            Item = EventList[0];
+            x = Item.coordinators.Where((item) => Item.name == value).FirstOrDefault();
+            EventList = DataManager.EventList.Where((x) => x.subCategory == Item.subCategory).ToObservableCollection<Event>();
+            MasterListView.ItemsSource = EventList;
+            MasterListView.SelectedItem = Item;
+            
+            //lastSelectedItem = clickedItem;   
+                }   
+            }
+            
             else if (EventList == null)
             {
                 MasterListView.SelectedItem = null;
@@ -163,10 +170,7 @@ namespace WindowsApp2.Views
                 _lastSelectedItem =
                     EventList.Where((item) => item.name == id).FirstOrDefault();
                 Header = EventList[0];
-
-
-            }
-
+            */
 
             UpdateForVisualState(AdaptiveStates.CurrentState);
 
@@ -176,12 +180,13 @@ namespace WindowsApp2.Views
 
             base.OnNavigatedTo(e);
 
-
         }
+
         private void AdaptiveStates_CurrentStateChanged(object sender, VisualStateChangedEventArgs e)
         {
             UpdateForVisualState(e.NewState, e.OldState);
         }
+
         private async void UpdateForVisualState(VisualState newState, VisualState oldState = null)
         {
             var isNarrow = newState == NarrowState;
@@ -203,6 +208,7 @@ namespace WindowsApp2.Views
                 EntranceNavigationTransitionInfo.SetIsTargetElement(DetailContentPresenter, !isNarrow);
             }
         }
+
         private async void MasterListView_ItemClick(object sender, ItemClickEventArgs e)
         {
 
@@ -298,7 +304,7 @@ namespace WindowsApp2.Views
             }
 
 
-        } 
+        }
         #endregion
     }
 }

@@ -8,8 +8,9 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <WebView x:ConnectionId='1' x:Name="WebView"
-                                                                      
-                 Source="http://info.vit.ac.in/gravitas2015/tg15/index.html" />
+                                                      
+                 Source="http://www.vitgravitas.com/#/team" />
+        <!--  Source="http://info.vit.ac.in/gravitas2015/tg15/index.html" />  -->
         <ProgressRing x:ConnectionId='2' x:Name="ProgressRing"
                       Width="100"
                       Height="100"
