@@ -1,4 +1,5 @@
 ﻿using System;
+using Template10.Utils;
 using Windows.Foundation;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -132,8 +133,13 @@ namespace AppStartupGuide
             next.Rect = new Rect(0, distance + OVER_PAN, ActualWidth, ActualHeight);
         }
 
+
         #endregion
 
-
+        private async void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        {
+            var service = this.Frame.GetNavigationService();
+            await service.NavigateAsync(typeof(Views.DetailPage));
+        }
     }
 }
