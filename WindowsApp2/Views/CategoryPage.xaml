@@ -33,11 +33,10 @@
                         MinWidth="229"
                         Margin="10"
                         VerticalAlignment="Center"
-                        RelativePanel.AlignRightWithPanel="True"
                         PlaceholderText="Type an Event Name"
                         QueryIcon="Find"
                         QuerySubmitted="asb_QuerySubmitted"
-                        SuggestionChosen="asb_SuggestionChosen"
+                        RelativePanel.AlignRightWithPanel="True"
                         TextChanged="asb_TextChanged" />
 
 

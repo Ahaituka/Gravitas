@@ -101,7 +101,7 @@ namespace WindowsApp2.Views
             if (!string.IsNullOrEmpty(value))
             {
                 int ind = value.IndexOf("#");
-               string key = value.Substring(0, ind);
+                string key = value.Substring(0, ind);
                 string data = value.Substring(ind + 1);
 
                 Event ev = null;
@@ -128,6 +128,7 @@ namespace WindowsApp2.Views
                 if (EventList == null || EventList.Count == 0)
                 {
                     // Display sad smiley with nothing found message
+                    MasterListView.ItemsSource = new ObservableCollection<Event>();
                 }
                 else
                 {

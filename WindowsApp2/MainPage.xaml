@@ -20,7 +20,6 @@
                 </MediaElement.Clip>
             </MediaElement>
 
-
             <Image Source="SampleData/DesignDataSource/DesignDataSource_Files/Week1.png" Stretch="UniformToFill">
                 <Image.Clip>
                     <RectangleGeometry x:Name="Geometry2" />
@@ -49,27 +48,25 @@
                           Grid.Row="1"
                           Background="White">
 
-
-
                         <StackPanel Margin="40"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center">
                             <TextBlock MaxWidth="360"
                                        FontSize="16"
                                        Foreground="Black"
+                                       TextAlignment="Justify"
                                        TextWrapping="WrapWholeWords">
                                 <Run FontWeight="ExtraBold" Text="ABOUT GRAVITAS" />
                                 <LineBreak />
                                 <LineBreak />
-                                <Run Text="graVITas 2015 is an amalgam of technology and ingenuity where both of them come together with creativity. The theme for this year's graVITas is :" />
+                                <Run Text="graVITas is VIT University's annual knowledge carnival which aims to empower the young minds by giving them a national platform to showcase their genius and innovation. Each year graVITas bring in a new theme, thus providing the eager participants a new experience every time. The theme for this year's graVITas is:" />
                                 <LineBreak />
-                                <LineBreak />
-                                <Run FontSize="15"
-                                     FontWeight="Bold"
-                                     Text="         Engineering for Changing Life " />
-                                <LineBreak />
-
                             </TextBlock>
+                            <TextBlock HorizontalAlignment="Center"
+                                       FontSize="15"
+                                       FontWeight="Bold"
+                                       Foreground="Black"
+                                       Text="Engineering for Changing Life" />
                             <!--<SymbolIcon Symbol="Comment" Foreground="Black" HorizontalAlignment="Center" Margin="0,0,0,12" />-->
                         </StackPanel>
                     </Grid>
@@ -85,30 +82,29 @@
                           Grid.Row="1"
                           Background="#FFDDBB0C">
 
-
-
                         <StackPanel Margin="40" HorizontalAlignment="Center">
-                            <SymbolIcon Margin="0,0,0,12"
-                                        HorizontalAlignment="Left"
+                            <SymbolIcon Margin="0,0,0,10"
+                                        HorizontalAlignment="Center"
                                         Foreground="White"
                                         Symbol="World" />
                             <TextBlock MaxWidth="360"
                                        FontSize="16"
                                        FontWeight="SemiBold"
                                        Foreground="White"
+                                       TextAlignment="Justify"
                                        TextWrapping="WrapWholeWords">
-                                <Run Text=" We are the Enginner " />
+                                <!--<Run Text=" We are the Enginner " />
                                 <LineBreak />
                                 <Run Text=" We are the Future of Enginneering " />
-
                                 <LineBreak />
                                 <Run Text=" We are the Enginner" />
-
                                 <LineBreak />
                                 <Run Text=" We  are Accountable" />
                                 <LineBreak />
-
-                                <Run Text=" We are Global Citizens" />
+                                <Run Text=" We are Global Citizens" />-->
+                                An international knowledge carnival, come unleash your
+                                <Bold>genius</Bold>
+                                at the 8th edition of graVITas presented to you by VIT University!
                             </TextBlock>
                         </StackPanel>
                     </Grid>
@@ -122,51 +118,49 @@
                           Grid.Row="1"
                           Background="#FF2CCD71">
                         <StackPanel Margin="40" HorizontalAlignment="Center">
-                            <SymbolIcon Margin="0,0,0,12"
+                            <SymbolIcon Margin="0,0,0,10"
                                         HorizontalAlignment="Center"
                                         Foreground="White"
-                                        Symbol="World" />
+                                        Symbol="Play" />
                             <TextBlock MaxWidth="360"
                                        FontSize="16"
                                        FontWeight="SemiBold"
                                        Foreground="White"
                                        TextWrapping="WrapWholeWords">
+                                <!--
                                 <Run Text=" We are Mobilizing A Community" />
                                 <LineBreak />
                                 <Run Text=" Our Community will drive a change  " />
-
                                 <LineBreak />
                                 <Run Text=" Information is Power,And" />
-
                                 <LineBreak />
                                 <Run Text=" We are Here To Empower" />
                                 <LineBreak />
-
                                 <Run Text="People First,Technology Follows" />
+                                -->
+                                Spread over three days with over 100 events, 50 workshops and 400 participating colleges, this is an opportunity of a lifetime.
                             </TextBlock>
                         </StackPanel>
                     </Grid>
                 </Grid>
+
                 <Grid Height="{x:Bind PageHeight, Mode=OneWay}">
                     <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition Height="100" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
                     <Grid x:Name="Section4"
                           Grid.Row="1"
+                          Height="100"
                           Background="Black">
-
                         <Grid.ColumnDefinitions>
-
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
-
                         </Grid.ColumnDefinitions>
-
                         <HyperlinkButton Grid.Column="0"
-                                         Margin="30"
+                                         Margin="20"
                                          HorizontalAlignment="Stretch"
                                          VerticalAlignment="Stretch"
                                          HorizontalContentAlignment="Stretch"
@@ -178,7 +172,6 @@
                                 </Ellipse.Fill>
                             </Ellipse>
                         </HyperlinkButton>
-
                         <HyperlinkButton Grid.Column="1"
                                          Margin="0"
                                          HorizontalAlignment="Center"
@@ -230,7 +223,6 @@
                             </Ellipse>
                         </HyperlinkButton>
 
-
                         <!--<SymbolIcon Margin="0,0,0,12"
                                         HorizontalAlignment="Left"
                                         Foreground="Black"
@@ -254,6 +246,7 @@
                 </Grid>
             </StackPanel>
         </ScrollViewer>
+
         <Grid IsHitTestVisible="False">
             <StackPanel x:Name="Section1Header"
                         Margin="0,80,0,0"
@@ -269,25 +262,14 @@
                                Foreground="Black"
                                d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition">
                         <Run FontSize="32" Text="graVITas '16" />
-                        <!--<Run Text="2016" FontSize="64" FontWeight="ExtraLight" />-->
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform x:Name="Section1HeaderContentTransform" />
+                        </TextBlock.RenderTransform>
                     </TextBlock>
+                    <!--<Run Text="2016" FontSize="64" FontWeight="ExtraLight" />-->
                     <!--<SymbolIcon Symbol="RepeatOne" Foreground="White" d:LayoutOverrides="TopMargin, BottomMargin" />-->
                 </StackPanel>
-                <TextBlock Margin="64,24,64,0"
-                           CacheMode="BitmapCache"
-                           FontSize="18.667"
-                           FontStyle="Italic"
-                           Foreground="White"
-                           Text=""
-                           TextAlignment="Center"
-                           TextWrapping="WrapWholeWords">
-                    <TextBlock.RenderTransform>
-                        <CompositeTransform x:Name="Section1HeaderContentTransform" />
-                    </TextBlock.RenderTransform>
-                </TextBlock>
             </StackPanel>
-
-
             <StackPanel x:Name="Section2Header"
                         Margin="0,80,0,0"
                         VerticalAlignment="Top"
@@ -297,12 +279,17 @@
                     <StackPanel.RenderTransform>
                         <CompositeTransform x:Name="Section2HeaderTransform" />
                     </StackPanel.RenderTransform>
+                    <TextBlock Text="">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform x:Name="Section2HeaderContentTransform" />
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <!--
                     <TextBlock HorizontalAlignment="Center"
                                FontWeight="SemiBold"
                                Foreground="#FFDDBB0C"
                                d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition">
                         <Run FontSize="32" Text="STATISTICS" />
-                        <!--<Run Text="1" FontSize="64" FontWeight="ExtraLight" />-->
                     </TextBlock>
                     <SymbolIcon Foreground="#FFDDBB0C"
                                 Symbol="Send"
@@ -315,10 +302,10 @@
                            Text=""
                            TextAlignment="Center"
                            TextWrapping="WrapWholeWords">
-                    <TextBlock.RenderTransform>
-                        <CompositeTransform x:Name="Section2HeaderContentTransform" />
-                    </TextBlock.RenderTransform>
+
                 </TextBlock>
+                    -->
+                </StackPanel>
             </StackPanel>
             <StackPanel x:Name="Section3Header"
                         Margin="0,80,0,0"
@@ -329,7 +316,13 @@
                     <StackPanel.RenderTransform>
                         <CompositeTransform x:Name="Section3HeaderTransform" />
                     </StackPanel.RenderTransform>
-                    <TextBlock HorizontalAlignment="Center"
+                    <TextBlock Text="">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform x:Name="Section3HeaderContentTransform" />
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <!--
+                        <TextBlock HorizontalAlignment="Center"
                                FontWeight="SemiBold"
                                Foreground="#FF2CCD71"
                                d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition">
@@ -353,6 +346,8 @@
                         <CompositeTransform x:Name="Section3HeaderContentTransform" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
+                    -->
+                </StackPanel>
             </StackPanel>
             <StackPanel x:Name="Section4Header"
                         Margin="0,80,0,0"
@@ -363,7 +358,13 @@
                     <StackPanel.RenderTransform>
                         <CompositeTransform x:Name="Section4HeaderTransform" />
                     </StackPanel.RenderTransform>
-                    <TextBlock HorizontalAlignment="Center"
+                    <TextBlock Text="">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform x:Name="Section4HeaderContentTransform" />
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </StackPanel>
+                <!--       <TextBlock HorizontalAlignment="Center"
                                FontWeight="SemiBold"
                                Foreground="White"
                                d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition">
@@ -387,11 +388,11 @@
                         <CompositeTransform x:Name="Section4HeaderContentTransform" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
+                -->
             </StackPanel>
 
         </Grid>
     </Grid>
-
 
     <VisualStateManager.VisualStateGroups>
         <VisualStateGroup x:Name="AdaptiveVisualStateGroup">

@@ -79,9 +79,9 @@ namespace WindowsApp2.Views
             var service = this.Frame.GetNavigationService();
 
             if (args.ChosenSuggestion != null)
-                await service.NavigateAsync(typeof(Views.MasterDetailPage), string.Format("{0}#{1}", "event", (args.ChosenSuggestion as Event).name));
+                await service.NavigateAsync(typeof(Views.MasterDetailPage), string.Format("{0}#{1}", "event", args.ChosenSuggestion as string));
             else
-                await service.NavigateAsync(typeof(Views.MasterDetailPage), string.Format("{0}#{1}", "event", args.QueryText as string));
+                await service.NavigateAsync(typeof(Views.MasterDetailPage), string.Format("{0}#{1}", "search", args.QueryText as string));
         }
         /*
         private async void asb_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
