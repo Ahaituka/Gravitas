@@ -107,7 +107,7 @@ namespace WindowsApp2
             UpdateSectionHeader(Section3, Section3Header, Section3HeaderTransform, Section3HeaderContentTransform, 2);
             UpdateSectionHeader(Section4, Section4Header, Section4HeaderTransform, Section4HeaderContentTransform, 3);
         }
-         
+        
         void UpdateSectionHeader(Panel section, Panel sectionHeader, CompositeTransform headerTransform, CompositeTransform headerContentTransform, double multiplier)
         {
             var travelledDistance = Math.Abs(ScrollingHost.VerticalOffset - ActualHeight * multiplier);

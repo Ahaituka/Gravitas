@@ -199,6 +199,7 @@
     <Content Include="Assets\9.jpg" />
     <Content Include="Assets\9.png" />
     <Content Include="Assets\appliedengineering.png" />
+    <Content Include="Assets\banner.png" />
     <Content Include="Assets\bioxyn.png" />
     <Content Include="Assets\bitsandbytes.png" />
     <Content Include="Assets\builtrix.png" />
@@ -262,7 +263,6 @@
     <Content Include="Assets\social\instagram.png" />
     <Content Include="Assets\social\instagram2.png" />
     <Content Include="Assets\social\twitter.png" />
-    <Content Include="Assets\social\twitter2.png" />
     <Content Include="Assets\workshop.jpg" />
     <Content Include="Help.htm" />
     <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Day1.MOV" />

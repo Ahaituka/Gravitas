@@ -39,7 +39,6 @@
                         RelativePanel.AlignRightWithPanel="True"
                         TextChanged="asb_TextChanged" />
 
-
         <GridView x:Name="ItemsGridView"
                   IsItemClickEnabled="True"
                   ItemClick="GridView_ItemClick"
@@ -47,7 +46,6 @@
                   ItemsSource="{x:Bind Categories}"
                   Padding="16,24,16,16"
                   SelectionMode="Single">
-
 
             <!--  place under to filter textbox  -->
             <RelativePanel.Below>pageHeader</RelativePanel.Below>
