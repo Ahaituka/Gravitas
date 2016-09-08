@@ -32,7 +32,7 @@ namespace WindowsApp2.ViewModels
         public bool UseShellBackButton
         {
             get { return _settings.UseShellBackButton; }
-            set { _settings.UseShellBackButton = value; base.RaisePropertyChanged(); }
+            set { _settings.UseShellBackButton = true; base.RaisePropertyChanged(); }
         }
 
         public bool UseLightThemeButton

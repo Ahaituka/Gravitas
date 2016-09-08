@@ -159,9 +159,6 @@
     <Compile Include="Views\Organisers.xaml.cs">
       <DependentUpon>Organisers.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Past.xaml.cs">
-      <DependentUpon>Past.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
@@ -181,23 +178,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\10.jpg" />
-    <Content Include="Assets\2.jpg" />
-    <Content Include="Assets\12.jpg" />
-    <Content Include="Assets\13.jpg" />
-    <Content Include="Assets\14.jpg" />
-    <Content Include="Assets\15.jpg" />
-    <Content Include="Assets\16.jpg" />
-    <Content Include="Assets\1.jpg" />
-    <Content Include="Assets\20.jpg" />
-    <Content Include="Assets\3.jpg" />
-    <Content Include="Assets\4.jpg" />
-    <Content Include="Assets\6.jpg" />
-    <Content Include="Assets\7.jpg" />
-    <Content Include="Assets\8.jpg" />
-    <Content Include="Assets\7.png" />
-    <Content Include="Assets\9.jpg" />
-    <Content Include="Assets\9.png" />
+    <Content Include="Assets\AppIcon.png" />
     <Content Include="Assets\appliedengineering.png" />
     <Content Include="Assets\banner.png" />
     <Content Include="Assets\bioxyn.png" />
@@ -253,6 +234,8 @@
     <Content Include="Assets\circuitrix.png" />
     <Content Include="Assets\gravitasquizseries.png" />
     <Content Include="Assets\informals.png" />
+    <Content Include="Assets\spash2.png" />
+    <Content Include="Assets\SplashScreennn.scale-200.png" />
     <Content Include="Assets\management.png" />
     <Content Include="Assets\manifesto4.jpg" />
     <Content Include="Assets\online.png" />
@@ -263,6 +246,7 @@
     <Content Include="Assets\social\instagram.png" />
     <Content Include="Assets\social\instagram2.png" />
     <Content Include="Assets\social\twitter.png" />
+    <Content Include="Assets\vitlogo.png" />
     <Content Include="Assets\workshop.jpg" />
     <Content Include="Help.htm" />
     <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Day1.MOV" />
@@ -335,10 +319,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Organisers.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Past.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

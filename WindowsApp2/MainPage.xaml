@@ -148,27 +148,27 @@
                     </Grid.RowDefinitions>
                     <Grid x:Name="Section4"
                           Grid.Row="1"
-                          Background="#FF707070">
+                          Background="#FF202020">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0"
-                                Margin="15,10,0,10"
-                                VerticalAlignment="Center"
-                                Click="BrowseButton_Click">
+                        <HyperlinkButton Grid.Column="0"
+                                         Margin="15,10,0,10"
+                                         VerticalAlignment="Center"
+                                         Click="BrowseButton_Click">
                             <StackPanel Orientation="Horizontal">
                                 <Viewbox Width="25"
                                          Height="25"
                                          Margin="0,0,10,0"
                                          VerticalAlignment="Center">
-                                    <SymbolIcon Symbol="BrowsePhotos" />
+                                    <SymbolIcon Symbol="List" />
                                 </Viewbox>
                                 <TextBlock VerticalAlignment="Center"
-                                           FontSize="15"
-                                           Text="Browse" />
+                                           FontSize="20"
+                                           Text="Browse categories" />
                             </StackPanel>
-                        </Button>
+                        </HyperlinkButton>
                         <Grid Grid.Column="1"
                               Margin="0,0,20,0"
                               HorizontalAlignment="Right"
@@ -182,9 +182,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <TextBlock Grid.ColumnSpan="3"
-                                       Foreground="LightGray"
-                                       Text="connect" />
+                            <Image Source="ms-appx:///Assets/vitlogo.jpg" />
                             <HyperlinkButton Grid.Row="1"
                                              Grid.Column="0"
                                              Margin="5"
@@ -245,7 +243,10 @@
                     <StackPanel.RenderTransform>
                         <CompositeTransform x:Name="Section2HeaderTransform" />
                     </StackPanel.RenderTransform>
-                    <TextBlock Text="">
+                    <TextBlock HorizontalAlignment="Center"
+                               Foreground="Gold"
+                               Style="{StaticResource SubheaderTextBlockStyle}"
+                               Text="statistics">
                         <TextBlock.RenderTransform>
                             <CompositeTransform x:Name="Section2HeaderContentTransform" />
                         </TextBlock.RenderTransform>
@@ -261,7 +262,10 @@
                     <StackPanel.RenderTransform>
                         <CompositeTransform x:Name="Section3HeaderTransform" />
                     </StackPanel.RenderTransform>
-                    <TextBlock Text="">
+                    <TextBlock HorizontalAlignment="Center"
+                               Foreground="#FF2CCD71"
+                               Style="{StaticResource SubheaderTextBlockStyle}"
+                               Text="opportunities">
                         <TextBlock.RenderTransform>
                             <CompositeTransform x:Name="Section3HeaderContentTransform" />
                         </TextBlock.RenderTransform>
@@ -277,7 +281,10 @@
                     <StackPanel.RenderTransform>
                         <CompositeTransform x:Name="Section4HeaderTransform" />
                     </StackPanel.RenderTransform>
-                    <TextBlock Text="">
+                    <TextBlock HorizontalAlignment="Center"
+                               Foreground="Gray"
+                               Style="{StaticResource SubheaderTextBlockStyle}"
+                               Text="Join Us">
                         <TextBlock.RenderTransform>
                             <CompositeTransform x:Name="Section4HeaderContentTransform" />
                         </TextBlock.RenderTransform>

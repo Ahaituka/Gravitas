@@ -69,7 +69,7 @@
                        Padding="10,5,10,10">
                 <ScrollViewer Margin="0,0,-12,0" VerticalScrollBarVisibility="Auto">
                     <StackPanel>
-                        <Image Margin="25,40,40,40"
+                        <Image Margin="20,30,30,30"
                                HorizontalAlignment="Stretch"
                                Source="ms-appx:///Assets/banner.png"
                                Stretch="UniformToFill" />

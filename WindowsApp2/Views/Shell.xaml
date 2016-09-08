@@ -69,7 +69,7 @@
             <!--  Gallery button  -->
             
 
-            <Controls:HamburgerButtonInfo AutomationProperties.Name="Jerry" PageType="views:Past">
+            <!--<Controls:HamburgerButtonInfo AutomationProperties.Name="Jerry" PageType="views:Past">
                 <StackPanel Orientation="Horizontal">
                     <SymbolIcon Width="48"
                                 Height="48"
@@ -78,7 +78,7 @@
                                VerticalAlignment="Center"
                                Text="Gallery" />
                 </StackPanel>
-            </Controls:HamburgerButtonInfo>
+            </Controls:HamburgerButtonInfo>-->
 
             <!--  Sponsors button  -->
             <!--

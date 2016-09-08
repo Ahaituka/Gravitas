@@ -77,7 +77,7 @@
         <DataTemplate x:Key="DetailContentTemplate" x:DataType="data:Event">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
+                    <RowDefinition Height="1.5*" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="3*" />
                     <RowDefinition Height="Auto" />
@@ -174,7 +174,7 @@
                         <Button Margin="0,0,15,0"
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
-                                Click="SymbolIcon_Tapped_1">
+                                Click="PhoneIcon_Tapped">
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Phone" />
                                 <TextBlock Margin="10,0,0,0" Text="Call" />
@@ -183,7 +183,7 @@
                         <Button Margin="0,0,15,0"
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
-                                Click="ShowPopupOffsetClicked">
+                                Click="EmailIcon_Tapped">
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon x:Name="People" Symbol="Mail" />
                                 <TextBlock Margin="10,0,0,0" Text="Email" />
@@ -219,9 +219,8 @@
             </Interactivity:Interaction.Behaviors>
         </controls:PageHeader>
 
-
         <!--  Coordinator Popup Starts  -->
-
+        <!--
         <Popup x:Name="StandardPopup"
                HorizontalAlignment="Center"
                VerticalAlignment="Center"
@@ -281,9 +280,7 @@
                                    RelativePanel.RightOf="img"
                                    Text="{x:Bind Item.name, Mode=OneWay}" />
                     </RelativePanel>
-
                 </StackPanel>
-
                 <StackPanel Grid.Row="2">
 
                     <Border Height="1"
@@ -380,12 +377,9 @@
 
                     </RelativePanel>
                 </StackPanel>
-
-
             </Grid>
-
         </Popup>
-
+        -->
         <!--  Coordinator Popup Ends  -->
 
         <ContentPresenter x:Name="DetailContentPresenter"

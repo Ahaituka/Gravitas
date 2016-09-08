@@ -41,8 +41,6 @@ namespace WindowsApp2.Views
             set { SetValue(s_itemProperty, value); }
         }
 
-
-
         private static DependencyProperty s_xProperty
            = DependencyProperty.Register("x", typeof(ObservableCollection<Coordinator>), typeof(MasterDetailPage), new PropertyMetadata(null));
 
@@ -56,9 +54,7 @@ namespace WindowsApp2.Views
             get { return (Coordinator)GetValue(s_xProperty); }
             set { SetValue(s_xProperty, value); }
         }
-
-
-
+        
 
         private static DependencyProperty s_HeaderProperty
          = DependencyProperty.Register("Header", typeof(ObservableCollection<Event>), typeof(MasterDetailPage), new PropertyMetadata(null));
@@ -230,35 +226,40 @@ namespace WindowsApp2.Views
                 DetailContentPresenter.ContentTransitions.Clear();
             }
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
 
+        /*
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             // open the Popup if it isn't open already 
             if (StandardPopup.IsOpen) { StandardPopup.IsOpen = false; }
 
         }
+        */
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
             // MainPageViewModel.AddToFavorites();
         }
+        /*
         private void ShowPopupOffsetClicked(object sender, RoutedEventArgs e)
         {
             // open the Popup if it isn't open already 
             if (!StandardPopup.IsOpen) { StandardPopup.IsOpen = true; }
         }
-        private async void SymbolIcon_Tapped(object sender, RoutedEventArgs e)
+        */
+
+        private async void EmailIcon_Tapped(object sender, RoutedEventArgs e)
         {
             EmailMessage emailMessage = new EmailMessage()
             {
-                Subject = "App Feedback " + Package.Current.DisplayName + " ",
-                Body = "First Line\r\nSecondLine"
+                Subject = "Regarding event: " + Item.name,
+                Body = ""
             };
-
             emailMessage.To.Add(new EmailRecipient() { Address = x.email });
             await EmailManager.ShowComposeNewEmailAsync(emailMessage);
-
         }
-        private async void SymbolIcon_Tapped_1(object sender, RoutedEventArgs e)
+
+        // TODO.
+        private async void PhoneIcon_Tapped(object sender, RoutedEventArgs e)
         {
             var uriSkype = new Uri(@"Skype:(9952549997)?call");
 
@@ -277,7 +278,6 @@ namespace WindowsApp2.Views
             {
                 // URI launch failed
             }
-
 
         }
         #endregion
