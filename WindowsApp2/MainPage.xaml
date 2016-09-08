@@ -149,29 +149,17 @@
                     <Grid x:Name="Section4"
                           Grid.Row="1"
                           Background="#FF202020">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <HyperlinkButton Grid.Column="0"
-                                         Margin="15,10,0,10"
-                                         VerticalAlignment="Center"
-                                         Click="BrowseButton_Click">
-                            <StackPanel Orientation="Horizontal">
-                                <Viewbox Width="25"
-                                         Height="25"
-                                         Margin="0,0,10,0"
-                                         VerticalAlignment="Center">
-                                    <SymbolIcon Symbol="List" />
-                                </Viewbox>
-                                <TextBlock VerticalAlignment="Center"
-                                           FontSize="20"
-                                           Text="Browse categories" />
-                            </StackPanel>
-                        </HyperlinkButton>
-                        <Grid Grid.Column="1"
-                              Margin="0,0,20,0"
-                              HorizontalAlignment="Right"
+                    
+                        <!--<Grid Grid.Column="0">
+                            <Grid.Background>
+                                <ImageBrush                               
+                                    ImageSource="ms-appx:///Assets/grav.jpg" Stretch="Fill" >
+                                </ImageBrush>
+                            </Grid.Background>
+                        </Grid>-->
+                        <Grid Grid.Column="0"  
+                            
+                              HorizontalAlignment="Center"
                               VerticalAlignment="Center">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
@@ -186,18 +174,19 @@
                             <HyperlinkButton Grid.Row="1"
                                              Grid.Column="0"
                                              Margin="5"
+                                             Height="85"
                                              NavigateUri="https://www.facebook.com/graVITasVITU">
                                 <Image Source="ms-appx:///Assets/social/facebook.png" Stretch="Uniform" />
                             </HyperlinkButton>
                             <HyperlinkButton Grid.Row="1"
                                              Grid.Column="1"
-                                             Margin="5"
+                                             Margin="5"   Height="85"
                                              NavigateUri="https://www.twitter.com/gravitas_vit">
                                 <Image Source="ms-appx:///Assets/social/twitter.png" Stretch="Uniform" />
                             </HyperlinkButton>
                             <HyperlinkButton Grid.Row="1"
                                              Grid.Column="2"
-                                             Margin="5"
+                                             Margin="5"   Height="85"
                                              HorizontalAlignment="Stretch"
                                              VerticalAlignment="Stretch"
                                              HorizontalContentAlignment="Stretch"
@@ -243,10 +232,15 @@
                     <StackPanel.RenderTransform>
                         <CompositeTransform x:Name="Section2HeaderTransform" />
                     </StackPanel.RenderTransform>
-                    <TextBlock HorizontalAlignment="Center"
-                               Foreground="Gold"
-                               Style="{StaticResource SubheaderTextBlockStyle}"
-                               Text="statistics">
+
+
+
+                    <TextBlock 
+                    HorizontalAlignment="Center"
+                               FontWeight="SemiBold"
+                               Foreground="#FFDDBB0C"
+                               d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition">
+                    <Run FontSize="32" Text="STATISTICS" />
                         <TextBlock.RenderTransform>
                             <CompositeTransform x:Name="Section2HeaderContentTransform" />
                         </TextBlock.RenderTransform>
@@ -263,9 +257,10 @@
                         <CompositeTransform x:Name="Section3HeaderTransform" />
                     </StackPanel.RenderTransform>
                     <TextBlock HorizontalAlignment="Center"
+                               FontWeight="SemiBold"
                                Foreground="#FF2CCD71"
-                               Style="{StaticResource SubheaderTextBlockStyle}"
-                               Text="opportunities">
+                               d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition">
+                        <Run FontSize="32" Text="OPPORTUNITIES" />
                         <TextBlock.RenderTransform>
                             <CompositeTransform x:Name="Section3HeaderContentTransform" />
                         </TextBlock.RenderTransform>
@@ -282,9 +277,10 @@
                         <CompositeTransform x:Name="Section4HeaderTransform" />
                     </StackPanel.RenderTransform>
                     <TextBlock HorizontalAlignment="Center"
-                               Foreground="Gray"
-                               Style="{StaticResource SubheaderTextBlockStyle}"
-                               Text="Join Us">
+                               FontWeight="SemiBold"
+                               Foreground="White"
+                               d:LayoutOverrides="LeftMargin, RightMargin, LeftPosition, RightPosition">
+                        <Run FontSize="32" Text="JOIN US" />
                         <TextBlock.RenderTransform>
                             <CompositeTransform x:Name="Section4HeaderContentTransform" />
                         </TextBlock.RenderTransform>
