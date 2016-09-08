@@ -89,6 +89,10 @@ namespace WindowsApp2.Views
             // {0} - type of string
             // {1} - content
 
+
+            
+            
+
             var param = e.Parameter?.ToString();
             var service = Template10.Services.SerializationService.SerializationService.Json;
             var value = service.Deserialize<string>(param);
@@ -150,7 +154,8 @@ namespace WindowsApp2.Views
             DisableContentTransitions();
 
             base.OnNavigatedTo(e);
-
+       //     DetailContentPresenter.Content = null;
+           
         }
 
         private void AdaptiveStates_CurrentStateChanged(object sender, VisualStateChangedEventArgs e)
@@ -227,31 +232,31 @@ namespace WindowsApp2.Views
             }
         }
 
-        /*
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            // open the Popup if it isn't open already 
+            //open the Popup if it isn't open already 
             if (StandardPopup.IsOpen) { StandardPopup.IsOpen = false; }
 
         }
-        */
+
         private void AppBarButton_Click(object sender, RoutedEventArgs e)
         {
             // MainPageViewModel.AddToFavorites();
         }
-        /*
+
         private void ShowPopupOffsetClicked(object sender, RoutedEventArgs e)
         {
-            // open the Popup if it isn't open already 
+        //    open the Popup if it isn't open already 
             if (!StandardPopup.IsOpen) { StandardPopup.IsOpen = true; }
         }
-        */
+
 
         private async void EmailIcon_Tapped(object sender, RoutedEventArgs e)
         {
             EmailMessage emailMessage = new EmailMessage()
             {
-                Subject = "Regarding event: " + Item.name,
+                Subject = "Gravitas Windows App:Regarding event: " + Item.name,
                 Body = ""
             };
             emailMessage.To.Add(new EmailRecipient() { Address = x.email });
@@ -261,7 +266,10 @@ namespace WindowsApp2.Views
         // TODO.
         private async void PhoneIcon_Tapped(object sender, RoutedEventArgs e)
         {
-            var uriSkype = new Uri(@"Skype:(9952549997)?call");
+
+
+            var call = x.phone;
+            var uriSkype = new Uri(@"Skype:(call)?call");
 
             // Set the option to show a warning
             var promptOptions = new Windows.System.LauncherOptions();

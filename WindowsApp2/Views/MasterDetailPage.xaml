@@ -157,10 +157,15 @@
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Grid.Column="0" HorizontalAlignment="Left">
+                    <TextBlock Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center">
                         Coordinator:
                         <LineBreak /><Run FontWeight="SemiBold" Text="{Binding name}" />
                     </TextBlock>
+
+                    <Button  Click="ShowPopupOffsetClicked" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <SymbolIcon Symbol="People"> </SymbolIcon>
+                    </Button>
+                    
                     <StackPanel Grid.Column="1"
                                 HorizontalAlignment="Right"
                                 Orientation="Horizontal">
@@ -220,7 +225,7 @@
         </controls:PageHeader>
 
         <!--  Coordinator Popup Starts  -->
-        <!--
+        
         <Popup x:Name="StandardPopup"
                HorizontalAlignment="Center"
                VerticalAlignment="Center"
@@ -379,7 +384,7 @@
                 </StackPanel>
             </Grid>
         </Popup>
-        -->
+        
         <!--  Coordinator Popup Ends  -->
 
         <ContentPresenter x:Name="DetailContentPresenter"

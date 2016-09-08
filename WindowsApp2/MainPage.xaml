@@ -317,3 +317,63 @@
         </VisualStateGroup>
     </VisualStateManager.VisualStateGroups>
 </Page>
+<!--<StackPanel Margin="10,10,0,0">
+    <RelativePanel>
+
+        <TextBlock x:Name="PublisherTextBlock"
+                                   Foreground="{StaticResource SystemControlForegroundAccentBrush}"
+                                   Text="App developed by:" 
+                                    
+                                      />
+
+        <TextBlock x:Name="Vinay"
+                                   Margin="0,0,0,0"
+                                   FontWeight="Normal"
+                                   Foreground="LightGray"
+                                   Style="{StaticResource SubheaderTextBlockStyle}"
+                                   Text="Vinay Gupta" RelativePanel.Below="PublisherTextBlock"
+                                      />
+
+
+
+
+
+        <TextBlock x:Name="Shubham"
+                                   Margin="0,0,0,0"
+                                   FontWeight="Normal"
+                                   Foreground="WhiteSmoke"
+                                   Style="{StaticResource SubtitleTextBlockStyle}"
+                                   Text="Shubham  Jain" 
+                                       RelativePanel.Below="Vinay"/>
+
+        <TextBlock x:Name="Website" Margin="0,40,0,0"
+                                   Text="Visit our website to learn more about events, the organizing team and the developers:"
+                                   TextWrapping="WrapWholeWords" 
+                                       RelativePanel.Below="Shubham"/>
+        <HyperlinkButton RelativePanel.Below="Website" Content="www.vitgravitas.com" FontSize="15" />
+    </RelativePanel>
+
+</StackPanel>
+
+<StackPanel Grid.Column="1" Margin="0,10,0,0">
+    <Border x:Name="LogoImage"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                BorderBrush="DimGray"
+                                BorderThickness="1"
+                                IsHitTestVisible="False"
+                                RelativePanel.AlignRightWithPanel="True"
+                                RelativePanel.AlignTopWithPanel="True">
+        <Border.Background>
+            <SolidColorBrush Color="{ThemeResource SystemAccentColor}" />
+        </Border.Background>
+        <Image Margin="12"
+                                   Source="{Binding Logo}"
+                                   Stretch="None" />
+    </Border>
+    <TextBlock Margin="0,10,0,0"
+                                   HorizontalAlignment="Center"
+                                   RelativePanel.Below="LogoImage"
+                                   Text="{Binding AppVersion,
+                                                  FallbackValue='v1.0.0.0'}" />
+</StackPanel>-->

@@ -156,7 +156,10 @@ namespace WindowsApp2.Views
         }
         private async void SymbolIcon_Tapped_1(object sender, RoutedEventArgs e)
         {
-            var uriSkype = new Uri(@"Skype:(9952549997)?call");
+
+            var call = Item.coordinators[0].phone;
+
+            var uriSkype = new Uri(@"Skype:(call)?call");
 
             // Set the option to show a warning
             var promptOptions = new Windows.System.LauncherOptions();

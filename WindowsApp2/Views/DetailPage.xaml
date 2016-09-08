@@ -7,6 +7,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:vm="using:WindowsApp2.ViewModels"
       x:Name="PageRoot"
+      xmlns:conv="using:WindowsApp2.Converters"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
       Loaded="PageRoot_Loaded"
       NavigationCacheMode="Enabled"
@@ -20,130 +21,139 @@
         </TransitionCollection>
     </Page.Transitions>
 
+    <Page.Resources>
+
+        <conv:CategoryToSymbolConverter x:Key="CatToIconConverter" />
+        <conv:CategoryToImageConverter x:Key="CatToImageConverter" />
+
+    </Page.Resources>
+
     <!--  Don't realize our content by default. See PageRoot_Loaded.  -->
     <Grid>
         <ScrollViewer>
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="200" />
+                    <RowDefinition Height="1.5*" />
                     <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="3*" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
+
+                <!--  Top Banner  -->
                 <Grid x:Name="Section2" Grid.Row="0">
-                    <Grid.Background>
-                        <ImageBrush ImageSource="ms-appx:///Assets/8.JPG" Stretch="Fill" />
-                    </Grid.Background>
-                    <TextBlock MaxWidth="250"
-                               Margin="36,62,34,68"
-                               FontFamily="Baskerville Old Face"
+                    <Image Source="{Binding Converter={StaticResource CatToImageConverter}}" Stretch="UniformToFill" />
+                    <TextBlock HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
                                FontSize="30"
-                               Foreground="{ThemeResource ToggleButtonPressedForegroundThemeBrush}"
+                               Foreground="White"
+                               TextAlignment="Center"
                                TextWrapping="WrapWholeWords"
                                d:LayoutOverrides="Width, LeftPosition, RightPosition, TopPosition, BottomPosition">
-                        <Run Text="{x:Bind Item.name, Mode=OneWay}" />
+                        <Run Text="{x:Bind Item.name}" />
                     </TextBlock>
                 </Grid>
+
+                <!--  Middle Panel  -->
                 <Grid x:Name="Content"
                       Grid.Row="1"
-                      Background="#FFDDBB0C">
+                      Background="{Binding Source={StaticResource SystemControlHighlightAccentBrush}}"
+                      Padding="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-
-                    <StackPanel Grid.Column="0" HorizontalAlignment="Right">
-                        <RelativePanel>
-                            <SymbolIcon x:Name="symbol"
-                                        Margin="10,0"
-                                        HorizontalAlignment="Left"
-                                        RelativePanel.AlignLeftWithPanel="True"
-                                        Symbol="Globe" />
-                            <TextBlock HorizontalAlignment="Right"
-                                       VerticalAlignment="Top"
-                                       FontWeight="Bold"
-                                       RelativePanel.RightOf="symbol"
-                                       Style="{ThemeResource BaseTextBlockStyle}"
-                                       Text="{x:Bind Item.subCategory, Mode=OneWay}" />
-                        </RelativePanel>
+                    <StackPanel Grid.Column="0"
+                                HorizontalAlignment="Center"
+                                Orientation="Horizontal">
+                        <SymbolIcon x:Name="symbol" Symbol="Globe" />
+                        <TextBlock Margin="10,0,0,0"
+                                   VerticalAlignment="Center"
+                                   FontWeight="Bold"
+                                   Style="{ThemeResource BaseTextBlockStyle}"
+                                   Text="{x:Bind Item.subCategory}"
+                                   TextTrimming="CharacterEllipsis" />
                     </StackPanel>
-
-                    <StackPanel Grid.Column="1" HorizontalAlignment="Center">
-                        <RelativePanel>
-                            <SymbolIcon x:Name="symboll"
-                                        Margin="10,0"
-                                        HorizontalAlignment="Left"
-                                        Symbol="People" />
-
-
-                            <TextBlock HorizontalAlignment="Right"
-                                       VerticalAlignment="Top"
-                                       FontWeight="Bold"
-                                       RelativePanel.RightOf="symboll"
-                                       Style="{ThemeResource BaseTextBlockStyle}"
-                                       Text="{x:Bind Item.teamSize, Mode=OneWay}" />
-                        </RelativePanel>
+                    <StackPanel Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                Orientation="Horizontal">
+                        <TextBlock VerticalAlignment="Center" Style="{ThemeResource BaseTextBlockStyle}">
+                            <Run FontWeight="Bold" Text="{x:Bind Item.teamSize}" />
+                        </TextBlock>
+                        <SymbolIcon x:Name="symboll"
+                                    Margin="3,0,0,0"
+                                    Symbol="People" />
+                        <TextBlock Margin="10,0,0,0" Text="per team" />
                     </StackPanel>
-
-                    <StackPanel Grid.Column="2" d:LayoutOverrides="Width, LeftPosition, RightPosition">
-                        <RelativePanel>
-                            <TextBlock x:Name="symbllol"
-                                       Margin="10,0"
-                                       FontWeight="Bold"
-                                       Text="&#x20b9;" />
-
-                            <TextBlock HorizontalAlignment="Right"
-                                       VerticalAlignment="Top"
-                                       FontWeight="Bold"
-                                       RelativePanel.RightOf="symbllol"
-                                       Style="{ThemeResource BaseTextBlockStyle}"
-                                       Text="{x:Bind Item.participationFee, Mode=OneWay}" />
-                        </RelativePanel>
+                    <StackPanel Grid.Column="2"
+                                HorizontalAlignment="Center"
+                                Orientation="Horizontal">
+                        <TextBlock x:Name="symbllol" DataContext="{Binding}">
+                            Fee: &#x20b9;<Run FontWeight="Bold" Text="{x:Bind Item.participationFee}" /></TextBlock>
                     </StackPanel>
                 </Grid>
-                <Grid Grid.Row="2"
-                      Margin="0,10,0,0"
-                      BorderBrush="White"
-                      BorderThickness="2"
-                      Padding="10">
+
+                <!--  Content Panel  -->
+                <ScrollViewer Grid.Row="2"
+                              Padding="15,10,15,10"
+                              VerticalScrollBarVisibility="Auto">
                     <TextBlock HorizontalAlignment="Center"
                                Style="{ThemeResource ScenarioDescriptionTextStyle}"
-                               Text="{x:Bind Item.description, Mode=OneWay}"
+                               Text="{x:Bind Item.description}"
                                TextWrapping="WrapWholeWords" />
-                </Grid>
+                </ScrollViewer>
 
-                <Grid Grid.Row="3" Margin="20">
+                <!--  Footer Panel  -->
+                <Grid Grid.Row="3"
+                      Background="DarkSlateBlue"
+                      DataContext="{x:Bind Item.coordinators[0]}"
+                      Padding="10">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
 
+                    <TextBlock Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        Coordinator:
+                        <LineBreak /><Run FontWeight="SemiBold" Text="{Binding name}" />
+                    </TextBlock>
 
-                    <Button HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            Click="SymbolIcon_Tapped_1">
+                    <!--<Button  Click="ShowPopupOffsetClicked" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <SymbolIcon Symbol="People"></SymbolIcon>
+                    </Button>-->
 
-                        <SymbolIcon Grid.Column="0" Symbol="Phone" />
-                    </Button>
-                    <Button Grid.Column="1"
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            Click="ShowPopupOffsetClicked">
-                        <SymbolIcon x:Name="People"
-                                    IsTapEnabled="True"
-                                    Symbol="People" 
-                                    Margin="10,0,0,0" />
-                    </Button>
-                    <Button Grid.Column="2"
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            Click="SymbolIcon_Tapped">
-                        <SymbolIcon IsTapEnabled="True" Symbol="Mail" />
-                    </Button>
+                    <StackPanel Grid.Column="1"
+                                HorizontalAlignment="Right"
+                                Orientation="Horizontal">
+                        <TextBlock Margin="0,0,20,0"
+                                   VerticalAlignment="Center"
+                                   FontSize="20"
+                                   FontWeight="Light"
+                                   Foreground="Gray"
+                                   Text="Queries?"
+                                   TextLineBounds="Tight" />
+                        <Button Margin="0,0,15,0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Click="SymbolIcon_Tapped_1">
+                            <StackPanel Orientation="Horizontal">
+                                <SymbolIcon Symbol="Phone" />
+                                <TextBlock Margin="10,0,0,0" Text="Call" />
+                            </StackPanel>
+                        </Button>
+                        <Button Margin="0,0,15,0"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Click="SymbolIcon_Tapped">
+                            <StackPanel Orientation="Horizontal">
+                                <SymbolIcon x:Name="People" Symbol="Mail" />
+                                <TextBlock Margin="10,0,0,0" Text="Email" />
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
                 </Grid>
             </Grid>
+
         </ScrollViewer>
 
         <Popup x:Name="StandardPopup"

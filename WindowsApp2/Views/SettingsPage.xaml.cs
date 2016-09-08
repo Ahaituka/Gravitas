@@ -1,4 +1,6 @@
+using System;
 using System.Threading.Tasks;
+using Windows.ApplicationModel.Email;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
@@ -23,7 +25,41 @@ namespace WindowsApp2.Views
         {
             var index = int.Parse(_SerializationService.Deserialize(e.Parameter?.ToString()).ToString());
             MyPivot.SelectedIndex = index;
-        } 
+        }
         #endregion
+
+        private async void Button_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+
+
+            EmailMessage emailMessage = new EmailMessage()
+            {
+                Subject = "FeedBack Regarding  Windows App: ",
+                Body = ""
+            };
+            emailMessage.To.Add(new EmailRecipient() { Address = "bitloks@gmail.com" });
+            await EmailManager.ShowComposeNewEmailAsync(emailMessage);
+        }
+
+        private async void Button_Click_1(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            // TODO.
+            var uriSkype = new Uri(@"Skype:(9952549997)?call");
+            // Set the option to show a warning
+            var promptOptions = new Windows.System.LauncherOptions();
+            promptOptions.TreatAsUntrusted = true;
+            // Launch the URI
+            var success = await Windows.System.Launcher.LaunchUriAsync(uriSkype, promptOptions);
+            if (success)
+            {
+                // URI launched
+            }
+            else
+            {
+                // URI launch failed
+            }
+        }
+
     }
+
 }
