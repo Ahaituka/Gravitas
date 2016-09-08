@@ -110,6 +110,7 @@
     <Compile Include="Controls\RoundProgressControl.xaml.cs">
       <DependentUpon>RoundProgressControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converters\CategoryConverters.cs" />
     <Compile Include="Converters\VisibleWhenTrue.cs">
       <DependentUpon>Past.xaml</DependentUpon>
     </Compile>
@@ -259,9 +260,10 @@
     <Content Include="Assets\school.png" />
     <Content Include="Assets\social\facebook.png" />
     <Content Include="Assets\social\instagram.png" />
+    <Content Include="Assets\social\instagram2.png" />
     <Content Include="Assets\social\twitter.png" />
     <Content Include="Assets\social\twitter2.png" />
-    <Content Include="Assets\workshop.png" />
+    <Content Include="Assets\workshop.jpg" />
     <Content Include="Help.htm" />
     <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Day1.MOV" />
     <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Gravitas.MP4" />

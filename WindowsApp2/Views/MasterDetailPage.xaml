@@ -6,6 +6,7 @@
       xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
       xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
       xmlns:controls="using:Template10.Controls"
+      xmlns:conv="using:WindowsApp2.Converters"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:data="using:WindowsApp2.Models"
       xmlns:local="using:WindowsApp2.Views"
@@ -25,6 +26,9 @@
 
     <Page.Resources>
 
+        <conv:CategoryToSymbolConverter x:Key="CatToIconConverter" />
+        <conv:CategoryToImageConverter x:Key="CatToImageConverter" />
+
         <!--  ListViewItemTemplate  -->
         <DataTemplate x:Key="MasterListViewItemTemplate" x:DataType="data:Event">
             <Grid Margin="0"
@@ -39,18 +43,6 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <!--
-                <controls:PageHeader Grid.Row="0"
-                                     Grid.Column="0"
-                                     Text="{x:Bind name, Mode=OneWay}">
-                    <Interactivity:Interaction.Behaviors>
-                        <Behaviors:EllipsisBehavior Visibility="Auto" />
-                        <Behaviors:DeviceDispositionBehavior Continuum="True"
-                                                             Desktop="True"
-                                                             IoT="True" />
-                    </Interactivity:Interaction.Behaviors>
-                </controls:PageHeader>
-                -->
                 <TextBlock Grid.Row="0"
                            Grid.Column="0"
                            HorizontalAlignment="Left"
@@ -66,26 +58,16 @@
                             Grid.Column="1"
                             Margin="15,0,0,0"
                             HorizontalAlignment="Right"
-                            Symbol="Setting" />
+                            Symbol="{x:Bind category, Converter={StaticResource CatToIconConverter}}" />
                 <TextBlock Grid.Row="1"
                            Grid.ColumnSpan="2"
+                           Margin="0,3,0,0"
                            VerticalAlignment="Center"
+                           FontSize="12"
                            MaxLines="1"
                            Style="{ThemeResource ListBodyTextBlockStyle}"
-                           Text="{x:Bind description}"
+                           Text="{x:Bind organization[0]}"
                            TextTrimming="Clip" />
-                <!--
-                <Grid Grid.Column="1" Background="White">
-                    <Ellipse Width="50"
-                             Height="50"
-                             HorizontalAlignment="Right"
-                             VerticalAlignment="Center">
-                        <Ellipse.Fill>
-                            <ImageBrush ImageSource="{x:Bind chapterpath, Mode=OneWay}" Stretch="UniformToFill" />
-                        </Ellipse.Fill>
-                    </Ellipse>
-                </Grid>
-                -->
             </Grid>
         </DataTemplate>
 
@@ -103,7 +85,7 @@
 
                 <!--  Top Banner  -->
                 <Grid x:Name="Section2" Grid.Row="0">
-                    <Image Source="ms-appx:///Assets/bioxyn.png" Stretch="UniformToFill" />
+                    <Image Source="{Binding Converter={StaticResource CatToImageConverter}}" Stretch="UniformToFill" />
                     <TextBlock HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                FontSize="30"
@@ -133,7 +115,8 @@
                                    VerticalAlignment="Center"
                                    FontWeight="Bold"
                                    Style="{ThemeResource BaseTextBlockStyle}"
-                                   Text="{x:Bind subCategory}" />
+                                   Text="{x:Bind subCategory}"
+                                   TextTrimming="CharacterEllipsis" />
                     </StackPanel>
                     <StackPanel Grid.Column="1"
                                 HorizontalAlignment="Center"

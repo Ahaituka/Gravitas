@@ -9,6 +9,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Email;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -84,7 +85,7 @@ namespace WindowsApp2.Views
         #endregion
 
         #region Methods
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
 
             // e.Param syntax:
@@ -127,8 +128,12 @@ namespace WindowsApp2.Views
 
                 if (EventList == null || EventList.Count == 0)
                 {
-                    // Display sad smiley with nothing found message
                     MasterListView.ItemsSource = new ObservableCollection<Event>();
+                    // Display sad smiley with nothing found message
+                    MessageDialog msgDialog = new MessageDialog("We could not find any event matching your search string. Close to return to the category view.", "Oops...");
+                    await msgDialog.ShowAsync();
+                    var navService = this.Frame.GetNavigationService();
+                    navService.GoBack();
                 }
                 else
                 {
@@ -137,42 +142,11 @@ namespace WindowsApp2.Views
                     MasterListView.ItemsSource = EventList;
                     if (ev != null)
                         MasterListView.SelectedItem = ev;
+                    else
+                        MasterListView.SelectedItem = EventList[0];
                 }
             }
-
-            /*
-            Item = EventList[0];
-            x = Item.coordinators.Where((item) => Item.name == value).FirstOrDefault();
-            EventList = DataManager.EventList.Where((x) => x.subCategory == Item.subCategory).ToObservableCollection<Event>();
-            MasterListView.ItemsSource = EventList;
-            MasterListView.SelectedItem = Item;
             
-            //lastSelectedItem = clickedItem;   
-                }   
-            }
-            
-            else if (EventList == null)
-            {
-                MasterListView.SelectedItem = null;
-                CategoryList = DataManager.EventList.Where((x) => x.subCategory == value).ToObservableCollection<Event>();
-                //EventList = DataManager.EventList;
-                EventList = CategoryList;
-                Header = EventList[0];
-
-                MasterListView.ItemsSource = EventList;
-            }
-
-
-            else if (e.Parameter != null)
-            {   // Parameter is item ID
-
-                MasterListView.SelectedItem = null;
-                var id = (string)e.Parameter;
-                _lastSelectedItem =
-                    EventList.Where((item) => item.name == id).FirstOrDefault();
-                Header = EventList[0];
-            */
-
             UpdateForVisualState(AdaptiveStates.CurrentState);
 
             // Don't play a content transition for first item load.

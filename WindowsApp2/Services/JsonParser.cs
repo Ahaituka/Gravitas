@@ -29,13 +29,10 @@ namespace WindowsApp2.Services
                 var ms = new MemoryStream(Encoding.UTF8.GetBytes(arrayString));
                 var eventList = new ObservableCollection<Event>((List<Event>)jsonSerializer.ReadObject(ms));
 
-                //var xg = GetfilesAsync();
-
-                //string g = xg.ToString();
-
-                foreach (var x in eventList)
+                foreach (var ev in eventList)
                 {
-                    x.chapterpath = String.Format("ms-appx:///Assets/ChapterLogos/{0}.png",x.organization[0].ToLower());
+                    ev.organization = ev.organization.Select((c) => c.ToUpper()).ToList();
+                    ev.chapterpath = String.Format("ms-appx:///Assets/ChapterLogos/{0}.png",ev.organization[0].ToLower());
                 }
                
               return eventList;

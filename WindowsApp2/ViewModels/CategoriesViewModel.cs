@@ -23,7 +23,7 @@ namespace WindowsApp2.ViewModels
             if (Name == "Applied Engineering")
                 CoverImage = "ms-appx:///Assets/appliedengineering.png";
             else if (Name == "Workshop")
-                CoverImage = "ms-appx:///Assets/workshop.png";
+                CoverImage = "ms-appx:///Assets/workshop.jpg";
             else if (Name == "Premium")
                 CoverImage = "ms-appx:///Assets/premium.png";
             else if (Name == "Informal")
