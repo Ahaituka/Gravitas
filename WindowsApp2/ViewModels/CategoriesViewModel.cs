@@ -11,10 +11,7 @@ namespace WindowsApp2.ViewModels
 {
     public class CategoryViewModel : ViewModelBase
     {
-
-     
-
-
+        
         public string Name { get; set; }
         public string Description { get; set; }
         public string CoverImage { get; set; }
@@ -35,10 +32,8 @@ namespace WindowsApp2.ViewModels
                 CoverImage = "ms-appx:///Assets/bioxyn.png";
             else if (Name == "Builtrix")
                 CoverImage = "ms-appx:///Assets/builtrix.png";
-           
             else if (Name == "Bits and Bytes")
                 CoverImage = "ms-appx:///Assets/bitsandbytes.png";
-
             else if (Name == "Quiz")
                 CoverImage = "ms-appx:///Assets/gravitasquizseries.png";
             else if (Name == "Online")
@@ -52,7 +47,6 @@ namespace WindowsApp2.ViewModels
             else
                 CoverImage = "ms-appx:///Assets/7.png";
         }
-
 
     }
 

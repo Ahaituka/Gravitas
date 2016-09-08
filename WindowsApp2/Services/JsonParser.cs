@@ -16,36 +16,6 @@ namespace WindowsApp2.Services
 {
     public static class JsonParser
     {
-        /*
-        private static void AssignStringList(JsonObject obj, string arrayKey, List<string> targetList)
-        {
-            if (obj.GetNamedValue(arrayKey).ValueType == JsonValueType.Null)
-                return;
-
-            foreach (JsonValue val in obj.GetNamedArray(arrayKey))
-                targetList.Add(val.GetString());
-        }
-        */
-
-        // public  async  static  Task<string> GetfilesAsync()
-        //{
-        //    StringBuilder outputText = new StringBuilder();
-        //    StorageFolder appInstalledFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
-        //     StorageFolder assets = await appInstalledFolder.GetFolderAsync("Assets");
-        //    var files = await assets.GetFilesAsync();
-
-
-        //    foreach (StorageFile file in files)
-        //    {
-        //        outputText.Append(file.Name + "\n");
-        //    }
-
-        //    //List<string> files = new DirectoryInfo(yourPath).GetDirectories().Select(d => d.Name).ToArray();
-        //    return outputText.ToString();
-
-
-        //}
-
         public static ObservableCollection<Event> TryGetEvents(string eventsJson)
         {
             try
@@ -63,22 +33,10 @@ namespace WindowsApp2.Services
 
                 //string g = xg.ToString();
 
-
-
-
-
                 foreach (var x in eventList)
                 {
-
-
                     x.chapterpath = String.Format("ms-appx:///Assets/ChapterLogos/{0}.png",x.organization[0].ToLower());
-
-                  
-
-
-                    
                 }
-
                
               return eventList;
             }

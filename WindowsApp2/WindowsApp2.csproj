@@ -119,7 +119,6 @@
     </Compile>
     <Compile Include="Managers\DataManager.cs" />
     <Compile Include="Managers\StorageHelper.cs" />
-    <Compile Include="Models\CharacterDataWrapper.cs" />
     <Compile Include="Models\Coordinator.cs" />
     <Compile Include="Models\Event.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -131,7 +130,6 @@
     <Compile Include="Services\FileHelper.cs" />
     <Compile Include="Services\JsonParser.cs" />
     <Compile Include="Services\NetworkService.cs" />
-    <Compile Include="Services\SearchQueries.cs" />
     <Compile Include="Services\ServiceResponse.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
     <Compile Include="ViewModels\PastPageViewModel.cs" />
@@ -153,9 +151,6 @@
     </Compile>
     <Compile Include="Views\Icheck.xaml.cs">
       <DependentUpon>Icheck.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MasterDetailPage.xaml.cs">
       <DependentUpon>MasterDetailPage.xaml</DependentUpon>
@@ -254,11 +249,8 @@
     <Content Include="Assets\ChapterLogos\VIT Spartans.png" />
     <Content Include="Assets\ChapterLogos\yrc.png" />
     <Content Include="Assets\circuitrix.png" />
-    <Content Include="Assets\email.png" />
-    <Content Include="Assets\fb.png" />
     <Content Include="Assets\gravitasquizseries.png" />
     <Content Include="Assets\informals.png" />
-    <Content Include="Assets\instagram.jpg" />
     <Content Include="Assets\management.png" />
     <Content Include="Assets\manifesto4.jpg" />
     <Content Include="Assets\online.png" />
@@ -268,7 +260,7 @@
     <Content Include="Assets\social\facebook.png" />
     <Content Include="Assets\social\instagram.png" />
     <Content Include="Assets\social\twitter.png" />
-    <Content Include="Assets\twiiter.png" />
+    <Content Include="Assets\social\twitter2.png" />
     <Content Include="Assets\workshop.png" />
     <Content Include="Help.htm" />
     <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Day1.MOV" />
@@ -335,10 +327,6 @@
     <Page Include="Views\Icheck.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\MasterDetailPage.xaml">
       <Generator>MSBuild:Compile</Generator>

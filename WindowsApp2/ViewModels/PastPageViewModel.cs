@@ -11,19 +11,13 @@ namespace WindowsApp2.ViewModels
 {
     public class PastPageViewModel : ViewModelBase
     {
-
-     
-
-
        
         public string CoverImage { get; set; }
 
         public PastPageViewModel()
         {
-            
           
         }
-
 
          public static List<PastPageViewModel> GetPhotos()
         {
@@ -42,7 +36,6 @@ namespace WindowsApp2.ViewModels
             Photo.Add(new PastPageViewModel { CoverImage = "ms-appx:///Assets/6.jpg" });
             Photo.Add(new PastPageViewModel { CoverImage = "ms-appx:///Assets/7.jpg" });
             Photo.Add(new PastPageViewModel { CoverImage = "ms-appx:///Assets/9.jpg" });
-          
 
             return Photo;
         }

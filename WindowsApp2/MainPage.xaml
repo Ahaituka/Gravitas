@@ -44,7 +44,6 @@
                     <Grid x:Name="Section1"
                           Grid.Row="1"
                           Background="White">
-
                         <StackPanel Margin="40"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center">
@@ -78,11 +77,17 @@
                           Grid.Row="1"
                           Background="#FFDDBB0C">
 
-                        <StackPanel Margin="40" HorizontalAlignment="Center">
-                            <SymbolIcon Margin="0,0,0,10"
-                                        HorizontalAlignment="Center"
-                                        Foreground="White"
-                                        Symbol="World" />
+                        <StackPanel x:Name="Section2Panel"
+                                    Margin="40"
+                                    HorizontalAlignment="Center">
+                            <Viewbox x:Name="Section2IconBox"
+                                     Height="100"
+                                     Stretch="Uniform">
+                                <SymbolIcon Margin="0,0,0,10"
+                                            HorizontalAlignment="Center"
+                                            Foreground="White"
+                                            Symbol="World" />
+                            </Viewbox>
                             <TextBlock MaxWidth="360"
                                        FontSize="16"
                                        FontWeight="SemiBold"
@@ -113,11 +118,17 @@
                     <Grid x:Name="Section3"
                           Grid.Row="1"
                           Background="#FF2CCD71">
-                        <StackPanel Margin="40" HorizontalAlignment="Center">
-                            <SymbolIcon Margin="0,0,0,10"
-                                        HorizontalAlignment="Center"
-                                        Foreground="White"
-                                        Symbol="Play" />
+                        <StackPanel x:Name="Section3Panel"
+                                    Margin="40"
+                                    HorizontalAlignment="Center">
+                            <Viewbox x:Name="Section3IconBox"
+                                     Height="100"
+                                     Stretch="Uniform">
+                                <SymbolIcon Margin="0,0,0,10"
+                                            HorizontalAlignment="Center"
+                                            Foreground="White"
+                                            Symbol="Play" />
+                            </Viewbox>
                             <TextBlock MaxWidth="360"
                                        FontSize="16"
                                        FontWeight="SemiBold"
@@ -136,9 +147,13 @@
                                 -->
                                 Spread over three days with over 100 events, 50 workshops and 400 participating colleges, this is an opportunity of a lifetime.
                             </TextBlock>
-                            <Grid>
-                                <TextBlock HorizontalAlignment="Left" Text="GRAVITAS '16" />
-                                <TextBlock HorizontalAlignment="Right" Text="26-28 September" />
+                            <Grid Margin="0,15,0,0">
+                                <TextBlock HorizontalAlignment="Left"
+                                           FontWeight="SemiBold"
+                                           Text="GRAVITAS '16" />
+                                <TextBlock HorizontalAlignment="Right"
+                                           FontWeight="SemiBold"
+                                           Text="26-28 September" />
                             </Grid>
                         </StackPanel>
                     </Grid>
@@ -154,9 +169,7 @@
                           Height="100"
                           Background="Black">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
 
@@ -164,83 +177,52 @@
                                          VerticalAlignment="Center"
                                          Click="BrowseButton_Click">
                             <StackPanel Orientation="Horizontal">
-                                <SymbolIcon Margin="0,0,10,0" Symbol="BrowsePhotos" />
+                                <Viewbox Width="30"
+                                         Height="30"
+                                         Margin="10,0,10,0">
+                                    <SymbolIcon Symbol="BrowsePhotos" />
+                                </Viewbox>
                                 <TextBlock FontSize="15" Text="Browse catalog" />
                             </StackPanel>
                         </HyperlinkButton>
-
-                        <HyperlinkButton Grid.Column="0"
-                                         Margin="20"
-                                         HorizontalAlignment="Stretch"
-                                         VerticalAlignment="Stretch"
-                                         HorizontalContentAlignment="Stretch"
-                                         VerticalContentAlignment="Stretch"
-                                         NavigateUri="https://www.facebook.com/graVITasVITU">
-                            <StackPanel Orientation="Horizontal">
-                                <Ellipse x:Name="fb" Stretch="Fill">
-                                    <Ellipse.Fill>
-                                        <ImageBrush ImageSource="/Assets/fb.png" Stretch="Uniform" />
-                                    </Ellipse.Fill>
-                                </Ellipse>
-                                <TextBlock Margin="10,0,0,0"
-                                           FontSize="15"
-                                           Text="facebook" />
-                            </StackPanel>
-                        </HyperlinkButton>
-                        <HyperlinkButton Grid.Column="1"
-                                         Margin="20"
-                                         HorizontalAlignment="Stretch"
-                                         VerticalAlignment="Stretch"
-                                         HorizontalContentAlignment="Stretch"
-                                         VerticalContentAlignment="Stretch"
-                                         NavigateUri="https://www.instagram.com/vitgravitas">
-                            <StackPanel Orientation="Horizontal">
-                                <Ellipse x:Name="insta" Stretch="Fill">
-                                    <Ellipse.Fill>
-                                        <ImageBrush ImageSource="/Assets/instagram.png" Stretch="Uniform" />
-                                    </Ellipse.Fill>
-                                </Ellipse>
-                                <TextBlock Margin="10,0,0,0"
-                                           FontSize="15"
-                                           Text="instagram" />
-                            </StackPanel>
-                        </HyperlinkButton>
-                        <HyperlinkButton Grid.Column="2"
-                                         Margin="20"
-                                         HorizontalAlignment="Stretch"
-                                         VerticalAlignment="Stretch"
-                                         HorizontalContentAlignment="Stretch"
-                                         VerticalContentAlignment="Stretch"
-                                         NavigateUri="https://www.twitter.com/gravitas_vit">
-                            <StackPanel Orientation="Horizontal">
-                                <Ellipse x:Name="twitter" Stretch="Fill">
-                                    <Ellipse.Fill>
-                                        <ImageBrush ImageSource="/Assets/twitter.png" Stretch="Uniform" />
-                                    </Ellipse.Fill>
-                                </Ellipse>
-                                <TextBlock Margin="10,0,0,0"
-                                           FontSize="15"
-                                           Text="twitter" />
-                            </StackPanel>
-                        </HyperlinkButton>
-                        <HyperlinkButton Grid.Column="3"
-                                         Margin="20"
-                                         HorizontalAlignment="Stretch"
-                                         VerticalAlignment="Stretch"
-                                         HorizontalContentAlignment="Stretch"
-                                         VerticalContentAlignment="Stretch"
-                                         NavigateUri="https://www.vitgravitas.com/">
-                            <StackPanel Orientation="Horizontal">
-                                <Ellipse x:Name="call" Stretch="Fill">
-                                    <Ellipse.Fill>
-                                        <ImageBrush ImageSource="/Assets/email.png" Stretch="Uniform" />
-                                    </Ellipse.Fill>
-                                </Ellipse>
-                                <TextBlock Margin="10,0,0,0"
-                                           FontSize="15"
-                                           Text="instagram" />
-                            </StackPanel>
-                        </HyperlinkButton>
+                        <Grid Grid.Column="1"
+                              Height="70"
+                              Margin="0,0,15,0"
+                              HorizontalAlignment="Right"
+                              VerticalAlignment="Center">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <HyperlinkButton Grid.Column="0"
+                                             Margin="10"
+                                             HorizontalAlignment="Stretch"
+                                             VerticalAlignment="Stretch"
+                                             HorizontalContentAlignment="Stretch"
+                                             VerticalContentAlignment="Stretch"
+                                             NavigateUri="https://www.facebook.com/graVITasVITU">
+                                <Image Source="ms-appx:///Assets/social/facebook.png" Stretch="Uniform" />
+                            </HyperlinkButton>
+                            <HyperlinkButton Grid.Column="1"
+                                             Margin="10"
+                                             HorizontalAlignment="Stretch"
+                                             VerticalAlignment="Stretch"
+                                             HorizontalContentAlignment="Stretch"
+                                             VerticalContentAlignment="Stretch"
+                                             NavigateUri="https://www.twitter.com/gravitas_vit">
+                                <Image Source="ms-appx:///Assets/social/twitter.png" Stretch="Uniform" />
+                            </HyperlinkButton>
+                            <HyperlinkButton Grid.Column="2"
+                                             Margin="10"
+                                             HorizontalAlignment="Stretch"
+                                             VerticalAlignment="Stretch"
+                                             HorizontalContentAlignment="Stretch"
+                                             VerticalContentAlignment="Stretch"
+                                             NavigateUri="https://www.instagram.com/vitgravitas">
+                                <Image Source="ms-appx:///Assets/social/instagram.png" Stretch="Uniform" />
+                            </HyperlinkButton>
+                        </Grid>
                     </Grid>
                 </Grid>
             </StackPanel>
