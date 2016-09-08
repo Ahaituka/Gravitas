@@ -232,6 +232,9 @@
     <Content Include="Assets\ChapterLogos\VIT Spartans.png" />
     <Content Include="Assets\ChapterLogos\yrc.png" />
     <Content Include="Assets\circuitrix.png" />
+    <Content Include="Assets\events.png" />
+    <Content Include="Assets\git.png" />
+    <Content Include="Assets\gitt.jpg" />
     <Content Include="Assets\grav.jpg" />
     <Content Include="Assets\gravitasquizseries.png" />
     <Content Include="Assets\informals.png" />
@@ -247,6 +250,7 @@
     <Content Include="Assets\social\twitter.png" />
     <Content Include="Assets\vitlogo.png" />
     <Content Include="Assets\workshop.jpg" />
+    <Content Include="Assets\workshop.png" />
     <Content Include="Help.htm" />
     <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Day1.MOV" />
     <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Gravitas.MP4" />

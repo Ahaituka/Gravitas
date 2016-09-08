@@ -104,12 +104,21 @@
                                    Text="Vinay Gupta" 
                                      />
 
-                                <Ellipse     Height="35" Width="35" RelativePanel.RightOf="vinayt" VerticalAlignment="Center" HorizontalAlignment="Center" >
-                                    <Ellipse.Fill>
-                                        <ImageBrush ImageSource="ms-appx:///Assets/informals.png">
-                                        </ImageBrush>
-                                    </Ellipse.Fill>
-                                </Ellipse>
+                                <HyperlinkButton 
+                                    
+                                     Height="55" Width="55" RelativePanel.RightOf="vinayt" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                                                                                       
+                                             NavigateUri="https://github.com/VinayGupta23">
+                                    <Image Source="ms-appx:///Assets/gitt.jpg" Stretch="Uniform" />
+                                </HyperlinkButton>
+                                <!--HyperlinkButton Background="White" >
+                                    <Ellipse  IsTapEnabled="True" Tapped="Ellipse_Tapped"    Height="35" Width="35" RelativePanel.RightOf="vinayt" VerticalAlignment="Center" HorizontalAlignment="Center" >
+                                        <Ellipse.Fill>
+                                            <ImageBrush ImageSource="ms-appx:///Assets/git.png">
+                                            </ImageBrush>
+                                        </Ellipse.Fill>
+                                    </Ellipse>
+                                </HyperlinkButton>-->
                             </StackPanel>
 
                             <StackPanel x:Name="Shubham" RelativePanel.Below="PublisssherTextBlock">
@@ -121,16 +130,20 @@
                                    Text="Shubham Jain" 
                                      />
                                 <Grid>
-                                    <Ellipse  Height="35" Width="35"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="48,-3,126,3" >
-                                        <Ellipse.Fill>
-                                            <ImageBrush ImageSource="ms-appx:///Assets/Social/instagram.png"/>
-                                        </Ellipse.Fill>
-                                    </Ellipse>
-                                    <Ellipse  Height="35" Width="35" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-3,66,3" >
-                                        <Ellipse.Fill>
-                                            <ImageBrush ImageSource="ms-appx:///Assets/informals.png"/>
-                                        </Ellipse.Fill>
-                                    </Ellipse>
+                                    <HyperlinkButton 
+                                    
+                                     Height="55" Width="55" RelativePanel.RightOf="vinayt" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                                                                                       
+                                             NavigateUri="https://www.instagram.com/bitloks/" Margin="33,-3,121,3">
+                                        <Image Source="ms-appx:///Assets/Social/instagram.png" Stretch="Uniform" />
+                                    </HyperlinkButton>
+                                    <HyperlinkButton 
+                                    
+                                     Height="55" Width="55" RelativePanel.RightOf="vinayt" VerticalAlignment="Center" HorizontalAlignment="Right" 
+                                                                                       
+                                             NavigateUri="https://github.com/bitloks">
+                                        <Image Source="ms-appx:///Assets/gitt.jpg" Stretch="Uniform" Margin="-47,-2,47,2" />
+                                    </HyperlinkButton>
                                 </Grid>
                             </StackPanel>
 

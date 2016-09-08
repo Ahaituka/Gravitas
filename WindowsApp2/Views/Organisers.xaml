@@ -6,12 +6,12 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d">
 
-    
-    
-    
+
+
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <WebView x:Name="WebView"
-                 LoadCompleted="WebView_LoadCompleted"
+                 NavigationCompleted="WebView_NavigationCompleted"
                  Source="http://www.vitgravitas.com/#/team" />
         <!--  Source="http://info.vit.ac.in/gravitas2015/tg15/index.html" />  -->
         <ProgressRing x:Name="ProgressRing"

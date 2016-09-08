@@ -40,13 +40,8 @@
                 </c:ValueWhenConverter.Otherwise>
             </c:ValueWhenConverter>
 
-            <DataTemplate x:Key="Chief">
-                
-                
-                
-                
-            </DataTemplate>
-            
+            <DataTemplate x:Key="Chief" />
+
 
             <DataTemplate x:Key="ArticleListItemTemplate">
                 <Grid>

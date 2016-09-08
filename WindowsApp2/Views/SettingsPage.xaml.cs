@@ -60,6 +60,14 @@ namespace WindowsApp2.Views
             }
         }
 
+        private async void Ellipse_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            string uriToLaunch = @"https://github.com/VinayGupta23";
+            var uri = new Uri(uriToLaunch);
+            await Windows.System.Launcher.LaunchUriAsync(uri);
+        }
+
+
     }
 
 }

@@ -43,19 +43,19 @@ namespace WindowsApp2.Views
         #endregion
 
         #region Methods
-        private async void WebView_LoadCompleted(object sender, NavigationEventArgs e)
-        {
-            ProgressRing.Visibility = Visibility.Collapsed;
+        //private async void WebView_LoadCompleted(object sender, NavigationEventArgs e)
+        //{
+        //    ProgressRing.Visibility = Visibility.Collapsed;
 
-            string functionString = String.Format("document.getElementsByClassName('stupid_icons')[0].style.visibility = 'hidden';document.getElementsByClassName('grey-text text-lighten-4 right')[0].style.visibility = 'hidden';document.getElementsByClassName('nav-wrapper z-depth-3')[0].style.visibility = 'hidden';document.getElementsByClassName('dock-container2')[0].style.visibility = 'hidden';");
-            await WebView.InvokeScriptAsync("eval", new string[] { functionString });
-
-
-            //functionString = String.Format("document.getElementsByClassName('dock-container2')[0].style.visibility = 'hidden';");
-            //await WebView.InvokeScriptAsync("eval", new string[] { functionString });
+        //    string functionString = String.Format("document.getElementsByClassName('stupid_icons')[0].style.visibility = 'hidden';document.getElementsByClassName('grey-text text-lighten-4 right')[0].style.visibility = 'hidden';document.getElementsByClassName('nav-wrapper z-depth-3')[0].style.visibility = 'hidden';document.getElementsByClassName('dock-container2')[0].style.visibility = 'hidden';");
+        //    await WebView.InvokeScriptAsync("eval", new string[] { functionString });
 
 
-        }
+        //    //functionString = String.Format("document.getElementsByClassName('dock-container2')[0].style.visibility = 'hidden';");
+        //    //await WebView.InvokeScriptAsync("eval", new string[] { functionString });
+
+
+        //}
 
         public async void Stop()
         {
@@ -65,8 +65,35 @@ namespace WindowsApp2.Views
 
             MyTextBox.Visibility = Visibility.Visible;
 
-        }      
+        }
         #endregion
 
+        private void WebView_LoadCompleted(FrameworkElement sender, object args)
+        {
+
+        }
+
+        //private async void WebView_Loading(FrameworkElement sender, object args)
+        //{
+        //    ProgressRing.Visibility = Visibility.Collapsed;
+
+        //    string functionString = String.Format("document.getElementsByClassName('stupid_icons')[0].style.visibility = 'hidden';document.getElementsByClassName('grey-text text-lighten-4 right')[0].style.visibility = 'hidden';document.getElementsByClassName('nav-wrapper z-depth-3')[0].style.visibility = 'hidden';document.getElementsByClassName('dock-container2')[0].style.visibility = 'hidden';");
+        //    await WebView.InvokeScriptAsync("eval", new string[] { functionString });
+
+
+        //}
+
+        private async void WebView_NavigationCompleted(WebView sender, WebViewNavigationCompletedEventArgs args)
+        {
+
+            ProgressRing.Visibility = Visibility.Collapsed;
+
+            string functionString = String.Format("document.getElementsByClassName('stupid_icons')[0].style.visibility = 'hidden';document.getElementsByClassName('grey-text text-lighten-4 right')[0].style.visibility = 'hidden';document.getElementsByClassName('nav-wrapper z-depth-3')[0].style.visibility = 'hidden';document.getElementsByClassName('dock-container2')[0].style.visibility = 'hidden';");
+            await WebView.InvokeScriptAsync("eval", new string[] { functionString });
+
+
+            //functionString = String.Format("document.getElementsByClassName('dock-container2')[0].style.visibility = 'hidden';");
+            //await WebView.InvokeScriptAsync("eval", new string[] { functionString });
+        }
     }
 }
