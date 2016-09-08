@@ -31,7 +31,7 @@ namespace WindowsApp2.Views
         public ObservableCollection<CategoryViewModel> Categories { get; set; }
         #endregion
 
-        #region Constructos
+        #region Constructors
         public CategoryPage()
         {
             this.InitializeComponent();

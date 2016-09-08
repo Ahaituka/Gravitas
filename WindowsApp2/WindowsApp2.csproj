@@ -133,6 +133,7 @@
     <Compile Include="Services\NetworkService.cs" />
     <Compile Include="Services\ServiceResponse.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
+    <Compile Include="ViewModels\OrganiserViewModel.cs" />
     <Compile Include="ViewModels\PastPageViewModel.cs" />
     <Compile Include="ViewModels\CategoriesViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />

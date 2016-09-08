@@ -46,7 +46,12 @@ namespace WindowsApp2.Views
         private async void WebView_LoadCompleted(object sender, NavigationEventArgs e)
         {
             ProgressRing.Visibility = Visibility.Collapsed;
-            //string functionString = String.Format("document.getElementById('portfolio').getElementsByTagName('h2')[0].innerHTML = 'Team Gravitas 16';");
+
+            string functionString = String.Format("document.getElementsByClassName('stupid_icons')[0].style.visibility = 'hidden';document.getElementsByClassName('grey-text text-lighten-4 right')[0].style.visibility = 'hidden';document.getElementsByClassName('nav-wrapper z-depth-3')[0].style.visibility = 'hidden';document.getElementsByClassName('dock-container2')[0].style.visibility = 'hidden';");
+            await WebView.InvokeScriptAsync("eval", new string[] { functionString });
+
+
+            //functionString = String.Format("document.getElementsByClassName('dock-container2')[0].style.visibility = 'hidden';");
             //await WebView.InvokeScriptAsync("eval", new string[] { functionString });
 
 
