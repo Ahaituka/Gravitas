@@ -7,7 +7,7 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace AppStartupGuide
+namespace WindowsApp2
 {
     public sealed partial class MainPage : Page
     {
@@ -133,13 +133,12 @@ namespace AppStartupGuide
             next.Rect = new Rect(0, distance + OVER_PAN, ActualWidth, ActualHeight);
         }
 
-
         #endregion
 
-        private async void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        private async void BrowseButton_Click(object sender, RoutedEventArgs e)
         {
             var service = this.Frame.GetNavigationService();
-            await service.NavigateAsync(typeof(Views.DetailPage));
+            await service.NavigateAsync(typeof(Views.CategoryPage));
         }
     }
 }

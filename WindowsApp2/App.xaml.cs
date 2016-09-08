@@ -79,7 +79,7 @@ namespace WindowsApp2
             if (DataManager.IsReady)
             {
 
-                NavigationService.Navigate(typeof(AppStartupGuide.MainPage));
+                NavigationService.Navigate(typeof(WindowsApp2.MainPage));
             }
             else if(!DataManager.IsReady)
             {
@@ -90,7 +90,7 @@ namespace WindowsApp2
                     if (DataManager.IsReady)
                     {
 
-                        NavigationService.Navigate(typeof(AppStartupGuide.MainPage));
+                        NavigationService.Navigate(typeof(WindowsApp2.MainPage));
 
                     }
 

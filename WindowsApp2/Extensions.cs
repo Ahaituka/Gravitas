@@ -8,7 +8,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-namespace AppStartupGuide
+namespace WindowsApp2
 {
     public static class Extensions
     {

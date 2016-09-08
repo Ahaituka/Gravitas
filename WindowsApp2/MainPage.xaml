@@ -1,9 +1,9 @@
-﻿<Page x:Class="AppStartupGuide.MainPage"
+﻿<Page x:Class="WindowsApp2.MainPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:controls="using:Template10.Controls"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:local="using:AppStartupGuide"
+      xmlns:local="using:WindowsApp2"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d">
     <Grid x:Name="LayoutRoot">
@@ -36,7 +36,6 @@
 
         <ScrollViewer x:Name="ScrollingHost">
             <StackPanel>
-
                 <Grid Height="{x:Bind PageHeight, Mode=OneWay}">
                     <Grid.RowDefinitions>
                         <RowDefinition />

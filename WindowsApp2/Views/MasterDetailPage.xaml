@@ -27,26 +27,18 @@
 
         <!--  ListViewItemTemplate  -->
         <DataTemplate x:Key="MasterListViewItemTemplate" x:DataType="data:Event">
-            <Grid Margin="0,5,0,5">
+            <Grid Margin="0"
+                  BorderBrush="#FF101010"
+                  BorderThickness="0,2,0,1"
+                  Padding="10">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="50" />
+                    <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <Grid Background="White">
-                    <Ellipse Grid.Column="1"
-                             Width="50"
-                             Height="50"
-                             HorizontalAlignment="Right"
-                             VerticalAlignment="Center">
-                        <Ellipse.Fill>
-                            <ImageBrush ImageSource="{x:Bind chapterpath, Mode=OneWay}" Stretch="UniformToFill" />
-                        </Ellipse.Fill>
-                    </Ellipse>
-                </Grid>
                 <!--
                 <controls:PageHeader Grid.Row="0"
                                      Grid.Column="0"
@@ -59,29 +51,41 @@
                     </Interactivity:Interaction.Behaviors>
                 </controls:PageHeader>
                 -->
-                <TextBlock Grid.Column="0"
+                <TextBlock Grid.Row="0"
+                           Grid.Column="0"
+                           HorizontalAlignment="Left"
                            VerticalAlignment="Center"
                            FontSize="20"
                            Foreground="{Binding Source={ThemeResource SystemControlHighlightAccentBrush}}"
+                           MaxLines="1"
                            Text="{x:Bind name, Mode=OneWay}"
-                           TextLineBounds="Tight">
-                    <!--
-                    <Interactivity:Interaction.Behaviors>
-                        <Behaviors:EllipsisBehavior Visibility="Auto" />
-                        <Behaviors:DeviceDispositionBehavior Continuum="True"
-                                                             Desktop="True"
-                                                             IoT="True" />
-                    </Interactivity:Interaction.Behaviors>
-                    -->
-                </TextBlock>
+                           TextLineBounds="Full"
+                           TextTrimming="CharacterEllipsis" />
+                <!--  Write a converter here to map different symbols for event and workshop e.g.  -->
+                <SymbolIcon Grid.Row="0"
+                            Grid.Column="1"
+                            Margin="15,0,0,0"
+                            HorizontalAlignment="Right"
+                            Symbol="Setting" />
                 <TextBlock Grid.Row="1"
                            Grid.ColumnSpan="2"
-                           Margin="0,0,10,0"
-                           VerticalAlignment="Top"
+                           VerticalAlignment="Center"
                            MaxLines="1"
                            Style="{ThemeResource ListBodyTextBlockStyle}"
                            Text="{x:Bind description}"
                            TextTrimming="Clip" />
+                <!--
+                <Grid Grid.Column="1" Background="White">
+                    <Ellipse Width="50"
+                             Height="50"
+                             HorizontalAlignment="Right"
+                             VerticalAlignment="Center">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="{x:Bind chapterpath, Mode=OneWay}" Stretch="UniformToFill" />
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </Grid>
+                -->
             </Grid>
         </DataTemplate>
 
@@ -106,7 +110,6 @@
                                Foreground="White"
                                TextAlignment="Center"
                                TextWrapping="WrapWholeWords"
-                               Typography.Capitals="AllSmallCaps"
                                d:LayoutOverrides="Width, LeftPosition, RightPosition, TopPosition, BottomPosition">
                         <Run Text="{x:Bind name}" />
                     </TextBlock>
@@ -153,7 +156,7 @@
 
                 <!--  Content Panel  -->
                 <ScrollViewer Grid.Row="2"
-                              Padding="10"
+                              Padding="15,10,15,10"
                               VerticalScrollBarVisibility="Auto">
                     <TextBlock HorizontalAlignment="Center"
                                Style="{ThemeResource ScenarioDescriptionTextStyle}"
@@ -173,11 +176,18 @@
 
                     <TextBlock Grid.Column="0" HorizontalAlignment="Left">
                         Coordinator:
-                        <LineBreak /><Run Text="{Binding name}" />
+                        <LineBreak /><Run FontWeight="SemiBold" Text="{Binding name}" />
                     </TextBlock>
                     <StackPanel Grid.Column="1"
                                 HorizontalAlignment="Right"
                                 Orientation="Horizontal">
+                        <TextBlock Margin="0,0,20,0"
+                                   VerticalAlignment="Center"
+                                   FontSize="20"
+                                   FontWeight="Light"
+                                   Foreground="Gray"
+                                   Text="Queries?"
+                                   TextLineBounds="Tight" />
                         <Button Margin="0,0,15,0"
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
@@ -410,13 +420,16 @@
 
         <ListView x:Name="MasterListView"
                   Grid.Row="1"
+                  Margin="0"
                   IsItemClickEnabled="True"
                   ItemClick="MasterListView_ItemClick"
                   ItemContainerTransitions="{x:Null}"
-                  ItemTemplate="{StaticResource MasterListViewItemTemplate}">
+                  ItemTemplate="{StaticResource MasterListViewItemTemplate}"
+                  Padding="0">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    <Setter Property="HorizontalAlignment" Value="Stretch" />
                 </Style>
             </ListView.ItemContainerStyle>
         </ListView>

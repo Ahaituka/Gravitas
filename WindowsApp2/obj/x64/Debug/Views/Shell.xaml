@@ -4,7 +4,7 @@
       xmlns:Controls="using:Template10.Controls"
       xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
       xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
-      xmlns:app="using:AppStartupGuide"
+      xmlns:app="using:WindowsApp2"
       xmlns:converters="using:Template10.Converters"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="using:WindowsApp2.Views"

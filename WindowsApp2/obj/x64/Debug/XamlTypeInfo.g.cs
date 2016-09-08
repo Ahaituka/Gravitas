@@ -181,7 +181,7 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             _typeNameTable[21] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[22] = "Double";
             _typeNameTable[23] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[24] = "AppStartupGuide.MainPage";
+            _typeNameTable[24] = "WindowsApp2.MainPage";
             _typeNameTable[25] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[26] = "Blend.SampleData.DesignDataSource.DesignDataSource";
             _typeNameTable[27] = "Blend.SampleData.DesignDataSource.Items";
@@ -282,7 +282,7 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
             _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[22] = typeof(global::System.Double);
             _typeTable[23] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[24] = typeof(global::AppStartupGuide.MainPage);
+            _typeTable[24] = typeof(global::WindowsApp2.MainPage);
             _typeTable[25] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[26] = typeof(global::Blend.SampleData.DesignDataSource.DesignDataSource);
             _typeTable[27] = typeof(global::Blend.SampleData.DesignDataSource.Items);
@@ -396,7 +396,7 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
         private object Activate_16_ModalDialog() { return new global::Template10.Controls.ModalDialog(); }
         private object Activate_19_ValueWhenConverter() { return new global::Template10.Converters.ValueWhenConverter(); }
         private object Activate_20_RoundProgressControl() { return new global::Template10GetTheSplashScreen.Controls.RoundProgressControl(); }
-        private object Activate_24_MainPage() { return new global::AppStartupGuide.MainPage(); }
+        private object Activate_24_MainPage() { return new global::WindowsApp2.MainPage(); }
         private object Activate_26_DesignDataSource() { return new global::Blend.SampleData.DesignDataSource.DesignDataSource(); }
         private object Activate_27_Items() { return new global::Blend.SampleData.DesignDataSource.Items(); }
         private object Activate_28_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Blend.SampleData.DesignDataSource.ItemsItem>(); }
@@ -660,7 +660,7 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
                 xamlType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 24:   //  AppStartupGuide.MainPage
+            case 24:   //  WindowsApp2.MainPage
                 userType = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_24_MainPage;
                 userType.AddMemberName("PageHeight");
@@ -1463,12 +1463,12 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
         }
         private object get_19_MainPage_PageHeight(object instance)
         {
-            var that = (global::AppStartupGuide.MainPage)instance;
+            var that = (global::WindowsApp2.MainPage)instance;
             return that.PageHeight;
         }
         private void set_19_MainPage_PageHeight(object instance, object Value)
         {
-            var that = (global::AppStartupGuide.MainPage)instance;
+            var that = (global::WindowsApp2.MainPage)instance;
             that.PageHeight = (global::System.Double)Value;
         }
         private object get_20_DesignDataSource_Items(object instance)
@@ -2674,8 +2674,8 @@ namespace WindowsApp2.WindowsApp2_XamlTypeInfo
                 xamlMember.Getter = get_18_RoundProgressControl_Color;
                 xamlMember.Setter = set_18_RoundProgressControl_Color;
                 break;
-            case "AppStartupGuide.MainPage.PageHeight":
-                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStartupGuide.MainPage");
+            case "WindowsApp2.MainPage.PageHeight":
+                userType = (global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsApp2.MainPage");
                 xamlMember = new global::WindowsApp2.WindowsApp2_XamlTypeInfo.XamlMember(this, "PageHeight", "Double");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_19_MainPage_PageHeight;

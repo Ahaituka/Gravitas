@@ -265,6 +265,9 @@
     <Content Include="Assets\premium.png" />
     <Content Include="Assets\robomania.png" />
     <Content Include="Assets\school.png" />
+    <Content Include="Assets\social\facebook.png" />
+    <Content Include="Assets\social\instagram.png" />
+    <Content Include="Assets\social\twitter.png" />
     <Content Include="Assets\twiiter.png" />
     <Content Include="Assets\workshop.png" />
     <Content Include="Help.htm" />
