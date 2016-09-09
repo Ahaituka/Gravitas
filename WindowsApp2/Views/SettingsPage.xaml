@@ -92,24 +92,53 @@
                     <StackPanel Margin="10,10,0,0">
                         <RelativePanel>
                             <TextBlock x:Name="PublisherTextBlock"
-                                   Foreground="{StaticResource SystemControlForegroundAccentBrush}"
-                                   Text="App developed by:" />
+                                       Foreground="{StaticResource SystemControlForegroundAccentBrush}"
+                                       Text="App developed by:" />
 
                             <StackPanel x:Name="PublisssherTextBlock" RelativePanel.Below="PublisherTextBlock">
-                                <TextBlock x:Name="vinayt"
-                                   Margin="0,0,0,0"
-                                   FontWeight="Normal"
-                                   Foreground="LightGray"
-                                   Style="{StaticResource SubheaderTextBlockStyle}"
-                                   Text="Vinay Gupta" 
-                                     />
 
-                                <HyperlinkButton 
-                                    
-                                     Height="55" Width="55" RelativePanel.RightOf="vinayt" VerticalAlignment="Center" HorizontalAlignment="Center" 
-                                                                                       
-                                             NavigateUri="https://github.com/VinayGupta23">
-                                    <Image Source="ms-appx:///Assets/gitt.jpg" Stretch="Uniform" />
+                                <TextBlock x:Name="shubht"
+                                           Margin="0,0,0,0"
+                                           FontWeight="Normal"
+                                           Foreground="LightGray"
+                                           Style="{StaticResource SubheaderTextBlockStyle}"
+                                           Text="Shubham Jain" />
+                                <StackPanel Orientation="Horizontal">
+
+                                    <HyperlinkButton Width="50"
+                                                     Height="50"
+                                                     HorizontalAlignment="Right"
+                                                     VerticalAlignment="Center"
+                                                     NavigateUri="https://github.com/bitloks"
+                                                     RelativePanel.RightOf="vinayt">
+                                        <Image Source="ms-appx:///Assets/git2.png" Stretch="Uniform" />
+                                    </HyperlinkButton>
+                                    <HyperlinkButton Width="50"
+                                                     Height="50"
+                                                     HorizontalAlignment="Center"
+                                                     VerticalAlignment="Center"
+                                                     NavigateUri="https://www.instagram.com/bitloks/"
+                                                     RelativePanel.RightOf="vinayt">
+                                        <Image Source="ms-appx:///Assets/Social/instagram.png" Stretch="Uniform" />
+                                    </HyperlinkButton>
+                                </StackPanel>
+                            </StackPanel>
+
+                            <StackPanel x:Name="Shubham" RelativePanel.Below="PublisssherTextBlock">
+                                <TextBlock x:Name="vinayt"
+                                           Margin="0,0,0,0"
+                                           FontWeight="Normal"
+                                           Foreground="LightGray"
+                                           Style="{StaticResource SubheaderTextBlockStyle}"
+                                           Text="Vinay Gupta" />
+
+                                <HyperlinkButton Width="50"
+                                                 Height="50"
+                                                 HorizontalAlignment="Left"
+                                                 VerticalAlignment="Center"
+                                                 NavigateUri="https://github.com/VinayGupta23"
+                                                 RelativePanel.RightOf="vinayt">
+                                    <Image Source="ms-appx:///Assets/git2.png" Stretch="Uniform" />
                                 </HyperlinkButton>
                                 <!--HyperlinkButton Background="White" >
                                     <Ellipse  IsTapEnabled="True" Tapped="Ellipse_Tapped"    Height="35" Width="35" RelativePanel.RightOf="vinayt" VerticalAlignment="Center" HorizontalAlignment="Center" >
@@ -121,53 +150,39 @@
                                 </HyperlinkButton>-->
                             </StackPanel>
 
-                            <StackPanel x:Name="Shubham" RelativePanel.Below="PublisssherTextBlock">
-                                <TextBlock x:Name="shubht"
-                                   Margin="0,0,0,0"
-                                   FontWeight="Normal"
-                                   Foreground="LightGray"
-                                   Style="{StaticResource SubheaderTextBlockStyle}"
-                                   Text="Shubham Jain" 
-                                     />
-                                <Grid>
-                                    <HyperlinkButton 
-                                    
-                                     Height="55" Width="55" RelativePanel.RightOf="vinayt" VerticalAlignment="Center" HorizontalAlignment="Center" 
-                                                                                       
-                                             NavigateUri="https://www.instagram.com/bitloks/" Margin="33,-3,121,3">
-                                        <Image Source="ms-appx:///Assets/Social/instagram.png" Stretch="Uniform" />
-                                    </HyperlinkButton>
-                                    <HyperlinkButton 
-                                    
-                                     Height="55" Width="55" RelativePanel.RightOf="vinayt" VerticalAlignment="Center" HorizontalAlignment="Right" 
-                                                                                       
-                                             NavigateUri="https://github.com/bitloks">
-                                        <Image Source="ms-appx:///Assets/gitt.jpg" Stretch="Uniform" Margin="-47,-2,47,2" />
-                                    </HyperlinkButton>
-                                </Grid>
+                            <TextBlock x:Name="tt"
+                                       Margin="0,40,0,0"
+                                       RelativePanel.Below="Shubham"
+                                       Text="Visit our website to learn more about events, the organizing team and the developers:"
+                                       TextWrapping="WrapWholeWords" />
+                            <HyperlinkButton x:Name="Web"
+                                             Content="www.vitgravitas.com"
+                                             FontSize="15"
+                                             RelativePanel.Below="tt" />
+
+                            <TextBlock x:Name="Mail"
+                                       Margin="0,10,10,10"
+                                       RelativePanel.Below="Web"
+                                       Style="{StaticResource TitleTextBlockStyle}"
+                                       Text="App Feedback"
+                                       TextWrapping="WrapWholeWords" />
+                            <StackPanel Orientation="Horizontal" RelativePanel.Below="Mail">
+                                <Button Margin="0"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        HorizontalContentAlignment="Center"
+                                        VerticalContentAlignment="Center"
+                                        Click="Button_Click"
+                                        Padding="5">
+                                    <SymbolIcon Symbol="mail" />
+                                </Button>
+                                <Button Margin="20,0,0,0"
+                                        Click="Button_Click_1"
+                                        Padding="5">
+                                    <SymbolIcon Symbol="Phone" />
+
+                                </Button>
                             </StackPanel>
-
-                            <TextBlock x:Name="tt"  RelativePanel.Below="Shubham" Margin="0,40,0,0"
-                                   Text="Visit our website to learn more about events, the organizing team and the developers:"
-                                   TextWrapping="WrapWholeWords" />
-                            <HyperlinkButton  x:Name="Web"  RelativePanel.Below="tt" Content="www.vitgravitas.com" FontSize="15" />
-
-                            <TextBlock  Margin="0,10,10,10" x:Name="Mail" RelativePanel.Below="Web"                                
-                             Text="App FeedBack"
-                                   TextWrapping="WrapWholeWords" 
-                                       Style="{StaticResource TitleTextBlockStyle}">
-                            </TextBlock>
-                            <Grid RelativePanel.Below="Mail" >
-                                <Button  Click="Button_Click"  HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="35,-2,-35,2" >
-                                    <SymbolIcon Symbol ="mail" />
-
-                                </Button>
-                                <Button  Click="Button_Click_1" Margin="95,-4,-95,4"  >
-                                    <SymbolIcon Symbol ="Phone" />
-
-                                </Button>
-                            </Grid>
-
 
                         </RelativePanel>
 

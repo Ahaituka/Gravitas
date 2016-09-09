@@ -83,7 +83,7 @@ namespace WindowsApp2.Views
         {
             base.OnNavigatedFrom(e);
             SystemNavigationManager systemNavigationManager = SystemNavigationManager.GetForCurrentView();
-            systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+           // systemNavigationManager.AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
         }
 
         void NavigateBackForWideState(bool useTransition)
@@ -137,52 +137,45 @@ namespace WindowsApp2.Views
                 NavigateBackForWideState(useTransition: false);
             }
         }
-        private void ShowPopupOffsetClicked(object sender, RoutedEventArgs e)
-        {
-            // open the Popup if it isn't open already 
-            if (!StandardPopup.IsOpen) { StandardPopup.IsOpen = true; }
-        }
         private async void SymbolIcon_Tapped(object sender, RoutedEventArgs e)
         {
-            EmailMessage emailMessage = new EmailMessage()
+            try
             {
-                Subject = "App Feedback " + Package.Current.DisplayName + " ",
-                Body = "First Line\r\nSecondLine"
-            };
-
-            emailMessage.To.Add(new EmailRecipient() { Address = x.email });
-            await EmailManager.ShowComposeNewEmailAsync(emailMessage);
+                EmailMessage emailMessage = new EmailMessage()
+                {
+                    Subject = "Gravitas Windows App - Regarding: " + Item.name,
+                    Body = ""
+                };
+                emailMessage.To.Add(new EmailRecipient() { Address = x.email });
+                await EmailManager.ShowComposeNewEmailAsync(emailMessage);
+            }
+            catch { }
 
         }
         private async void SymbolIcon_Tapped_1(object sender, RoutedEventArgs e)
         {
-
-            var call = Item.coordinators[0].phone;
-
-            var uriSkype = new Uri(@"Skype:(call)?call");
-
-            // Set the option to show a warning
-            var promptOptions = new Windows.System.LauncherOptions();
-            promptOptions.TreatAsUntrusted = true;
-
-            // Launch the URI
-            var success = await Windows.System.Launcher.LaunchUriAsync(uriSkype, promptOptions);
-
-            if (success)
+            try
             {
-                // URI launched
-            }
-            else
-            {
-                // URI launch failed
-            }
-        }
-        private void Button_Click(object sender, RoutedEventArgs e)
+                var call = x.phone;
+                var uriSkype = new Uri(@"Skype:(" + call + ")?call");
 
-        {
-            // open the Popup if it isn't open already 
-            if (StandardPopup.IsOpen) { StandardPopup.IsOpen = false; }
+                // Set the option to show a warning
+                var promptOptions = new Windows.System.LauncherOptions();
+                promptOptions.TreatAsUntrusted = true;
 
+                // Launch the URI
+                var success = await Windows.System.Launcher.LaunchUriAsync(uriSkype, promptOptions);
+
+                if (success)
+                {
+                    // URI launched
+                }
+                else
+                {
+                    // URI launch failed
+                }
+            }
+            catch { }
         }
     } 
     #endregion

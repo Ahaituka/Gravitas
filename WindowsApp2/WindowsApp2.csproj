@@ -233,7 +233,7 @@
     <Content Include="Assets\ChapterLogos\yrc.png" />
     <Content Include="Assets\circuitrix.png" />
     <Content Include="Assets\events.png" />
-    <Content Include="Assets\git.png" />
+    <Content Include="Assets\git2.png" />
     <Content Include="Assets\gitt.jpg" />
     <Content Include="Assets\grav.jpg" />
     <Content Include="Assets\gravitasquizseries.png" />
@@ -248,6 +248,7 @@
     <Content Include="Assets\social\instagram.png" />
     <Content Include="Assets\social\instagram2.png" />
     <Content Include="Assets\social\twitter.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\vitlogo.png" />
     <Content Include="Assets\workshop.jpg" />
     <Content Include="Assets\workshop.png" />
@@ -261,12 +262,9 @@
     <None Include="Package.StoreAssociation.xml" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
-    <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

@@ -32,42 +32,44 @@ namespace WindowsApp2.Views
         {
 
 
-            EmailMessage emailMessage = new EmailMessage()
+            try
             {
-                Subject = "FeedBack Regarding  Windows App: ",
-                Body = ""
-            };
-            emailMessage.To.Add(new EmailRecipient() { Address = "bitloks@gmail.com" });
-            await EmailManager.ShowComposeNewEmailAsync(emailMessage);
+                EmailMessage emailMessage = new EmailMessage()
+                {
+                    Subject = "FeedBack Regarding Windows App: ",
+                    Body = ""
+                };
+                emailMessage.To.Add(new EmailRecipient() { Address = "bitloks@gmail.com" });
+                await EmailManager.ShowComposeNewEmailAsync(emailMessage);
+            }
+            catch (Exception)
+            {
+            }
         }
 
         private async void Button_Click_1(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
-            // TODO.
-            var uriSkype = new Uri(@"Skype:(9952549997)?call");
-            // Set the option to show a warning
-            var promptOptions = new Windows.System.LauncherOptions();
-            promptOptions.TreatAsUntrusted = true;
-            // Launch the URI
-            var success = await Windows.System.Launcher.LaunchUriAsync(uriSkype, promptOptions);
-            if (success)
+            try
             {
-                // URI launched
+                // TODO.
+                var uriSkype = new Uri(@"Skype:(9952549997)?call");
+                // Set the option to show a warning
+                var promptOptions = new Windows.System.LauncherOptions();
+                promptOptions.TreatAsUntrusted = true;
+                // Launch the URI
+                var success = await Windows.System.Launcher.LaunchUriAsync(uriSkype, promptOptions);
+                if (success)
+                {
+                    // URI launched
+                }
+                else
+                {
+                    // URI launch failed
+                }
             }
-            else
-            {
-                // URI launch failed
-            }
+            catch { }
         }
-
-        private async void Ellipse_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
-        {
-            string uriToLaunch = @"https://github.com/VinayGupta23";
-            var uri = new Uri(uriToLaunch);
-            await Windows.System.Launcher.LaunchUriAsync(uri);
-        }
-
-
+        
     }
 
 }

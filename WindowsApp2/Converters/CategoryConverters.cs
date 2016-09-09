@@ -22,7 +22,7 @@ namespace WindowsApp2.Converters
                 if (String.Compare(cat, "events", true) == 0)
                     return Symbol.Play;
                 else if (String.Compare(cat, "workshop", true) == 0)
-                    return Symbol.Setting;
+                    return Symbol.Repair;
             }
             return Symbol.Add;
         }

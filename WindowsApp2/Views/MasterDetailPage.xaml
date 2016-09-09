@@ -149,7 +149,7 @@
 
                 <!--  Footer Panel  -->
                 <Grid Grid.Row="3"
-                      Background="DarkSlateBlue"
+                      Background="{Binding Source={StaticResource SystemControlHighlightAltAccentBrush}}"
                       DataContext="{x:Bind coordinators[0]}"
                       Padding="10">
                     <Grid.ColumnDefinitions>
@@ -157,15 +157,20 @@
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
 
-                    <TextBlock Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <TextBlock Grid.Column="0"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Center">
                         Coordinator:
                         <LineBreak /><Run FontWeight="SemiBold" Text="{Binding name}" />
                     </TextBlock>
 
-                    <Button  Click="ShowPopupOffsetClicked" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center">
-                        <SymbolIcon Symbol="People"> </SymbolIcon>
+                    <Button Grid.Column="0"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Click="ShowPopupOffsetClicked">
+                        <SymbolIcon Symbol="People" />
                     </Button>
-                    
+
                     <StackPanel Grid.Column="1"
                                 HorizontalAlignment="Right"
                                 Orientation="Horizontal">
@@ -225,7 +230,7 @@
         </controls:PageHeader>
 
         <!--  Coordinator Popup Starts  -->
-        
+
         <Popup x:Name="StandardPopup"
                HorizontalAlignment="Center"
                VerticalAlignment="Center"
@@ -287,7 +292,6 @@
                     </RelativePanel>
                 </StackPanel>
                 <StackPanel Grid.Row="2">
-
                     <Border Height="1"
                             Margin="15,0"
                             Background="#FFE2E2E2" />
@@ -306,7 +310,7 @@
                         <TextBlock Grid.Row="2"
                                    HorizontalAlignment="Center"
                                    VerticalAlignment="Center"
-                                   FontSize="24"
+                                   FontSize="20"
                                    Foreground="Black"
                                    RelativePanel.AlignHorizontalCenterWithPanel="True"
                                    RelativePanel.AlignVerticalCenterWithPanel="True"
@@ -322,7 +326,6 @@
                         VerticalAlignment="Bottom"
                         Background="#FFE2E2E2" />
                 <StackPanel Grid.Row="3">
-
                     <RelativePanel>
                         <SymbolIcon x:Name="phoe"
                                     Width="45"
@@ -335,7 +338,7 @@
                         <TextBlock Grid.Row="2"
                                    HorizontalAlignment="Center"
                                    VerticalAlignment="Center"
-                                   FontSize="24"
+                                   FontSize="18"
                                    Foreground="Black"
                                    RelativePanel.AlignHorizontalCenterWithPanel="True"
                                    RelativePanel.AlignVerticalCenterWithPanel="True"
@@ -372,19 +375,19 @@
                         <TextBlock Grid.Row="2"
                                    HorizontalAlignment="Center"
                                    VerticalAlignment="Center"
-                                   FontSize="24"
+                                   FontSize="18"
                                    Foreground="Black"
                                    RelativePanel.AlignHorizontalCenterWithPanel="True"
                                    RelativePanel.AlignVerticalCenterWithPanel="True"
                                    RelativePanel.RightOf="email"
                                    Text="{x:Bind x.email, Mode=OneWay}"
-                                   TextWrapping="Wrap" />
+                                   TextWrapping="WrapWholeWords" />
 
                     </RelativePanel>
                 </StackPanel>
             </Grid>
         </Popup>
-        
+
         <!--  Coordinator Popup Ends  -->
 
         <ContentPresenter x:Name="DetailContentPresenter"

@@ -144,6 +144,8 @@ namespace WindowsApp2.Views
                         MasterListView.SelectedItem = ev;
                     else
                         MasterListView.SelectedItem = EventList[0];
+                    x = (MasterListView.SelectedItem as Event).coordinators[0];
+
                 }
             }
             
@@ -254,40 +256,48 @@ namespace WindowsApp2.Views
 
         private async void EmailIcon_Tapped(object sender, RoutedEventArgs e)
         {
-            EmailMessage emailMessage = new EmailMessage()
+            try
             {
-                Subject = "Gravitas Windows App:Regarding event: " + Item.name,
-                Body = ""
-            };
-            emailMessage.To.Add(new EmailRecipient() { Address = x.email });
-            await EmailManager.ShowComposeNewEmailAsync(emailMessage);
+
+
+                EmailMessage emailMessage = new EmailMessage()
+                {
+                    Subject = "Gravitas Windows App - Regarding: " + Item.name,
+                    Body = ""
+                };
+                emailMessage.To.Add(new EmailRecipient() { Address = x.email });
+                await EmailManager.ShowComposeNewEmailAsync(emailMessage);
+            }
+            catch { }
         }
 
         // TODO.
         private async void PhoneIcon_Tapped(object sender, RoutedEventArgs e)
         {
-
-
-            var call = x.phone;
-            var uriSkype = new Uri(@"Skype:(call)?call");
-
-            // Set the option to show a warning
-            var promptOptions = new Windows.System.LauncherOptions();
-            promptOptions.TreatAsUntrusted = true;
-
-            // Launch the URI
-            var success = await Windows.System.Launcher.LaunchUriAsync(uriSkype, promptOptions);
-
-            if (success)
+            try
             {
-                // URI launched
-            }
-            else
-            {
-                // URI launch failed
-            }
+                var call = x.phone;
+                var uriSkype = new Uri(@"Skype:(" + call + ")?call");
 
+                // Set the option to show a warning
+                var promptOptions = new Windows.System.LauncherOptions();
+                promptOptions.TreatAsUntrusted = true;
+
+                // Launch the URI
+                var success = await Windows.System.Launcher.LaunchUriAsync(uriSkype, promptOptions);
+
+                if (success)
+                {
+                    // URI launched
+                }
+                else
+                {
+                    // URI launch failed
+                }
+            }
+            catch { }
         }
+
         #endregion
     }
 }
