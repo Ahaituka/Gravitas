@@ -144,8 +144,8 @@ namespace WindowsApp2.Views
                         MasterListView.SelectedItem = ev;
                     else
                         MasterListView.SelectedItem = EventList[0];
-                    x = (MasterListView.SelectedItem as Event).coordinators[0];
-
+                    Item = MasterListView.SelectedItem as Event;
+                    x = Item.coordinators[0];
                 }
             }
             
@@ -250,7 +250,10 @@ namespace WindowsApp2.Views
         private void ShowPopupOffsetClicked(object sender, RoutedEventArgs e)
         {
         //    open the Popup if it isn't open already 
-            if (!StandardPopup.IsOpen) { StandardPopup.IsOpen = true; }
+            if (!StandardPopup.IsOpen) { StandardPopup.IsOpen = true;
+                StandardPopup.HorizontalOffset = DetailColumn.ActualWidth / 2;
+                StandardPopup.VerticalOffset = ActualHeight - 400;
+            }
         }
 
 

@@ -66,19 +66,24 @@ namespace WindowsApp2
         public override async Task OnStartAsync(StartKind startKind, IActivatedEventArgs args)
         {
             // long-running startup tasks go here
-            await Task.Delay(TimeSpan.FromSeconds(6));
+            await Task.Delay(TimeSpan.FromSeconds(5));
 
-       //     await Windows.Storage.ApplicationData.Current.ClearAsync();
+            // await Windows.Storage.ApplicationData.Current.ClearAsync();
 
-            await DataManager.LoadCacheAsync();
-               
+            try
+            {
+                StatusCode status = await DataManager.RefreshDataAsync();
+                if (status != StatusCode.Success)
+                    await DataManager.LoadCacheAsync();
+            }
+            catch { }
+
             Debug.WriteLine("Data Status: ", DataManager.IsReady);
 
             var x = NetworkService.IsInternet();
 
             if (DataManager.IsReady)
             {
-
                 NavigationService.Navigate(typeof(WindowsApp2.MainPage));
             }
             else if(!DataManager.IsReady)
@@ -86,23 +91,18 @@ namespace WindowsApp2
                 if (x)
                 {
                     await DataManager.RefreshDataAsync();
-
                     if (DataManager.IsReady)
                     {
-
                         NavigationService.Navigate(typeof(WindowsApp2.MainPage));
-
                     }
 
                 }
 
                 if (!x)
                 {
-
                       Shell.Instance._MyHamburgerMenu.IsFullScreen = true;
                 //    Shell.HamburgerMenu.IsFullScreen = true;
-                    NavigationService.Navigate(typeof(Views.Icheck));
-                    
+                    NavigationService.Navigate(typeof(Views.Icheck));   
                 }             
                 }
 

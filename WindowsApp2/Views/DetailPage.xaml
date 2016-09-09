@@ -23,7 +23,6 @@
     <Page.Resources>
 
         <conv:CategoryToSymbolConverter x:Key="CatToIconConverter" />
-        <conv:CategoryToImageConverter x:Key="CatToImageConverter" />
 
     </Page.Resources>
 
@@ -39,7 +38,7 @@
 
             <!--  Top Banner  -->
             <Grid x:Name="Section2" Grid.Row="0">
-                <Image Source="{Binding Converter={StaticResource CatToImageConverter}}" Stretch="UniformToFill" />
+                <Image Source="ms-appx:///Assets/narrowBackground.png" Stretch="UniformToFill" />
                 <TextBlock HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="30"
@@ -47,7 +46,7 @@
                            TextAlignment="Center"
                            TextWrapping="WrapWholeWords"
                            d:LayoutOverrides="Width, LeftPosition, RightPosition, TopPosition, BottomPosition">
-                    <Run Text="{x:Bind Item.name}" />
+                    <Run Text="{x:Bind Item.name, Mode=OneWay}" />
                 </TextBlock>
             </Grid>
 
@@ -55,7 +54,7 @@
             <StackPanel x:Name="Content"
                         Grid.Row="1"
                         HorizontalAlignment="Stretch"
-                        Background="{Binding Source={StaticResource SystemControlHighlightAccentBrush}}"
+                        Background="#FF4682B4"
                         Padding="10">
                 <StackPanel Grid.Column="0"
                             HorizontalAlignment="Center"
@@ -65,7 +64,7 @@
                                VerticalAlignment="Center"
                                FontWeight="Bold"
                                Style="{ThemeResource BaseTextBlockStyle}"
-                               Text="{x:Bind Item.subCategory}"
+                               Text="{x:Bind Item.subCategory, Mode=OneWay}"
                                TextTrimming="CharacterEllipsis" />
                 </StackPanel>
                 <StackPanel Grid.Column="1"
@@ -73,7 +72,7 @@
                             HorizontalAlignment="Center"
                             Orientation="Horizontal">
                     <TextBlock VerticalAlignment="Center" Style="{ThemeResource BaseTextBlockStyle}">
-                        <Run FontWeight="Bold" Text="{x:Bind Item.teamSize}" />
+                        <Run FontWeight="Bold" Text="{x:Bind Item.teamSize, Mode=OneWay}" />
                     </TextBlock>
                     <TextBlock Margin="5,0,0,0" Text="per team" />
                 </StackPanel>
@@ -82,7 +81,7 @@
                             HorizontalAlignment="Center"
                             Orientation="Horizontal">
                     <TextBlock x:Name="symbllol" DataContext="{Binding}">
-                        Fee: &#x20b9;<Run FontWeight="Bold" Text="{x:Bind Item.participationFee}" /></TextBlock>
+                        Fee: &#x20b9;<Run FontWeight="Bold" Text="{x:Bind Item.participationFee, Mode=OneWay}" /></TextBlock>
                 </StackPanel>
             </StackPanel>
 
@@ -92,14 +91,14 @@
                           VerticalScrollBarVisibility="Auto">
                 <TextBlock HorizontalAlignment="Center"
                            Style="{ThemeResource ScenarioDescriptionTextStyle}"
-                           Text="{x:Bind Item.description}"
+                           Text="{x:Bind Item.description, Mode=OneWay}"
                            TextWrapping="WrapWholeWords" />
             </ScrollViewer>
 
             <!--  Footer Panel  -->
             <Grid Grid.Row="3"
-                  Background="DarkSlateBlue"
-                  DataContext="{x:Bind Item.coordinators[0]}"
+                  Background="#FF303030"
+                  DataContext="{x:Bind Item.coordinators[0], Mode=OneWay}"
                   Padding="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -111,7 +110,7 @@
                            VerticalAlignment="Center"
                            TextWrapping="WrapWholeWords">
                     Coordinator:
-                    <LineBreak /><Run FontWeight="SemiBold" Text="{Binding name}" />
+                    <LineBreak /><Run FontWeight="SemiBold" Text="{x:Bind x.name, Mode=OneWay}" />
                 </TextBlock>
 
                 <StackPanel Grid.Column="1"

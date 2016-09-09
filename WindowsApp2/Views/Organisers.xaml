@@ -10,7 +10,9 @@
 
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
         <WebView x:Name="WebView"
+                 DefaultBackgroundColor="White"
                  NavigationCompleted="WebView_NavigationCompleted"
                  Source="http://www.vitgravitas.com/#/team" />
         <!--  Source="http://info.vit.ac.in/gravitas2015/tg15/index.html" />  -->
@@ -22,11 +24,14 @@
         <TextBlock x:Name="MyTextBox"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   FontSize="30"
-                   Foreground="Black"
+                   FontSize="24"
+                   Foreground="White"
+                   TextAlignment="Center"
                    TextWrapping="WrapWholeWords"
                    Visibility="Collapsed">
-            Houston! We Got a problem .No Internet Connection!
+            Houston! We Got a problem.
+            <LineBreak /><Run FontSize="18" Foreground="Gray">Check for network issues or try again later!</Run>
         </TextBlock>
+
     </Grid>
 </Page>

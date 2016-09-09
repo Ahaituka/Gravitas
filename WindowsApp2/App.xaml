@@ -16,6 +16,8 @@
 
             </ResourceDictionary.MergedDictionaries>
 
+            <SolidColorBrush x:Key="AppThemeBrush" Color="#FF4682B4" />
+
             <c:ValueWhenConverter x:Key="VisibleWhenTrueConverter">
                 <c:ValueWhenConverter.When>
                     <x:Boolean>True</x:Boolean>

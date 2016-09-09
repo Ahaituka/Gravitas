@@ -21,7 +21,7 @@
             <RelativePanel.AlignTopWithPanel>True</RelativePanel.AlignTopWithPanel>
             <RelativePanel.AlignRightWithPanel>True</RelativePanel.AlignRightWithPanel>
             <RelativePanel.AlignLeftWithPanel>True</RelativePanel.AlignLeftWithPanel>
-            <!--  secondary commands  -->          
+            <!--  secondary commands  -->
         </controls:PageHeader>
 
         <AutoSuggestBox x:Name="ajsb"

@@ -134,7 +134,6 @@
     <Compile Include="Services\ServiceResponse.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
     <Compile Include="ViewModels\OrganiserViewModel.cs" />
-    <Compile Include="ViewModels\PastPageViewModel.cs" />
     <Compile Include="ViewModels\CategoriesViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\DetailPageViewModel.cs" />
@@ -168,9 +167,6 @@
     </Compile>
     <Compile Include="Views\Splash.xaml.cs">
       <DependentUpon>Splash.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Sponsors.xaml.cs">
-      <DependentUpon>Sponsors.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -234,12 +230,10 @@
     <Content Include="Assets\circuitrix.png" />
     <Content Include="Assets\events.png" />
     <Content Include="Assets\git2.png" />
-    <Content Include="Assets\gitt.jpg" />
-    <Content Include="Assets\grav.jpg" />
     <Content Include="Assets\gravitasquizseries.png" />
     <Content Include="Assets\informals.png" />
     <Content Include="Assets\management.png" />
-    <Content Include="Assets\manifesto4.jpg" />
+    <Content Include="Assets\narrowBackground.png" />
     <Content Include="Assets\online.png" />
     <Content Include="Assets\premium.png" />
     <Content Include="Assets\robomania.png" />
@@ -253,11 +247,9 @@
     <Content Include="Assets\workshop.jpg" />
     <Content Include="Assets\workshop.png" />
     <Content Include="Help.htm" />
-    <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Day1.MOV" />
     <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Gravitas.MP4" />
     <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Week1.png" />
     <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Week2.JPG" />
-    <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Week3.JPG" />
     <Content Include="SampleData\DesignDataSource\DesignDataSource_Files\Week3.png" />
     <None Include="Package.StoreAssociation.xml" />
     <Content Include="Properties\Default.rd.xml" />
@@ -332,10 +324,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Splash.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Sponsors.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

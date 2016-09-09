@@ -18,6 +18,7 @@ using static Template10.Common.BootStrapper;
 using WindowsApp2.Services;
 using Template10.Services.NavigationService;
 using Template10.Utils;
+using Windows.UI;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -89,7 +90,15 @@ namespace WindowsApp2.Views
             ProgressRing.Visibility = Visibility.Collapsed;
 
             string functionString = String.Format("document.getElementsByClassName('stupid_icons')[0].style.visibility = 'hidden';document.getElementsByClassName('grey-text text-lighten-4 right')[0].style.visibility = 'hidden';document.getElementsByClassName('nav-wrapper z-depth-3')[0].style.visibility = 'hidden';document.getElementsByClassName('dock-container2')[0].style.visibility = 'hidden';");
-            await WebView.InvokeScriptAsync("eval", new string[] { functionString });
+            try
+            {
+                await WebView.InvokeScriptAsync("eval", new string[] { functionString });
+            }
+            catch (Exception ex)
+            {
+                WebView.DefaultBackgroundColor = Colors.White;
+                MyTextBox.Visibility = Visibility.Visible;
+            }
 
 
             //functionString = String.Format("document.getElementsByClassName('dock-container2')[0].style.visibility = 'hidden';");

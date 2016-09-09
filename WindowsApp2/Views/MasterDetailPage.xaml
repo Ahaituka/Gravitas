@@ -100,7 +100,7 @@
                 <!--  Middle Panel  -->
                 <Grid x:Name="Content"
                       Grid.Row="1"
-                      Background="{Binding Source={StaticResource SystemControlHighlightAccentBrush}}"
+                      Background="{Binding Source={ThemeResource SystemControlHighlightAccentBrush}}"
                       Padding="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
@@ -121,7 +121,7 @@
                     <StackPanel Grid.Column="1"
                                 HorizontalAlignment="Center"
                                 Orientation="Horizontal">
-                        <TextBlock VerticalAlignment="Center" Style="{ThemeResource BaseTextBlockStyle}">
+                        <TextBlock VerticalAlignment="Center" Style="{StaticResource BaseTextBlockStyle}">
                             <Run FontWeight="Bold" Text="{x:Bind teamSize}" />
                         </TextBlock>
                         <SymbolIcon x:Name="symboll"
@@ -149,7 +149,7 @@
 
                 <!--  Footer Panel  -->
                 <Grid Grid.Row="3"
-                      Background="{Binding Source={StaticResource SystemControlHighlightAltAccentBrush}}"
+                      Background="#FF303030"
                       DataContext="{x:Bind coordinators[0]}"
                       Padding="10">
                     <Grid.ColumnDefinitions>
@@ -177,8 +177,8 @@
                         <TextBlock Margin="0,0,20,0"
                                    VerticalAlignment="Center"
                                    FontSize="20"
-                                   FontWeight="Light"
-                                   Foreground="Gray"
+                                   FontWeight="Normal"
+                                   Foreground="LightGray"
                                    Text="Queries?"
                                    TextLineBounds="Tight" />
                         <Button Margin="0,0,15,0"
@@ -250,11 +250,11 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
-                <TextBlock Margin="20,0"
+                <TextBlock Margin="10,3,3,3"
                            VerticalAlignment="Center"
-                           FontSize="24"
+                           FontSize="20"
                            Foreground="Black">
-                    Cordinator Details
+                    Coordinator Details
                 </TextBlock>
                 <Button Margin="12"
                         HorizontalAlignment="Right"
@@ -275,10 +275,10 @@
                                  Margin="0,15,0,0"
                                  HorizontalAlignment="Left"
                                  VerticalAlignment="Center"
-                                 Stroke="White"
+                                 Stroke="DimGray"
                                  StrokeThickness="2">
                             <Ellipse.Fill>
-                                <ImageBrush ImageSource="{x:Bind Item.chapterpath, Mode=OneWay}" />
+                                <ImageBrush ImageSource="{x:Bind Item.chapterpath, Mode=OneWay}" Stretch="Uniform" />
                             </Ellipse.Fill>
                         </Ellipse>
                         <TextBlock Margin="15,15,0,0"
@@ -308,16 +308,17 @@
                                     Foreground="Black"
                                     Symbol="People" />
                         <TextBlock Grid.Row="2"
+                                   Margin="0,0,5,0"
                                    HorizontalAlignment="Center"
                                    VerticalAlignment="Center"
-                                   FontSize="20"
+                                   FontSize="16"
                                    Foreground="Black"
+                                   MaxLines="2"
                                    RelativePanel.AlignHorizontalCenterWithPanel="True"
                                    RelativePanel.AlignVerticalCenterWithPanel="True"
                                    RelativePanel.RightOf="imhg"
                                    Text="{x:Bind x.name, Mode=OneWay}"
-                                   TextWrapping="Wrap" />
-
+                                   TextWrapping="WrapWholeWords" />
                     </RelativePanel>
                 </StackPanel>
                 <Border Grid.Row="2"
@@ -336,6 +337,7 @@
                                     Foreground="Black"
                                     Symbol="Phone" />
                         <TextBlock Grid.Row="2"
+                                   Margin="0,0,5,0"
                                    HorizontalAlignment="Center"
                                    VerticalAlignment="Center"
                                    FontSize="18"
@@ -344,7 +346,7 @@
                                    RelativePanel.AlignVerticalCenterWithPanel="True"
                                    RelativePanel.RightOf="phoe"
                                    Text="{x:Bind x.phone, Mode=OneWay}"
-                                   TextWrapping="Wrap" />
+                                   TextWrapping="WrapWholeWords" />
 
                     </RelativePanel>
                 </StackPanel>
@@ -373,15 +375,16 @@
                                     Foreground="Black"
                                     Symbol="mail" />
                         <TextBlock Grid.Row="2"
+                                   Margin="0,0,0,5"
                                    HorizontalAlignment="Center"
                                    VerticalAlignment="Center"
-                                   FontSize="18"
                                    Foreground="Black"
+                                   MaxLines="2"
                                    RelativePanel.AlignHorizontalCenterWithPanel="True"
                                    RelativePanel.AlignVerticalCenterWithPanel="True"
                                    RelativePanel.RightOf="email"
                                    Text="{x:Bind x.email, Mode=OneWay}"
-                                   TextWrapping="WrapWholeWords" />
+                                   TextWrapping="Wrap" />
 
                     </RelativePanel>
                 </StackPanel>
