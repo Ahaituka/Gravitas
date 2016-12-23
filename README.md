@@ -24,7 +24,8 @@ Contribution Guidelines :
   - use  **camelCasing** for method arguments and local variables.
   - use implicit type var for local variable declarations.
   - prefix interfaces with the letter I
-  - 
+  
+  
 Download
 ========
 Download the latest official release [here](https://www.microsoft.com/en-in/store/p/gravitas-16/9nblggh4rvs4)
