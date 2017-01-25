@@ -12,7 +12,7 @@ This  is an UWP (Universal Windows Platform)  app for Vit University Techfest gr
  Features
 ========
   - Browse through different categories
-  - Get cordinator details
+  - Get coordinator details
   - Get Event details
   - Call or Email Cordinator
   - Search for a particular event
